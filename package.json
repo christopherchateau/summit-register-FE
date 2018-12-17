@@ -21,5 +21,19 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christopherchateau/Summit-Register-FE.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/christopherchateau/Summit-Register-FE/issues"
+  },
+  "homepage": "https://github.com/christopherchateau/Summit-Register-FE#readme",
+  "description": ""
 }

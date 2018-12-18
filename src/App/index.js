@@ -12,10 +12,16 @@ class App extends Component {
       currentDisplay: "start"
     };
   }
+
+  updateDisplay = currentMountain => {
+    this.setState({ currentMountain, currentDisplay: "info" });
+  };
+
   render() {
     return (
       <div className="App">
-        <Start />
+        {this.state.currentDisplay === "start" && <Start updateDisplay={this.updateDisplay} />}
+        {this.state.currentDisplay === "info" && <Info mountainName={this.state.currentMountain}/>}
       </div>
     );
   }

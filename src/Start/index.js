@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { mountainData } from "../utilities/Data/mountain-data";
-import logo from "../utilities/Images/logo.png";
+import { mountainData } from "../utilities/data/mountain-data";
+import logo from "../utilities/images/logo.png";
 import "./Start.css";
 
 class Start extends Component {
@@ -27,7 +27,7 @@ class Start extends Component {
           </select>
           <button
             className="select-btn"
-            onClick={() => this.props.updateDisplay(this.menu.value)}
+            onClick={() => this.props.handleSelectButton(this.menu.value)}
           >
             Select
           </button>

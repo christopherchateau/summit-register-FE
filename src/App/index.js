@@ -2,40 +2,50 @@ import React, { Component } from "react";
 import Start from "../Start";
 import Info from "../Info";
 import Log from "../Log";
+import * as apiCalls from "../utilities/helper/apiCalls";
 import "./App.css";
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
+      currentDisplay: "start",
       currentMountain: "",
-      currentDisplay: "start"
+      currentMountainData: []
     };
   }
 
   handleBackButton = () => {
-    if (this.state.currentDisplay === 'info') {
-      this.setState({ currentDisplay: 'start'})
+    if (this.state.currentDisplay === "info") {
+      this.setState({ currentDisplay: "start" });
     }
-    //document.querySelector('.drop-down-menu').value
   };
 
-  updateDisplay = currentMountain => {
+  handleSelectButton = async currentMountain => {
     const selectedMountain = this.state.selectedMountain;
-    this.setState({ currentMountain, currentDisplay: "info" });
+    const currentMountainData = await apiCalls.getMountain();
+
+    await this.setState({
+      currentMountain,
+      currentDisplay: "info",
+      currentMountainData
+    });
   };
 
   render() {
-    const { currentDisplay, currentMountain } = this.state;
+    const { currentDisplay, currentMountain, currentMountainData } = this.state;
     return (
       <div className="App">
         {currentDisplay === "start" && (
-          <Start currentMountain={currentMountain} updateDisplay={this.updateDisplay} />
+          <Start
+            currentMountain={currentMountain}
+            handleSelectButton={this.handleSelectButton}
+          />
         )}
         {currentDisplay === "info" && (
           <Info
             handleBackButton={this.handleBackButton}
-            mountainName={currentMountain}
+            currentMountainData={currentMountainData}
           />
         )}
       </div>

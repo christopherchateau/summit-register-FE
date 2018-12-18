@@ -7,7 +7,11 @@ class Start extends Component {
   render() {
     const mountainNames = mountainData.data.map((mountain, index) => {
       return (
-        <option value={mountain.name} key={index}>
+        <option
+          value={mountain.name}
+          key={index}
+          selected={mountain.name === this.props.currentMountain}
+        >
           {mountain.name}
         </option>
       );

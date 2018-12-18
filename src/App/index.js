@@ -17,9 +17,11 @@ class App extends Component {
     if (this.state.currentDisplay === 'info') {
       this.setState({ currentDisplay: 'start'})
     }
+    //document.querySelector('.drop-down-menu').value
   };
 
   updateDisplay = currentMountain => {
+    const selectedMountain = this.state.selectedMountain;
     this.setState({ currentMountain, currentDisplay: "info" });
   };
 
@@ -28,7 +30,7 @@ class App extends Component {
     return (
       <div className="App">
         {currentDisplay === "start" && (
-          <Start updateDisplay={this.updateDisplay} />
+          <Start currentMountain={currentMountain} updateDisplay={this.updateDisplay} />
         )}
         {currentDisplay === "info" && (
           <Info

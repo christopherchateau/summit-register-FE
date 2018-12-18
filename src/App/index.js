@@ -13,16 +13,29 @@ class App extends Component {
     };
   }
 
+  handleBackButton = () => {
+    if (this.state.currentDisplay === 'info') {
+      this.setState({ currentDisplay: 'start'})
+    }
+  };
+
   updateDisplay = currentMountain => {
     this.setState({ currentMountain, currentDisplay: "info" });
   };
 
   render() {
-    const { currentDisplay, currentMountain } = this.state
+    const { currentDisplay, currentMountain } = this.state;
     return (
       <div className="App">
-        {currentDisplay === "start" && <Start updateDisplay={this.updateDisplay} />}
-        {currentDisplay === "info" && <Info mountainName={currentMountain}/>}
+        {currentDisplay === "start" && (
+          <Start updateDisplay={this.updateDisplay} />
+        )}
+        {currentDisplay === "info" && (
+          <Info
+            handleBackButton={this.handleBackButton}
+            mountainName={currentMountain}
+          />
+        )}
       </div>
     );
   }

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import BackButton from "../BackButton"
 import logo from "../utilities/Images/logo.png";
 import "./Info.css";
 
@@ -7,7 +8,7 @@ class Info extends Component {
     return (
       <div className="Info">
         <header className="header">
-          <button className="back-btn">Back</button>
+          <BackButton handleBackButton={this.props.handleBackButton}/>
           <img className="logo-small" alt="logo" src={logo} />
         </header>
         <h1>{this.props.mountainName}</h1>

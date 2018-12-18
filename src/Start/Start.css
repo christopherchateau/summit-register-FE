@@ -1,0 +1,32 @@
+.Start {
+  align-items: center;
+  background: gray;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-evenly;
+
+  border: 4px solid black;
+  border-radius: 10%;
+  margin: 0 35%;
+  width: 30%;
+}
+
+.main-title {
+}
+
+.logo {
+    /* border: 2px solid red; */
+  height: 50%;
+  width: 100%;
+}
+
+.drop-down-menu {
+}
+
+.select-btn {
+}
+
+.sign-log-btn {
+  display: block;
+}

@@ -18,10 +18,11 @@ class App extends Component {
   };
 
   render() {
+    const { currentDisplay, currentMountain } = this.state
     return (
       <div className="App">
-        {this.state.currentDisplay === "start" && <Start updateDisplay={this.updateDisplay} />}
-        {this.state.currentDisplay === "info" && <Info mountainName={this.state.currentMountain}/>}
+        {currentDisplay === "start" && <Start updateDisplay={this.updateDisplay} />}
+        {currentDisplay === "info" && <Info mountainName={currentMountain}/>}
       </div>
     );
   }

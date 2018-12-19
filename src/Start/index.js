@@ -4,19 +4,29 @@ import logo from "../utilities/images/logo.png";
 import "./Start.css";
 
 class Start extends Component {
+  compareNames = (a, b) => {
+    if (a.name < b.name) return -1;
+    if (a.name > b.name) return 1;
+    return 0;
+  };
+
   render() {
-    const mountainNames = mountainData.data.map((mountain, index) => {
-      return (
-        <option value={mountain.name} key={index}>
-          {mountain.name}
-        </option>
-      );
-    });
+    const mountainNames = mountainData.data
+      .sort(this.compareNames)
+      .map((mountain, index) => {
+        return (
+          <option value={mountain.name} key={index}>
+            {mountain.name}
+          </option>
+        );
+      });
 
     return (
       <div className="Start">
-        <h1 className="main-title">Summit Register</h1>
-        <img className="logo" alt="logo" src={logo} />
+        <h1 className="main-title">
+          Summit Register
+          <img className="logo" alt="logo" src={logo} />
+        </h1>
         <div className="drop-down-controls">
           <select
             className="drop-down-menu"

@@ -1,0 +1,4088 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Start should match snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Start
+    currentMountainData={
+      Object {
+        "altitude": 999999,
+        "difficulty": "super hard",
+        "name": "Mt Massive",
+        "range": "Front Range",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h1
+          className="main-title"
+        >
+          Summit Register
+        </h1>,
+        <img
+          alt="logo"
+          className="logo"
+          src="logo.png"
+        />,
+        <div
+          className="drop-down-controls"
+        >
+          <select
+            className="drop-down-menu"
+          >
+            <option
+              selected={false}
+              value="Mt. Elbert"
+            >
+              Mt. Elbert
+            </option>
+            <option
+              selected={false}
+              value="Mt. Massive"
+            >
+              Mt. Massive
+            </option>
+            <option
+              selected={false}
+              value="Mt. Harvard"
+            >
+              Mt. Harvard
+            </option>
+            <option
+              selected={false}
+              value="Blanca Peak"
+            >
+              Blanca Peak
+            </option>
+            <option
+              selected={false}
+              value="La Plata Peak"
+            >
+              La Plata Peak
+            </option>
+            <option
+              selected={false}
+              value="Uncompahgre Peak"
+            >
+              Uncompahgre Peak
+            </option>
+            <option
+              selected={false}
+              value="Crestone Peak"
+            >
+              Crestone Peak
+            </option>
+            <option
+              selected={false}
+              value="Mt. Lincoln"
+            >
+              Mt. Lincoln
+            </option>
+            <option
+              selected={false}
+              value="Grays Peak"
+            >
+              Grays Peak
+            </option>
+            <option
+              selected={false}
+              value="Mt. Antero"
+            >
+              Mt. Antero
+            </option>
+            <option
+              selected={false}
+              value="Torreys Peak"
+            >
+              Torreys Peak
+            </option>
+            <option
+              selected={false}
+              value="Castle Peak"
+            >
+              Castle Peak
+            </option>
+            <option
+              selected={false}
+              value="Quandary Peak"
+            >
+              Quandary Peak
+            </option>
+            <option
+              selected={false}
+              value="Mt. Evans"
+            >
+              Mt. Evans
+            </option>
+            <option
+              selected={false}
+              value="Longs Peak"
+            >
+              Longs Peak
+            </option>
+            <option
+              selected={false}
+              value="Mt. Wilson"
+            >
+              Mt. Wilson
+            </option>
+            <option
+              selected={false}
+              value="Mt. Shavano"
+            >
+              Mt. Shavano
+            </option>
+            <option
+              selected={false}
+              value="Mt. Princeton"
+            >
+              Mt. Princeton
+            </option>
+            <option
+              selected={false}
+              value="Mt. Belford"
+            >
+              Mt. Belford
+            </option>
+            <option
+              selected={false}
+              value="Crestone Needle"
+            >
+              Crestone Needle
+            </option>
+            <option
+              selected={false}
+              value="Mt. Yale"
+            >
+              Mt. Yale
+            </option>
+            <option
+              selected={false}
+              value="Mt. Bross"
+            >
+              Mt. Bross
+            </option>
+            <option
+              selected={false}
+              value="Kit Carson"
+            >
+              Kit Carson
+            </option>
+            <option
+              selected={false}
+              value="Maroon Peak"
+            >
+              Maroon Peak
+            </option>
+            <option
+              selected={false}
+              value="Tabeguache Peak"
+            >
+              Tabeguache Peak
+            </option>
+            <option
+              selected={false}
+              value="Mt. Oxford"
+            >
+              Mt. Oxford
+            </option>
+            <option
+              selected={false}
+              value="Mt. Sneffels"
+            >
+              Mt. Sneffels
+            </option>
+            <option
+              selected={false}
+              value="Mt. Democrat"
+            >
+              Mt. Democrat
+            </option>
+            <option
+              selected={false}
+              value="Capital Peak"
+            >
+              Capital Peak
+            </option>
+            <option
+              selected={false}
+              value="Pikes Peak"
+            >
+              Pikes Peak
+            </option>
+            <option
+              selected={false}
+              value="Snowmass Mountain"
+            >
+              Snowmass Mountain
+            </option>
+            <option
+              selected={false}
+              value="Windom Peak"
+            >
+              Windom Peak
+            </option>
+            <option
+              selected={false}
+              value="Mt. Eolus"
+            >
+              Mt. Eolus
+            </option>
+            <option
+              selected={false}
+              value="Challenger Point"
+            >
+              Challenger Point
+            </option>
+            <option
+              selected={false}
+              value="Mt. Columbia"
+            >
+              Mt. Columbia
+            </option>
+            <option
+              selected={false}
+              value="Missouri Mountain"
+            >
+              Missouri Mountain
+            </option>
+            <option
+              selected={false}
+              value="Humboldt Peak"
+            >
+              Humboldt Peak
+            </option>
+            <option
+              selected={false}
+              value="Mt. Bierstadt"
+            >
+              Mt. Bierstadt
+            </option>
+            <option
+              selected={false}
+              value="Sunlight Peak"
+            >
+              Sunlight Peak
+            </option>
+            <option
+              selected={false}
+              value="Handies Peak"
+            >
+              Handies Peak
+            </option>
+            <option
+              selected={false}
+              value="Culebra Peak"
+            >
+              Culebra Peak
+            </option>
+            <option
+              selected={false}
+              value="Mt. Lindsey"
+            >
+              Mt. Lindsey
+            </option>
+            <option
+              selected={false}
+              value="Ellingwood Point"
+            >
+              Ellingwood Point
+            </option>
+            <option
+              selected={false}
+              value="Little Bear Peak"
+            >
+              Little Bear Peak
+            </option>
+            <option
+              selected={false}
+              value="Mt. Sherman"
+            >
+              Mt. Sherman
+            </option>
+            <option
+              selected={false}
+              value="Redcloud Peak"
+            >
+              Redcloud Peak
+            </option>
+            <option
+              selected={false}
+              value="Pyramid Peak"
+            >
+              Pyramid Peak
+            </option>
+            <option
+              selected={false}
+              value="Wilson Peak"
+            >
+              Wilson Peak
+            </option>
+            <option
+              selected={false}
+              value="Wetterhorn Peak"
+            >
+              Wetterhorn Peak
+            </option>
+            <option
+              selected={false}
+              value="San Luis Peak"
+            >
+              San Luis Peak
+            </option>
+            <option
+              selected={false}
+              value="Mt. of the Holy Cross"
+            >
+              Mt. of the Holy Cross
+            </option>
+            <option
+              selected={false}
+              value="Huron Peak"
+            >
+              Huron Peak
+            </option>
+            <option
+              selected={false}
+              value="Sunshine Peak"
+            >
+              Sunshine Peak
+            </option>
+            <option
+              selected={false}
+              value="Mt. Cameron"
+            >
+              Mt. Cameron
+            </option>
+            <option
+              selected={false}
+              value="El Diente"
+            >
+              El Diente
+            </option>
+            <option
+              selected={false}
+              value="Conundrum Peak"
+            >
+              Conundrum Peak
+            </option>
+            <option
+              selected={false}
+              value="North Eolus"
+            >
+              North Eolus
+            </option>
+            <option
+              selected={false}
+              value="North Maroon"
+            >
+              North Maroon
+            </option>
+            <option
+              selected={false}
+              value="Mt. Sanitas"
+            >
+              Mt. Sanitas
+            </option>
+            <option
+              selected={false}
+              value="Highlands Ranch High Point"
+            >
+              Highlands Ranch High Point
+            </option>
+            <option
+              selected={false}
+              value="Dry Peak"
+            >
+              Dry Peak
+            </option>
+          </select>
+          <button
+            className="select-btn"
+            onClick={[Function]}
+          >
+            Select
+          </button>
+        </div>,
+        <button
+          className="sign-log-btn"
+        >
+          Sign Log
+        </button>,
+      ],
+      "className": "Start",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Summit Register",
+          "className": "main-title",
+        },
+        "ref": null,
+        "rendered": "Summit Register",
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "alt": "logo",
+          "className": "logo",
+          "src": "logo.png",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "img",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <select
+              className="drop-down-menu"
+            >
+              <option
+                selected={false}
+                value="Mt. Elbert"
+              >
+                Mt. Elbert
+              </option>
+              <option
+                selected={false}
+                value="Mt. Massive"
+              >
+                Mt. Massive
+              </option>
+              <option
+                selected={false}
+                value="Mt. Harvard"
+              >
+                Mt. Harvard
+              </option>
+              <option
+                selected={false}
+                value="Blanca Peak"
+              >
+                Blanca Peak
+              </option>
+              <option
+                selected={false}
+                value="La Plata Peak"
+              >
+                La Plata Peak
+              </option>
+              <option
+                selected={false}
+                value="Uncompahgre Peak"
+              >
+                Uncompahgre Peak
+              </option>
+              <option
+                selected={false}
+                value="Crestone Peak"
+              >
+                Crestone Peak
+              </option>
+              <option
+                selected={false}
+                value="Mt. Lincoln"
+              >
+                Mt. Lincoln
+              </option>
+              <option
+                selected={false}
+                value="Grays Peak"
+              >
+                Grays Peak
+              </option>
+              <option
+                selected={false}
+                value="Mt. Antero"
+              >
+                Mt. Antero
+              </option>
+              <option
+                selected={false}
+                value="Torreys Peak"
+              >
+                Torreys Peak
+              </option>
+              <option
+                selected={false}
+                value="Castle Peak"
+              >
+                Castle Peak
+              </option>
+              <option
+                selected={false}
+                value="Quandary Peak"
+              >
+                Quandary Peak
+              </option>
+              <option
+                selected={false}
+                value="Mt. Evans"
+              >
+                Mt. Evans
+              </option>
+              <option
+                selected={false}
+                value="Longs Peak"
+              >
+                Longs Peak
+              </option>
+              <option
+                selected={false}
+                value="Mt. Wilson"
+              >
+                Mt. Wilson
+              </option>
+              <option
+                selected={false}
+                value="Mt. Shavano"
+              >
+                Mt. Shavano
+              </option>
+              <option
+                selected={false}
+                value="Mt. Princeton"
+              >
+                Mt. Princeton
+              </option>
+              <option
+                selected={false}
+                value="Mt. Belford"
+              >
+                Mt. Belford
+              </option>
+              <option
+                selected={false}
+                value="Crestone Needle"
+              >
+                Crestone Needle
+              </option>
+              <option
+                selected={false}
+                value="Mt. Yale"
+              >
+                Mt. Yale
+              </option>
+              <option
+                selected={false}
+                value="Mt. Bross"
+              >
+                Mt. Bross
+              </option>
+              <option
+                selected={false}
+                value="Kit Carson"
+              >
+                Kit Carson
+              </option>
+              <option
+                selected={false}
+                value="Maroon Peak"
+              >
+                Maroon Peak
+              </option>
+              <option
+                selected={false}
+                value="Tabeguache Peak"
+              >
+                Tabeguache Peak
+              </option>
+              <option
+                selected={false}
+                value="Mt. Oxford"
+              >
+                Mt. Oxford
+              </option>
+              <option
+                selected={false}
+                value="Mt. Sneffels"
+              >
+                Mt. Sneffels
+              </option>
+              <option
+                selected={false}
+                value="Mt. Democrat"
+              >
+                Mt. Democrat
+              </option>
+              <option
+                selected={false}
+                value="Capital Peak"
+              >
+                Capital Peak
+              </option>
+              <option
+                selected={false}
+                value="Pikes Peak"
+              >
+                Pikes Peak
+              </option>
+              <option
+                selected={false}
+                value="Snowmass Mountain"
+              >
+                Snowmass Mountain
+              </option>
+              <option
+                selected={false}
+                value="Windom Peak"
+              >
+                Windom Peak
+              </option>
+              <option
+                selected={false}
+                value="Mt. Eolus"
+              >
+                Mt. Eolus
+              </option>
+              <option
+                selected={false}
+                value="Challenger Point"
+              >
+                Challenger Point
+              </option>
+              <option
+                selected={false}
+                value="Mt. Columbia"
+              >
+                Mt. Columbia
+              </option>
+              <option
+                selected={false}
+                value="Missouri Mountain"
+              >
+                Missouri Mountain
+              </option>
+              <option
+                selected={false}
+                value="Humboldt Peak"
+              >
+                Humboldt Peak
+              </option>
+              <option
+                selected={false}
+                value="Mt. Bierstadt"
+              >
+                Mt. Bierstadt
+              </option>
+              <option
+                selected={false}
+                value="Sunlight Peak"
+              >
+                Sunlight Peak
+              </option>
+              <option
+                selected={false}
+                value="Handies Peak"
+              >
+                Handies Peak
+              </option>
+              <option
+                selected={false}
+                value="Culebra Peak"
+              >
+                Culebra Peak
+              </option>
+              <option
+                selected={false}
+                value="Mt. Lindsey"
+              >
+                Mt. Lindsey
+              </option>
+              <option
+                selected={false}
+                value="Ellingwood Point"
+              >
+                Ellingwood Point
+              </option>
+              <option
+                selected={false}
+                value="Little Bear Peak"
+              >
+                Little Bear Peak
+              </option>
+              <option
+                selected={false}
+                value="Mt. Sherman"
+              >
+                Mt. Sherman
+              </option>
+              <option
+                selected={false}
+                value="Redcloud Peak"
+              >
+                Redcloud Peak
+              </option>
+              <option
+                selected={false}
+                value="Pyramid Peak"
+              >
+                Pyramid Peak
+              </option>
+              <option
+                selected={false}
+                value="Wilson Peak"
+              >
+                Wilson Peak
+              </option>
+              <option
+                selected={false}
+                value="Wetterhorn Peak"
+              >
+                Wetterhorn Peak
+              </option>
+              <option
+                selected={false}
+                value="San Luis Peak"
+              >
+                San Luis Peak
+              </option>
+              <option
+                selected={false}
+                value="Mt. of the Holy Cross"
+              >
+                Mt. of the Holy Cross
+              </option>
+              <option
+                selected={false}
+                value="Huron Peak"
+              >
+                Huron Peak
+              </option>
+              <option
+                selected={false}
+                value="Sunshine Peak"
+              >
+                Sunshine Peak
+              </option>
+              <option
+                selected={false}
+                value="Mt. Cameron"
+              >
+                Mt. Cameron
+              </option>
+              <option
+                selected={false}
+                value="El Diente"
+              >
+                El Diente
+              </option>
+              <option
+                selected={false}
+                value="Conundrum Peak"
+              >
+                Conundrum Peak
+              </option>
+              <option
+                selected={false}
+                value="North Eolus"
+              >
+                North Eolus
+              </option>
+              <option
+                selected={false}
+                value="North Maroon"
+              >
+                North Maroon
+              </option>
+              <option
+                selected={false}
+                value="Mt. Sanitas"
+              >
+                Mt. Sanitas
+              </option>
+              <option
+                selected={false}
+                value="Highlands Ranch High Point"
+              >
+                Highlands Ranch High Point
+              </option>
+              <option
+                selected={false}
+                value="Dry Peak"
+              >
+                Dry Peak
+              </option>
+            </select>,
+            <button
+              className="select-btn"
+              onClick={[Function]}
+            >
+              Select
+            </button>,
+          ],
+          "className": "drop-down-controls",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <option
+                  selected={false}
+                  value="Mt. Elbert"
+                >
+                  Mt. Elbert
+                </option>,
+                <option
+                  selected={false}
+                  value="Mt. Massive"
+                >
+                  Mt. Massive
+                </option>,
+                <option
+                  selected={false}
+                  value="Mt. Harvard"
+                >
+                  Mt. Harvard
+                </option>,
+                <option
+                  selected={false}
+                  value="Blanca Peak"
+                >
+                  Blanca Peak
+                </option>,
+                <option
+                  selected={false}
+                  value="La Plata Peak"
+                >
+                  La Plata Peak
+                </option>,
+                <option
+                  selected={false}
+                  value="Uncompahgre Peak"
+                >
+                  Uncompahgre Peak
+                </option>,
+                <option
+                  selected={false}
+                  value="Crestone Peak"
+                >
+                  Crestone Peak
+                </option>,
+                <option
+                  selected={false}
+                  value="Mt. Lincoln"
+                >
+                  Mt. Lincoln
+                </option>,
+                <option
+                  selected={false}
+                  value="Grays Peak"
+                >
+                  Grays Peak
+                </option>,
+                <option
+                  selected={false}
+                  value="Mt. Antero"
+                >
+                  Mt. Antero
+                </option>,
+                <option
+                  selected={false}
+                  value="Torreys Peak"
+                >
+                  Torreys Peak
+                </option>,
+                <option
+                  selected={false}
+                  value="Castle Peak"
+                >
+                  Castle Peak
+                </option>,
+                <option
+                  selected={false}
+                  value="Quandary Peak"
+                >
+                  Quandary Peak
+                </option>,
+                <option
+                  selected={false}
+                  value="Mt. Evans"
+                >
+                  Mt. Evans
+                </option>,
+                <option
+                  selected={false}
+                  value="Longs Peak"
+                >
+                  Longs Peak
+                </option>,
+                <option
+                  selected={false}
+                  value="Mt. Wilson"
+                >
+                  Mt. Wilson
+                </option>,
+                <option
+                  selected={false}
+                  value="Mt. Shavano"
+                >
+                  Mt. Shavano
+                </option>,
+                <option
+                  selected={false}
+                  value="Mt. Princeton"
+                >
+                  Mt. Princeton
+                </option>,
+                <option
+                  selected={false}
+                  value="Mt. Belford"
+                >
+                  Mt. Belford
+                </option>,
+                <option
+                  selected={false}
+                  value="Crestone Needle"
+                >
+                  Crestone Needle
+                </option>,
+                <option
+                  selected={false}
+                  value="Mt. Yale"
+                >
+                  Mt. Yale
+                </option>,
+                <option
+                  selected={false}
+                  value="Mt. Bross"
+                >
+                  Mt. Bross
+                </option>,
+                <option
+                  selected={false}
+                  value="Kit Carson"
+                >
+                  Kit Carson
+                </option>,
+                <option
+                  selected={false}
+                  value="Maroon Peak"
+                >
+                  Maroon Peak
+                </option>,
+                <option
+                  selected={false}
+                  value="Tabeguache Peak"
+                >
+                  Tabeguache Peak
+                </option>,
+                <option
+                  selected={false}
+                  value="Mt. Oxford"
+                >
+                  Mt. Oxford
+                </option>,
+                <option
+                  selected={false}
+                  value="Mt. Sneffels"
+                >
+                  Mt. Sneffels
+                </option>,
+                <option
+                  selected={false}
+                  value="Mt. Democrat"
+                >
+                  Mt. Democrat
+                </option>,
+                <option
+                  selected={false}
+                  value="Capital Peak"
+                >
+                  Capital Peak
+                </option>,
+                <option
+                  selected={false}
+                  value="Pikes Peak"
+                >
+                  Pikes Peak
+                </option>,
+                <option
+                  selected={false}
+                  value="Snowmass Mountain"
+                >
+                  Snowmass Mountain
+                </option>,
+                <option
+                  selected={false}
+                  value="Windom Peak"
+                >
+                  Windom Peak
+                </option>,
+                <option
+                  selected={false}
+                  value="Mt. Eolus"
+                >
+                  Mt. Eolus
+                </option>,
+                <option
+                  selected={false}
+                  value="Challenger Point"
+                >
+                  Challenger Point
+                </option>,
+                <option
+                  selected={false}
+                  value="Mt. Columbia"
+                >
+                  Mt. Columbia
+                </option>,
+                <option
+                  selected={false}
+                  value="Missouri Mountain"
+                >
+                  Missouri Mountain
+                </option>,
+                <option
+                  selected={false}
+                  value="Humboldt Peak"
+                >
+                  Humboldt Peak
+                </option>,
+                <option
+                  selected={false}
+                  value="Mt. Bierstadt"
+                >
+                  Mt. Bierstadt
+                </option>,
+                <option
+                  selected={false}
+                  value="Sunlight Peak"
+                >
+                  Sunlight Peak
+                </option>,
+                <option
+                  selected={false}
+                  value="Handies Peak"
+                >
+                  Handies Peak
+                </option>,
+                <option
+                  selected={false}
+                  value="Culebra Peak"
+                >
+                  Culebra Peak
+                </option>,
+                <option
+                  selected={false}
+                  value="Mt. Lindsey"
+                >
+                  Mt. Lindsey
+                </option>,
+                <option
+                  selected={false}
+                  value="Ellingwood Point"
+                >
+                  Ellingwood Point
+                </option>,
+                <option
+                  selected={false}
+                  value="Little Bear Peak"
+                >
+                  Little Bear Peak
+                </option>,
+                <option
+                  selected={false}
+                  value="Mt. Sherman"
+                >
+                  Mt. Sherman
+                </option>,
+                <option
+                  selected={false}
+                  value="Redcloud Peak"
+                >
+                  Redcloud Peak
+                </option>,
+                <option
+                  selected={false}
+                  value="Pyramid Peak"
+                >
+                  Pyramid Peak
+                </option>,
+                <option
+                  selected={false}
+                  value="Wilson Peak"
+                >
+                  Wilson Peak
+                </option>,
+                <option
+                  selected={false}
+                  value="Wetterhorn Peak"
+                >
+                  Wetterhorn Peak
+                </option>,
+                <option
+                  selected={false}
+                  value="San Luis Peak"
+                >
+                  San Luis Peak
+                </option>,
+                <option
+                  selected={false}
+                  value="Mt. of the Holy Cross"
+                >
+                  Mt. of the Holy Cross
+                </option>,
+                <option
+                  selected={false}
+                  value="Huron Peak"
+                >
+                  Huron Peak
+                </option>,
+                <option
+                  selected={false}
+                  value="Sunshine Peak"
+                >
+                  Sunshine Peak
+                </option>,
+                <option
+                  selected={false}
+                  value="Mt. Cameron"
+                >
+                  Mt. Cameron
+                </option>,
+                <option
+                  selected={false}
+                  value="El Diente"
+                >
+                  El Diente
+                </option>,
+                <option
+                  selected={false}
+                  value="Conundrum Peak"
+                >
+                  Conundrum Peak
+                </option>,
+                <option
+                  selected={false}
+                  value="North Eolus"
+                >
+                  North Eolus
+                </option>,
+                <option
+                  selected={false}
+                  value="North Maroon"
+                >
+                  North Maroon
+                </option>,
+                <option
+                  selected={false}
+                  value="Mt. Sanitas"
+                >
+                  Mt. Sanitas
+                </option>,
+                <option
+                  selected={false}
+                  value="Highlands Ranch High Point"
+                >
+                  Highlands Ranch High Point
+                </option>,
+                <option
+                  selected={false}
+                  value="Dry Peak"
+                >
+                  Dry Peak
+                </option>,
+              ],
+              "className": "drop-down-menu",
+            },
+            "ref": [Function],
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": "0",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Mt. Elbert",
+                  "selected": false,
+                  "value": "Mt. Elbert",
+                },
+                "ref": null,
+                "rendered": "Mt. Elbert",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "1",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Mt. Massive",
+                  "selected": false,
+                  "value": "Mt. Massive",
+                },
+                "ref": null,
+                "rendered": "Mt. Massive",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "2",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Mt. Harvard",
+                  "selected": false,
+                  "value": "Mt. Harvard",
+                },
+                "ref": null,
+                "rendered": "Mt. Harvard",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "3",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Blanca Peak",
+                  "selected": false,
+                  "value": "Blanca Peak",
+                },
+                "ref": null,
+                "rendered": "Blanca Peak",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "4",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "La Plata Peak",
+                  "selected": false,
+                  "value": "La Plata Peak",
+                },
+                "ref": null,
+                "rendered": "La Plata Peak",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "5",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Uncompahgre Peak",
+                  "selected": false,
+                  "value": "Uncompahgre Peak",
+                },
+                "ref": null,
+                "rendered": "Uncompahgre Peak",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "6",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Crestone Peak",
+                  "selected": false,
+                  "value": "Crestone Peak",
+                },
+                "ref": null,
+                "rendered": "Crestone Peak",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "7",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Mt. Lincoln",
+                  "selected": false,
+                  "value": "Mt. Lincoln",
+                },
+                "ref": null,
+                "rendered": "Mt. Lincoln",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "8",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Grays Peak",
+                  "selected": false,
+                  "value": "Grays Peak",
+                },
+                "ref": null,
+                "rendered": "Grays Peak",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "9",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Mt. Antero",
+                  "selected": false,
+                  "value": "Mt. Antero",
+                },
+                "ref": null,
+                "rendered": "Mt. Antero",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "10",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Torreys Peak",
+                  "selected": false,
+                  "value": "Torreys Peak",
+                },
+                "ref": null,
+                "rendered": "Torreys Peak",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "11",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Castle Peak",
+                  "selected": false,
+                  "value": "Castle Peak",
+                },
+                "ref": null,
+                "rendered": "Castle Peak",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "12",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Quandary Peak",
+                  "selected": false,
+                  "value": "Quandary Peak",
+                },
+                "ref": null,
+                "rendered": "Quandary Peak",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "13",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Mt. Evans",
+                  "selected": false,
+                  "value": "Mt. Evans",
+                },
+                "ref": null,
+                "rendered": "Mt. Evans",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "14",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Longs Peak",
+                  "selected": false,
+                  "value": "Longs Peak",
+                },
+                "ref": null,
+                "rendered": "Longs Peak",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "15",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Mt. Wilson",
+                  "selected": false,
+                  "value": "Mt. Wilson",
+                },
+                "ref": null,
+                "rendered": "Mt. Wilson",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "16",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Mt. Shavano",
+                  "selected": false,
+                  "value": "Mt. Shavano",
+                },
+                "ref": null,
+                "rendered": "Mt. Shavano",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "17",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Mt. Princeton",
+                  "selected": false,
+                  "value": "Mt. Princeton",
+                },
+                "ref": null,
+                "rendered": "Mt. Princeton",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "18",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Mt. Belford",
+                  "selected": false,
+                  "value": "Mt. Belford",
+                },
+                "ref": null,
+                "rendered": "Mt. Belford",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "19",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Crestone Needle",
+                  "selected": false,
+                  "value": "Crestone Needle",
+                },
+                "ref": null,
+                "rendered": "Crestone Needle",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "20",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Mt. Yale",
+                  "selected": false,
+                  "value": "Mt. Yale",
+                },
+                "ref": null,
+                "rendered": "Mt. Yale",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "21",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Mt. Bross",
+                  "selected": false,
+                  "value": "Mt. Bross",
+                },
+                "ref": null,
+                "rendered": "Mt. Bross",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "22",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Kit Carson",
+                  "selected": false,
+                  "value": "Kit Carson",
+                },
+                "ref": null,
+                "rendered": "Kit Carson",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "23",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Maroon Peak",
+                  "selected": false,
+                  "value": "Maroon Peak",
+                },
+                "ref": null,
+                "rendered": "Maroon Peak",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "24",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Tabeguache Peak",
+                  "selected": false,
+                  "value": "Tabeguache Peak",
+                },
+                "ref": null,
+                "rendered": "Tabeguache Peak",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "25",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Mt. Oxford",
+                  "selected": false,
+                  "value": "Mt. Oxford",
+                },
+                "ref": null,
+                "rendered": "Mt. Oxford",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "26",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Mt. Sneffels",
+                  "selected": false,
+                  "value": "Mt. Sneffels",
+                },
+                "ref": null,
+                "rendered": "Mt. Sneffels",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "27",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Mt. Democrat",
+                  "selected": false,
+                  "value": "Mt. Democrat",
+                },
+                "ref": null,
+                "rendered": "Mt. Democrat",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "28",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Capital Peak",
+                  "selected": false,
+                  "value": "Capital Peak",
+                },
+                "ref": null,
+                "rendered": "Capital Peak",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "29",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Pikes Peak",
+                  "selected": false,
+                  "value": "Pikes Peak",
+                },
+                "ref": null,
+                "rendered": "Pikes Peak",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "30",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Snowmass Mountain",
+                  "selected": false,
+                  "value": "Snowmass Mountain",
+                },
+                "ref": null,
+                "rendered": "Snowmass Mountain",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "31",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Windom Peak",
+                  "selected": false,
+                  "value": "Windom Peak",
+                },
+                "ref": null,
+                "rendered": "Windom Peak",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "32",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Mt. Eolus",
+                  "selected": false,
+                  "value": "Mt. Eolus",
+                },
+                "ref": null,
+                "rendered": "Mt. Eolus",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "33",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Challenger Point",
+                  "selected": false,
+                  "value": "Challenger Point",
+                },
+                "ref": null,
+                "rendered": "Challenger Point",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "34",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Mt. Columbia",
+                  "selected": false,
+                  "value": "Mt. Columbia",
+                },
+                "ref": null,
+                "rendered": "Mt. Columbia",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "35",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Missouri Mountain",
+                  "selected": false,
+                  "value": "Missouri Mountain",
+                },
+                "ref": null,
+                "rendered": "Missouri Mountain",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "36",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Humboldt Peak",
+                  "selected": false,
+                  "value": "Humboldt Peak",
+                },
+                "ref": null,
+                "rendered": "Humboldt Peak",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "37",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Mt. Bierstadt",
+                  "selected": false,
+                  "value": "Mt. Bierstadt",
+                },
+                "ref": null,
+                "rendered": "Mt. Bierstadt",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "38",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Sunlight Peak",
+                  "selected": false,
+                  "value": "Sunlight Peak",
+                },
+                "ref": null,
+                "rendered": "Sunlight Peak",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "39",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Handies Peak",
+                  "selected": false,
+                  "value": "Handies Peak",
+                },
+                "ref": null,
+                "rendered": "Handies Peak",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "40",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Culebra Peak",
+                  "selected": false,
+                  "value": "Culebra Peak",
+                },
+                "ref": null,
+                "rendered": "Culebra Peak",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "41",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Mt. Lindsey",
+                  "selected": false,
+                  "value": "Mt. Lindsey",
+                },
+                "ref": null,
+                "rendered": "Mt. Lindsey",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "42",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Ellingwood Point",
+                  "selected": false,
+                  "value": "Ellingwood Point",
+                },
+                "ref": null,
+                "rendered": "Ellingwood Point",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "43",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Little Bear Peak",
+                  "selected": false,
+                  "value": "Little Bear Peak",
+                },
+                "ref": null,
+                "rendered": "Little Bear Peak",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "44",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Mt. Sherman",
+                  "selected": false,
+                  "value": "Mt. Sherman",
+                },
+                "ref": null,
+                "rendered": "Mt. Sherman",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "45",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Redcloud Peak",
+                  "selected": false,
+                  "value": "Redcloud Peak",
+                },
+                "ref": null,
+                "rendered": "Redcloud Peak",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "46",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Pyramid Peak",
+                  "selected": false,
+                  "value": "Pyramid Peak",
+                },
+                "ref": null,
+                "rendered": "Pyramid Peak",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "47",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Wilson Peak",
+                  "selected": false,
+                  "value": "Wilson Peak",
+                },
+                "ref": null,
+                "rendered": "Wilson Peak",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "48",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Wetterhorn Peak",
+                  "selected": false,
+                  "value": "Wetterhorn Peak",
+                },
+                "ref": null,
+                "rendered": "Wetterhorn Peak",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "49",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "San Luis Peak",
+                  "selected": false,
+                  "value": "San Luis Peak",
+                },
+                "ref": null,
+                "rendered": "San Luis Peak",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "50",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Mt. of the Holy Cross",
+                  "selected": false,
+                  "value": "Mt. of the Holy Cross",
+                },
+                "ref": null,
+                "rendered": "Mt. of the Holy Cross",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "51",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Huron Peak",
+                  "selected": false,
+                  "value": "Huron Peak",
+                },
+                "ref": null,
+                "rendered": "Huron Peak",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "52",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Sunshine Peak",
+                  "selected": false,
+                  "value": "Sunshine Peak",
+                },
+                "ref": null,
+                "rendered": "Sunshine Peak",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "53",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Mt. Cameron",
+                  "selected": false,
+                  "value": "Mt. Cameron",
+                },
+                "ref": null,
+                "rendered": "Mt. Cameron",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "54",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "El Diente",
+                  "selected": false,
+                  "value": "El Diente",
+                },
+                "ref": null,
+                "rendered": "El Diente",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "55",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Conundrum Peak",
+                  "selected": false,
+                  "value": "Conundrum Peak",
+                },
+                "ref": null,
+                "rendered": "Conundrum Peak",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "56",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "North Eolus",
+                  "selected": false,
+                  "value": "North Eolus",
+                },
+                "ref": null,
+                "rendered": "North Eolus",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "57",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "North Maroon",
+                  "selected": false,
+                  "value": "North Maroon",
+                },
+                "ref": null,
+                "rendered": "North Maroon",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "58",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Mt. Sanitas",
+                  "selected": false,
+                  "value": "Mt. Sanitas",
+                },
+                "ref": null,
+                "rendered": "Mt. Sanitas",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "59",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Highlands Ranch High Point",
+                  "selected": false,
+                  "value": "Highlands Ranch High Point",
+                },
+                "ref": null,
+                "rendered": "Highlands Ranch High Point",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "60",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Dry Peak",
+                  "selected": false,
+                  "value": "Dry Peak",
+                },
+                "ref": null,
+                "rendered": "Dry Peak",
+                "type": "option",
+              },
+            ],
+            "type": "select",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Select",
+              "className": "select-btn",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Select",
+            "type": "button",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Sign Log",
+          "className": "sign-log-btn",
+        },
+        "ref": null,
+        "rendered": "Sign Log",
+        "type": "button",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h1
+            className="main-title"
+          >
+            Summit Register
+          </h1>,
+          <img
+            alt="logo"
+            className="logo"
+            src="logo.png"
+          />,
+          <div
+            className="drop-down-controls"
+          >
+            <select
+              className="drop-down-menu"
+            >
+              <option
+                selected={false}
+                value="Mt. Elbert"
+              >
+                Mt. Elbert
+              </option>
+              <option
+                selected={false}
+                value="Mt. Massive"
+              >
+                Mt. Massive
+              </option>
+              <option
+                selected={false}
+                value="Mt. Harvard"
+              >
+                Mt. Harvard
+              </option>
+              <option
+                selected={false}
+                value="Blanca Peak"
+              >
+                Blanca Peak
+              </option>
+              <option
+                selected={false}
+                value="La Plata Peak"
+              >
+                La Plata Peak
+              </option>
+              <option
+                selected={false}
+                value="Uncompahgre Peak"
+              >
+                Uncompahgre Peak
+              </option>
+              <option
+                selected={false}
+                value="Crestone Peak"
+              >
+                Crestone Peak
+              </option>
+              <option
+                selected={false}
+                value="Mt. Lincoln"
+              >
+                Mt. Lincoln
+              </option>
+              <option
+                selected={false}
+                value="Grays Peak"
+              >
+                Grays Peak
+              </option>
+              <option
+                selected={false}
+                value="Mt. Antero"
+              >
+                Mt. Antero
+              </option>
+              <option
+                selected={false}
+                value="Torreys Peak"
+              >
+                Torreys Peak
+              </option>
+              <option
+                selected={false}
+                value="Castle Peak"
+              >
+                Castle Peak
+              </option>
+              <option
+                selected={false}
+                value="Quandary Peak"
+              >
+                Quandary Peak
+              </option>
+              <option
+                selected={false}
+                value="Mt. Evans"
+              >
+                Mt. Evans
+              </option>
+              <option
+                selected={false}
+                value="Longs Peak"
+              >
+                Longs Peak
+              </option>
+              <option
+                selected={false}
+                value="Mt. Wilson"
+              >
+                Mt. Wilson
+              </option>
+              <option
+                selected={false}
+                value="Mt. Shavano"
+              >
+                Mt. Shavano
+              </option>
+              <option
+                selected={false}
+                value="Mt. Princeton"
+              >
+                Mt. Princeton
+              </option>
+              <option
+                selected={false}
+                value="Mt. Belford"
+              >
+                Mt. Belford
+              </option>
+              <option
+                selected={false}
+                value="Crestone Needle"
+              >
+                Crestone Needle
+              </option>
+              <option
+                selected={false}
+                value="Mt. Yale"
+              >
+                Mt. Yale
+              </option>
+              <option
+                selected={false}
+                value="Mt. Bross"
+              >
+                Mt. Bross
+              </option>
+              <option
+                selected={false}
+                value="Kit Carson"
+              >
+                Kit Carson
+              </option>
+              <option
+                selected={false}
+                value="Maroon Peak"
+              >
+                Maroon Peak
+              </option>
+              <option
+                selected={false}
+                value="Tabeguache Peak"
+              >
+                Tabeguache Peak
+              </option>
+              <option
+                selected={false}
+                value="Mt. Oxford"
+              >
+                Mt. Oxford
+              </option>
+              <option
+                selected={false}
+                value="Mt. Sneffels"
+              >
+                Mt. Sneffels
+              </option>
+              <option
+                selected={false}
+                value="Mt. Democrat"
+              >
+                Mt. Democrat
+              </option>
+              <option
+                selected={false}
+                value="Capital Peak"
+              >
+                Capital Peak
+              </option>
+              <option
+                selected={false}
+                value="Pikes Peak"
+              >
+                Pikes Peak
+              </option>
+              <option
+                selected={false}
+                value="Snowmass Mountain"
+              >
+                Snowmass Mountain
+              </option>
+              <option
+                selected={false}
+                value="Windom Peak"
+              >
+                Windom Peak
+              </option>
+              <option
+                selected={false}
+                value="Mt. Eolus"
+              >
+                Mt. Eolus
+              </option>
+              <option
+                selected={false}
+                value="Challenger Point"
+              >
+                Challenger Point
+              </option>
+              <option
+                selected={false}
+                value="Mt. Columbia"
+              >
+                Mt. Columbia
+              </option>
+              <option
+                selected={false}
+                value="Missouri Mountain"
+              >
+                Missouri Mountain
+              </option>
+              <option
+                selected={false}
+                value="Humboldt Peak"
+              >
+                Humboldt Peak
+              </option>
+              <option
+                selected={false}
+                value="Mt. Bierstadt"
+              >
+                Mt. Bierstadt
+              </option>
+              <option
+                selected={false}
+                value="Sunlight Peak"
+              >
+                Sunlight Peak
+              </option>
+              <option
+                selected={false}
+                value="Handies Peak"
+              >
+                Handies Peak
+              </option>
+              <option
+                selected={false}
+                value="Culebra Peak"
+              >
+                Culebra Peak
+              </option>
+              <option
+                selected={false}
+                value="Mt. Lindsey"
+              >
+                Mt. Lindsey
+              </option>
+              <option
+                selected={false}
+                value="Ellingwood Point"
+              >
+                Ellingwood Point
+              </option>
+              <option
+                selected={false}
+                value="Little Bear Peak"
+              >
+                Little Bear Peak
+              </option>
+              <option
+                selected={false}
+                value="Mt. Sherman"
+              >
+                Mt. Sherman
+              </option>
+              <option
+                selected={false}
+                value="Redcloud Peak"
+              >
+                Redcloud Peak
+              </option>
+              <option
+                selected={false}
+                value="Pyramid Peak"
+              >
+                Pyramid Peak
+              </option>
+              <option
+                selected={false}
+                value="Wilson Peak"
+              >
+                Wilson Peak
+              </option>
+              <option
+                selected={false}
+                value="Wetterhorn Peak"
+              >
+                Wetterhorn Peak
+              </option>
+              <option
+                selected={false}
+                value="San Luis Peak"
+              >
+                San Luis Peak
+              </option>
+              <option
+                selected={false}
+                value="Mt. of the Holy Cross"
+              >
+                Mt. of the Holy Cross
+              </option>
+              <option
+                selected={false}
+                value="Huron Peak"
+              >
+                Huron Peak
+              </option>
+              <option
+                selected={false}
+                value="Sunshine Peak"
+              >
+                Sunshine Peak
+              </option>
+              <option
+                selected={false}
+                value="Mt. Cameron"
+              >
+                Mt. Cameron
+              </option>
+              <option
+                selected={false}
+                value="El Diente"
+              >
+                El Diente
+              </option>
+              <option
+                selected={false}
+                value="Conundrum Peak"
+              >
+                Conundrum Peak
+              </option>
+              <option
+                selected={false}
+                value="North Eolus"
+              >
+                North Eolus
+              </option>
+              <option
+                selected={false}
+                value="North Maroon"
+              >
+                North Maroon
+              </option>
+              <option
+                selected={false}
+                value="Mt. Sanitas"
+              >
+                Mt. Sanitas
+              </option>
+              <option
+                selected={false}
+                value="Highlands Ranch High Point"
+              >
+                Highlands Ranch High Point
+              </option>
+              <option
+                selected={false}
+                value="Dry Peak"
+              >
+                Dry Peak
+              </option>
+            </select>
+            <button
+              className="select-btn"
+              onClick={[Function]}
+            >
+              Select
+            </button>
+          </div>,
+          <button
+            className="sign-log-btn"
+          >
+            Sign Log
+          </button>,
+        ],
+        "className": "Start",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Summit Register",
+            "className": "main-title",
+          },
+          "ref": null,
+          "rendered": "Summit Register",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "logo",
+            "className": "logo",
+            "src": "logo.png",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <select
+                className="drop-down-menu"
+              >
+                <option
+                  selected={false}
+                  value="Mt. Elbert"
+                >
+                  Mt. Elbert
+                </option>
+                <option
+                  selected={false}
+                  value="Mt. Massive"
+                >
+                  Mt. Massive
+                </option>
+                <option
+                  selected={false}
+                  value="Mt. Harvard"
+                >
+                  Mt. Harvard
+                </option>
+                <option
+                  selected={false}
+                  value="Blanca Peak"
+                >
+                  Blanca Peak
+                </option>
+                <option
+                  selected={false}
+                  value="La Plata Peak"
+                >
+                  La Plata Peak
+                </option>
+                <option
+                  selected={false}
+                  value="Uncompahgre Peak"
+                >
+                  Uncompahgre Peak
+                </option>
+                <option
+                  selected={false}
+                  value="Crestone Peak"
+                >
+                  Crestone Peak
+                </option>
+                <option
+                  selected={false}
+                  value="Mt. Lincoln"
+                >
+                  Mt. Lincoln
+                </option>
+                <option
+                  selected={false}
+                  value="Grays Peak"
+                >
+                  Grays Peak
+                </option>
+                <option
+                  selected={false}
+                  value="Mt. Antero"
+                >
+                  Mt. Antero
+                </option>
+                <option
+                  selected={false}
+                  value="Torreys Peak"
+                >
+                  Torreys Peak
+                </option>
+                <option
+                  selected={false}
+                  value="Castle Peak"
+                >
+                  Castle Peak
+                </option>
+                <option
+                  selected={false}
+                  value="Quandary Peak"
+                >
+                  Quandary Peak
+                </option>
+                <option
+                  selected={false}
+                  value="Mt. Evans"
+                >
+                  Mt. Evans
+                </option>
+                <option
+                  selected={false}
+                  value="Longs Peak"
+                >
+                  Longs Peak
+                </option>
+                <option
+                  selected={false}
+                  value="Mt. Wilson"
+                >
+                  Mt. Wilson
+                </option>
+                <option
+                  selected={false}
+                  value="Mt. Shavano"
+                >
+                  Mt. Shavano
+                </option>
+                <option
+                  selected={false}
+                  value="Mt. Princeton"
+                >
+                  Mt. Princeton
+                </option>
+                <option
+                  selected={false}
+                  value="Mt. Belford"
+                >
+                  Mt. Belford
+                </option>
+                <option
+                  selected={false}
+                  value="Crestone Needle"
+                >
+                  Crestone Needle
+                </option>
+                <option
+                  selected={false}
+                  value="Mt. Yale"
+                >
+                  Mt. Yale
+                </option>
+                <option
+                  selected={false}
+                  value="Mt. Bross"
+                >
+                  Mt. Bross
+                </option>
+                <option
+                  selected={false}
+                  value="Kit Carson"
+                >
+                  Kit Carson
+                </option>
+                <option
+                  selected={false}
+                  value="Maroon Peak"
+                >
+                  Maroon Peak
+                </option>
+                <option
+                  selected={false}
+                  value="Tabeguache Peak"
+                >
+                  Tabeguache Peak
+                </option>
+                <option
+                  selected={false}
+                  value="Mt. Oxford"
+                >
+                  Mt. Oxford
+                </option>
+                <option
+                  selected={false}
+                  value="Mt. Sneffels"
+                >
+                  Mt. Sneffels
+                </option>
+                <option
+                  selected={false}
+                  value="Mt. Democrat"
+                >
+                  Mt. Democrat
+                </option>
+                <option
+                  selected={false}
+                  value="Capital Peak"
+                >
+                  Capital Peak
+                </option>
+                <option
+                  selected={false}
+                  value="Pikes Peak"
+                >
+                  Pikes Peak
+                </option>
+                <option
+                  selected={false}
+                  value="Snowmass Mountain"
+                >
+                  Snowmass Mountain
+                </option>
+                <option
+                  selected={false}
+                  value="Windom Peak"
+                >
+                  Windom Peak
+                </option>
+                <option
+                  selected={false}
+                  value="Mt. Eolus"
+                >
+                  Mt. Eolus
+                </option>
+                <option
+                  selected={false}
+                  value="Challenger Point"
+                >
+                  Challenger Point
+                </option>
+                <option
+                  selected={false}
+                  value="Mt. Columbia"
+                >
+                  Mt. Columbia
+                </option>
+                <option
+                  selected={false}
+                  value="Missouri Mountain"
+                >
+                  Missouri Mountain
+                </option>
+                <option
+                  selected={false}
+                  value="Humboldt Peak"
+                >
+                  Humboldt Peak
+                </option>
+                <option
+                  selected={false}
+                  value="Mt. Bierstadt"
+                >
+                  Mt. Bierstadt
+                </option>
+                <option
+                  selected={false}
+                  value="Sunlight Peak"
+                >
+                  Sunlight Peak
+                </option>
+                <option
+                  selected={false}
+                  value="Handies Peak"
+                >
+                  Handies Peak
+                </option>
+                <option
+                  selected={false}
+                  value="Culebra Peak"
+                >
+                  Culebra Peak
+                </option>
+                <option
+                  selected={false}
+                  value="Mt. Lindsey"
+                >
+                  Mt. Lindsey
+                </option>
+                <option
+                  selected={false}
+                  value="Ellingwood Point"
+                >
+                  Ellingwood Point
+                </option>
+                <option
+                  selected={false}
+                  value="Little Bear Peak"
+                >
+                  Little Bear Peak
+                </option>
+                <option
+                  selected={false}
+                  value="Mt. Sherman"
+                >
+                  Mt. Sherman
+                </option>
+                <option
+                  selected={false}
+                  value="Redcloud Peak"
+                >
+                  Redcloud Peak
+                </option>
+                <option
+                  selected={false}
+                  value="Pyramid Peak"
+                >
+                  Pyramid Peak
+                </option>
+                <option
+                  selected={false}
+                  value="Wilson Peak"
+                >
+                  Wilson Peak
+                </option>
+                <option
+                  selected={false}
+                  value="Wetterhorn Peak"
+                >
+                  Wetterhorn Peak
+                </option>
+                <option
+                  selected={false}
+                  value="San Luis Peak"
+                >
+                  San Luis Peak
+                </option>
+                <option
+                  selected={false}
+                  value="Mt. of the Holy Cross"
+                >
+                  Mt. of the Holy Cross
+                </option>
+                <option
+                  selected={false}
+                  value="Huron Peak"
+                >
+                  Huron Peak
+                </option>
+                <option
+                  selected={false}
+                  value="Sunshine Peak"
+                >
+                  Sunshine Peak
+                </option>
+                <option
+                  selected={false}
+                  value="Mt. Cameron"
+                >
+                  Mt. Cameron
+                </option>
+                <option
+                  selected={false}
+                  value="El Diente"
+                >
+                  El Diente
+                </option>
+                <option
+                  selected={false}
+                  value="Conundrum Peak"
+                >
+                  Conundrum Peak
+                </option>
+                <option
+                  selected={false}
+                  value="North Eolus"
+                >
+                  North Eolus
+                </option>
+                <option
+                  selected={false}
+                  value="North Maroon"
+                >
+                  North Maroon
+                </option>
+                <option
+                  selected={false}
+                  value="Mt. Sanitas"
+                >
+                  Mt. Sanitas
+                </option>
+                <option
+                  selected={false}
+                  value="Highlands Ranch High Point"
+                >
+                  Highlands Ranch High Point
+                </option>
+                <option
+                  selected={false}
+                  value="Dry Peak"
+                >
+                  Dry Peak
+                </option>
+              </select>,
+              <button
+                className="select-btn"
+                onClick={[Function]}
+              >
+                Select
+              </button>,
+            ],
+            "className": "drop-down-controls",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <option
+                    selected={false}
+                    value="Mt. Elbert"
+                  >
+                    Mt. Elbert
+                  </option>,
+                  <option
+                    selected={false}
+                    value="Mt. Massive"
+                  >
+                    Mt. Massive
+                  </option>,
+                  <option
+                    selected={false}
+                    value="Mt. Harvard"
+                  >
+                    Mt. Harvard
+                  </option>,
+                  <option
+                    selected={false}
+                    value="Blanca Peak"
+                  >
+                    Blanca Peak
+                  </option>,
+                  <option
+                    selected={false}
+                    value="La Plata Peak"
+                  >
+                    La Plata Peak
+                  </option>,
+                  <option
+                    selected={false}
+                    value="Uncompahgre Peak"
+                  >
+                    Uncompahgre Peak
+                  </option>,
+                  <option
+                    selected={false}
+                    value="Crestone Peak"
+                  >
+                    Crestone Peak
+                  </option>,
+                  <option
+                    selected={false}
+                    value="Mt. Lincoln"
+                  >
+                    Mt. Lincoln
+                  </option>,
+                  <option
+                    selected={false}
+                    value="Grays Peak"
+                  >
+                    Grays Peak
+                  </option>,
+                  <option
+                    selected={false}
+                    value="Mt. Antero"
+                  >
+                    Mt. Antero
+                  </option>,
+                  <option
+                    selected={false}
+                    value="Torreys Peak"
+                  >
+                    Torreys Peak
+                  </option>,
+                  <option
+                    selected={false}
+                    value="Castle Peak"
+                  >
+                    Castle Peak
+                  </option>,
+                  <option
+                    selected={false}
+                    value="Quandary Peak"
+                  >
+                    Quandary Peak
+                  </option>,
+                  <option
+                    selected={false}
+                    value="Mt. Evans"
+                  >
+                    Mt. Evans
+                  </option>,
+                  <option
+                    selected={false}
+                    value="Longs Peak"
+                  >
+                    Longs Peak
+                  </option>,
+                  <option
+                    selected={false}
+                    value="Mt. Wilson"
+                  >
+                    Mt. Wilson
+                  </option>,
+                  <option
+                    selected={false}
+                    value="Mt. Shavano"
+                  >
+                    Mt. Shavano
+                  </option>,
+                  <option
+                    selected={false}
+                    value="Mt. Princeton"
+                  >
+                    Mt. Princeton
+                  </option>,
+                  <option
+                    selected={false}
+                    value="Mt. Belford"
+                  >
+                    Mt. Belford
+                  </option>,
+                  <option
+                    selected={false}
+                    value="Crestone Needle"
+                  >
+                    Crestone Needle
+                  </option>,
+                  <option
+                    selected={false}
+                    value="Mt. Yale"
+                  >
+                    Mt. Yale
+                  </option>,
+                  <option
+                    selected={false}
+                    value="Mt. Bross"
+                  >
+                    Mt. Bross
+                  </option>,
+                  <option
+                    selected={false}
+                    value="Kit Carson"
+                  >
+                    Kit Carson
+                  </option>,
+                  <option
+                    selected={false}
+                    value="Maroon Peak"
+                  >
+                    Maroon Peak
+                  </option>,
+                  <option
+                    selected={false}
+                    value="Tabeguache Peak"
+                  >
+                    Tabeguache Peak
+                  </option>,
+                  <option
+                    selected={false}
+                    value="Mt. Oxford"
+                  >
+                    Mt. Oxford
+                  </option>,
+                  <option
+                    selected={false}
+                    value="Mt. Sneffels"
+                  >
+                    Mt. Sneffels
+                  </option>,
+                  <option
+                    selected={false}
+                    value="Mt. Democrat"
+                  >
+                    Mt. Democrat
+                  </option>,
+                  <option
+                    selected={false}
+                    value="Capital Peak"
+                  >
+                    Capital Peak
+                  </option>,
+                  <option
+                    selected={false}
+                    value="Pikes Peak"
+                  >
+                    Pikes Peak
+                  </option>,
+                  <option
+                    selected={false}
+                    value="Snowmass Mountain"
+                  >
+                    Snowmass Mountain
+                  </option>,
+                  <option
+                    selected={false}
+                    value="Windom Peak"
+                  >
+                    Windom Peak
+                  </option>,
+                  <option
+                    selected={false}
+                    value="Mt. Eolus"
+                  >
+                    Mt. Eolus
+                  </option>,
+                  <option
+                    selected={false}
+                    value="Challenger Point"
+                  >
+                    Challenger Point
+                  </option>,
+                  <option
+                    selected={false}
+                    value="Mt. Columbia"
+                  >
+                    Mt. Columbia
+                  </option>,
+                  <option
+                    selected={false}
+                    value="Missouri Mountain"
+                  >
+                    Missouri Mountain
+                  </option>,
+                  <option
+                    selected={false}
+                    value="Humboldt Peak"
+                  >
+                    Humboldt Peak
+                  </option>,
+                  <option
+                    selected={false}
+                    value="Mt. Bierstadt"
+                  >
+                    Mt. Bierstadt
+                  </option>,
+                  <option
+                    selected={false}
+                    value="Sunlight Peak"
+                  >
+                    Sunlight Peak
+                  </option>,
+                  <option
+                    selected={false}
+                    value="Handies Peak"
+                  >
+                    Handies Peak
+                  </option>,
+                  <option
+                    selected={false}
+                    value="Culebra Peak"
+                  >
+                    Culebra Peak
+                  </option>,
+                  <option
+                    selected={false}
+                    value="Mt. Lindsey"
+                  >
+                    Mt. Lindsey
+                  </option>,
+                  <option
+                    selected={false}
+                    value="Ellingwood Point"
+                  >
+                    Ellingwood Point
+                  </option>,
+                  <option
+                    selected={false}
+                    value="Little Bear Peak"
+                  >
+                    Little Bear Peak
+                  </option>,
+                  <option
+                    selected={false}
+                    value="Mt. Sherman"
+                  >
+                    Mt. Sherman
+                  </option>,
+                  <option
+                    selected={false}
+                    value="Redcloud Peak"
+                  >
+                    Redcloud Peak
+                  </option>,
+                  <option
+                    selected={false}
+                    value="Pyramid Peak"
+                  >
+                    Pyramid Peak
+                  </option>,
+                  <option
+                    selected={false}
+                    value="Wilson Peak"
+                  >
+                    Wilson Peak
+                  </option>,
+                  <option
+                    selected={false}
+                    value="Wetterhorn Peak"
+                  >
+                    Wetterhorn Peak
+                  </option>,
+                  <option
+                    selected={false}
+                    value="San Luis Peak"
+                  >
+                    San Luis Peak
+                  </option>,
+                  <option
+                    selected={false}
+                    value="Mt. of the Holy Cross"
+                  >
+                    Mt. of the Holy Cross
+                  </option>,
+                  <option
+                    selected={false}
+                    value="Huron Peak"
+                  >
+                    Huron Peak
+                  </option>,
+                  <option
+                    selected={false}
+                    value="Sunshine Peak"
+                  >
+                    Sunshine Peak
+                  </option>,
+                  <option
+                    selected={false}
+                    value="Mt. Cameron"
+                  >
+                    Mt. Cameron
+                  </option>,
+                  <option
+                    selected={false}
+                    value="El Diente"
+                  >
+                    El Diente
+                  </option>,
+                  <option
+                    selected={false}
+                    value="Conundrum Peak"
+                  >
+                    Conundrum Peak
+                  </option>,
+                  <option
+                    selected={false}
+                    value="North Eolus"
+                  >
+                    North Eolus
+                  </option>,
+                  <option
+                    selected={false}
+                    value="North Maroon"
+                  >
+                    North Maroon
+                  </option>,
+                  <option
+                    selected={false}
+                    value="Mt. Sanitas"
+                  >
+                    Mt. Sanitas
+                  </option>,
+                  <option
+                    selected={false}
+                    value="Highlands Ranch High Point"
+                  >
+                    Highlands Ranch High Point
+                  </option>,
+                  <option
+                    selected={false}
+                    value="Dry Peak"
+                  >
+                    Dry Peak
+                  </option>,
+                ],
+                "className": "drop-down-menu",
+              },
+              "ref": [Function],
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": "0",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Mt. Elbert",
+                    "selected": false,
+                    "value": "Mt. Elbert",
+                  },
+                  "ref": null,
+                  "rendered": "Mt. Elbert",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "1",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Mt. Massive",
+                    "selected": false,
+                    "value": "Mt. Massive",
+                  },
+                  "ref": null,
+                  "rendered": "Mt. Massive",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "2",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Mt. Harvard",
+                    "selected": false,
+                    "value": "Mt. Harvard",
+                  },
+                  "ref": null,
+                  "rendered": "Mt. Harvard",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "3",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Blanca Peak",
+                    "selected": false,
+                    "value": "Blanca Peak",
+                  },
+                  "ref": null,
+                  "rendered": "Blanca Peak",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "4",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "La Plata Peak",
+                    "selected": false,
+                    "value": "La Plata Peak",
+                  },
+                  "ref": null,
+                  "rendered": "La Plata Peak",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "5",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Uncompahgre Peak",
+                    "selected": false,
+                    "value": "Uncompahgre Peak",
+                  },
+                  "ref": null,
+                  "rendered": "Uncompahgre Peak",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "6",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Crestone Peak",
+                    "selected": false,
+                    "value": "Crestone Peak",
+                  },
+                  "ref": null,
+                  "rendered": "Crestone Peak",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "7",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Mt. Lincoln",
+                    "selected": false,
+                    "value": "Mt. Lincoln",
+                  },
+                  "ref": null,
+                  "rendered": "Mt. Lincoln",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "8",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Grays Peak",
+                    "selected": false,
+                    "value": "Grays Peak",
+                  },
+                  "ref": null,
+                  "rendered": "Grays Peak",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "9",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Mt. Antero",
+                    "selected": false,
+                    "value": "Mt. Antero",
+                  },
+                  "ref": null,
+                  "rendered": "Mt. Antero",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "10",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Torreys Peak",
+                    "selected": false,
+                    "value": "Torreys Peak",
+                  },
+                  "ref": null,
+                  "rendered": "Torreys Peak",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "11",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Castle Peak",
+                    "selected": false,
+                    "value": "Castle Peak",
+                  },
+                  "ref": null,
+                  "rendered": "Castle Peak",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "12",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Quandary Peak",
+                    "selected": false,
+                    "value": "Quandary Peak",
+                  },
+                  "ref": null,
+                  "rendered": "Quandary Peak",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "13",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Mt. Evans",
+                    "selected": false,
+                    "value": "Mt. Evans",
+                  },
+                  "ref": null,
+                  "rendered": "Mt. Evans",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "14",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Longs Peak",
+                    "selected": false,
+                    "value": "Longs Peak",
+                  },
+                  "ref": null,
+                  "rendered": "Longs Peak",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "15",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Mt. Wilson",
+                    "selected": false,
+                    "value": "Mt. Wilson",
+                  },
+                  "ref": null,
+                  "rendered": "Mt. Wilson",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "16",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Mt. Shavano",
+                    "selected": false,
+                    "value": "Mt. Shavano",
+                  },
+                  "ref": null,
+                  "rendered": "Mt. Shavano",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "17",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Mt. Princeton",
+                    "selected": false,
+                    "value": "Mt. Princeton",
+                  },
+                  "ref": null,
+                  "rendered": "Mt. Princeton",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "18",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Mt. Belford",
+                    "selected": false,
+                    "value": "Mt. Belford",
+                  },
+                  "ref": null,
+                  "rendered": "Mt. Belford",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "19",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Crestone Needle",
+                    "selected": false,
+                    "value": "Crestone Needle",
+                  },
+                  "ref": null,
+                  "rendered": "Crestone Needle",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "20",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Mt. Yale",
+                    "selected": false,
+                    "value": "Mt. Yale",
+                  },
+                  "ref": null,
+                  "rendered": "Mt. Yale",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "21",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Mt. Bross",
+                    "selected": false,
+                    "value": "Mt. Bross",
+                  },
+                  "ref": null,
+                  "rendered": "Mt. Bross",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "22",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Kit Carson",
+                    "selected": false,
+                    "value": "Kit Carson",
+                  },
+                  "ref": null,
+                  "rendered": "Kit Carson",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "23",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Maroon Peak",
+                    "selected": false,
+                    "value": "Maroon Peak",
+                  },
+                  "ref": null,
+                  "rendered": "Maroon Peak",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "24",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Tabeguache Peak",
+                    "selected": false,
+                    "value": "Tabeguache Peak",
+                  },
+                  "ref": null,
+                  "rendered": "Tabeguache Peak",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "25",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Mt. Oxford",
+                    "selected": false,
+                    "value": "Mt. Oxford",
+                  },
+                  "ref": null,
+                  "rendered": "Mt. Oxford",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "26",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Mt. Sneffels",
+                    "selected": false,
+                    "value": "Mt. Sneffels",
+                  },
+                  "ref": null,
+                  "rendered": "Mt. Sneffels",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "27",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Mt. Democrat",
+                    "selected": false,
+                    "value": "Mt. Democrat",
+                  },
+                  "ref": null,
+                  "rendered": "Mt. Democrat",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "28",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Capital Peak",
+                    "selected": false,
+                    "value": "Capital Peak",
+                  },
+                  "ref": null,
+                  "rendered": "Capital Peak",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "29",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Pikes Peak",
+                    "selected": false,
+                    "value": "Pikes Peak",
+                  },
+                  "ref": null,
+                  "rendered": "Pikes Peak",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "30",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Snowmass Mountain",
+                    "selected": false,
+                    "value": "Snowmass Mountain",
+                  },
+                  "ref": null,
+                  "rendered": "Snowmass Mountain",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "31",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Windom Peak",
+                    "selected": false,
+                    "value": "Windom Peak",
+                  },
+                  "ref": null,
+                  "rendered": "Windom Peak",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "32",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Mt. Eolus",
+                    "selected": false,
+                    "value": "Mt. Eolus",
+                  },
+                  "ref": null,
+                  "rendered": "Mt. Eolus",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "33",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Challenger Point",
+                    "selected": false,
+                    "value": "Challenger Point",
+                  },
+                  "ref": null,
+                  "rendered": "Challenger Point",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "34",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Mt. Columbia",
+                    "selected": false,
+                    "value": "Mt. Columbia",
+                  },
+                  "ref": null,
+                  "rendered": "Mt. Columbia",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "35",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Missouri Mountain",
+                    "selected": false,
+                    "value": "Missouri Mountain",
+                  },
+                  "ref": null,
+                  "rendered": "Missouri Mountain",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "36",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Humboldt Peak",
+                    "selected": false,
+                    "value": "Humboldt Peak",
+                  },
+                  "ref": null,
+                  "rendered": "Humboldt Peak",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "37",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Mt. Bierstadt",
+                    "selected": false,
+                    "value": "Mt. Bierstadt",
+                  },
+                  "ref": null,
+                  "rendered": "Mt. Bierstadt",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "38",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Sunlight Peak",
+                    "selected": false,
+                    "value": "Sunlight Peak",
+                  },
+                  "ref": null,
+                  "rendered": "Sunlight Peak",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "39",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Handies Peak",
+                    "selected": false,
+                    "value": "Handies Peak",
+                  },
+                  "ref": null,
+                  "rendered": "Handies Peak",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "40",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Culebra Peak",
+                    "selected": false,
+                    "value": "Culebra Peak",
+                  },
+                  "ref": null,
+                  "rendered": "Culebra Peak",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "41",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Mt. Lindsey",
+                    "selected": false,
+                    "value": "Mt. Lindsey",
+                  },
+                  "ref": null,
+                  "rendered": "Mt. Lindsey",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "42",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Ellingwood Point",
+                    "selected": false,
+                    "value": "Ellingwood Point",
+                  },
+                  "ref": null,
+                  "rendered": "Ellingwood Point",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "43",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Little Bear Peak",
+                    "selected": false,
+                    "value": "Little Bear Peak",
+                  },
+                  "ref": null,
+                  "rendered": "Little Bear Peak",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "44",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Mt. Sherman",
+                    "selected": false,
+                    "value": "Mt. Sherman",
+                  },
+                  "ref": null,
+                  "rendered": "Mt. Sherman",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "45",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Redcloud Peak",
+                    "selected": false,
+                    "value": "Redcloud Peak",
+                  },
+                  "ref": null,
+                  "rendered": "Redcloud Peak",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "46",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Pyramid Peak",
+                    "selected": false,
+                    "value": "Pyramid Peak",
+                  },
+                  "ref": null,
+                  "rendered": "Pyramid Peak",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "47",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Wilson Peak",
+                    "selected": false,
+                    "value": "Wilson Peak",
+                  },
+                  "ref": null,
+                  "rendered": "Wilson Peak",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "48",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Wetterhorn Peak",
+                    "selected": false,
+                    "value": "Wetterhorn Peak",
+                  },
+                  "ref": null,
+                  "rendered": "Wetterhorn Peak",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "49",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "San Luis Peak",
+                    "selected": false,
+                    "value": "San Luis Peak",
+                  },
+                  "ref": null,
+                  "rendered": "San Luis Peak",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "50",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Mt. of the Holy Cross",
+                    "selected": false,
+                    "value": "Mt. of the Holy Cross",
+                  },
+                  "ref": null,
+                  "rendered": "Mt. of the Holy Cross",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "51",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Huron Peak",
+                    "selected": false,
+                    "value": "Huron Peak",
+                  },
+                  "ref": null,
+                  "rendered": "Huron Peak",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "52",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Sunshine Peak",
+                    "selected": false,
+                    "value": "Sunshine Peak",
+                  },
+                  "ref": null,
+                  "rendered": "Sunshine Peak",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "53",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Mt. Cameron",
+                    "selected": false,
+                    "value": "Mt. Cameron",
+                  },
+                  "ref": null,
+                  "rendered": "Mt. Cameron",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "54",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "El Diente",
+                    "selected": false,
+                    "value": "El Diente",
+                  },
+                  "ref": null,
+                  "rendered": "El Diente",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "55",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Conundrum Peak",
+                    "selected": false,
+                    "value": "Conundrum Peak",
+                  },
+                  "ref": null,
+                  "rendered": "Conundrum Peak",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "56",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "North Eolus",
+                    "selected": false,
+                    "value": "North Eolus",
+                  },
+                  "ref": null,
+                  "rendered": "North Eolus",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "57",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "North Maroon",
+                    "selected": false,
+                    "value": "North Maroon",
+                  },
+                  "ref": null,
+                  "rendered": "North Maroon",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "58",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Mt. Sanitas",
+                    "selected": false,
+                    "value": "Mt. Sanitas",
+                  },
+                  "ref": null,
+                  "rendered": "Mt. Sanitas",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "59",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Highlands Ranch High Point",
+                    "selected": false,
+                    "value": "Highlands Ranch High Point",
+                  },
+                  "ref": null,
+                  "rendered": "Highlands Ranch High Point",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "60",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Dry Peak",
+                    "selected": false,
+                    "value": "Dry Peak",
+                  },
+                  "ref": null,
+                  "rendered": "Dry Peak",
+                  "type": "option",
+                },
+              ],
+              "type": "select",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Select",
+                "className": "select-btn",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Select",
+              "type": "button",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Sign Log",
+            "className": "sign-log-btn",
+          },
+          "ref": null,
+          "rendered": "Sign Log",
+          "type": "button",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

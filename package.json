@@ -7,6 +7,7 @@
     "node": "9.5.0"
   },
   "dependencies": {
+    "enzyme-adapter-react-16": "^1.7.1",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-redux": "^6.0.0",
@@ -29,7 +30,10 @@
     "not op_mini all"
   ],
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "enzyme": "^3.8.0",
+    "enzyme-to-json": "^3.3.5"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/christopherchateau/Summit-Register-FE.git"

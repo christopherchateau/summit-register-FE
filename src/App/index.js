@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Start from "../Start";
 import Info from "../Info";
 import Log from "../Log";
+import { mountainData } from "../utilities/data/mountain-data";
 import * as apiCalls from "../utilities/helper/apiCalls";
 import "./App.css";
 
@@ -34,7 +35,11 @@ class App extends Component {
   }
 
   handleSelectButton = async currentMountain => {
-    let currentMountainData = await apiCalls.getMountain();
+    const mountainId = mountainData.data.find(mountain => {
+      return mountain.attributes.name === currentMountain 
+    })
+    await console.log(mountainId.id)
+    let currentMountainData = await apiCalls.getMountain(mountainId.id);
 
     await this.setState({
       currentMountain,

@@ -17,11 +17,13 @@ class Info extends Component {
           <BackButton handleBackButton={this.props.handleBackButton} />
           <img className="logo-small" alt="logo" src={logo} />
         </header>
+        <section className="info-section">
         <h1>{name}</h1>
         <h3>Altitude: {altitude}</h3>
         <h3>Difficulty: {difficulty}</h3>
         <h3>Range: {range}</h3>
-        <button className="sign-log-btn">Sign Log</button>
+        </section>
+        <button className="sign-register-btn">Sign Register</button>
       </div>
     );
   }

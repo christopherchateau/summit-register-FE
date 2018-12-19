@@ -10,7 +10,7 @@ export const getMountain = async(id) => {
       }
 }
 
-export const getLog = async(id) => {
+export const getMountainLog = async(id) => {
     // const response = await fetch(`http://summit-register-api.herokuapp.com/api/v1/mountains/${id}`)
     // const log = await response.json()
     return {

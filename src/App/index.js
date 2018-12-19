@@ -11,7 +11,8 @@ class App extends Component {
     this.state = {
       currentDisplay: "start",
       currentMountain: "",
-      currentMountainData: []
+      currentMountainData: [],
+      currentMountainLog: []
     };
   }
 
@@ -19,7 +20,18 @@ class App extends Component {
     if (this.state.currentDisplay === "info") {
       this.setState({ currentDisplay: "start" });
     }
+    if ( this.state.currentDisplay === 'log') {
+      this.setState({ currentDisplay: 'info'})
+    }
   };
+
+  handleViewLogButton = async () => {
+      const currentMountainLog = await apiCalls.getMountainLog()
+      await this.setState({ 
+        currentDisplay: 'log',
+        currentMountainLog,
+    });
+  }
 
   handleSelectButton = async currentMountain => {
     const currentMountainData = await apiCalls.getMountain();
@@ -32,7 +44,7 @@ class App extends Component {
   };
 
   render() {
-    const { currentDisplay, currentMountain, currentMountainData } = this.state;
+    const { currentDisplay, currentMountain, currentMountainData, currentMountainLog } = this.state;
     return (
       <div className="App">
         {currentDisplay === "start" && (
@@ -45,6 +57,13 @@ class App extends Component {
           <Info
             handleBackButton={this.handleBackButton}
             currentMountainData={currentMountainData}
+            handleViewLogButton={this.handleViewLogButton}
+            />
+            )}
+        {currentDisplay === "log" && (
+          <Log
+          currentMountainLog={currentMountainLog}
+          handleBackButton={this.handleBackButton}
           />
         )}
       </div>

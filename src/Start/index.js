@@ -15,8 +15,10 @@ class Start extends Component {
 
     return (
       <div className="Start">
-        <h1 className="main-title">Summit Register</h1>
-        <img className="logo" alt="logo" src={logo} />
+        <h1 className="main-title">
+          Summit Register
+          <img className="logo" alt="logo" src={logo} />
+        </h1>
         <div className="drop-down-controls">
           <select
             className="drop-down-menu"

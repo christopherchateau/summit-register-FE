@@ -23,6 +23,7 @@ class Info extends Component {
         <h3>Altitude: {altitude} ft</h3>
         <h3>Difficulty: {difficulty}</h3>
         <h3>Range: {range}</h3>
+        </section>
         <button className="view-log-btn" onClick={() => this.props.handleViewLogButton()}>View Log</button>
         <button className="sign-log-btn">Sign Log</button>
       </div>

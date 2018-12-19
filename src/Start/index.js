@@ -5,8 +5,8 @@ import "./Start.css";
 
 class Start extends Component {
   compareNames = (a, b) => {
-    if (a.name < b.name) return -1;
-    if (a.name > b.name) return 1;
+    if (a.attributes.name < b.attributes.name) return -1;
+    if (a.attributes.name > b.attributes.name) return 1;
     return 0;
   };
 
@@ -15,8 +15,8 @@ class Start extends Component {
       .sort(this.compareNames)
       .map((mountain, index) => {
         return (
-          <option value={mountain.name} key={index}>
-            {mountain.name}
+          <option value={mountain.attributes.name} key={index}>
+            {mountain.attributes.name}
           </option>
         );
       });

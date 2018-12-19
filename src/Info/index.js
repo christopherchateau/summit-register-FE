@@ -5,13 +5,12 @@ import "./Info.css";
 
 class Info extends Component {
   render() {
-    console.log(this.props)
     const {
       name,
       altitude,
       difficulty,
       range
-    } = this.props.currentMountainData;
+    } = this.props.currentMountainData.data.attributes;
     return (
       <div className="Info">
         <header className="header">

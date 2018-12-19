@@ -1,10 +1,10 @@
 .Info {
   align-items: center;
-  background: gray;
   display: flex;
   flex-direction: column;
   background: url("../utilities/images/mountains-2.jpg") no-repeat center
-    rgba(165, 165, 165, 0.68);
+  rgba(165, 165, 165, 0.68);
+  background-color: white;
   background-size: auto 70%;
   height: 90vh;
   justify-content: space-between;
@@ -30,10 +30,10 @@
 }
 
 .info-section {
-  border: 2px solid white;
+  border: 1px solid white;
   border-radius: 20px;
   background: grey;
-  opacity: .8;
+  opacity: .9;
   padding: 20px;
 }
 

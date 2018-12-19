@@ -19,7 +19,7 @@ class Info extends Component {
         </header>
         <section className="info-section">
         <h1>{name}</h1>
-        <h3>Altitude: {altitude}</h3>
+        <h3>Altitude: {altitude} ft</h3>
         <h3>Difficulty: {difficulty}</h3>
         <h3>Range: {range}</h3>
         </section>

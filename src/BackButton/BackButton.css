@@ -1,5 +1,6 @@
 .BackButton {
-    background: transparent;
+  background: transparent;
+  border: none;
   display: block;
   font-size: 22px;
   margin: 70px 0;

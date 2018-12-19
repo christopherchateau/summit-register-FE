@@ -6,6 +6,10 @@ import './Log.css';
 class Log extends Component {
   render() {
     const { name, hometown, comments } = this.props.currentMountainLog
+    let singleLog = this.props.currentMountainLog.map( log => {
+      return <li>name: {log.attributes.name}, hometown:{log.attributes.hometown},Date:{log.attributes.date}</li>
+    })
+
     return (
       <div className="Log">
         <header className="header">
@@ -13,8 +17,7 @@ class Log extends Component {
           <img className="logo-small" alt="logo" src={logo} />
         </header>
         <h1>{name}</h1>
-        <h3>Hometown: {hometown}</h3>
-        <h3>Comments: {comments}</h3>
+        <ol>{singleLog}</ol>
       </div>
     );
   }

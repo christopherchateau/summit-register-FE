@@ -27,24 +27,25 @@ class App extends Component {
   };
 
   handleViewLogButton = async () => {
-      const currentMountainLog = await apiCalls.getMountainLog()
+    console.log(this.state.currentMountainData.id)
+      const currentMountainLog = await apiCalls.getMountainLog(this.state.currentMountainData.id)
       await this.setState({ 
         currentDisplay: 'log',
-        currentMountainLog,
+        currentMountainLog: currentMountainLog.data.attributes.registries.data
     });
   }
 
   handleSelectButton = async currentMountain => {
-    const mountainId = mountainData.data.find(mountain => {
+    const mountain = mountainData.data.find(mountain => {
       return mountain.attributes.name === currentMountain 
     })
-    await console.log(mountainId.id)
-    let currentMountainData = await apiCalls.getMountain(mountainId.id);
+    await console.log(mountain.id)
+    let currentMountainData = await apiCalls.getMountain(mountain.id);
 
     await this.setState({
       currentMountain,
       currentDisplay: "info",
-      currentMountainData
+      currentMountainData: currentMountainData.data
     });
   };
 

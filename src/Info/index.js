@@ -10,7 +10,7 @@ class Info extends Component {
       altitude,
       difficulty,
       range
-    } = this.props.currentMountainData.data.attributes;
+    } = this.props.currentMountainData.attributes;
     return (
       <div className="Info">
         <header className="header">

@@ -16,7 +16,6 @@
 }
 
 .logo {
-    /* border: 2px solid red; */
   height: 50%;
   width: 100%;
 }
@@ -27,6 +26,6 @@
 .select-btn {
 }
 
-.sign-log-btn {
+.sign-register-btn {
   display: block;
 }

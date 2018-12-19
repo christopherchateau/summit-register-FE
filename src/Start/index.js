@@ -7,11 +7,7 @@ class Start extends Component {
   render() {
     const mountainNames = mountainData.data.map((mountain, index) => {
       return (
-        <option
-          value={mountain.name}
-          key={index}
-          selected={mountain.name === this.props.currentMountain}
-        >
+        <option value={mountain.name} key={index}>
           {mountain.name}
         </option>
       );
@@ -22,7 +18,11 @@ class Start extends Component {
         <h1 className="main-title">Summit Register</h1>
         <img className="logo" alt="logo" src={logo} />
         <div className="drop-down-controls">
-          <select className="drop-down-menu" ref={input => (this.menu = input)}>
+          <select
+            className="drop-down-menu"
+            ref={input => (this.menu = input)}
+            defaultValue={this.props.currentMountain}
+          >
             {mountainNames}
           </select>
           <button
@@ -32,7 +32,7 @@ class Start extends Component {
             Select
           </button>
         </div>
-        <button className="sign-log-btn">Sign Log</button>
+        <button className="sign-register-btn">Sign Register</button>
       </div>
     );
   }

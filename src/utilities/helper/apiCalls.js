@@ -9,3 +9,13 @@ export const getMountain = async(id) => {
         range: "Sawatch"
       }
 }
+
+export const getLog = async(id) => {
+    // const response = await fetch(`http://summit-register-api.herokuapp.com/api/v1/mountains/${id}`)
+    // const log = await response.json()
+    return {
+        name: "Mr. Massive",
+        hometown: "Denver, CO",
+        comments: "hiking rules"
+      }
+}

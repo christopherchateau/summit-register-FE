@@ -44,367 +44,306 @@ ShallowWrapper {
             className="drop-down-menu"
           >
             <option
-              selected={false}
               value="Mt. Elbert"
             >
               Mt. Elbert
             </option>
             <option
-              selected={false}
               value="Mt. Massive"
             >
               Mt. Massive
             </option>
             <option
-              selected={false}
               value="Mt. Harvard"
             >
               Mt. Harvard
             </option>
             <option
-              selected={false}
               value="Blanca Peak"
             >
               Blanca Peak
             </option>
             <option
-              selected={false}
               value="La Plata Peak"
             >
               La Plata Peak
             </option>
             <option
-              selected={false}
               value="Uncompahgre Peak"
             >
               Uncompahgre Peak
             </option>
             <option
-              selected={false}
               value="Crestone Peak"
             >
               Crestone Peak
             </option>
             <option
-              selected={false}
               value="Mt. Lincoln"
             >
               Mt. Lincoln
             </option>
             <option
-              selected={false}
               value="Grays Peak"
             >
               Grays Peak
             </option>
             <option
-              selected={false}
               value="Mt. Antero"
             >
               Mt. Antero
             </option>
             <option
-              selected={false}
               value="Torreys Peak"
             >
               Torreys Peak
             </option>
             <option
-              selected={false}
               value="Castle Peak"
             >
               Castle Peak
             </option>
             <option
-              selected={false}
               value="Quandary Peak"
             >
               Quandary Peak
             </option>
             <option
-              selected={false}
               value="Mt. Evans"
             >
               Mt. Evans
             </option>
             <option
-              selected={false}
               value="Longs Peak"
             >
               Longs Peak
             </option>
             <option
-              selected={false}
               value="Mt. Wilson"
             >
               Mt. Wilson
             </option>
             <option
-              selected={false}
               value="Mt. Shavano"
             >
               Mt. Shavano
             </option>
             <option
-              selected={false}
               value="Mt. Princeton"
             >
               Mt. Princeton
             </option>
             <option
-              selected={false}
               value="Mt. Belford"
             >
               Mt. Belford
             </option>
             <option
-              selected={false}
               value="Crestone Needle"
             >
               Crestone Needle
             </option>
             <option
-              selected={false}
               value="Mt. Yale"
             >
               Mt. Yale
             </option>
             <option
-              selected={false}
               value="Mt. Bross"
             >
               Mt. Bross
             </option>
             <option
-              selected={false}
               value="Kit Carson"
             >
               Kit Carson
             </option>
             <option
-              selected={false}
               value="Maroon Peak"
             >
               Maroon Peak
             </option>
             <option
-              selected={false}
               value="Tabeguache Peak"
             >
               Tabeguache Peak
             </option>
             <option
-              selected={false}
               value="Mt. Oxford"
             >
               Mt. Oxford
             </option>
             <option
-              selected={false}
               value="Mt. Sneffels"
             >
               Mt. Sneffels
             </option>
             <option
-              selected={false}
               value="Mt. Democrat"
             >
               Mt. Democrat
             </option>
             <option
-              selected={false}
               value="Capital Peak"
             >
               Capital Peak
             </option>
             <option
-              selected={false}
               value="Pikes Peak"
             >
               Pikes Peak
             </option>
             <option
-              selected={false}
               value="Snowmass Mountain"
             >
               Snowmass Mountain
             </option>
             <option
-              selected={false}
               value="Windom Peak"
             >
               Windom Peak
             </option>
             <option
-              selected={false}
               value="Mt. Eolus"
             >
               Mt. Eolus
             </option>
             <option
-              selected={false}
               value="Challenger Point"
             >
               Challenger Point
             </option>
             <option
-              selected={false}
               value="Mt. Columbia"
             >
               Mt. Columbia
             </option>
             <option
-              selected={false}
               value="Missouri Mountain"
             >
               Missouri Mountain
             </option>
             <option
-              selected={false}
               value="Humboldt Peak"
             >
               Humboldt Peak
             </option>
             <option
-              selected={false}
               value="Mt. Bierstadt"
             >
               Mt. Bierstadt
             </option>
             <option
-              selected={false}
               value="Sunlight Peak"
             >
               Sunlight Peak
             </option>
             <option
-              selected={false}
               value="Handies Peak"
             >
               Handies Peak
             </option>
             <option
-              selected={false}
               value="Culebra Peak"
             >
               Culebra Peak
             </option>
             <option
-              selected={false}
               value="Mt. Lindsey"
             >
               Mt. Lindsey
             </option>
             <option
-              selected={false}
               value="Ellingwood Point"
             >
               Ellingwood Point
             </option>
             <option
-              selected={false}
               value="Little Bear Peak"
             >
               Little Bear Peak
             </option>
             <option
-              selected={false}
               value="Mt. Sherman"
             >
               Mt. Sherman
             </option>
             <option
-              selected={false}
               value="Redcloud Peak"
             >
               Redcloud Peak
             </option>
             <option
-              selected={false}
               value="Pyramid Peak"
             >
               Pyramid Peak
             </option>
             <option
-              selected={false}
               value="Wilson Peak"
             >
               Wilson Peak
             </option>
             <option
-              selected={false}
               value="Wetterhorn Peak"
             >
               Wetterhorn Peak
             </option>
             <option
-              selected={false}
               value="San Luis Peak"
             >
               San Luis Peak
             </option>
             <option
-              selected={false}
               value="Mt. of the Holy Cross"
             >
               Mt. of the Holy Cross
             </option>
             <option
-              selected={false}
               value="Huron Peak"
             >
               Huron Peak
             </option>
             <option
-              selected={false}
               value="Sunshine Peak"
             >
               Sunshine Peak
             </option>
             <option
-              selected={false}
               value="Mt. Cameron"
             >
               Mt. Cameron
             </option>
             <option
-              selected={false}
               value="El Diente"
             >
               El Diente
             </option>
             <option
-              selected={false}
               value="Conundrum Peak"
             >
               Conundrum Peak
             </option>
             <option
-              selected={false}
               value="North Eolus"
             >
               North Eolus
             </option>
             <option
-              selected={false}
               value="North Maroon"
             >
               North Maroon
             </option>
             <option
-              selected={false}
               value="Mt. Sanitas"
             >
               Mt. Sanitas
             </option>
             <option
-              selected={false}
               value="Highlands Ranch High Point"
             >
               Highlands Ranch High Point
             </option>
             <option
-              selected={false}
               value="Dry Peak"
             >
               Dry Peak
@@ -462,367 +401,306 @@ ShallowWrapper {
               className="drop-down-menu"
             >
               <option
-                selected={false}
                 value="Mt. Elbert"
               >
                 Mt. Elbert
               </option>
               <option
-                selected={false}
                 value="Mt. Massive"
               >
                 Mt. Massive
               </option>
               <option
-                selected={false}
                 value="Mt. Harvard"
               >
                 Mt. Harvard
               </option>
               <option
-                selected={false}
                 value="Blanca Peak"
               >
                 Blanca Peak
               </option>
               <option
-                selected={false}
                 value="La Plata Peak"
               >
                 La Plata Peak
               </option>
               <option
-                selected={false}
                 value="Uncompahgre Peak"
               >
                 Uncompahgre Peak
               </option>
               <option
-                selected={false}
                 value="Crestone Peak"
               >
                 Crestone Peak
               </option>
               <option
-                selected={false}
                 value="Mt. Lincoln"
               >
                 Mt. Lincoln
               </option>
               <option
-                selected={false}
                 value="Grays Peak"
               >
                 Grays Peak
               </option>
               <option
-                selected={false}
                 value="Mt. Antero"
               >
                 Mt. Antero
               </option>
               <option
-                selected={false}
                 value="Torreys Peak"
               >
                 Torreys Peak
               </option>
               <option
-                selected={false}
                 value="Castle Peak"
               >
                 Castle Peak
               </option>
               <option
-                selected={false}
                 value="Quandary Peak"
               >
                 Quandary Peak
               </option>
               <option
-                selected={false}
                 value="Mt. Evans"
               >
                 Mt. Evans
               </option>
               <option
-                selected={false}
                 value="Longs Peak"
               >
                 Longs Peak
               </option>
               <option
-                selected={false}
                 value="Mt. Wilson"
               >
                 Mt. Wilson
               </option>
               <option
-                selected={false}
                 value="Mt. Shavano"
               >
                 Mt. Shavano
               </option>
               <option
-                selected={false}
                 value="Mt. Princeton"
               >
                 Mt. Princeton
               </option>
               <option
-                selected={false}
                 value="Mt. Belford"
               >
                 Mt. Belford
               </option>
               <option
-                selected={false}
                 value="Crestone Needle"
               >
                 Crestone Needle
               </option>
               <option
-                selected={false}
                 value="Mt. Yale"
               >
                 Mt. Yale
               </option>
               <option
-                selected={false}
                 value="Mt. Bross"
               >
                 Mt. Bross
               </option>
               <option
-                selected={false}
                 value="Kit Carson"
               >
                 Kit Carson
               </option>
               <option
-                selected={false}
                 value="Maroon Peak"
               >
                 Maroon Peak
               </option>
               <option
-                selected={false}
                 value="Tabeguache Peak"
               >
                 Tabeguache Peak
               </option>
               <option
-                selected={false}
                 value="Mt. Oxford"
               >
                 Mt. Oxford
               </option>
               <option
-                selected={false}
                 value="Mt. Sneffels"
               >
                 Mt. Sneffels
               </option>
               <option
-                selected={false}
                 value="Mt. Democrat"
               >
                 Mt. Democrat
               </option>
               <option
-                selected={false}
                 value="Capital Peak"
               >
                 Capital Peak
               </option>
               <option
-                selected={false}
                 value="Pikes Peak"
               >
                 Pikes Peak
               </option>
               <option
-                selected={false}
                 value="Snowmass Mountain"
               >
                 Snowmass Mountain
               </option>
               <option
-                selected={false}
                 value="Windom Peak"
               >
                 Windom Peak
               </option>
               <option
-                selected={false}
                 value="Mt. Eolus"
               >
                 Mt. Eolus
               </option>
               <option
-                selected={false}
                 value="Challenger Point"
               >
                 Challenger Point
               </option>
               <option
-                selected={false}
                 value="Mt. Columbia"
               >
                 Mt. Columbia
               </option>
               <option
-                selected={false}
                 value="Missouri Mountain"
               >
                 Missouri Mountain
               </option>
               <option
-                selected={false}
                 value="Humboldt Peak"
               >
                 Humboldt Peak
               </option>
               <option
-                selected={false}
                 value="Mt. Bierstadt"
               >
                 Mt. Bierstadt
               </option>
               <option
-                selected={false}
                 value="Sunlight Peak"
               >
                 Sunlight Peak
               </option>
               <option
-                selected={false}
                 value="Handies Peak"
               >
                 Handies Peak
               </option>
               <option
-                selected={false}
                 value="Culebra Peak"
               >
                 Culebra Peak
               </option>
               <option
-                selected={false}
                 value="Mt. Lindsey"
               >
                 Mt. Lindsey
               </option>
               <option
-                selected={false}
                 value="Ellingwood Point"
               >
                 Ellingwood Point
               </option>
               <option
-                selected={false}
                 value="Little Bear Peak"
               >
                 Little Bear Peak
               </option>
               <option
-                selected={false}
                 value="Mt. Sherman"
               >
                 Mt. Sherman
               </option>
               <option
-                selected={false}
                 value="Redcloud Peak"
               >
                 Redcloud Peak
               </option>
               <option
-                selected={false}
                 value="Pyramid Peak"
               >
                 Pyramid Peak
               </option>
               <option
-                selected={false}
                 value="Wilson Peak"
               >
                 Wilson Peak
               </option>
               <option
-                selected={false}
                 value="Wetterhorn Peak"
               >
                 Wetterhorn Peak
               </option>
               <option
-                selected={false}
                 value="San Luis Peak"
               >
                 San Luis Peak
               </option>
               <option
-                selected={false}
                 value="Mt. of the Holy Cross"
               >
                 Mt. of the Holy Cross
               </option>
               <option
-                selected={false}
                 value="Huron Peak"
               >
                 Huron Peak
               </option>
               <option
-                selected={false}
                 value="Sunshine Peak"
               >
                 Sunshine Peak
               </option>
               <option
-                selected={false}
                 value="Mt. Cameron"
               >
                 Mt. Cameron
               </option>
               <option
-                selected={false}
                 value="El Diente"
               >
                 El Diente
               </option>
               <option
-                selected={false}
                 value="Conundrum Peak"
               >
                 Conundrum Peak
               </option>
               <option
-                selected={false}
                 value="North Eolus"
               >
                 North Eolus
               </option>
               <option
-                selected={false}
                 value="North Maroon"
               >
                 North Maroon
               </option>
               <option
-                selected={false}
                 value="Mt. Sanitas"
               >
                 Mt. Sanitas
               </option>
               <option
-                selected={false}
                 value="Highlands Ranch High Point"
               >
                 Highlands Ranch High Point
               </option>
               <option
-                selected={false}
                 value="Dry Peak"
               >
                 Dry Peak
@@ -846,373 +724,313 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <option
-                  selected={false}
                   value="Mt. Elbert"
                 >
                   Mt. Elbert
                 </option>,
                 <option
-                  selected={false}
                   value="Mt. Massive"
                 >
                   Mt. Massive
                 </option>,
                 <option
-                  selected={false}
                   value="Mt. Harvard"
                 >
                   Mt. Harvard
                 </option>,
                 <option
-                  selected={false}
                   value="Blanca Peak"
                 >
                   Blanca Peak
                 </option>,
                 <option
-                  selected={false}
                   value="La Plata Peak"
                 >
                   La Plata Peak
                 </option>,
                 <option
-                  selected={false}
                   value="Uncompahgre Peak"
                 >
                   Uncompahgre Peak
                 </option>,
                 <option
-                  selected={false}
                   value="Crestone Peak"
                 >
                   Crestone Peak
                 </option>,
                 <option
-                  selected={false}
                   value="Mt. Lincoln"
                 >
                   Mt. Lincoln
                 </option>,
                 <option
-                  selected={false}
                   value="Grays Peak"
                 >
                   Grays Peak
                 </option>,
                 <option
-                  selected={false}
                   value="Mt. Antero"
                 >
                   Mt. Antero
                 </option>,
                 <option
-                  selected={false}
                   value="Torreys Peak"
                 >
                   Torreys Peak
                 </option>,
                 <option
-                  selected={false}
                   value="Castle Peak"
                 >
                   Castle Peak
                 </option>,
                 <option
-                  selected={false}
                   value="Quandary Peak"
                 >
                   Quandary Peak
                 </option>,
                 <option
-                  selected={false}
                   value="Mt. Evans"
                 >
                   Mt. Evans
                 </option>,
                 <option
-                  selected={false}
                   value="Longs Peak"
                 >
                   Longs Peak
                 </option>,
                 <option
-                  selected={false}
                   value="Mt. Wilson"
                 >
                   Mt. Wilson
                 </option>,
                 <option
-                  selected={false}
                   value="Mt. Shavano"
                 >
                   Mt. Shavano
                 </option>,
                 <option
-                  selected={false}
                   value="Mt. Princeton"
                 >
                   Mt. Princeton
                 </option>,
                 <option
-                  selected={false}
                   value="Mt. Belford"
                 >
                   Mt. Belford
                 </option>,
                 <option
-                  selected={false}
                   value="Crestone Needle"
                 >
                   Crestone Needle
                 </option>,
                 <option
-                  selected={false}
                   value="Mt. Yale"
                 >
                   Mt. Yale
                 </option>,
                 <option
-                  selected={false}
                   value="Mt. Bross"
                 >
                   Mt. Bross
                 </option>,
                 <option
-                  selected={false}
                   value="Kit Carson"
                 >
                   Kit Carson
                 </option>,
                 <option
-                  selected={false}
                   value="Maroon Peak"
                 >
                   Maroon Peak
                 </option>,
                 <option
-                  selected={false}
                   value="Tabeguache Peak"
                 >
                   Tabeguache Peak
                 </option>,
                 <option
-                  selected={false}
                   value="Mt. Oxford"
                 >
                   Mt. Oxford
                 </option>,
                 <option
-                  selected={false}
                   value="Mt. Sneffels"
                 >
                   Mt. Sneffels
                 </option>,
                 <option
-                  selected={false}
                   value="Mt. Democrat"
                 >
                   Mt. Democrat
                 </option>,
                 <option
-                  selected={false}
                   value="Capital Peak"
                 >
                   Capital Peak
                 </option>,
                 <option
-                  selected={false}
                   value="Pikes Peak"
                 >
                   Pikes Peak
                 </option>,
                 <option
-                  selected={false}
                   value="Snowmass Mountain"
                 >
                   Snowmass Mountain
                 </option>,
                 <option
-                  selected={false}
                   value="Windom Peak"
                 >
                   Windom Peak
                 </option>,
                 <option
-                  selected={false}
                   value="Mt. Eolus"
                 >
                   Mt. Eolus
                 </option>,
                 <option
-                  selected={false}
                   value="Challenger Point"
                 >
                   Challenger Point
                 </option>,
                 <option
-                  selected={false}
                   value="Mt. Columbia"
                 >
                   Mt. Columbia
                 </option>,
                 <option
-                  selected={false}
                   value="Missouri Mountain"
                 >
                   Missouri Mountain
                 </option>,
                 <option
-                  selected={false}
                   value="Humboldt Peak"
                 >
                   Humboldt Peak
                 </option>,
                 <option
-                  selected={false}
                   value="Mt. Bierstadt"
                 >
                   Mt. Bierstadt
                 </option>,
                 <option
-                  selected={false}
                   value="Sunlight Peak"
                 >
                   Sunlight Peak
                 </option>,
                 <option
-                  selected={false}
                   value="Handies Peak"
                 >
                   Handies Peak
                 </option>,
                 <option
-                  selected={false}
                   value="Culebra Peak"
                 >
                   Culebra Peak
                 </option>,
                 <option
-                  selected={false}
                   value="Mt. Lindsey"
                 >
                   Mt. Lindsey
                 </option>,
                 <option
-                  selected={false}
                   value="Ellingwood Point"
                 >
                   Ellingwood Point
                 </option>,
                 <option
-                  selected={false}
                   value="Little Bear Peak"
                 >
                   Little Bear Peak
                 </option>,
                 <option
-                  selected={false}
                   value="Mt. Sherman"
                 >
                   Mt. Sherman
                 </option>,
                 <option
-                  selected={false}
                   value="Redcloud Peak"
                 >
                   Redcloud Peak
                 </option>,
                 <option
-                  selected={false}
                   value="Pyramid Peak"
                 >
                   Pyramid Peak
                 </option>,
                 <option
-                  selected={false}
                   value="Wilson Peak"
                 >
                   Wilson Peak
                 </option>,
                 <option
-                  selected={false}
                   value="Wetterhorn Peak"
                 >
                   Wetterhorn Peak
                 </option>,
                 <option
-                  selected={false}
                   value="San Luis Peak"
                 >
                   San Luis Peak
                 </option>,
                 <option
-                  selected={false}
                   value="Mt. of the Holy Cross"
                 >
                   Mt. of the Holy Cross
                 </option>,
                 <option
-                  selected={false}
                   value="Huron Peak"
                 >
                   Huron Peak
                 </option>,
                 <option
-                  selected={false}
                   value="Sunshine Peak"
                 >
                   Sunshine Peak
                 </option>,
                 <option
-                  selected={false}
                   value="Mt. Cameron"
                 >
                   Mt. Cameron
                 </option>,
                 <option
-                  selected={false}
                   value="El Diente"
                 >
                   El Diente
                 </option>,
                 <option
-                  selected={false}
                   value="Conundrum Peak"
                 >
                   Conundrum Peak
                 </option>,
                 <option
-                  selected={false}
                   value="North Eolus"
                 >
                   North Eolus
                 </option>,
                 <option
-                  selected={false}
                   value="North Maroon"
                 >
                   North Maroon
                 </option>,
                 <option
-                  selected={false}
                   value="Mt. Sanitas"
                 >
                   Mt. Sanitas
                 </option>,
                 <option
-                  selected={false}
                   value="Highlands Ranch High Point"
                 >
                   Highlands Ranch High Point
                 </option>,
                 <option
-                  selected={false}
                   value="Dry Peak"
                 >
                   Dry Peak
                 </option>,
               ],
               "className": "drop-down-menu",
+              "defaultValue": undefined,
             },
             "ref": [Function],
             "rendered": Array [
@@ -1222,7 +1040,6 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Mt. Elbert",
-                  "selected": false,
                   "value": "Mt. Elbert",
                 },
                 "ref": null,
@@ -1235,7 +1052,6 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Mt. Massive",
-                  "selected": false,
                   "value": "Mt. Massive",
                 },
                 "ref": null,
@@ -1248,7 +1064,6 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Mt. Harvard",
-                  "selected": false,
                   "value": "Mt. Harvard",
                 },
                 "ref": null,
@@ -1261,7 +1076,6 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Blanca Peak",
-                  "selected": false,
                   "value": "Blanca Peak",
                 },
                 "ref": null,
@@ -1274,7 +1088,6 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "La Plata Peak",
-                  "selected": false,
                   "value": "La Plata Peak",
                 },
                 "ref": null,
@@ -1287,7 +1100,6 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Uncompahgre Peak",
-                  "selected": false,
                   "value": "Uncompahgre Peak",
                 },
                 "ref": null,
@@ -1300,7 +1112,6 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Crestone Peak",
-                  "selected": false,
                   "value": "Crestone Peak",
                 },
                 "ref": null,
@@ -1313,7 +1124,6 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Mt. Lincoln",
-                  "selected": false,
                   "value": "Mt. Lincoln",
                 },
                 "ref": null,
@@ -1326,7 +1136,6 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Grays Peak",
-                  "selected": false,
                   "value": "Grays Peak",
                 },
                 "ref": null,
@@ -1339,7 +1148,6 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Mt. Antero",
-                  "selected": false,
                   "value": "Mt. Antero",
                 },
                 "ref": null,
@@ -1352,7 +1160,6 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Torreys Peak",
-                  "selected": false,
                   "value": "Torreys Peak",
                 },
                 "ref": null,
@@ -1365,7 +1172,6 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Castle Peak",
-                  "selected": false,
                   "value": "Castle Peak",
                 },
                 "ref": null,
@@ -1378,7 +1184,6 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Quandary Peak",
-                  "selected": false,
                   "value": "Quandary Peak",
                 },
                 "ref": null,
@@ -1391,7 +1196,6 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Mt. Evans",
-                  "selected": false,
                   "value": "Mt. Evans",
                 },
                 "ref": null,
@@ -1404,7 +1208,6 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Longs Peak",
-                  "selected": false,
                   "value": "Longs Peak",
                 },
                 "ref": null,
@@ -1417,7 +1220,6 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Mt. Wilson",
-                  "selected": false,
                   "value": "Mt. Wilson",
                 },
                 "ref": null,
@@ -1430,7 +1232,6 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Mt. Shavano",
-                  "selected": false,
                   "value": "Mt. Shavano",
                 },
                 "ref": null,
@@ -1443,7 +1244,6 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Mt. Princeton",
-                  "selected": false,
                   "value": "Mt. Princeton",
                 },
                 "ref": null,
@@ -1456,7 +1256,6 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Mt. Belford",
-                  "selected": false,
                   "value": "Mt. Belford",
                 },
                 "ref": null,
@@ -1469,7 +1268,6 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Crestone Needle",
-                  "selected": false,
                   "value": "Crestone Needle",
                 },
                 "ref": null,
@@ -1482,7 +1280,6 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Mt. Yale",
-                  "selected": false,
                   "value": "Mt. Yale",
                 },
                 "ref": null,
@@ -1495,7 +1292,6 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Mt. Bross",
-                  "selected": false,
                   "value": "Mt. Bross",
                 },
                 "ref": null,
@@ -1508,7 +1304,6 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Kit Carson",
-                  "selected": false,
                   "value": "Kit Carson",
                 },
                 "ref": null,
@@ -1521,7 +1316,6 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Maroon Peak",
-                  "selected": false,
                   "value": "Maroon Peak",
                 },
                 "ref": null,
@@ -1534,7 +1328,6 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Tabeguache Peak",
-                  "selected": false,
                   "value": "Tabeguache Peak",
                 },
                 "ref": null,
@@ -1547,7 +1340,6 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Mt. Oxford",
-                  "selected": false,
                   "value": "Mt. Oxford",
                 },
                 "ref": null,
@@ -1560,7 +1352,6 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Mt. Sneffels",
-                  "selected": false,
                   "value": "Mt. Sneffels",
                 },
                 "ref": null,
@@ -1573,7 +1364,6 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Mt. Democrat",
-                  "selected": false,
                   "value": "Mt. Democrat",
                 },
                 "ref": null,
@@ -1586,7 +1376,6 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Capital Peak",
-                  "selected": false,
                   "value": "Capital Peak",
                 },
                 "ref": null,
@@ -1599,7 +1388,6 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Pikes Peak",
-                  "selected": false,
                   "value": "Pikes Peak",
                 },
                 "ref": null,
@@ -1612,7 +1400,6 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Snowmass Mountain",
-                  "selected": false,
                   "value": "Snowmass Mountain",
                 },
                 "ref": null,
@@ -1625,7 +1412,6 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Windom Peak",
-                  "selected": false,
                   "value": "Windom Peak",
                 },
                 "ref": null,
@@ -1638,7 +1424,6 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Mt. Eolus",
-                  "selected": false,
                   "value": "Mt. Eolus",
                 },
                 "ref": null,
@@ -1651,7 +1436,6 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Challenger Point",
-                  "selected": false,
                   "value": "Challenger Point",
                 },
                 "ref": null,
@@ -1664,7 +1448,6 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Mt. Columbia",
-                  "selected": false,
                   "value": "Mt. Columbia",
                 },
                 "ref": null,
@@ -1677,7 +1460,6 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Missouri Mountain",
-                  "selected": false,
                   "value": "Missouri Mountain",
                 },
                 "ref": null,
@@ -1690,7 +1472,6 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Humboldt Peak",
-                  "selected": false,
                   "value": "Humboldt Peak",
                 },
                 "ref": null,
@@ -1703,7 +1484,6 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Mt. Bierstadt",
-                  "selected": false,
                   "value": "Mt. Bierstadt",
                 },
                 "ref": null,
@@ -1716,7 +1496,6 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Sunlight Peak",
-                  "selected": false,
                   "value": "Sunlight Peak",
                 },
                 "ref": null,
@@ -1729,7 +1508,6 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Handies Peak",
-                  "selected": false,
                   "value": "Handies Peak",
                 },
                 "ref": null,
@@ -1742,7 +1520,6 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Culebra Peak",
-                  "selected": false,
                   "value": "Culebra Peak",
                 },
                 "ref": null,
@@ -1755,7 +1532,6 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Mt. Lindsey",
-                  "selected": false,
                   "value": "Mt. Lindsey",
                 },
                 "ref": null,
@@ -1768,7 +1544,6 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Ellingwood Point",
-                  "selected": false,
                   "value": "Ellingwood Point",
                 },
                 "ref": null,
@@ -1781,7 +1556,6 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Little Bear Peak",
-                  "selected": false,
                   "value": "Little Bear Peak",
                 },
                 "ref": null,
@@ -1794,7 +1568,6 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Mt. Sherman",
-                  "selected": false,
                   "value": "Mt. Sherman",
                 },
                 "ref": null,
@@ -1807,7 +1580,6 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Redcloud Peak",
-                  "selected": false,
                   "value": "Redcloud Peak",
                 },
                 "ref": null,
@@ -1820,7 +1592,6 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Pyramid Peak",
-                  "selected": false,
                   "value": "Pyramid Peak",
                 },
                 "ref": null,
@@ -1833,7 +1604,6 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Wilson Peak",
-                  "selected": false,
                   "value": "Wilson Peak",
                 },
                 "ref": null,
@@ -1846,7 +1616,6 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Wetterhorn Peak",
-                  "selected": false,
                   "value": "Wetterhorn Peak",
                 },
                 "ref": null,
@@ -1859,7 +1628,6 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "San Luis Peak",
-                  "selected": false,
                   "value": "San Luis Peak",
                 },
                 "ref": null,
@@ -1872,7 +1640,6 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Mt. of the Holy Cross",
-                  "selected": false,
                   "value": "Mt. of the Holy Cross",
                 },
                 "ref": null,
@@ -1885,7 +1652,6 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Huron Peak",
-                  "selected": false,
                   "value": "Huron Peak",
                 },
                 "ref": null,
@@ -1898,7 +1664,6 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Sunshine Peak",
-                  "selected": false,
                   "value": "Sunshine Peak",
                 },
                 "ref": null,
@@ -1911,7 +1676,6 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Mt. Cameron",
-                  "selected": false,
                   "value": "Mt. Cameron",
                 },
                 "ref": null,
@@ -1924,7 +1688,6 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "El Diente",
-                  "selected": false,
                   "value": "El Diente",
                 },
                 "ref": null,
@@ -1937,7 +1700,6 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Conundrum Peak",
-                  "selected": false,
                   "value": "Conundrum Peak",
                 },
                 "ref": null,
@@ -1950,7 +1712,6 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "North Eolus",
-                  "selected": false,
                   "value": "North Eolus",
                 },
                 "ref": null,
@@ -1963,7 +1724,6 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "North Maroon",
-                  "selected": false,
                   "value": "North Maroon",
                 },
                 "ref": null,
@@ -1976,7 +1736,6 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Mt. Sanitas",
-                  "selected": false,
                   "value": "Mt. Sanitas",
                 },
                 "ref": null,
@@ -1989,7 +1748,6 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Highlands Ranch High Point",
-                  "selected": false,
                   "value": "Highlands Ranch High Point",
                 },
                 "ref": null,
@@ -2002,7 +1760,6 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Dry Peak",
-                  "selected": false,
                   "value": "Dry Peak",
                 },
                 "ref": null,
@@ -2067,367 +1824,306 @@ ShallowWrapper {
               className="drop-down-menu"
             >
               <option
-                selected={false}
                 value="Mt. Elbert"
               >
                 Mt. Elbert
               </option>
               <option
-                selected={false}
                 value="Mt. Massive"
               >
                 Mt. Massive
               </option>
               <option
-                selected={false}
                 value="Mt. Harvard"
               >
                 Mt. Harvard
               </option>
               <option
-                selected={false}
                 value="Blanca Peak"
               >
                 Blanca Peak
               </option>
               <option
-                selected={false}
                 value="La Plata Peak"
               >
                 La Plata Peak
               </option>
               <option
-                selected={false}
                 value="Uncompahgre Peak"
               >
                 Uncompahgre Peak
               </option>
               <option
-                selected={false}
                 value="Crestone Peak"
               >
                 Crestone Peak
               </option>
               <option
-                selected={false}
                 value="Mt. Lincoln"
               >
                 Mt. Lincoln
               </option>
               <option
-                selected={false}
                 value="Grays Peak"
               >
                 Grays Peak
               </option>
               <option
-                selected={false}
                 value="Mt. Antero"
               >
                 Mt. Antero
               </option>
               <option
-                selected={false}
                 value="Torreys Peak"
               >
                 Torreys Peak
               </option>
               <option
-                selected={false}
                 value="Castle Peak"
               >
                 Castle Peak
               </option>
               <option
-                selected={false}
                 value="Quandary Peak"
               >
                 Quandary Peak
               </option>
               <option
-                selected={false}
                 value="Mt. Evans"
               >
                 Mt. Evans
               </option>
               <option
-                selected={false}
                 value="Longs Peak"
               >
                 Longs Peak
               </option>
               <option
-                selected={false}
                 value="Mt. Wilson"
               >
                 Mt. Wilson
               </option>
               <option
-                selected={false}
                 value="Mt. Shavano"
               >
                 Mt. Shavano
               </option>
               <option
-                selected={false}
                 value="Mt. Princeton"
               >
                 Mt. Princeton
               </option>
               <option
-                selected={false}
                 value="Mt. Belford"
               >
                 Mt. Belford
               </option>
               <option
-                selected={false}
                 value="Crestone Needle"
               >
                 Crestone Needle
               </option>
               <option
-                selected={false}
                 value="Mt. Yale"
               >
                 Mt. Yale
               </option>
               <option
-                selected={false}
                 value="Mt. Bross"
               >
                 Mt. Bross
               </option>
               <option
-                selected={false}
                 value="Kit Carson"
               >
                 Kit Carson
               </option>
               <option
-                selected={false}
                 value="Maroon Peak"
               >
                 Maroon Peak
               </option>
               <option
-                selected={false}
                 value="Tabeguache Peak"
               >
                 Tabeguache Peak
               </option>
               <option
-                selected={false}
                 value="Mt. Oxford"
               >
                 Mt. Oxford
               </option>
               <option
-                selected={false}
                 value="Mt. Sneffels"
               >
                 Mt. Sneffels
               </option>
               <option
-                selected={false}
                 value="Mt. Democrat"
               >
                 Mt. Democrat
               </option>
               <option
-                selected={false}
                 value="Capital Peak"
               >
                 Capital Peak
               </option>
               <option
-                selected={false}
                 value="Pikes Peak"
               >
                 Pikes Peak
               </option>
               <option
-                selected={false}
                 value="Snowmass Mountain"
               >
                 Snowmass Mountain
               </option>
               <option
-                selected={false}
                 value="Windom Peak"
               >
                 Windom Peak
               </option>
               <option
-                selected={false}
                 value="Mt. Eolus"
               >
                 Mt. Eolus
               </option>
               <option
-                selected={false}
                 value="Challenger Point"
               >
                 Challenger Point
               </option>
               <option
-                selected={false}
                 value="Mt. Columbia"
               >
                 Mt. Columbia
               </option>
               <option
-                selected={false}
                 value="Missouri Mountain"
               >
                 Missouri Mountain
               </option>
               <option
-                selected={false}
                 value="Humboldt Peak"
               >
                 Humboldt Peak
               </option>
               <option
-                selected={false}
                 value="Mt. Bierstadt"
               >
                 Mt. Bierstadt
               </option>
               <option
-                selected={false}
                 value="Sunlight Peak"
               >
                 Sunlight Peak
               </option>
               <option
-                selected={false}
                 value="Handies Peak"
               >
                 Handies Peak
               </option>
               <option
-                selected={false}
                 value="Culebra Peak"
               >
                 Culebra Peak
               </option>
               <option
-                selected={false}
                 value="Mt. Lindsey"
               >
                 Mt. Lindsey
               </option>
               <option
-                selected={false}
                 value="Ellingwood Point"
               >
                 Ellingwood Point
               </option>
               <option
-                selected={false}
                 value="Little Bear Peak"
               >
                 Little Bear Peak
               </option>
               <option
-                selected={false}
                 value="Mt. Sherman"
               >
                 Mt. Sherman
               </option>
               <option
-                selected={false}
                 value="Redcloud Peak"
               >
                 Redcloud Peak
               </option>
               <option
-                selected={false}
                 value="Pyramid Peak"
               >
                 Pyramid Peak
               </option>
               <option
-                selected={false}
                 value="Wilson Peak"
               >
                 Wilson Peak
               </option>
               <option
-                selected={false}
                 value="Wetterhorn Peak"
               >
                 Wetterhorn Peak
               </option>
               <option
-                selected={false}
                 value="San Luis Peak"
               >
                 San Luis Peak
               </option>
               <option
-                selected={false}
                 value="Mt. of the Holy Cross"
               >
                 Mt. of the Holy Cross
               </option>
               <option
-                selected={false}
                 value="Huron Peak"
               >
                 Huron Peak
               </option>
               <option
-                selected={false}
                 value="Sunshine Peak"
               >
                 Sunshine Peak
               </option>
               <option
-                selected={false}
                 value="Mt. Cameron"
               >
                 Mt. Cameron
               </option>
               <option
-                selected={false}
                 value="El Diente"
               >
                 El Diente
               </option>
               <option
-                selected={false}
                 value="Conundrum Peak"
               >
                 Conundrum Peak
               </option>
               <option
-                selected={false}
                 value="North Eolus"
               >
                 North Eolus
               </option>
               <option
-                selected={false}
                 value="North Maroon"
               >
                 North Maroon
               </option>
               <option
-                selected={false}
                 value="Mt. Sanitas"
               >
                 Mt. Sanitas
               </option>
               <option
-                selected={false}
                 value="Highlands Ranch High Point"
               >
                 Highlands Ranch High Point
               </option>
               <option
-                selected={false}
                 value="Dry Peak"
               >
                 Dry Peak
@@ -2485,367 +2181,306 @@ ShallowWrapper {
                 className="drop-down-menu"
               >
                 <option
-                  selected={false}
                   value="Mt. Elbert"
                 >
                   Mt. Elbert
                 </option>
                 <option
-                  selected={false}
                   value="Mt. Massive"
                 >
                   Mt. Massive
                 </option>
                 <option
-                  selected={false}
                   value="Mt. Harvard"
                 >
                   Mt. Harvard
                 </option>
                 <option
-                  selected={false}
                   value="Blanca Peak"
                 >
                   Blanca Peak
                 </option>
                 <option
-                  selected={false}
                   value="La Plata Peak"
                 >
                   La Plata Peak
                 </option>
                 <option
-                  selected={false}
                   value="Uncompahgre Peak"
                 >
                   Uncompahgre Peak
                 </option>
                 <option
-                  selected={false}
                   value="Crestone Peak"
                 >
                   Crestone Peak
                 </option>
                 <option
-                  selected={false}
                   value="Mt. Lincoln"
                 >
                   Mt. Lincoln
                 </option>
                 <option
-                  selected={false}
                   value="Grays Peak"
                 >
                   Grays Peak
                 </option>
                 <option
-                  selected={false}
                   value="Mt. Antero"
                 >
                   Mt. Antero
                 </option>
                 <option
-                  selected={false}
                   value="Torreys Peak"
                 >
                   Torreys Peak
                 </option>
                 <option
-                  selected={false}
                   value="Castle Peak"
                 >
                   Castle Peak
                 </option>
                 <option
-                  selected={false}
                   value="Quandary Peak"
                 >
                   Quandary Peak
                 </option>
                 <option
-                  selected={false}
                   value="Mt. Evans"
                 >
                   Mt. Evans
                 </option>
                 <option
-                  selected={false}
                   value="Longs Peak"
                 >
                   Longs Peak
                 </option>
                 <option
-                  selected={false}
                   value="Mt. Wilson"
                 >
                   Mt. Wilson
                 </option>
                 <option
-                  selected={false}
                   value="Mt. Shavano"
                 >
                   Mt. Shavano
                 </option>
                 <option
-                  selected={false}
                   value="Mt. Princeton"
                 >
                   Mt. Princeton
                 </option>
                 <option
-                  selected={false}
                   value="Mt. Belford"
                 >
                   Mt. Belford
                 </option>
                 <option
-                  selected={false}
                   value="Crestone Needle"
                 >
                   Crestone Needle
                 </option>
                 <option
-                  selected={false}
                   value="Mt. Yale"
                 >
                   Mt. Yale
                 </option>
                 <option
-                  selected={false}
                   value="Mt. Bross"
                 >
                   Mt. Bross
                 </option>
                 <option
-                  selected={false}
                   value="Kit Carson"
                 >
                   Kit Carson
                 </option>
                 <option
-                  selected={false}
                   value="Maroon Peak"
                 >
                   Maroon Peak
                 </option>
                 <option
-                  selected={false}
                   value="Tabeguache Peak"
                 >
                   Tabeguache Peak
                 </option>
                 <option
-                  selected={false}
                   value="Mt. Oxford"
                 >
                   Mt. Oxford
                 </option>
                 <option
-                  selected={false}
                   value="Mt. Sneffels"
                 >
                   Mt. Sneffels
                 </option>
                 <option
-                  selected={false}
                   value="Mt. Democrat"
                 >
                   Mt. Democrat
                 </option>
                 <option
-                  selected={false}
                   value="Capital Peak"
                 >
                   Capital Peak
                 </option>
                 <option
-                  selected={false}
                   value="Pikes Peak"
                 >
                   Pikes Peak
                 </option>
                 <option
-                  selected={false}
                   value="Snowmass Mountain"
                 >
                   Snowmass Mountain
                 </option>
                 <option
-                  selected={false}
                   value="Windom Peak"
                 >
                   Windom Peak
                 </option>
                 <option
-                  selected={false}
                   value="Mt. Eolus"
                 >
                   Mt. Eolus
                 </option>
                 <option
-                  selected={false}
                   value="Challenger Point"
                 >
                   Challenger Point
                 </option>
                 <option
-                  selected={false}
                   value="Mt. Columbia"
                 >
                   Mt. Columbia
                 </option>
                 <option
-                  selected={false}
                   value="Missouri Mountain"
                 >
                   Missouri Mountain
                 </option>
                 <option
-                  selected={false}
                   value="Humboldt Peak"
                 >
                   Humboldt Peak
                 </option>
                 <option
-                  selected={false}
                   value="Mt. Bierstadt"
                 >
                   Mt. Bierstadt
                 </option>
                 <option
-                  selected={false}
                   value="Sunlight Peak"
                 >
                   Sunlight Peak
                 </option>
                 <option
-                  selected={false}
                   value="Handies Peak"
                 >
                   Handies Peak
                 </option>
                 <option
-                  selected={false}
                   value="Culebra Peak"
                 >
                   Culebra Peak
                 </option>
                 <option
-                  selected={false}
                   value="Mt. Lindsey"
                 >
                   Mt. Lindsey
                 </option>
                 <option
-                  selected={false}
                   value="Ellingwood Point"
                 >
                   Ellingwood Point
                 </option>
                 <option
-                  selected={false}
                   value="Little Bear Peak"
                 >
                   Little Bear Peak
                 </option>
                 <option
-                  selected={false}
                   value="Mt. Sherman"
                 >
                   Mt. Sherman
                 </option>
                 <option
-                  selected={false}
                   value="Redcloud Peak"
                 >
                   Redcloud Peak
                 </option>
                 <option
-                  selected={false}
                   value="Pyramid Peak"
                 >
                   Pyramid Peak
                 </option>
                 <option
-                  selected={false}
                   value="Wilson Peak"
                 >
                   Wilson Peak
                 </option>
                 <option
-                  selected={false}
                   value="Wetterhorn Peak"
                 >
                   Wetterhorn Peak
                 </option>
                 <option
-                  selected={false}
                   value="San Luis Peak"
                 >
                   San Luis Peak
                 </option>
                 <option
-                  selected={false}
                   value="Mt. of the Holy Cross"
                 >
                   Mt. of the Holy Cross
                 </option>
                 <option
-                  selected={false}
                   value="Huron Peak"
                 >
                   Huron Peak
                 </option>
                 <option
-                  selected={false}
                   value="Sunshine Peak"
                 >
                   Sunshine Peak
                 </option>
                 <option
-                  selected={false}
                   value="Mt. Cameron"
                 >
                   Mt. Cameron
                 </option>
                 <option
-                  selected={false}
                   value="El Diente"
                 >
                   El Diente
                 </option>
                 <option
-                  selected={false}
                   value="Conundrum Peak"
                 >
                   Conundrum Peak
                 </option>
                 <option
-                  selected={false}
                   value="North Eolus"
                 >
                   North Eolus
                 </option>
                 <option
-                  selected={false}
                   value="North Maroon"
                 >
                   North Maroon
                 </option>
                 <option
-                  selected={false}
                   value="Mt. Sanitas"
                 >
                   Mt. Sanitas
                 </option>
                 <option
-                  selected={false}
                   value="Highlands Ranch High Point"
                 >
                   Highlands Ranch High Point
                 </option>
                 <option
-                  selected={false}
                   value="Dry Peak"
                 >
                   Dry Peak
@@ -2869,373 +2504,313 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   <option
-                    selected={false}
                     value="Mt. Elbert"
                   >
                     Mt. Elbert
                   </option>,
                   <option
-                    selected={false}
                     value="Mt. Massive"
                   >
                     Mt. Massive
                   </option>,
                   <option
-                    selected={false}
                     value="Mt. Harvard"
                   >
                     Mt. Harvard
                   </option>,
                   <option
-                    selected={false}
                     value="Blanca Peak"
                   >
                     Blanca Peak
                   </option>,
                   <option
-                    selected={false}
                     value="La Plata Peak"
                   >
                     La Plata Peak
                   </option>,
                   <option
-                    selected={false}
                     value="Uncompahgre Peak"
                   >
                     Uncompahgre Peak
                   </option>,
                   <option
-                    selected={false}
                     value="Crestone Peak"
                   >
                     Crestone Peak
                   </option>,
                   <option
-                    selected={false}
                     value="Mt. Lincoln"
                   >
                     Mt. Lincoln
                   </option>,
                   <option
-                    selected={false}
                     value="Grays Peak"
                   >
                     Grays Peak
                   </option>,
                   <option
-                    selected={false}
                     value="Mt. Antero"
                   >
                     Mt. Antero
                   </option>,
                   <option
-                    selected={false}
                     value="Torreys Peak"
                   >
                     Torreys Peak
                   </option>,
                   <option
-                    selected={false}
                     value="Castle Peak"
                   >
                     Castle Peak
                   </option>,
                   <option
-                    selected={false}
                     value="Quandary Peak"
                   >
                     Quandary Peak
                   </option>,
                   <option
-                    selected={false}
                     value="Mt. Evans"
                   >
                     Mt. Evans
                   </option>,
                   <option
-                    selected={false}
                     value="Longs Peak"
                   >
                     Longs Peak
                   </option>,
                   <option
-                    selected={false}
                     value="Mt. Wilson"
                   >
                     Mt. Wilson
                   </option>,
                   <option
-                    selected={false}
                     value="Mt. Shavano"
                   >
                     Mt. Shavano
                   </option>,
                   <option
-                    selected={false}
                     value="Mt. Princeton"
                   >
                     Mt. Princeton
                   </option>,
                   <option
-                    selected={false}
                     value="Mt. Belford"
                   >
                     Mt. Belford
                   </option>,
                   <option
-                    selected={false}
                     value="Crestone Needle"
                   >
                     Crestone Needle
                   </option>,
                   <option
-                    selected={false}
                     value="Mt. Yale"
                   >
                     Mt. Yale
                   </option>,
                   <option
-                    selected={false}
                     value="Mt. Bross"
                   >
                     Mt. Bross
                   </option>,
                   <option
-                    selected={false}
                     value="Kit Carson"
                   >
                     Kit Carson
                   </option>,
                   <option
-                    selected={false}
                     value="Maroon Peak"
                   >
                     Maroon Peak
                   </option>,
                   <option
-                    selected={false}
                     value="Tabeguache Peak"
                   >
                     Tabeguache Peak
                   </option>,
                   <option
-                    selected={false}
                     value="Mt. Oxford"
                   >
                     Mt. Oxford
                   </option>,
                   <option
-                    selected={false}
                     value="Mt. Sneffels"
                   >
                     Mt. Sneffels
                   </option>,
                   <option
-                    selected={false}
                     value="Mt. Democrat"
                   >
                     Mt. Democrat
                   </option>,
                   <option
-                    selected={false}
                     value="Capital Peak"
                   >
                     Capital Peak
                   </option>,
                   <option
-                    selected={false}
                     value="Pikes Peak"
                   >
                     Pikes Peak
                   </option>,
                   <option
-                    selected={false}
                     value="Snowmass Mountain"
                   >
                     Snowmass Mountain
                   </option>,
                   <option
-                    selected={false}
                     value="Windom Peak"
                   >
                     Windom Peak
                   </option>,
                   <option
-                    selected={false}
                     value="Mt. Eolus"
                   >
                     Mt. Eolus
                   </option>,
                   <option
-                    selected={false}
                     value="Challenger Point"
                   >
                     Challenger Point
                   </option>,
                   <option
-                    selected={false}
                     value="Mt. Columbia"
                   >
                     Mt. Columbia
                   </option>,
                   <option
-                    selected={false}
                     value="Missouri Mountain"
                   >
                     Missouri Mountain
                   </option>,
                   <option
-                    selected={false}
                     value="Humboldt Peak"
                   >
                     Humboldt Peak
                   </option>,
                   <option
-                    selected={false}
                     value="Mt. Bierstadt"
                   >
                     Mt. Bierstadt
                   </option>,
                   <option
-                    selected={false}
                     value="Sunlight Peak"
                   >
                     Sunlight Peak
                   </option>,
                   <option
-                    selected={false}
                     value="Handies Peak"
                   >
                     Handies Peak
                   </option>,
                   <option
-                    selected={false}
                     value="Culebra Peak"
                   >
                     Culebra Peak
                   </option>,
                   <option
-                    selected={false}
                     value="Mt. Lindsey"
                   >
                     Mt. Lindsey
                   </option>,
                   <option
-                    selected={false}
                     value="Ellingwood Point"
                   >
                     Ellingwood Point
                   </option>,
                   <option
-                    selected={false}
                     value="Little Bear Peak"
                   >
                     Little Bear Peak
                   </option>,
                   <option
-                    selected={false}
                     value="Mt. Sherman"
                   >
                     Mt. Sherman
                   </option>,
                   <option
-                    selected={false}
                     value="Redcloud Peak"
                   >
                     Redcloud Peak
                   </option>,
                   <option
-                    selected={false}
                     value="Pyramid Peak"
                   >
                     Pyramid Peak
                   </option>,
                   <option
-                    selected={false}
                     value="Wilson Peak"
                   >
                     Wilson Peak
                   </option>,
                   <option
-                    selected={false}
                     value="Wetterhorn Peak"
                   >
                     Wetterhorn Peak
                   </option>,
                   <option
-                    selected={false}
                     value="San Luis Peak"
                   >
                     San Luis Peak
                   </option>,
                   <option
-                    selected={false}
                     value="Mt. of the Holy Cross"
                   >
                     Mt. of the Holy Cross
                   </option>,
                   <option
-                    selected={false}
                     value="Huron Peak"
                   >
                     Huron Peak
                   </option>,
                   <option
-                    selected={false}
                     value="Sunshine Peak"
                   >
                     Sunshine Peak
                   </option>,
                   <option
-                    selected={false}
                     value="Mt. Cameron"
                   >
                     Mt. Cameron
                   </option>,
                   <option
-                    selected={false}
                     value="El Diente"
                   >
                     El Diente
                   </option>,
                   <option
-                    selected={false}
                     value="Conundrum Peak"
                   >
                     Conundrum Peak
                   </option>,
                   <option
-                    selected={false}
                     value="North Eolus"
                   >
                     North Eolus
                   </option>,
                   <option
-                    selected={false}
                     value="North Maroon"
                   >
                     North Maroon
                   </option>,
                   <option
-                    selected={false}
                     value="Mt. Sanitas"
                   >
                     Mt. Sanitas
                   </option>,
                   <option
-                    selected={false}
                     value="Highlands Ranch High Point"
                   >
                     Highlands Ranch High Point
                   </option>,
                   <option
-                    selected={false}
                     value="Dry Peak"
                   >
                     Dry Peak
                   </option>,
                 ],
                 "className": "drop-down-menu",
+                "defaultValue": undefined,
               },
               "ref": [Function],
               "rendered": Array [
@@ -3245,7 +2820,6 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Mt. Elbert",
-                    "selected": false,
                     "value": "Mt. Elbert",
                   },
                   "ref": null,
@@ -3258,7 +2832,6 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Mt. Massive",
-                    "selected": false,
                     "value": "Mt. Massive",
                   },
                   "ref": null,
@@ -3271,7 +2844,6 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Mt. Harvard",
-                    "selected": false,
                     "value": "Mt. Harvard",
                   },
                   "ref": null,
@@ -3284,7 +2856,6 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Blanca Peak",
-                    "selected": false,
                     "value": "Blanca Peak",
                   },
                   "ref": null,
@@ -3297,7 +2868,6 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "La Plata Peak",
-                    "selected": false,
                     "value": "La Plata Peak",
                   },
                   "ref": null,
@@ -3310,7 +2880,6 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Uncompahgre Peak",
-                    "selected": false,
                     "value": "Uncompahgre Peak",
                   },
                   "ref": null,
@@ -3323,7 +2892,6 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Crestone Peak",
-                    "selected": false,
                     "value": "Crestone Peak",
                   },
                   "ref": null,
@@ -3336,7 +2904,6 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Mt. Lincoln",
-                    "selected": false,
                     "value": "Mt. Lincoln",
                   },
                   "ref": null,
@@ -3349,7 +2916,6 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Grays Peak",
-                    "selected": false,
                     "value": "Grays Peak",
                   },
                   "ref": null,
@@ -3362,7 +2928,6 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Mt. Antero",
-                    "selected": false,
                     "value": "Mt. Antero",
                   },
                   "ref": null,
@@ -3375,7 +2940,6 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Torreys Peak",
-                    "selected": false,
                     "value": "Torreys Peak",
                   },
                   "ref": null,
@@ -3388,7 +2952,6 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Castle Peak",
-                    "selected": false,
                     "value": "Castle Peak",
                   },
                   "ref": null,
@@ -3401,7 +2964,6 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Quandary Peak",
-                    "selected": false,
                     "value": "Quandary Peak",
                   },
                   "ref": null,
@@ -3414,7 +2976,6 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Mt. Evans",
-                    "selected": false,
                     "value": "Mt. Evans",
                   },
                   "ref": null,
@@ -3427,7 +2988,6 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Longs Peak",
-                    "selected": false,
                     "value": "Longs Peak",
                   },
                   "ref": null,
@@ -3440,7 +3000,6 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Mt. Wilson",
-                    "selected": false,
                     "value": "Mt. Wilson",
                   },
                   "ref": null,
@@ -3453,7 +3012,6 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Mt. Shavano",
-                    "selected": false,
                     "value": "Mt. Shavano",
                   },
                   "ref": null,
@@ -3466,7 +3024,6 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Mt. Princeton",
-                    "selected": false,
                     "value": "Mt. Princeton",
                   },
                   "ref": null,
@@ -3479,7 +3036,6 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Mt. Belford",
-                    "selected": false,
                     "value": "Mt. Belford",
                   },
                   "ref": null,
@@ -3492,7 +3048,6 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Crestone Needle",
-                    "selected": false,
                     "value": "Crestone Needle",
                   },
                   "ref": null,
@@ -3505,7 +3060,6 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Mt. Yale",
-                    "selected": false,
                     "value": "Mt. Yale",
                   },
                   "ref": null,
@@ -3518,7 +3072,6 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Mt. Bross",
-                    "selected": false,
                     "value": "Mt. Bross",
                   },
                   "ref": null,
@@ -3531,7 +3084,6 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Kit Carson",
-                    "selected": false,
                     "value": "Kit Carson",
                   },
                   "ref": null,
@@ -3544,7 +3096,6 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Maroon Peak",
-                    "selected": false,
                     "value": "Maroon Peak",
                   },
                   "ref": null,
@@ -3557,7 +3108,6 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Tabeguache Peak",
-                    "selected": false,
                     "value": "Tabeguache Peak",
                   },
                   "ref": null,
@@ -3570,7 +3120,6 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Mt. Oxford",
-                    "selected": false,
                     "value": "Mt. Oxford",
                   },
                   "ref": null,
@@ -3583,7 +3132,6 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Mt. Sneffels",
-                    "selected": false,
                     "value": "Mt. Sneffels",
                   },
                   "ref": null,
@@ -3596,7 +3144,6 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Mt. Democrat",
-                    "selected": false,
                     "value": "Mt. Democrat",
                   },
                   "ref": null,
@@ -3609,7 +3156,6 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Capital Peak",
-                    "selected": false,
                     "value": "Capital Peak",
                   },
                   "ref": null,
@@ -3622,7 +3168,6 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Pikes Peak",
-                    "selected": false,
                     "value": "Pikes Peak",
                   },
                   "ref": null,
@@ -3635,7 +3180,6 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Snowmass Mountain",
-                    "selected": false,
                     "value": "Snowmass Mountain",
                   },
                   "ref": null,
@@ -3648,7 +3192,6 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Windom Peak",
-                    "selected": false,
                     "value": "Windom Peak",
                   },
                   "ref": null,
@@ -3661,7 +3204,6 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Mt. Eolus",
-                    "selected": false,
                     "value": "Mt. Eolus",
                   },
                   "ref": null,
@@ -3674,7 +3216,6 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Challenger Point",
-                    "selected": false,
                     "value": "Challenger Point",
                   },
                   "ref": null,
@@ -3687,7 +3228,6 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Mt. Columbia",
-                    "selected": false,
                     "value": "Mt. Columbia",
                   },
                   "ref": null,
@@ -3700,7 +3240,6 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Missouri Mountain",
-                    "selected": false,
                     "value": "Missouri Mountain",
                   },
                   "ref": null,
@@ -3713,7 +3252,6 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Humboldt Peak",
-                    "selected": false,
                     "value": "Humboldt Peak",
                   },
                   "ref": null,
@@ -3726,7 +3264,6 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Mt. Bierstadt",
-                    "selected": false,
                     "value": "Mt. Bierstadt",
                   },
                   "ref": null,
@@ -3739,7 +3276,6 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Sunlight Peak",
-                    "selected": false,
                     "value": "Sunlight Peak",
                   },
                   "ref": null,
@@ -3752,7 +3288,6 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Handies Peak",
-                    "selected": false,
                     "value": "Handies Peak",
                   },
                   "ref": null,
@@ -3765,7 +3300,6 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Culebra Peak",
-                    "selected": false,
                     "value": "Culebra Peak",
                   },
                   "ref": null,
@@ -3778,7 +3312,6 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Mt. Lindsey",
-                    "selected": false,
                     "value": "Mt. Lindsey",
                   },
                   "ref": null,
@@ -3791,7 +3324,6 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Ellingwood Point",
-                    "selected": false,
                     "value": "Ellingwood Point",
                   },
                   "ref": null,
@@ -3804,7 +3336,6 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Little Bear Peak",
-                    "selected": false,
                     "value": "Little Bear Peak",
                   },
                   "ref": null,
@@ -3817,7 +3348,6 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Mt. Sherman",
-                    "selected": false,
                     "value": "Mt. Sherman",
                   },
                   "ref": null,
@@ -3830,7 +3360,6 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Redcloud Peak",
-                    "selected": false,
                     "value": "Redcloud Peak",
                   },
                   "ref": null,
@@ -3843,7 +3372,6 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Pyramid Peak",
-                    "selected": false,
                     "value": "Pyramid Peak",
                   },
                   "ref": null,
@@ -3856,7 +3384,6 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Wilson Peak",
-                    "selected": false,
                     "value": "Wilson Peak",
                   },
                   "ref": null,
@@ -3869,7 +3396,6 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Wetterhorn Peak",
-                    "selected": false,
                     "value": "Wetterhorn Peak",
                   },
                   "ref": null,
@@ -3882,7 +3408,6 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "San Luis Peak",
-                    "selected": false,
                     "value": "San Luis Peak",
                   },
                   "ref": null,
@@ -3895,7 +3420,6 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Mt. of the Holy Cross",
-                    "selected": false,
                     "value": "Mt. of the Holy Cross",
                   },
                   "ref": null,
@@ -3908,7 +3432,6 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Huron Peak",
-                    "selected": false,
                     "value": "Huron Peak",
                   },
                   "ref": null,
@@ -3921,7 +3444,6 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Sunshine Peak",
-                    "selected": false,
                     "value": "Sunshine Peak",
                   },
                   "ref": null,
@@ -3934,7 +3456,6 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Mt. Cameron",
-                    "selected": false,
                     "value": "Mt. Cameron",
                   },
                   "ref": null,
@@ -3947,7 +3468,6 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "El Diente",
-                    "selected": false,
                     "value": "El Diente",
                   },
                   "ref": null,
@@ -3960,7 +3480,6 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Conundrum Peak",
-                    "selected": false,
                     "value": "Conundrum Peak",
                   },
                   "ref": null,
@@ -3973,7 +3492,6 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "North Eolus",
-                    "selected": false,
                     "value": "North Eolus",
                   },
                   "ref": null,
@@ -3986,7 +3504,6 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "North Maroon",
-                    "selected": false,
                     "value": "North Maroon",
                   },
                   "ref": null,
@@ -3999,7 +3516,6 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Mt. Sanitas",
-                    "selected": false,
                     "value": "Mt. Sanitas",
                   },
                   "ref": null,
@@ -4012,7 +3528,6 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Highlands Ranch High Point",
-                    "selected": false,
                     "value": "Highlands Ranch High Point",
                   },
                   "ref": null,
@@ -4025,7 +3540,6 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Dry Peak",
-                    "selected": false,
                     "value": "Dry Peak",
                   },
                   "ref": null,

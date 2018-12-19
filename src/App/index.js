@@ -22,7 +22,7 @@ class App extends Component {
   };
 
   handleSelectButton = async currentMountain => {
-    const currentMountainData = await apiCalls.getMountain();
+    let currentMountainData = await apiCalls.getMountain();
 
     await this.setState({
       currentMountain,

@@ -1,1517 +1,431 @@
-export const mountainData = [
-  "Mt. Elbert",
-  "Mt. Massive",
-  "Mt. Harvard",
-  "Blanca Peak",
-  "La Plata Peak",
-  "Uncompahgre Peak",
-  "Crestone Peak",
-  "Mt. Lincoln",
-  "Castle Peak",
-  "Grays Peak",
-  "Mt. Antero",
-  "Torreys Peak",
-  "Quandary Peak",
-  "Mt. Evans",
-  "Longs Peak",
-  "Mt. Wilson",
-  "Mt. Cameron",
-  "Mt. Shavano",
-  "Mt. Princeton",
-  "Mt. Belford",
-  "Mt. Yale",
-  "Crestone Needle",
-  "Mt. Bross",
-  "Kit Carson Peak",
-  "Maroon Peak",
-  "Tabeguache Mtn.",
-  "Mt. Oxford",
-  "El Diente Peak",
-  "Mt. Democrat",
-  "Mt.Sneffels",
-  "Capitol Peak",
-  "Pikes Peak",
-  "Snowmass Mountain",
-  "Windom Peak",
-  "Mt. Eolus",
-  "Challenger Point",
-  "Mt. Columbia",
-  "Missouri Mountain",
-  "Humbolt Peak",
-  "Mt. Bierstadt",
-  "Conundrum Peak",
-  "Sunlight Peak",
-  "Heandies Peak",
-  "Culebra Peak",
-  "Mt. Lindsey",
-  "Ellingwood Point",
-  "North Eolus",
-  "Little Bear Peak",
-  "Mt. Sherman",
-  "Redcloud peak",
-  "Pyramid Peak",
-  "Wilson peak",
-  "Wetterhorn Peak",
-  "San Luis peak",
-  "North maroon Peak",
-  "Mt. of the Holy Cross",
-  "Huron Peak",
-  "Sunshine peak"
-];
-
-export const fourteeners = {
-  frontRange: {
-    numberOfPeaks: 6,
-    highestPeak: "Gray's Peak",
-    peaks: {
-      graysPeak: {
-        elevation: 14270,
-        rank: 9,
-        forest: "Arapaho",
-        grizzlyBears: false,
-        marmots: true,
-        jerryLevel: "critical",
-        numberOfRoutes: 4,
-        routes: {
-          northSlopes: {
-            mileage: 8,
-            gain: 3000,
-            difficulty: "class 1",
-            exposure: 1
-          },
-          southRidge: {
-            mileage: 7,
-            gain: 3250,
-            difficulty: "class 2",
-            exposure: 2
-          },
-          lostRatCouloir: {
-            mileage: 6.5,
-            gain: 3000,
-            difficulty: "class 3",
-            exposure: 3
-          },
-          southWestRidge: {
-            mileage: 10.25,
-            gain: 3800,
-            difficulty: "class 2",
-            exposure: 1
-          }
-        }
-      },
-      torreysPeak: {
-        elevation: 14267,
-        rank: 11,
-        forest: "Arapaho",
-        grizzlyBears: false,
-        marmots: true,
-        jerryLevel: "critical",
-        numberOfRoutes: 6,
-        routes: {
-          southSlopes: {
-            mileage: 8,
-            gain: 3000,
-            difficulty: "class 2",
-            exposure: 1
-          },
-          kelsoRidge: {
-            mileage: 6.75,
-            gain: 3100,
-            difficulty: "class 3",
-            exposure: 4
-          },
-          deadDogCouloir: {
-            mileage: 6.5,
-            gain: 3000,
-            difficulty: "class 3",
-            exposure: 3
-          },
-          tuningFork: {
-            mileage: 10.5,
-            gain: 4500,
-            difficulty: "class 2+",
-            exposure: 2
-          },
-          emperorCouloir: {
-            mileage: 9.5,
-            gain: 4500,
-            difficulty: "class 3",
-            exposure: 3
-          },
-          westRidge: {
-            mileage: 10,
-            gain: 5500,
-            difficulty: "class 2",
-            exposure: 2
-          }
-        }
-      },
-      longsPeak: {
-        elevation: 14255,
-        rank: 15,
-        forest: "Rocky Mountain National Park",
-        grizzlyBears: false,
-        marmots: true,
-        jerryLevel: "extreme",
-        numberOfRoutes: 3,
-        routes: {
-          keyhole: {
-            mileage: 14.5,
-            gain: 5100,
-            difficulty: "class 3",
-            exposure: 4
-          },
-          loft: {
-            mileage: 13,
-            gain: 5300,
-            difficulty: "class 3",
-            exposure: 4
-          },
-          keplingersCouloir: {
-            mileage: 16,
-            gain: 5900,
-            difficulty: "class 3",
-            exposure: 4
-          }
-        }
-      },
-      mountEvans: {
-        elevation: 14262,
-        rank: 14,
-        forest: "Arapaho",
-        grizzlyBears: false,
-        marmots: true,
-        jerryLevel: "critical",
-        numberOfRoutes: 4,
-        routes: {
-          westRidge: {
-            mileage: 17,
-            gain: 5600,
-            difficulty: "class 2",
-            exposure: 2
-          },
-          northeastFace: {
-            mileage: 3.5,
-            gain: 1475,
-            difficulty: "class 2",
-            exposure: 1
-          },
-          northFace: {
-            mileage: 2,
-            gain: 1500,
-            difficulty: "class 3",
-            exposure: 4
-          }
-        }
-      },
-      mountBierstadt: {
-        elevation: 14060,
-        rank: 38,
-        forest: "Arapaho",
-        grizzlyBears: false,
-        marmots: true,
-        jerryLevel: "critical",
-        numberOfRoutes: 2,
-        routes: {
-          westSlopes: {
-            mileage: 7,
-            gain: 2850,
-            difficulty: "class 2",
-            exposure: 1
-          },
-          eastRidge: {
-            mileage: 5,
-            gain: 3000,
-            difficulty: "class 3",
-            exposure: 4
-          }
-        }
-      },
-      pikesPeak: {
-        elevation: 14100,
-        rank: 30,
-        forest: "Pike",
-        grizzlyBears: false,
-        marmots: true,
-        jerryLevel: "extreme",
-        numberOfRoutes: 2,
-        routes: {
-          eastSlopes: {
-            mileage: 26,
-            gain: 7500,
-            difficulty: "class 1",
-            exposure: 0
-          },
-          northwestSlopes: {
-            mileage: 14,
-            gain: 4300,
-            difficulty: "class 2",
-            exposure: 1
-          }
-        }
-      }
+export const mountainData = {
+  data: [
+    {
+      name: "Mt. Elbert",
+      altitude: 14433,
+      summit: "39.118075,-106.445417",
+      difficulty: "Blue",
+      range: "Sawatch"
+    },
+    {
+      name: "Mt. Massive",
+      altitude: 14421,
+      summit: "39.187298,-106.475548",
+      difficulty: "Blue",
+      range: "Sawatch"
+    },
+    {
+      name: "Mt. Harvard",
+      altitude: 14420,
+      summit: "38.924328,-106.320618",
+      difficulty: "Blue",
+      range: "Sawatch"
+    },
+    {
+      name: "Blanca Peak",
+      altitude: 14345,
+      summit: "37.577473,-105.485443",
+      difficulty: "Black",
+      range: "Sangre de Cristo"
+    },
+    {
+      name: "La Plata Peak",
+      altitude: 14336,
+      summit: "39.029251,-106.473145",
+      difficulty: "Blue",
+      range: "Sawatch"
+    },
+    {
+      name: "Uncompahgre Peak",
+      altitude: 14309,
+      summit: "38.071507,-107.462166",
+      difficulty: "Blue",
+      range: "San Juan"
+    },
+    {
+      name: "Crestone Peak",
+      altitude: 14294,
+      summit: "37.966972,-105.585304",
+      difficulty: "Black",
+      range: "Sangre de Cristo"
+    },
+    {
+      name: "Mt. Lincoln",
+      altitude: 14286,
+      summit: "39.351391,-106.111404",
+      difficulty: "Green",
+      range: "Mosquito"
+    },
+    {
+      name: "Grays Peak",
+      altitude: 14270,
+      summit: "39.633820,-105.817520",
+      difficulty: "Green",
+      range: "Front"
+    },
+    {
+      name: "Mt. Antero",
+      altitude: 14269,
+      summit: "38.674088,-106.246201",
+      difficulty: "Green",
+      range: "Sawatch"
+    },
+    {
+      name: "Torreys Peak",
+      altitude: 14267,
+      summit: "39.642742,-105.821259",
+      difficulty: "Green",
+      range: "Front"
+    },
+    {
+      name: "Castle Peak",
+      altitude: 14265,
+      summit: "39.009647,-106.86144",
+      difficulty: "Blue",
+      range: "Elk"
+    },
+    {
+      name: "Quandary Peak",
+      altitude: 14265,
+      summit: "39.397236,-106.106430",
+      difficulty: "Green",
+      range: "Tenmile"
+    },
+    {
+      name: "Mt. Evans",
+      altitude: 14264,
+      summit: "39.588360,-105.643333",
+      difficulty: "Blue",
+      range: "Front"
+    },
+    {
+      name: "Longs Peak",
+      altitude: 14255,
+      summit: "40.254902,-105.615738",
+      difficulty: "Double Black",
+      range: "Front"
+    },
+    {
+      name: "Mt. Wilson",
+      altitude: 14246,
+      summit: "37.839310,-107.991570",
+      difficulty: "Black",
+      range: "San Juan"
+    },
+    {
+      name: "Mt. Shavano",
+      altitude: 14229,
+      summit: "38.619083,-106.239296",
+      difficulty: "Green",
+      range: "Sawatch"
+    },
+    {
+      name: "Mt. Princeton",
+      altitude: 14197,
+      summit: "38.749062,-106.242432",
+      difficulty: "Green",
+      range: "Sawatch"
+    },
+    {
+      name: "Mt. Belford",
+      altitude: 14197,
+      summit: "38.960575,-106.360832",
+      difficulty: "Blue",
+      range: "Sawatch"
+    },
+    {
+      name: "Crestone Needle",
+      altitude: 14197,
+      summit: "37.964737,-105.576683",
+      difficulty: "Black",
+      range: "Sangre de Cristo"
+    },
+    {
+      name: "Mt. Yale",
+      altitude: 14196,
+      summit: "38.844051,-106.313965",
+      difficulty: "Blue",
+      range: "Sawatch"
+    },
+    {
+      name: "Mt. Bross",
+      altitude: 14172,
+      summit: "39.335060,-106.107376",
+      difficulty: "Green",
+      range: "Mosquito"
+    },
+    {
+      name: "Kit Carson",
+      altitude: 14165,
+      summit: "37.979759,-105.602562",
+      difficulty: "Blue",
+      range: "Sangre de Cristo"
+    },
+    {
+      name: "Maroon Peak",
+      altitude: 14156,
+      summit: "39.070713,-106.989113",
+      difficulty: "Double Black",
+      range: "Elk"
+    },
+    {
+      name: "Tabeguache Peak",
+      altitude: 14155,
+      summit: "38.625622,-106.250710",
+      difficulty: "Blue",
+      range: "Sawatch"
+    },
+    {
+      name: "Mt. Oxford",
+      altitude: 14153,
+      summit: "38.964680,-106.338432",
+      difficulty: "Blue",
+      range: "Sawatch"
+    },
+    {
+      name: "Mt. Sneffels",
+      altitude: 14150,
+      summit: "38.003605,-107.792229",
+      difficulty: "Black",
+      range: "San Juan"
+    },
+    {
+      name: "Mt. Democrat",
+      altitude: 14148,
+      summit: "39.339542,-106.139946",
+      difficulty: "Green",
+      range: "Mosquito"
+    },
+    {
+      name: "Capital Peak",
+      altitude: 14130,
+      summit: "39.150166,-107.083221",
+      difficulty: "Double Black",
+      range: "Elk"
+    },
+    {
+      name: "Pikes Peak",
+      altitude: 14110,
+      summit: "38.840542,-105.044357",
+      difficulty: "Blue",
+      range: "Front"
+    },
+    {
+      name: "Snowmass Mountain",
+      altitude: 14092,
+      summit: "39.118809,-107.066528",
+      difficulty: "Black",
+      range: "Elk"
+    },
+    {
+      name: "Windom Peak",
+      altitude: 14087,
+      summit: "37.621235,-107.591774",
+      difficulty: "Black",
+      range: "San Juan"
+    },
+    {
+      name: "Mt. Eolus",
+      altitude: 14083,
+      summit: "37.621948,-107.622498",
+      difficulty: "Black",
+      range: "San Juan"
+    },
+    {
+      name: "Challenger Point",
+      altitude: 14081,
+      summit: "37.980267,-105.606766",
+      difficulty: "Blue",
+      range: "Sangre de Cristo"
+    },
+    {
+      name: "Mt. Columbia",
+      altitude: 14073,
+      summit: "38.903957,-106.297485",
+      difficulty: "Blue",
+      range: "Sawatch"
+    },
+    {
+      name: "Missouri Mountain",
+      altitude: 14067,
+      summit: "38.947559,-106.378471",
+      difficulty: "Blue",
+      range: "Sawatch"
+    },
+    {
+      name: "Humboldt Peak",
+      altitude: 14064,
+      summit: "37.976105,-105.555351",
+      difficulty: "Blue",
+      range: "Sanre de Cristo"
+    },
+    {
+      name: "Mt. Bierstadt",
+      altitude: 14060,
+      summit: "39.582638,-105.668610",
+      difficulty: "Blue",
+      range: "Front"
+    },
+    {
+      name: "Sunlight Peak",
+      altitude: 14059,
+      summit: "37.627285,-107.595894",
+      difficulty: "Black",
+      range: "San Juan"
+    },
+    {
+      name: "Handies Peak",
+      altitude: 14048,
+      summit: "37.913021,-107.504478",
+      difficulty: "Blue",
+      range: "San Juan"
+    },
+    {
+      name: "Culebra Peak",
+      altitude: 14047,
+      summit: "37.122173,-105.185593",
+      difficulty: "Blue",
+      range: "Sangre de Cristo"
+    },
+    {
+      name: "Mt. Lindsey",
+      altitude: 14042,
+      summit: "37.583801,-105.444763",
+      difficulty: "Blue",
+      range: "Sangre de Cristo"
+    },
+    {
+      name: "Ellingwood Point",
+      altitude: 14042,
+      summit: "37.582508,-105.492569",
+      difficulty: "Blue",
+      range: "Sangre de Cristo"
+    },
+    {
+      name: "Little Bear Peak",
+      altitude: 14037,
+      summit: "37.566624,-105.497162",
+      difficulty: "Double Black",
+      range: "Sangre de Cristo"
+    },
+    {
+      name: "Mt. Sherman",
+      altitude: 14036,
+      summit: "39.225006,-106.169945",
+      difficulty: "Green",
+      range: "Mosquito"
+    },
+    {
+      name: "Redcloud Peak",
+      altitude: 14034,
+      summit: "37.940880,-107.421654",
+      difficulty: "Blue",
+      range: "San Juan"
+    },
+    {
+      name: "Pyramid Peak",
+      altitude: 14018,
+      summit: "39.071545,-106.950188",
+      difficulty: "Black",
+      range: "Elk"
+    },
+    {
+      name: "Wilson Peak",
+      altitude: 14017,
+      summit: "37.859913,-107.984795",
+      difficulty: "Black",
+      range: "San Juan"
+    },
+    {
+      name: "Wetterhorn Peak",
+      altitude: 14015,
+      summit: "38.060593,-107.510834",
+      difficulty: "Black",
+      range: "San Juan"
+    },
+    {
+      name: "San Luis Peak",
+      altitude: 14014,
+      summit: "37.986897,-106.931389",
+      difficulty: "Green",
+      range: "San Juan"
+    },
+    {
+      name: "Mt. of the Holy Cross",
+      altitude: 14005,
+      summit: "39.466713,-106.481766",
+      difficulty: "Blue",
+      range: "Sawatch"
+    },
+    {
+      name: "Huron Peak",
+      altitude: 14003,
+      summit: "38.945423,-106.438126",
+      difficulty: "Blue",
+      range: "Sawatch"
+    },
+    {
+      name: "Sunshine Peak",
+      altitude: 14001,
+      summit: "37.922604,-107.425606",
+      difficulty: "Blue",
+      range: "San Juan"
+    },
+    {
+      name: "Mt. Cameron",
+      altitude: 14238,
+      summit: "39.346844,-106.118576",
+      difficulty: "Green",
+      range: "Mosquito"
+    },
+    {
+      name: "El Diente",
+      altitude: 14159,
+      summit: "37.839275,-108.005219",
+      difficulty: "Black",
+      range: "San Juan"
+    },
+    {
+      name: "Conundrum Peak",
+      altitude: 14060,
+      summit: "39.01563,-106.86294",
+      difficulty: "Blue",
+      range: "Elk"
+    },
+    {
+      name: "North Eolus",
+      altitude: 14039,
+      summit: "37.625416,-107.620995",
+      difficulty: "Blue",
+      range: "San Juan"
+    },
+    {
+      name: "North Maroon",
+      altitude: 14014,
+      summit: "39.076077,-106.987267",
+      difficulty: "Black",
+      range: "Elk"
+    },
+    {
+      name: "Mt. Sanitas",
+      altitude: 6843,
+      summit: "40.034434,-105.305301",
+      difficulty: "Blue",
+      range: "Front Range"
+    },
+    {
+      name: "Highlands Ranch High Point",
+      altitude: 6309,
+      summit: "39.511751,-104.956245",
+      difficulty: "Green",
+      range: "Front Range"
+    },
+    {
+      name: "Dry Peak",
+      altitude: 5207,
+      summit: "39.753114,-104.994165",
+      difficulty: "Green",
+      range: "Front"
     }
-  },
-  tenMileRange: {
-    numberOfPeaks: 1,
-    highestPeak: "Quandary Peak",
-    peaks: {
-      quandaryPeak: {
-        elevation: 14265,
-        rank: 13,
-        forest: "White River",
-        grizzlyBears: false,
-        marmots: true,
-        jerryLevel: "extreme",
-        numberOfRoutes: 4,
-        routes: {
-          eastRidge: {
-            mileage: 6.75,
-            gain: 3450,
-            difficulty: "class 1",
-            exposure: 1
-          },
-          cristoCouloir: {
-            mileage: 2,
-            gain: 2575,
-            difficulty: "class 2+",
-            exposure: 2
-          },
-          westRidge: {
-            mileage: 4,
-            gain: 2650,
-            difficulty: "class 3",
-            exposure: 4
-          },
-          quandaryCouloir: {
-            mileage: 5.25,
-            gain: 3250,
-            difficulty: "class 3",
-            exposure: 3
-          }
-        }
-      }
-    }
-  },
-  mosquitoRange: {
-    numberOfPeaks: 5,
-    highestPeak: "Mt Lincoln",
-    peaks: {
-      mountLincoln: {
-        elevation: 14286,
-        rank: 8,
-        forest: "Pike",
-        grizzlyBears: false,
-        marmots: true,
-        jerryLevel: "extreme",
-        numberOfRoutes: 3,
-        routes: {
-          westRidge: {
-            mileage: 6,
-            gain: 2600,
-            difficulty: "class 2",
-            exposure: 1
-          },
-          lincolnAmpitheatre: {
-            mileage: 4.75,
-            gain: 3400,
-            difficulty: "class 2",
-            exposure: 2
-          },
-          eastSlopes: {
-            mileage: 6.5,
-            gain: 2650,
-            difficulty: "class 2",
-            exposure: 1
-          }
-        }
-      },
-      mountCameron: {
-        elevation: 14238,
-        rank: "unranked",
-        forest: "Pike",
-        grizzlyBears: false,
-        marmots: true,
-        jerryLevel: "extreme",
-        numberOfRoutes: 1,
-        routes: {
-          westRidge: {
-            mileage: 4.75,
-            gain: 2250,
-            difficulty: "class 2",
-            exposure: 1
-          }
-        }
-      },
-      mountBross: {
-        elevation: 14172,
-        rank: 22,
-        forest: "Pike",
-        grizzlyBears: false,
-        marmots: true,
-        jerryLevel: "extreme",
-        numberOfRoutes: 5,
-        routes: {
-          westSlopes: {
-            mileage: 3.25,
-            gain: 2250,
-            difficulty: "class 2",
-            exposure: 2
-          },
-          eastSlopesMineralPark: {
-            mileage: 9,
-            gain: 2900,
-            difficulty: "class 1",
-            exposure: 1
-          },
-          sGully: {
-            mileage: 9.5,
-            gain: 2600,
-            difficulty: "class 2",
-            exposure: 1
-          },
-          dollyVardenGully: {
-            mileage: 4,
-            gain: 2900,
-            difficulty: "class 2",
-            exposure: 1
-          },
-          eastSlopesMooseCreek: {
-            mileage: 5,
-            gain: 3100,
-            difficulty: "class 2",
-            exposure: 1
-          }
-        }
-      },
-      mountDemocrat: {
-        elevation: 14148,
-        rank: 28,
-        forest: "Pike",
-        grizzlyBears: false,
-        marmots: true,
-        jerryLevel: "extreme",
-        numberOfRoutes: 2,
-        routes: {
-          eastSlope: {
-            mileage: 4,
-            gain: 2150,
-            difficulty: "class 2",
-            exposure: 1
-          },
-          southSlope: {
-            mileage: 2.5,
-            gain: 2150,
-            difficulty: "class 2+",
-            exposure: 3
-          }
-        }
-      },
-      mountSherman: {
-        elevation: 14036,
-        rank: 45,
-        forest: "Pike",
-        grizzlyBears: false,
-        marmots: true,
-        jerryLevel: "extreme",
-        numberOfRoutes: 3,
-        routes: {
-          southwestRidge: {
-            mileage: 5.25,
-            gain: 2100,
-            difficulty: "class 2",
-            exposure: 2
-          },
-          westSlopesFromIowaGulch: {
-            mileage: 4.5,
-            gain: 2150,
-            difficulty: "class 2",
-            exposure: 2
-          },
-          southSlope: {
-            mileage: 8.5,
-            gain: 3100,
-            difficulty: "class 2",
-            exposure: 1
-          }
-        }
-      }
-    }
-  },
-  sawatchRange: {
-    numberOfPeaks: 15,
-    highestPeak: "Mt Elbert",
-    peaks: {
-      mountElbert: {
-        elevation: 14433,
-        rank: 1,
-        forest: "San Isabel",
-        grizzlyBears: false,
-        marmots: true,
-        jerryLevel: "high",
-        numberOfRoutes: 4,
-        routes: {
-          northeastRidge: {
-            mileage: 9.5,
-            gain: 4700,
-            difficulty: "class 1",
-            exposure: 1
-          },
-          eastRidge: {
-            mileage: 10,
-            gain: 4100,
-            difficulty: "class 1",
-            exposure: 1
-          },
-          southeastRidge: {
-            mileage: 11,
-            gain: 5300,
-            difficulty: "class 2",
-            exposure: 1
-          },
-          boxCreekCouloir: {
-            mileage: 8.5,
-            gain: 4150,
-            difficulty: "class 2+",
-            exposure: 3
-          }
-        }
-      },
-      mountMassive: {
-        elevation: 14421,
-        rank: 2,
-        forest: "San Isabel",
-        grizzlyBears: false,
-        marmots: true,
-        jerryLevel: "high",
-        numberOfRoutes: 3,
-        routes: {
-          eastSlopes: {
-            mileage: 14.5,
-            gain: 4500,
-            difficulty: "class 2",
-            exposure: 2
-          },
-          southwestSlopes: {
-            mileage: 8,
-            gain: 3950,
-            difficulty: "class 2",
-            exposure: 2
-          },
-          eastRidge: {
-            mileage: 14,
-            gain: 4800,
-            difficulty: "class 2+",
-            exposure: 2
-          }
-        }
-      },
-      mountHarvard: {
-        elevation: 14420,
-        rank: 3,
-        forest: "San Isabel",
-        grizzlyBears: false,
-        marmots: true,
-        jerryLevel: "medium",
-        numberOfRoutes: 2,
-        routes: {
-          southSlopes: {
-            mileage: 14,
-            gain: 4600,
-            difficulty: "class 2",
-            exposure: 2
-          },
-          southFace: {
-            mileage: 14,
-            gain: 4600,
-            difficulty: "class 2",
-            exposure: 2
-          }
-        }
-      },
-      mountColumbia: {
-        elevation: 14073,
-        rank: 35,
-        forest: "San Isabel",
-        grizzlyBears: false,
-        marmots: true,
-        jerryLevel: "medium",
-        numberOfRoutes: 3,
-        routes: {
-          westSlopes: {
-            mileage: 11.5,
-            gain: 4250,
-            difficulty: "class 2",
-            exposure: 2
-          },
-          southeastRidge: {
-            mileage: 12,
-            gain: 4800,
-            difficulty: "class 2",
-            exposure: 2
-          },
-          southwestCouloir: {
-            mileage: 13.5,
-            gain: 4800,
-            difficulty: "class 2",
-            exposure: 2
-          }
-        }
-      },
-      laPlataPeak: {
-        elevation: 14336,
-        rank: 5,
-        forest: "San Isabel",
-        grizzlyBears: false,
-        marmots: true,
-        jerryLevel: "medium",
-        numberOfRoutes: 3,
-        routes: {
-          northwestRidge: {
-            mileage: 9.25,
-            gain: 4500,
-            difficulty: "class 2",
-            exposure: 2
-          },
-          southwestRidge: {
-            mileage: 7,
-            gain: 3380,
-            difficulty: "class 2",
-            exposure: 2
-          },
-          ellingwoodRidge: {
-            mileage: 9.5,
-            gain: 5900,
-            difficulty: "class 3",
-            exposure: 4
-          }
-        }
-      },
-      mountOfTheHolyCross: {
-        elevation: 14005,
-        rank: 51,
-        forest: "White River",
-        grizzlyBears: false,
-        marmots: true,
-        jerryLevel: "high",
-        numberOfRoutes: 3,
-        routes: {
-          northRidge: {
-            mileage: 12,
-            gain: 5600,
-            difficulty: "class 2",
-            exposure: 2
-          },
-          crossCouloir: {
-            mileage: 12.25,
-            gain: 5600,
-            difficulty: "class 3",
-            exposure: 3
-          },
-          haloRidge: {
-            mileage: 15,
-            gain: 5210,
-            difficulty: "class 2+",
-            exposure: 3
-          }
-        }
-      },
-      mountHuron: {
-        elevation: 14003,
-        rank: 52,
-        forest: "San Isabel",
-        grizzlyBears: false,
-        marmots: true,
-        jerryLevel: "high",
-        numberOfRoutes: 3,
-        routes: {
-          northwestSlopes: {
-            mileage: 6.5,
-            gain: 3500,
-            difficulty: "class 2",
-            exposure: 2
-          },
-          southwestSlopes: {
-            mileage: 9,
-            gain: 3600,
-            difficulty: "class 2",
-            exposure: 2
-          },
-          northRidgeFromLuluGulch: {
-            mileage: 8.4,
-            gain: 3980,
-            difficulty: "class 2",
-            exposure: 2
-          }
-        }
-      },
-      missouriMountain: {
-        elevation: 14067,
-        rank: 36,
-        forest: "San Isabel",
-        grizzlyBears: false,
-        marmots: true,
-        jerryLevel: "medium",
-        numberOfRoutes: 3,
-        routes: {
-          northwestRidge: {
-            mileage: 10.5,
-            gain: 4500,
-            difficulty: "class 2",
-            exposure: 3
-          },
-          westRidge: {
-            mileage: 11.75,
-            gain: 4250,
-            difficulty: "class 2",
-            exposure: 3
-          },
-          northFaceCouloirs: {
-            mileage: 9,
-            gain: 4500,
-            difficulty: "class 2+",
-            exposure: 3
-          }
-        }
-      },
-      mountBelford: {
-        elevation: 14197,
-        rank: 18,
-        forest: "San Isabel",
-        grizzlyBears: false,
-        marmots: true,
-        jerryLevel: "high",
-        numberOfRoutes: 1,
-        routes: {
-          northwestRidge: {
-            mileage: 8,
-            gain: 4500,
-            difficulty: "class 2",
-            exposure: 1
-          }
-        }
-      },
-      mountOxford: {
-        elevation: 14153,
-        rank: 26,
-        forest: "San Isabel",
-        grizzlyBears: false,
-        marmots: true,
-        jerryLevel: "high",
-        numberOfRoutes: 1,
-        routes: {
-          viaMtBelford: {
-            mileage: 11,
-            gain: 5800,
-            difficulty: "class 2",
-            exposure: 2
-          }
-        }
-      },
-      mountPrinceton: {
-        elevation: 14197,
-        rank: 20,
-        forest: "San Isabel",
-        grizzlyBears: false,
-        marmots: true,
-        jerryLevel: "medium",
-        numberOfRoutes: 1,
-        routes: {
-          eastSlopes: {
-            mileage: 6.5,
-            gain: 3200,
-            difficulty: "class 2",
-            exposure: 2
-          }
-        }
-      },
-      mountYale: {
-        elevation: 14196,
-        rank: 21,
-        forest: "San Isabel",
-        grizzlyBears: false,
-        marmots: true,
-        jerryLevel: "medium",
-        numberOfRoutes: 2,
-        routes: {
-          southwestSlopes: {
-            mileage: 9.5,
-            gain: 4300,
-            difficulty: "class 2",
-            exposure: 2
-          },
-          eastRidge: {
-            mileage: 10.5,
-            gain: 5000,
-            difficulty: "class 2",
-            exposure: 2
-          }
-        }
-      },
-      mountAntero: {
-        elevation: 14269,
-        rank: 10,
-        forest: "San Isabel",
-        grizzlyBears: false,
-        marmots: true,
-        jerryLevel: "medium",
-        numberOfRoutes: 1,
-        routes: {
-          westSlopes: {
-            mileage: 16,
-            gain: 5200,
-            difficulty: "class 2",
-            exposure: 2
-          }
-        }
-      },
-      mountShavano: {
-        elevation: 14229,
-        rank: 17,
-        forest: "San Isabel",
-        grizzlyBears: false,
-        marmots: true,
-        jerryLevel: "low",
-        numberOfRoutes: 2,
-        routes: {
-          eastSlopes: {
-            mileage: 9,
-            gain: 4600,
-            difficulty: "class 2",
-            exposure: 2
-          },
-          angelOfShavano: {
-            mileage: 7.5,
-            gain: 4600,
-            difficulty: "class 2",
-            exposure: 2
-          }
-        }
-      },
-      tabeguachePeak: {
-        elevation: 14155,
-        rank: 25,
-        forest: "San Isabel",
-        grizzlyBears: false,
-        marmots: true,
-        jerryLevel: "low",
-        numberOfRoutes: 2,
-        routes: {
-          viaMtShavano: {
-            mileage: 11,
-            gain: 5600,
-            difficulty: "class 2",
-            exposure: 2
-          },
-          westRidge: {
-            mileage: 8,
-            gain: 4000,
-            difficulty: "class 2",
-            exposure: 2
-          }
-        }
-      }
-    }
-  },
-  sangreDeCristoRange: {
-    numberOfPeaks: 10,
-    highestPeak: "Blanca Peak",
-    peaks: {
-      blancaPeak: {
-        elevation: 14345,
-        rank: 4,
-        forest: "Rio Grande",
-        grizzlyBears: false,
-        marmots: true,
-        jerryLevel: "low",
-        numberOfRoutes: 1,
-        routes: {
-          northwestRidge: {
-            mileage: 17,
-            gain: 6500,
-            difficulty: "class 2+",
-            exposure: 3
-          }
-        }
-      },
-      ellingwoodPoint: {
-        elevation: 14042,
-        rank: 42,
-        forest: "Rio Grande",
-        grizzlyBears: false,
-        marmots: true,
-        jerryLevel: "low",
-        numberOfRoutes: 3,
-        routes: {
-          southFace: {
-            mileage: 17,
-            gain: 6200,
-            difficulty: "class 2+",
-            exposure: 2
-          },
-          southwestRidge: {
-            mileage: 15,
-            gain: 2200,
-            difficulty: "class 3",
-            exposure: 4
-          },
-          northRidgeViaSouthZapataCreek: {
-            mileage: 11.6,
-            gain: 5500,
-            difficulty: "class 3",
-            exposure: 3
-          }
-        }
-      },
-      littleBearPeak: {
-        elevation: 14037,
-        rank: 44,
-        forest: "Rio Grande",
-        grizzlyBears: false,
-        marmots: true,
-        jerryLevel: "low",
-        numberOfRoutes: 1,
-        routes: {
-          westRidge: {
-            mileage: 14,
-            gain: 6200,
-            difficulty: "class 4",
-            exposure: 4
-          }
-        }
-      },
-      mountLindsey: {
-        elevation: 14042,
-        rank: 43,
-        forest: "San Isabel",
-        grizzlyBears: false,
-        marmots: true,
-        jerryLevel: "low",
-        numberOfRoutes: 3,
-        routes: {
-          northwestGully: {
-            mileage: 8.25,
-            gain: 3500,
-            difficulty: "class 3",
-            exposure: 3
-          },
-          northwestRidge: {
-            mileage: 8.25,
-            gain: 3500,
-            difficulty: "class 3",
-            exposure: 4
-          },
-          northCouloir: {
-            mileage: 8.75,
-            gain: 3900,
-            difficulty: "class 2",
-            exposure: 2
-          }
-        }
-      },
-      crestonePeak: {
-        elevation: 14294,
-        rank: 7,
-        forest: "San Isabel",
-        grizzlyBears: false,
-        marmots: true,
-        jerryLevel: "low",
-        numberOfRoutes: 1,
-        routes: {
-          southFace: {
-            mileage: 14,
-            gain: 5700,
-            difficulty: "class 3",
-            exposure: 4
-          }
-        }
-      },
-      crestoneNeedle: {
-        elevation: 14197,
-        rank: 19,
-        forest: "San Isabel",
-        grizzlyBears: false,
-        marmots: true,
-        jerryLevel: "low",
-        numberOfRoutes: 2,
-        routes: {
-          southFace: {
-            mileage: 12,
-            gain: 4400,
-            difficulty: "class 3",
-            exposure: 4
-          },
-          ellingwoodArete: {
-            mileage: 11.25,
-            gain: 4400,
-            difficulty: "class 5",
-            exposure: 5
-          }
-        }
-      },
-      humboldtPeak: {
-        elevation: 14064,
-        rank: 37,
-        forest: "San Isabel",
-        grizzlyBears: false,
-        marmots: true,
-        jerryLevel: "low",
-        numberOfRoutes: 3,
-        routes: {
-          westRidge: {
-            mileage: 11,
-            gain: 4200,
-            difficulty: "class 2",
-            exposure: 2
-          },
-          eastRidge: {
-            mileage: 8,
-            gain: 4300,
-            difficulty: "class 2",
-            exposure: 3
-          },
-          southeastGully: {
-            mileage: 8,
-            gain: 5400,
-            difficulty: "class 2",
-            exposure: 2
-          }
-        }
-      },
-      kitCarsonPeak: {
-        elevation: 14165,
-        rank: 23,
-        forest: "Rio Grande",
-        grizzlyBears: false,
-        marmots: true,
-        jerryLevel: "low",
-        numberOfRoutes: 4,
-        routes: {
-          viaChallengerPoint: {
-            mileage: 14.5,
-            gain: 6250,
-            difficulty: "class 3",
-            exposure: 3
-          },
-          eastRidge: {
-            mileage: 14.5,
-            gain: 5900,
-            difficulty: "class 3",
-            exposure: 4
-          },
-          northRidge: {
-            mileage: 11.4,
-            gain: 5315,
-            difficulty: "class 4",
-            exposure: 4
-          },
-          outwardBoundCouloir: {
-            mileage: 13.75,
-            gain: 5500,
-            difficulty: "class 3",
-            exposure: 3
-          }
-        }
-      },
-      challengerPoint: {
-        elevation: 14081,
-        rank: 34,
-        forest: "Rio Grande",
-        grizzlyBears: false,
-        marmots: true,
-        jerryLevel: "low",
-        numberOfRoutes: 2,
-        routes: {
-          northSlope: {
-            mileage: 12.5,
-            gain: 5400,
-            difficulty: "class 2+",
-            exposure: 2
-          },
-          kirkCouloir: {
-            mileage: 12.75,
-            gain: 5400,
-            difficulty: "class 3",
-            exposure: 3
-          }
-        }
-      },
-      culebraPeak: {
-        elevation: 14047,
-        rank: 41,
-        forest: "Cielo Vista Ranch",
-        grizzlyBears: false,
-        marmots: true,
-        jerryLevel: "low",
-        numberOfRoutes: 1,
-        routes: {
-          northwestRidge: {
-            mileage: 5,
-            gain: 2700,
-            difficulty: "class 2",
-            exposure: 2
-          }
-        }
-      }
-    }
-  },
-  elkRange: {
-    numberOfPeaks: 7,
-    highestPeak: "Castle Peak",
-    peaks: {
-      castlePeak: {
-        elevation: 14265,
-        rank: 12,
-        forest: "White River",
-        grizzlyBears: false,
-        marmots: true,
-        jerryLevel: "low",
-        numberOfRoutes: 3,
-        routes: {
-          northeastRidge: {
-            mileage: 13.5,
-            gain: 4600,
-            difficulty: "class 2+",
-            exposure: 3
-          },
-          northwestRidge: {
-            mileage: 13.5,
-            gain: 4600,
-            difficulty: "class 2+",
-            exposure: 3
-          },
-          northFaceCouloir: {
-            mileage: 13,
-            gain: 4600,
-            difficulty: "class 2+",
-            exposure: 3
-          }
-        }
-      },
-      conundrumPeak: {
-        elevation: 14060,
-        rank: "unranked",
-        forest: "White River",
-        grizzlyBears: false,
-        marmots: true,
-        jerryLevel: "low",
-        numberOfRoutes: 1,
-        routes: {
-          viaCastlePeak: {
-            mileage: 14.5,
-            gain: 4850,
-            difficulty: "class 2+",
-            exposure: 3
-          }
-        }
-      },
-      maroonPeak: {
-        elevation: 14156,
-        rank: 24,
-        forest: "White River",
-        grizzlyBears: false,
-        marmots: false,
-        jerryLevel: "low",
-        numberOfRoutes: 2,
-        routes: {
-          southRidge: {
-            mileage: 11.5,
-            gain: 4800,
-            difficulty: "class 3",
-            exposure: 4
-          },
-          bellCordCouloir: {
-            mileage: 8,
-            gain: 4556,
-            difficulty: "class 4",
-            exposure: 4
-          }
-        }
-      },
-      northMaroonPeak: {
-        elevation: 14014,
-        rank: "unranked",
-        forest: "White River",
-        grizzlyBears: false,
-        marmots: true,
-        jerryLevel: "low",
-        numberOfRoutes: 1,
-        routes: {
-          northeastRidge: {
-            mileage: 9.25,
-            gain: 4500,
-            difficulty: "class 4",
-            exposure: 4
-          }
-        }
-      },
-      pyramidPeak: {
-        elevation: 14018,
-        rank: 47,
-        forest: "White River",
-        grizzlyBears: false,
-        marmots: true,
-        jerryLevel: "low",
-        numberOfRoutes: 1,
-        routes: {
-          northeastRidge: {
-            mileage: 8.25,
-            gain: 4500,
-            difficulty: "class 4",
-            exposure: 4
-          }
-        }
-      },
-      capitolPeak: {
-        elevation: 14130,
-        rank: 29,
-        forest: "White River",
-        grizzlyBears: false,
-        marmots: true,
-        jerryLevel: "low",
-        numberOfRoutes: 1,
-        routes: {
-          northeastRidge: {
-            mileage: 17,
-            gain: 5300,
-            difficulty: "class 4",
-            exposure: 4
-          }
-        }
-      },
-      snowmassMountain: {
-        elevation: 14092,
-        rank: 31,
-        forest: "White River",
-        grizzlyBears: false,
-        marmots: true,
-        jerryLevel: "low",
-        numberOfRoutes: 2,
-        routes: {
-          eastSlopes: {
-            mileage: 22,
-            gain: 5800,
-            difficulty: "class 3",
-            exposure: 4
-          },
-          westSlope: {
-            mileage: 9,
-            gain: 4500,
-            difficulty: "class 3",
-            exposure: 4
-          }
-        }
-      }
-    }
-  },
-  sanJuanRange: {
-    numberOfPeaks: 14,
-    highestPeak: "Uncompahgre Peak",
-    peaks: {
-      uncompahgrePeak: {
-        elevation: 14309,
-        rank: 6,
-        forest: "Uncompahgre",
-        grizzlyBears: false,
-        marmots: true,
-        jerryLevel: "low",
-        numberOfRoutes: 1,
-        routes: {
-          southRidge: {
-            mileage: 7.5,
-            gain: 3000,
-            difficulty: "class 2",
-            exposure: 2
-          }
-        }
-      },
-      mountWilson: {
-        elevation: 14246,
-        rank: 16,
-        forest: "San Juan",
-        grizzlyBears: false,
-        marmots: true,
-        jerryLevel: "low",
-        numberOfRoutes: 3,
-        routes: {
-          northSlopes: {
-            mileage: 16,
-            gain: 5100,
-            difficulty: "class 4",
-            exposure: 4
-          },
-          southwestSlopes: {
-            mileage: 12.5,
-            gain: 4400,
-            difficulty: "class 3",
-            exposure: 4
-          },
-          eastFace: {
-            mileage: 12,
-            gain: 4900,
-            difficulty: "class 3",
-            exposure: 4
-          }
-        }
-      },
-      wilsonPeak: {
-        elevation: 14017,
-        rank: 48,
-        forest: "San Juan",
-        grizzlyBears: false,
-        marmots: true,
-        jerryLevel: "low",
-        numberOfRoutes: 1,
-        routes: {
-          southwestRidge: {
-            mileage: 10,
-            gain: 5000,
-            difficulty: "class 3",
-            exposure: 4
-          }
-        }
-      },
-      elDientePeak: {
-        elevation: 14159,
-        rank: "unranked",
-        forest: "San Juan",
-        grizzlyBears: false,
-        marmots: true,
-        jerryLevel: "low",
-        numberOfRoutes: 3,
-        routes: {
-          northSlopes: {
-            mileage: 15,
-            gain: 5000,
-            difficulty: "class 3",
-            exposure: 3
-          },
-          southSlopes: {
-            mileage: 12,
-            gain: 4300,
-            difficulty: "class 3",
-            exposure: 3
-          },
-          northButtress: {
-            mileage: 5,
-            gain: 3200,
-            difficulty: "class 4",
-            exposure: 5
-          }
-        }
-      },
-      mountSneffels: {
-        elevation: 14150,
-        rank: 27,
-        forest: "Uncompahgre",
-        grizzlyBears: false,
-        marmots: true,
-        jerryLevel: "medium",
-        numberOfRoutes: 2,
-        routes: {
-          southSlopes: {
-            mileage: 6,
-            gain: 2900,
-            difficulty: "class 3",
-            exposure: 3
-          },
-          southwestRidge: {
-            mileage: 6.5,
-            gain: 2950,
-            difficulty: "class 3",
-            exposure: 3
-          }
-        }
-      },
-      mountEolus: {
-        elevation: 14083,
-        rank: 32,
-        forest: "San Juan",
-        grizzlyBears: false,
-        marmots: true,
-        jerryLevel: "low",
-        numberOfRoutes: 1,
-        routes: {
-          northeastRidge: {
-            mileage: 17,
-            gain: 6100,
-            difficulty: "class 3",
-            exposure: 4
-          }
-        }
-      },
-      northEolus: {
-        elevation: 14039,
-        rank: "unranked",
-        forest: "San Juan",
-        grizzlyBears: false,
-        marmots: true,
-        jerryLevel: "low",
-        numberOfRoutes: 1,
-        routes: {
-          southRidge: {
-            mileage: 16.75,
-            gain: 6000,
-            difficulty: "class 3",
-            exposure: 3
-          }
-        }
-      },
-      windomPeak: {
-        elevation: 14082,
-        rank: 33,
-        forest: "San Juan",
-        grizzlyBears: false,
-        marmots: true,
-        jerryLevel: "low",
-        numberOfRoutes: 1,
-        routes: {
-          westRidge: {
-            mileage: 17,
-            gain: 6000,
-            difficulty: "class 2+",
-            exposure: 3
-          }
-        }
-      },
-      sunlightPeak: {
-        elevation: 14059,
-        rank: 39,
-        forest: "San Juan",
-        grizzlyBears: false,
-        marmots: true,
-        jerryLevel: "low",
-        numberOfRoutes: 1,
-        routes: {
-          southFace: {
-            mileage: 17,
-            gain: 6000,
-            difficulty: "class 4",
-            exposure: 5
-          }
-        }
-      },
-      handiesPeak: {
-        elevation: 14048,
-        rank: 40,
-        forest: "n/a",
-        grizzlyBears: false,
-        marmots: true,
-        jerryLevel: "medium",
-        numberOfRoutes: 3,
-        routes: {
-          southwestSlopes: {
-            mileage: 5.75,
-            gain: 2500,
-            difficulty: "class 1",
-            exposure: 1
-          },
-          eastSlopes: {
-            mileage: 8,
-            gain: 3650,
-            difficulty: "class 2",
-            exposure: 2
-          },
-          westSlopes: {
-            mileage: 5,
-            gain: 2800,
-            difficulty: "class 2",
-            exposure: 2
-          }
-        }
-      },
-      redcloudPeak: {
-        elevation: 14034,
-        rank: 46,
-        forest: "n/a",
-        grizzlyBears: false,
-        marmots: true,
-        jerryLevel: "low",
-        numberOfRoutes: 1,
-        routes: {
-          northeastRidge: {
-            mileage: 9,
-            gain: 3700,
-            difficulty: "class 2",
-            exposure: 2
-          }
-        }
-      },
-      sunshinePeak: {
-        elevation: 14001,
-        rank: 53,
-        forest: "n/a",
-        grizzlyBears: false,
-        marmots: true,
-        jerryLevel: "low",
-        numberOfRoutes: 3,
-        routes: {
-          viaRedcloudPeak: {
-            mileage: 12.25,
-            gain: 4800,
-            difficulty: "class 2",
-            exposure: 2
-          },
-          northwestFace: {
-            mileage: 8.5,
-            gain: 3800,
-            difficulty: "class 2+",
-            exposure: 2
-          },
-          eastRidge: {
-            mileage: 7,
-            gain: 4600,
-            difficulty: "class 2",
-            exposure: 2
-          }
-        }
-      },
-      wetterhornPeak: {
-        elevation: 14015,
-        rank: 49,
-        forest: "Uncompahgre",
-        grizzlyBears: false,
-        marmots: true,
-        jerryLevel: "low",
-        numberOfRoutes: 2,
-        routes: {
-          southeastRidge: {
-            mileage: 7,
-            gain: 3300,
-            difficulty: "class 3",
-            exposure: 4
-          },
-          eastFace: {
-            mileage: 6.5,
-            gain: 3300,
-            difficulty: "class 3",
-            exposure: 4
-          }
-        }
-      },
-      sanLuisPeak: {
-        elevation: 14014,
-        rank: 50,
-        forest: "Gunnison",
-        grizzlyBears: true,
-        marmots: true,
-        jerryLevel: "low",
-        numberOfRoutes: 2,
-        routes: {
-          northeastRidge: {
-            mileage: 13.5,
-            gain: 3600,
-            difficulty: "class 1",
-            exposure: 0
-          },
-          southRidge: {
-            mileage: 11,
-            gain: 3700,
-            difficulty: "class 1",
-            exposure: 1
-          }
-        }
-      }
-    }
-  }
+  ]
 };

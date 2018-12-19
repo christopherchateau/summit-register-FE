@@ -1,0 +1,26 @@
+.Info {
+  align-items: center;
+  background: gray;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+
+  border: 4px solid black;
+  border-radius: 10%;
+  margin: 0 35%;
+  width: 30%;
+}
+
+.header {
+  align-items: center;
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo-small {
+  height: 60px;
+  width: 100px;
+}

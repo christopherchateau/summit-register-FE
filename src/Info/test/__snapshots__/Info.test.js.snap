@@ -1,0 +1,368 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Info should match snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Info
+    currentMountainData={
+      Object {
+        "altitude": 999999,
+        "difficulty": "super hard",
+        "name": "Mt Massive",
+        "range": "Front Range",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <header
+          className="header"
+        >
+          <BackButton />
+          <img
+            alt="logo"
+            className="logo-small"
+            src="logo.png"
+          />
+        </header>,
+        <h1>
+          Mt Massive
+        </h1>,
+        <h3>
+          Altitude: 
+          999999
+        </h3>,
+        <h3>
+          Difficulty: 
+          super hard
+        </h3>,
+        <h3>
+          Range: 
+          Front Range
+        </h3>,
+        <button
+          className="sign-log-btn"
+        >
+          Sign Log
+        </button>,
+      ],
+      "className": "Info",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <BackButton />,
+            <img
+              alt="logo"
+              className="logo-small"
+              src="logo.png"
+            />,
+          ],
+          "className": "header",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "handleBackButton": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "alt": "logo",
+              "className": "logo-small",
+              "src": "logo.png",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+        ],
+        "type": "header",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Mt Massive",
+        },
+        "ref": null,
+        "rendered": "Mt Massive",
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Altitude: ",
+            999999,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Altitude: ",
+          999999,
+        ],
+        "type": "h3",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Difficulty: ",
+            "super hard",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Difficulty: ",
+          "super hard",
+        ],
+        "type": "h3",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Range: ",
+            "Front Range",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Range: ",
+          "Front Range",
+        ],
+        "type": "h3",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Sign Log",
+          "className": "sign-log-btn",
+        },
+        "ref": null,
+        "rendered": "Sign Log",
+        "type": "button",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <header
+            className="header"
+          >
+            <BackButton />
+            <img
+              alt="logo"
+              className="logo-small"
+              src="logo.png"
+            />
+          </header>,
+          <h1>
+            Mt Massive
+          </h1>,
+          <h3>
+            Altitude: 
+            999999
+          </h3>,
+          <h3>
+            Difficulty: 
+            super hard
+          </h3>,
+          <h3>
+            Range: 
+            Front Range
+          </h3>,
+          <button
+            className="sign-log-btn"
+          >
+            Sign Log
+          </button>,
+        ],
+        "className": "Info",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <BackButton />,
+              <img
+                alt="logo"
+                className="logo-small"
+                src="logo.png"
+              />,
+            ],
+            "className": "header",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "handleBackButton": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "alt": "logo",
+                "className": "logo-small",
+                "src": "logo.png",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+          ],
+          "type": "header",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Mt Massive",
+          },
+          "ref": null,
+          "rendered": "Mt Massive",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Altitude: ",
+              999999,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Altitude: ",
+            999999,
+          ],
+          "type": "h3",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Difficulty: ",
+              "super hard",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Difficulty: ",
+            "super hard",
+          ],
+          "type": "h3",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Range: ",
+              "Front Range",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Range: ",
+            "Front Range",
+          ],
+          "type": "h3",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Sign Log",
+            "className": "sign-log-btn",
+          },
+          "ref": null,
+          "rendered": "Sign Log",
+          "type": "button",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

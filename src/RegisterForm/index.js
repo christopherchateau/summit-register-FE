@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import logo from "../utilities/images/logo.png";
 import "./RegisterForm.css";
 
 class RegisterForm extends Component {
@@ -26,10 +27,13 @@ class RegisterForm extends Component {
     const { name, hometown, comments } = this.state;
     return (
       <div className="RegisterForm">
-        <button className="back-btn" onClick={this.props.handleBackButton}>
-          Back
-        </button>
-        <form onSubmit={this.handleSubmit}>
+        <header className="header">
+          <button className="back-btn" onClick={this.props.handleBackButton}>
+            Back
+          </button>
+          <img className="logo-small" alt="logo" src={logo} />
+        </header>
+        <form className="register-form" onSubmit={this.handleSubmit}>
           <input
             className="name-input"
             value={name}
@@ -49,6 +53,7 @@ class RegisterForm extends Component {
             onChange={this.handleChange}
           />
           <button
+            className="submit-btn"
             // onClick={}
             type="submit"
           >

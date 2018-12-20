@@ -9,7 +9,7 @@ class Log extends Component {
     const { name } = this.props.currentMountainLog;
     let singleLog = this.props.currentMountainLog.map(log => {
       return (
-        <li>
+        <li key={log.id}>
           name: {log.attributes.name}, hometown:{log.attributes.hometown},Date:
           {log.attributes.date}
         </li>

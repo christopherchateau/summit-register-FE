@@ -2,9 +2,11 @@ import React, { Component } from "react";
 import Start from "../Start";
 import Info from "../Info";
 import Log from "../Log";
+import LoadingScreen from "../LoadingScreen"
 import RegisterForm from "../RegisterForm";
 import { mountainData } from "../utilities/data/mountain-data";
 import * as apiCalls from "../utilities/helper/apiCalls";
+import { generateTimeStamp } from "../utilities/helper/timeStamp";
 import "./App.css";
 
 class App extends Component {
@@ -13,7 +15,7 @@ class App extends Component {
     this.state = {
       currentDisplay: ["start"],
       currentMountain: "",
-      currentMountainData: [],
+      currentMountainData: {},
       currentMountainLog: []
     };
   }
@@ -45,8 +47,22 @@ class App extends Component {
     await this.updateCurrentDisplayLog("info");
   };
 
-  handleLogUpdate = currentMountainLog => {
+  handleSignLog = () => {
     this.updateCurrentDisplayLog("registerForm");
+  };
+
+  handleLogUpdate = async logEntry => {
+    const timeStamp = generateTimeStamp();
+    this.updateCurrentDisplayLog("loadingScreen");
+    const response = await apiCalls.postToLog(
+      this.state.currentMountainData.id,
+      logEntry,
+      timeStamp
+    );
+    if (response) {
+      await this.setState({ currentMountainLog: response })
+      await this.updateCurrentDisplayLog("log");
+    }
   };
 
   updateCurrentDisplayLog = display => {
@@ -68,6 +84,7 @@ class App extends Component {
             currentMountain={currentMountain}
             handleSelectButton={this.handleSelectButton}
             handleLogUpdate={this.handleLogUpdate}
+            handleSignLog={this.handleSignLog}
           />
         )}
         {currentDisplay[0] === "info" && (
@@ -76,6 +93,7 @@ class App extends Component {
             currentMountainData={currentMountainData}
             handleViewLogButton={this.handleViewLogButton}
             handleLogUpdate={this.handleLogUpdate}
+            handleSignLog={this.handleSignLog}
           />
         )}
         {currentDisplay[0] === "log" && (
@@ -83,13 +101,17 @@ class App extends Component {
             currentMountainLog={currentMountainLog}
             handleBackButton={this.handleBackButton}
             handleLogUpdate={this.handleLogUpdate}
+            handleSignLog={this.handleSignLog}
           />
         )}
         {currentDisplay[0] === "registerForm" && (
           <RegisterForm
-            //currentDisplay={currentDisplay}
             handleBackButton={this.handleBackButton}
             handleLogUpdate={this.handleLogUpdate}
+          />
+        )}
+        {currentDisplay[0] === "loadingScreen" && (
+          <LoadingScreen
           />
         )}
       </div>

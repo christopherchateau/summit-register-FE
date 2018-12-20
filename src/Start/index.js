@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 import { mountainData } from "../utilities/data/mountain-data";
 import logo from "../utilities/images/logo.png";
 import SignRegister from "../SignRegister";
@@ -44,19 +44,16 @@ class Start extends Component {
             Select
           </button>
         </div>
-        <SignRegister handleLogUpdate={this.props.handleLogUpdate} />
+        <SignRegister handleSignLog={this.props.handleSignLog} />
       </div>
     );
   }
 }
 
-
 Start.propTypes = {
   handleSelect: PropTypes.func,
   currentMountain: PropTypes.string,
   handleLogUpdate: PropTypes.func
-
-}
-
+};
 
 export default Start;

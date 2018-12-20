@@ -9,10 +9,12 @@ import Info from "..";
 describe("Info", () => {
   let wrapper;
   const currentMountainData = {
-    name: "Mt Massive",
-    altitude: 999999,
-    difficulty: "super hard",
-    range: "Front Range"
+    attributes: {
+      name: "Mt Massive",
+      altitude: 999999,
+      difficulty: "super hard",
+      range: "Front Range"
+    }
   };
   beforeEach(() => {
     wrapper = shallow(<Info currentMountainData={currentMountainData} />);

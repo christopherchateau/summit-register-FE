@@ -7,7 +7,7 @@ class SignRegister extends Component {
     return (
       <button
         className="SignRegister"
-        onClick={() => this.props.handleLogUpdate()}
+        onClick={() => this.props.handleSignLog()}
       >
         Sign Register
       </button>

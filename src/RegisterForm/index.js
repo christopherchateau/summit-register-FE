@@ -71,5 +71,4 @@ RegisterForm.propTypes = {
   handleLogUpdate: PropTypes.func
 
 }
-
 export default RegisterForm;

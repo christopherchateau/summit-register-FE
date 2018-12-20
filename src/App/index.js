@@ -11,7 +11,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      currentDisplay: "start",
+      currentDisplay: ["start"],
       currentMountain: "",
       currentMountainData: [],
       currentMountainLog: []
@@ -19,35 +19,34 @@ class App extends Component {
   }
 
   handleBackButton = () => {
-    if (this.state.currentDisplay === "info") {
-      this.setState({ currentDisplay: "start" });
+    let updatedDisplay = this.state.currentDisplay;
+    if (updatedDisplay.length > 1) {
+      updatedDisplay = updatedDisplay.slice(1);
     }
-    if (this.state.currentDisplay === "log") {
-      this.setState({ currentDisplay: "info" });
-    }
-    if (this.state.currentlDisplay === 'registerForm') {
-      this.setState({ currentDisplay: ''})
-    }
+    console.log(updatedDisplay)
+    this.setState({ currentDisplay: updatedDisplay })
   };
 
   handleViewLogButton = async () => {
     console.log(this.state.currentMountainData.id);
+    const updatedDisplay = this.state.currentDisplay
     const currentMountainLog = await apiCalls.getMountainLog(
       this.state.currentMountainData.id
     );
     await this.setState({
-      currentDisplay: "log",
+      currentDisplay: ["log", ...updatedDisplay],
       currentMountainLog: currentMountainLog.data.attributes.registries.data
     });
   };
 
   handleLogUpdate = currentMountainLog => {
     this.setState({
-      currentDisplay: 'registerForm',
+      currentDisplay: "registerForm"
     });
   };
 
   handleSelectButton = async currentMountain => {
+    const updatedDisplay = this.state.currentDisplay;
     const mountain = mountainData.data.find(mountain => {
       return mountain.attributes.name === currentMountain;
     });
@@ -56,7 +55,7 @@ class App extends Component {
 
     await this.setState({
       currentMountain,
-      currentDisplay: "info",
+      currentDisplay: ["info", ...updatedDisplay],
       currentMountainData: currentMountainData.data
     });
   };
@@ -70,31 +69,31 @@ class App extends Component {
     } = this.state;
     return (
       <div className="App">
-        {currentDisplay === "start" && (
+        {currentDisplay[0] === "start" && (
           <Start
             currentMountain={currentMountain}
             handleSelectButton={this.handleSelectButton}
             handleLogUpdate={this.handleLogUpdate}
-            />
-            )}
-        {currentDisplay === "info" && (
+          />
+        )}
+        {currentDisplay[0] === "info" && (
           <Info
-          handleBackButton={this.handleBackButton}
-          currentMountainData={currentMountainData}
-          handleViewLogButton={this.handleViewLogButton}
-          handleLogUpdate={this.handleLogUpdate}
+            handleBackButton={this.handleBackButton}
+            currentMountainData={currentMountainData}
+            handleViewLogButton={this.handleViewLogButton}
+            handleLogUpdate={this.handleLogUpdate}
           />
-          )}
-        {currentDisplay === "log" && (
+        )}
+        {currentDisplay[0] === "log" && (
           <Log
-          currentMountainLog={currentMountainLog}
-          handleBackButton={this.handleBackButton}
-          handleLogUpdate={this.handleLogUpdate}
+            currentMountainLog={currentMountainLog}
+            handleBackButton={this.handleBackButton}
+            handleLogUpdate={this.handleLogUpdate}
           />
-          )}
-        {currentDisplay === "registerForm" && (
+        )}
+        {currentDisplay[0] === "registerForm" && (
           <RegisterForm
-            currentDisplay={currentDisplay}
+            //currentDisplay={currentDisplay}
             handleBackButton={this.handleBackButton}
             handleLogUpdate={this.handleLogUpdate}
           />

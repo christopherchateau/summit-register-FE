@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Start from "../Start";
 import Info from "../Info";
 import Log from "../Log";
+import LoadingScreen from "../LoadingScreen"
 import RegisterForm from "../RegisterForm";
 import { mountainData } from "../utilities/data/mountain-data";
 import * as apiCalls from "../utilities/helper/apiCalls";
@@ -51,9 +52,17 @@ class App extends Component {
   };
 
   handleLogUpdate = async logEntry => {
-    const timeStamp = generateTimeStamp()
-    await apiCalls.postToLog(this.state.currentMountainData.id, logEntry, timeStamp);
-    await this.updateCurrentDisplayLog("log");
+    const timeStamp = generateTimeStamp();
+    this.updateCurrentDisplayLog("loadingScreen");
+    const response = await apiCalls.postToLog(
+      this.state.currentMountainData.id,
+      logEntry,
+      timeStamp
+    );
+    if (response) {
+      await this.setState({ currentMountainLog: response })
+      await this.updateCurrentDisplayLog("log");
+    }
   };
 
   updateCurrentDisplayLog = display => {
@@ -99,6 +108,10 @@ class App extends Component {
           <RegisterForm
             handleBackButton={this.handleBackButton}
             handleLogUpdate={this.handleLogUpdate}
+          />
+        )}
+        {currentDisplay[0] === "loadingScreen" && (
+          <LoadingScreen
           />
         )}
       </div>

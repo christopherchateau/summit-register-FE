@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import logo from "../utilities/images/logo.png";
+import logo from "../utilities/Images/logo.png";
 import "./RegisterForm.css";
 
 class RegisterForm extends Component {

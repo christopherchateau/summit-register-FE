@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { mountainData } from "../utilities/data/mountain-data";
-import logo from "../utilities/images/logo.png";
+import { mountainData } from "../utilities/Data/mountain-data";
+import logo from "../utilities/Images/logo.png";
 import SignRegister from "../SignRegister";
 import "./Start.css";
 

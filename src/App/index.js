@@ -4,7 +4,7 @@ import Info from "../Info";
 import Log from "../Log";
 import LoadingScreen from "../LoadingScreen"
 import RegisterForm from "../RegisterForm";
-import { mountainData } from "../utilities/data/mountain-data";
+import { mountainData } from "../utilities/Data/mountain-data";
 import * as apiCalls from "../utilities/helper/apiCalls";
 import { generateTimeStamp } from "../utilities/helper/timeStamp";
 import "./App.css";

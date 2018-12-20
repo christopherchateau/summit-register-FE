@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types'
-import React, { Component } from "react";
 import logo from "../utilities/images/logo.png";
 import SignRegister from "../SignRegister";
 import "./Log.css";

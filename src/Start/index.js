@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { mountainData } from "../utilities/data/mountain-data";
 import logo from "../utilities/images/logo.png";
+import SignRegister from '../SignRegister'
 import "./Start.css";
 
 class Start extends Component {
@@ -42,7 +43,7 @@ class Start extends Component {
             Select
           </button>
         </div>
-        <button className="sign-register-btn">Sign Register</button>
+        <SignRegister handleLogUpdate={this.props.handleLogUpdate} />
       </div>
     );
   }

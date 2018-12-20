@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from "../utilities/images/logo.png";
 import BackButton from "../BackButton";
+import SignRegister from '../SignRegister'
 import './Log.css';
 
 class Log extends Component {
@@ -22,6 +23,7 @@ class Log extends Component {
         </header>
         <h1>{name}</h1>
         <ol>{singleLog}</ol>
+        <SignRegister handleLogUpdate={this.props.handleLogUpdate} />
       </div>
     );
   }

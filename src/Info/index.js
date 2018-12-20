@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import BackButton from "../BackButton";
 import logo from "../utilities/images/logo.png";
+import SignRegister from '../SignRegister'
 import "./Info.css";
 
 class Info extends Component {
@@ -24,7 +25,7 @@ class Info extends Component {
         <h3>Range: {range}</h3>
         </section>
         <button className="view-log-btn" onClick={() => this.props.handleViewLogButton()}>View Log</button>
-        <button className="sign-log-btn">Sign Log</button>
+        <SignRegister handleLogUpdate={this.props.handleLogUpdate} />
       </div>
     );
   }

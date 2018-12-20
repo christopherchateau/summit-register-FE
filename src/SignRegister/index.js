@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from 'prop-types'
 import "./SignRegister.css";
 
 class SignRegister extends Component {
@@ -12,6 +13,11 @@ class SignRegister extends Component {
       </button>
     );
   }
+}
+
+SignRegister.propTypes = {
+  handleLogUpdate: PropTypes.func
+
 }
 
 export default SignRegister;

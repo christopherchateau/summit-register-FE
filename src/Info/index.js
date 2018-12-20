@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from 'prop-types'
 import BackButton from "../BackButton";
 import logo from "../utilities/images/logo.png";
 import SignRegister from '../SignRegister'
@@ -29,6 +30,14 @@ class Info extends Component {
       </div>
     );
   }
+}
+
+Info.propTypes = {
+  handleBackButton: PropTypes.func,
+  currentMountainData: PropTypes.object,
+  handleviewLogButton: PropTypes.func,
+  handleLogUpdate: PropTypes.func
+
 }
 
 export default Info;

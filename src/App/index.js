@@ -24,14 +24,25 @@ class App extends Component {
   };
 
   handleViewLogButton = async () => {
-    const updatedDisplay = this.state.currentDisplay;
     const currentMountainLog = await apiCalls.getMountainLog(
       this.state.currentMountainData.id
     );
     await this.setState({
-      currentDisplay: ["log", ...updatedDisplay],
       currentMountainLog: currentMountainLog.data.attributes.registries.data
     });
+    this.updateCurrentDisplayLog("log");
+  };
+
+  handleSelectButton = async currentMountain => {
+    const mountain = mountainData.data.find(mountain => {
+      return mountain.attributes.name === currentMountain;
+    });
+    let currentMountainData = await apiCalls.getMountain(mountain.id);
+    await this.setState({
+      currentMountain,
+      currentMountainData: currentMountainData.data
+    });
+    await this.updateCurrentDisplayLog("info");
   };
 
   handleLogUpdate = currentMountainLog => {
@@ -41,21 +52,6 @@ class App extends Component {
   updateCurrentDisplayLog = display => {
     const updatedDisplay = this.state.currentDisplay;
     this.setState({ currentDisplay: [display, ...updatedDisplay] });
-  };
-
-  handleSelectButton = async currentMountain => {
-    const updatedDisplay = this.state.currentDisplay;
-    const mountain = mountainData.data.find(mountain => {
-      return mountain.attributes.name === currentMountain;
-    });
-    await console.log(mountain.id);
-    let currentMountainData = await apiCalls.getMountain(mountain.id);
-
-    await this.setState({
-      currentMountain,
-      currentDisplay: ["info", ...updatedDisplay],
-      currentMountainData: currentMountainData.data
-    });
   };
 
   render() {

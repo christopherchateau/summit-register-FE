@@ -5,6 +5,7 @@ import Log from "../Log";
 import RegisterForm from "../RegisterForm";
 import { mountainData } from "../utilities/data/mountain-data";
 import * as apiCalls from "../utilities/helper/apiCalls";
+import { generateTimeStamp } from "../utilities/helper/timeStamp";
 import "./App.css";
 
 class App extends Component {
@@ -50,7 +51,9 @@ class App extends Component {
   };
 
   handleLogUpdate = async logEntry => {
-    await apiCalls.postToLog(this.state.currentMountainData.id, logEntry);
+    const timeStamp = generateTimeStamp()
+    await apiCalls.postToLog(this.state.currentMountainData.id, logEntry, timeStamp);
+    await this.updateCurrentDisplayLog("log");
   };
 
   updateCurrentDisplayLog = display => {

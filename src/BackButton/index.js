@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from 'prop-types'
 import "./BackButton.css";
 
 class BackButton extends Component {
@@ -10,5 +11,10 @@ class BackButton extends Component {
     );
   }
 }
+
+BackButton.propTypes = {
+  handleBackButton: PropTypes.func
+}
+
 
 export default BackButton;

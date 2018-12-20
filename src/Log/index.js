@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types'
 import logo from "../utilities/images/logo.png";
 import BackButton from "../BackButton";
 import SignRegister from '../SignRegister'
@@ -27,6 +28,13 @@ class Log extends Component {
       </div>
     );
   }
+}
+
+Log.propTypes = {
+  handleBackButton: PropTypes.func,
+  currentMountainLog: PropTypes.array,
+  handleLogUpdate: PropTypes.func
+
 }
 
 export default Log;

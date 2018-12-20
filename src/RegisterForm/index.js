@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types'
 import BackButton from '../BackButton'
 import './RegisterForm.css'
 
@@ -62,6 +63,13 @@ class RegisterForm extends Component {
       </div>
     );
   }
+}
+
+RegisterForm.propTypes = {
+  currentDisplay: PropTypes.string,
+  handleBackButton: PropTypes.func,
+  handleLogUpdate: PropTypes.func
+
 }
 
 export default RegisterForm;

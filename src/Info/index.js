@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from 'prop-types'
-import BackButton from "../BackButton";
 import logo from "../utilities/images/logo.png";
-import SignRegister from '../SignRegister'
+import SignRegister from "../SignRegister";
 import "./Info.css";
 
 class Info extends Component {
@@ -16,16 +15,23 @@ class Info extends Component {
     return (
       <div className="Info">
         <header className="header">
-          <BackButton handleBackButton={this.props.handleBackButton} />
+          <button className="back-btn" onClick={this.props.handleBackButton}>
+            Back
+          </button>
           <img className="logo-small" alt="logo" src={logo} />
         </header>
         <section className="info-section">
-        <h1>{name}</h1>
-        <h3>Altitude: {altitude} ft</h3>
-        <h3>Difficulty: {difficulty}</h3>
-        <h3>Range: {range}</h3>
+          <h1>{name}</h1>
+          <h3>Altitude: {altitude} ft</h3>
+          <h3>Difficulty: {difficulty}</h3>
+          <h3>Range: {range}</h3>
         </section>
-        <button className="view-log-btn" onClick={() => this.props.handleViewLogButton()}>View Log</button>
+        <button
+          className="view-log-btn"
+          onClick={() => this.props.handleViewLogButton()}
+        >
+          View Log
+        </button>
         <SignRegister handleLogUpdate={this.props.handleLogUpdate} />
       </div>
     );

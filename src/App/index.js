@@ -13,7 +13,7 @@ class App extends Component {
     this.state = {
       currentDisplay: ["start"],
       currentMountain: "",
-      currentMountainData: [],
+      currentMountainData: {},
       currentMountainLog: []
     };
   }
@@ -45,8 +45,12 @@ class App extends Component {
     await this.updateCurrentDisplayLog("info");
   };
 
-  handleLogUpdate = currentMountainLog => {
+  handleSignLog = () => {
     this.updateCurrentDisplayLog("registerForm");
+  };
+
+  handleLogUpdate = async logEntry => {
+    await apiCalls.postToLog(this.state.currentMountainData.id, logEntry);
   };
 
   updateCurrentDisplayLog = display => {
@@ -68,6 +72,7 @@ class App extends Component {
             currentMountain={currentMountain}
             handleSelectButton={this.handleSelectButton}
             handleLogUpdate={this.handleLogUpdate}
+            handleSignLog={this.handleSignLog}
           />
         )}
         {currentDisplay[0] === "info" && (
@@ -76,6 +81,7 @@ class App extends Component {
             currentMountainData={currentMountainData}
             handleViewLogButton={this.handleViewLogButton}
             handleLogUpdate={this.handleLogUpdate}
+            handleSignLog={this.handleSignLog}
           />
         )}
         {currentDisplay[0] === "log" && (
@@ -83,11 +89,11 @@ class App extends Component {
             currentMountainLog={currentMountainLog}
             handleBackButton={this.handleBackButton}
             handleLogUpdate={this.handleLogUpdate}
+            handleSignLog={this.handleSignLog}
           />
         )}
         {currentDisplay[0] === "registerForm" && (
           <RegisterForm
-            //currentDisplay={currentDisplay}
             handleBackButton={this.handleBackButton}
             handleLogUpdate={this.handleLogUpdate}
           />

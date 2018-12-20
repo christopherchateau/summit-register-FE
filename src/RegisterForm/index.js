@@ -20,7 +20,7 @@ class RegisterForm extends Component {
 
   handleSubmit = e => {
     e.preventDefault();
-    this.props.handleLogUpdate();
+    this.props.handleLogUpdate(this.state);
   };
 
   render() {

@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types'
+import React, { Component } from "react";
+import PropTypes from "prop-types";
 import logo from "../utilities/images/logo.png";
 import SignRegister from "../SignRegister";
 import "./Log.css";
@@ -30,7 +30,7 @@ class Log extends Component {
         </header>
         <h1>{name}</h1>
         <ol>{singleLog}</ol>
-        <SignRegister handleLogUpdate={this.props.handleLogUpdate} />
+        <SignRegister handleSignLog={this.props.handleSignLog} />
       </div>
     );
   }
@@ -40,7 +40,6 @@ Log.propTypes = {
   handleBackButton: PropTypes.func,
   currentMountainLog: PropTypes.array,
   handleLogUpdate: PropTypes.func
-
-}
+};
 
 export default Log;

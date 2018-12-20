@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 import logo from "../utilities/images/logo.png";
 import SignRegister from "../SignRegister";
 import "./Info.css";
@@ -32,7 +32,7 @@ class Info extends Component {
         >
           View Log
         </button>
-        <SignRegister handleLogUpdate={this.props.handleLogUpdate} />
+        <SignRegister handleSignLog={this.props.handleSignLog} />
       </div>
     );
   }
@@ -43,7 +43,6 @@ Info.propTypes = {
   currentMountainData: PropTypes.object,
   handleviewLogButton: PropTypes.func,
   handleLogUpdate: PropTypes.func
-
-}
+};
 
 export default Info;

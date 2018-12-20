@@ -24,6 +24,7 @@ export const postToLog = async (id, logEntry, timeStamp) => {
       body: JSON.stringify({
         name,
         hometown,
+
         comments,
         time: timeStamp
       }),
@@ -31,6 +32,5 @@ export const postToLog = async (id, logEntry, timeStamp) => {
     }
   );
   const data = await response.json();
-  console.log(data)
   return data;
 };

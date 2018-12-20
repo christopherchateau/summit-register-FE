@@ -38,6 +38,19 @@
   transition: all 0.4s ease-in-out;
 }
 
+.logo {
+  height: 40px;
+  margin-left: 10px;
+  position: relative;
+  top: 8px;
+}
+
+.back-btn:hover {
+  background: black;
+  color: white;
+  transition: all 0.4s ease-in-out;
+}
+
 .logo-small {
   height: 60px;
   width: 100px;

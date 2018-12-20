@@ -19,17 +19,12 @@ class App extends Component {
   }
 
   handleBackButton = () => {
-    let updatedDisplay = this.state.currentDisplay;
-    if (updatedDisplay.length > 1) {
-      updatedDisplay = updatedDisplay.slice(1);
-    }
-    console.log(updatedDisplay)
-    this.setState({ currentDisplay: updatedDisplay })
+    let updatedDisplay = this.state.currentDisplay.slice(1);
+    this.setState({ currentDisplay: updatedDisplay });
   };
 
   handleViewLogButton = async () => {
-    console.log(this.state.currentMountainData.id);
-    const updatedDisplay = this.state.currentDisplay
+    const updatedDisplay = this.state.currentDisplay;
     const currentMountainLog = await apiCalls.getMountainLog(
       this.state.currentMountainData.id
     );
@@ -40,9 +35,12 @@ class App extends Component {
   };
 
   handleLogUpdate = currentMountainLog => {
-    this.setState({
-      currentDisplay: "registerForm"
-    });
+    this.updateCurrentDisplayLog("registerForm");
+  };
+
+  updateCurrentDisplayLog = display => {
+    const updatedDisplay = this.state.currentDisplay;
+    this.setState({ currentDisplay: [display, ...updatedDisplay] });
   };
 
   handleSelectButton = async currentMountain => {

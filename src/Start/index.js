@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import PropTypes from 'prop-types'
 import { mountainData } from "../utilities/data/mountain-data";
 import logo from "../utilities/images/logo.png";
-import SignRegister from '../SignRegister'
+import SignRegister from "../SignRegister";
 import "./Start.css";
 
 class Start extends Component {

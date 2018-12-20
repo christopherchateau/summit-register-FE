@@ -43,3 +43,8 @@
     height: 50px;
     width: 90px;
   }
+
+  .loading {
+      height: 100px;
+      width: 100px;
+  }

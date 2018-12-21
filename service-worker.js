@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/summit-register-FE/precache-manifest.d0fed4da3fe48c98e16a17886d79227e.js"
+  "/summit-register-FE/precache-manifest.8badfbb9208add97cbfbd122258f36c4.js"
 );
 
 workbox.clientsClaim();

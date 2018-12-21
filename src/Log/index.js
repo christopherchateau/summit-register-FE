@@ -9,10 +9,12 @@ class Log extends Component {
     const { name } = this.props.currentMountainLog;
     let singleLog = this.props.currentMountainLog.map(log => {
       return (
-        <li key={log.id}>
-          name: {log.attributes.name}, hometown:{log.attributes.hometown}, Date:
-          {log.attributes.date}
-        </li>
+        <div className="comment" key={log.id}>
+          <h4>Name: {log.attributes.name}</h4>
+          <h4>Hometown: {log.attributes.hometown}</h4>
+          <h4>Comments: {log.attributes.comments} </h4>
+          <h4>Date: {log.attributes.date}</h4>
+        </div>
       );
     });
 
@@ -29,7 +31,7 @@ class Log extends Component {
           <img className="logo-small" alt="logo" src={logo} />
         </header>
         <h1>{name}</h1>
-        <ol>{singleLog}</ol>
+        <section className="comment-container">{singleLog}</section>
         <SignRegister handleSignLog={this.props.handleSignLog} />
       </div>
     );

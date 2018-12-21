@@ -47,16 +47,17 @@
 .info-section {
   border: 1px solid white;
   border-radius: 20px;
-  background: grey;
-  opacity: .9;
+  background: rgba(165, 165, 165, 0.9);
+  margin-bottom: 20px;
+  margin-top: 50px;
   padding: 20px;
 }
 
+.view-log-btn,
 .sign-register-btn {
   border: 1px solid black;
   border-radius: 20px;
   display: block;
   font-size: 16px;
-  margin-bottom: 20px;
   padding: 5px 10px;
 }

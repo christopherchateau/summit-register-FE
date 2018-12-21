@@ -18,19 +18,19 @@ class App extends Component {
       currentMountainData: {},
       currentMountainLog: [],
       currentLocation: {},
-      errorMessage: ''
+      errorMessage: ""
     };
   }
 
-  componentDidMount =  () => {
+  componentDidMount = () => {
     this.getLocation();
   };
 
   componentDidUpdate = () => {
     if (this.state.errorMessage.length) {
-      console.log(this.state.errorMessage)
+      console.log(this.state.errorMessage);
     }
-  }
+  };
 
   handleBackButton = () => {
     let updatedDisplay = this.state.currentDisplay.slice(1);
@@ -85,7 +85,9 @@ class App extends Component {
   getLocation = () => {
     return navigator.geolocation
       ? navigator.geolocation.watchPosition(this.showPosition)
-      : "Geo Location not supported by browser";
+      : this.setState({
+          errorMessage: "Geo Location not supported by browser"
+        });
   };
 
   showPosition = position => {

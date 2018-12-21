@@ -15,7 +15,6 @@ class LoadingScreen extends Component {
           <img className="logo-small" alt="logo" src={logo} />
         </header>
         <img className="loading" alt="loading" src={loading} />
-        <h1>LOADING</h1>
       </div>
     );
   }

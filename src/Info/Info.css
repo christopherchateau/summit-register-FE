@@ -47,9 +47,10 @@
 .info-section {
   border: 1px solid white;
   border-radius: 20px;
-  background: rgba(165, 165, 165, 0.9);
+  background: grey;
   margin-bottom: 20px;
   margin-top: 50px;
+  opacity: .9;
   padding: 20px;
 }
 

@@ -67,12 +67,13 @@
 }
 
 .form-instructions {
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .input {
   border: 1px solid black;
   border-radius: 10px;
+  font-size: 14px;
   margin-left: 10px;
   padding: 5px;
 }
@@ -80,7 +81,8 @@
 .submit-btn {
   border: 1px solid black;
   border-radius: 20px;
-  font-size: 12px;
+  font-size: 20px;
   margin-left: 5px;
+  margin-top: 180px;
   padding: 2px 10px;
 }

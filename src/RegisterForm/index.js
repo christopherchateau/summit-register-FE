@@ -33,7 +33,7 @@ class RegisterForm extends Component {
           </button>
           <img className="logo-small" alt="logo" src={logo} />
         </header>
-        <form className="register-form" onSubmit={this.handleSubmit}>
+        <form className="register-form">
           <h3 className="form-instructions">
             Name:
             <input
@@ -61,14 +61,10 @@ class RegisterForm extends Component {
               onChange={this.handleChange}
             />
           </h3>
-          <button
-            className="submit-btn"
-            // onClick={}
-            type="submit"
-          >
-            Submit Your Entry
-          </button>
         </form>
+        <button className="submit-btn" type="submit" onClick={this.handleSubmit}>
+          Submit
+        </button>
       </div>
     );
   }

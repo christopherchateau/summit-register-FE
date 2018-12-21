@@ -26,7 +26,7 @@ class App extends Component {
   };
 
   componentDidUpdate = () => {
-    if (this.state.currentLocation === undefined) {
+    if (Object.keys(this.state.currentLocation).length) {
       return;
     } else {
       console.log("unable to track location");
@@ -34,7 +34,15 @@ class App extends Component {
   };
 
   handleBackButton = () => {
-    let updatedDisplay = this.state.currentDisplay.slice(1);
+    let currentDisplay = this.state.currentDisplay[0];
+    let updatedDisplay = this.state.currentDisplay
+      .slice(1)
+      .filter(
+        screen => screen !== "loadingScreen" && screen !== "registerForm"
+      );
+    if (updatedDisplay[0] === currentDisplay) {
+      updatedDisplay = updatedDisplay.slice(1);
+    }
     this.setState({ currentDisplay: updatedDisplay });
   };
 

@@ -1,6 +1,6 @@
 export const getMountain = async id => {
   const response = await fetch(
-    `http://summit-register-api.herokuapp.com/api/v1/mountains/${id}`
+    `https://summit-register-api.herokuapp.com/api/v1/mountains/${id}`
   );
   const mountains = await response.json();
   return mountains;
@@ -8,7 +8,7 @@ export const getMountain = async id => {
 
 export const getMountainLog = async id => {
   const response = await fetch(
-    `http://summit-register-api.herokuapp.com/api/v1/mountains/${id}`
+    `https://summit-register-api.herokuapp.com/api/v1/mountains/${id}`
   );
   const log = await response.json();
   return log;
@@ -17,7 +17,7 @@ export const getMountainLog = async id => {
 export const postToLog = async (id, logEntry, timeStamp) => {
   const { name, hometown, comments } = logEntry;
   const response = await fetch(
-    `http://summit-register-api.herokuapp.com/api/v1/mountains/${id}/registries`,
+    `https://summit-register-api.herokuapp.com/api/v1/mountains/${id}/registries`,
     {
       method: "POST",
       credentials: "same-origin",

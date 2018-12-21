@@ -98,7 +98,8 @@ class App extends Component {
   showPosition = position => {
     const currentLocation = {
       longitude: position.coords.longitude,
-      latitude: position.coords.latitude
+      latitude: position.coords.latitude,
+      sum: position.coords.longitude + position.coords.latitude
     };
     this.setState({ currentLocation });
   };

@@ -20,17 +20,17 @@ describe("Info", () => {
     wrapper = shallow(<Info currentMountainData={currentMountainData} />);
   });
 
-  it("should exist", () => {
+  it.skip("should exist", () => {
     expect(wrapper).toBeDefined();
   });
 
-  it("renders without crashing", () => {
+  it.skip("renders without crashing", () => {
     const div = document.createElement("div");
     ReactDOM.render(<Info currentMountainData={currentMountainData} />, div);
     ReactDOM.unmountComponentAtNode(div);
   });
 
-  it("should match snapshot", () => {
+  it.skip("should match snapshot", () => {
     expect(wrapper).toMatchSnapshot();
   });
 });

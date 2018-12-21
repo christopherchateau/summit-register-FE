@@ -58,24 +58,52 @@ ShallowWrapper {
           />
         </header>,
         <h1 />,
-        <ol>
-          <li>
-            name: 
-            Andrew
-            , hometown:
-            Boulder
-            , Date:
-            2018-12-19 21:10:17 UTC
-          </li>
-          <li>
-            name: 
-            Andrew Tobin
-            , hometown:
-            Denver
-            , Date:
-            2018-12-19 21:11:29 UTC
-          </li>
-        </ol>,
+        <section
+          className="comment-container"
+        >
+          <div
+            className="comment"
+          >
+            <h4>
+              Name: 
+              Andrew
+            </h4>
+            <h4>
+              Hometown: 
+              Boulder
+            </h4>
+            <h4>
+              Comments: 
+              Great hike
+               
+            </h4>
+            <h4>
+              Date: 
+              2018-12-19 21:10:17 UTC
+            </h4>
+          </div>
+          <div
+            className="comment"
+          >
+            <h4>
+              Name: 
+              Andrew Tobin
+            </h4>
+            <h4>
+              Hometown: 
+              Denver
+            </h4>
+            <h4>
+              Comments: 
+              Best hike ever
+               
+            </h4>
+            <h4>
+              Date: 
+              2018-12-19 21:11:29 UTC
+            </h4>
+          </div>
+        </section>,
         <SignRegister />,
       ],
       "className": "Log",
@@ -149,23 +177,50 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <li>
-              name: 
-              Andrew
-              , hometown:
-              Boulder
-              , Date:
-              2018-12-19 21:10:17 UTC
-            </li>,
-            <li>
-              name: 
-              Andrew Tobin
-              , hometown:
-              Denver
-              , Date:
-              2018-12-19 21:11:29 UTC
-            </li>,
+            <div
+              className="comment"
+            >
+              <h4>
+                Name: 
+                Andrew
+              </h4>
+              <h4>
+                Hometown: 
+                Boulder
+              </h4>
+              <h4>
+                Comments: 
+                Great hike
+                 
+              </h4>
+              <h4>
+                Date: 
+                2018-12-19 21:10:17 UTC
+              </h4>
+            </div>,
+            <div
+              className="comment"
+            >
+              <h4>
+                Name: 
+                Andrew Tobin
+              </h4>
+              <h4>
+                Hometown: 
+                Denver
+              </h4>
+              <h4>
+                Comments: 
+                Best hike ever
+                 
+              </h4>
+              <h4>
+                Date: 
+                2018-12-19 21:11:29 UTC
+              </h4>
+            </div>,
           ],
+          "className": "comment-container",
         },
         "ref": null,
         "rendered": Array [
@@ -175,24 +230,100 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
-                "name: ",
-                "Andrew",
-                ", hometown:",
-                "Boulder",
-                ", Date:",
-                "2018-12-19 21:10:17 UTC",
+                <h4>
+                  Name: 
+                  Andrew
+                </h4>,
+                <h4>
+                  Hometown: 
+                  Boulder
+                </h4>,
+                <h4>
+                  Comments: 
+                  Great hike
+                   
+                </h4>,
+                <h4>
+                  Date: 
+                  2018-12-19 21:10:17 UTC
+                </h4>,
               ],
+              "className": "comment",
             },
             "ref": null,
             "rendered": Array [
-              "name: ",
-              "Andrew",
-              ", hometown:",
-              "Boulder",
-              ", Date:",
-              "2018-12-19 21:10:17 UTC",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Name: ",
+                    "Andrew",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Name: ",
+                  "Andrew",
+                ],
+                "type": "h4",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Hometown: ",
+                    "Boulder",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Hometown: ",
+                  "Boulder",
+                ],
+                "type": "h4",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Comments: ",
+                    "Great hike",
+                    " ",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Comments: ",
+                  "Great hike",
+                  " ",
+                ],
+                "type": "h4",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Date: ",
+                    "2018-12-19 21:10:17 UTC",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Date: ",
+                  "2018-12-19 21:10:17 UTC",
+                ],
+                "type": "h4",
+              },
             ],
-            "type": "li",
+            "type": "div",
           },
           Object {
             "instance": null,
@@ -200,27 +331,103 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
-                "name: ",
-                "Andrew Tobin",
-                ", hometown:",
-                "Denver",
-                ", Date:",
-                "2018-12-19 21:11:29 UTC",
+                <h4>
+                  Name: 
+                  Andrew Tobin
+                </h4>,
+                <h4>
+                  Hometown: 
+                  Denver
+                </h4>,
+                <h4>
+                  Comments: 
+                  Best hike ever
+                   
+                </h4>,
+                <h4>
+                  Date: 
+                  2018-12-19 21:11:29 UTC
+                </h4>,
               ],
+              "className": "comment",
             },
             "ref": null,
             "rendered": Array [
-              "name: ",
-              "Andrew Tobin",
-              ", hometown:",
-              "Denver",
-              ", Date:",
-              "2018-12-19 21:11:29 UTC",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Name: ",
+                    "Andrew Tobin",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Name: ",
+                  "Andrew Tobin",
+                ],
+                "type": "h4",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Hometown: ",
+                    "Denver",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Hometown: ",
+                  "Denver",
+                ],
+                "type": "h4",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Comments: ",
+                    "Best hike ever",
+                    " ",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Comments: ",
+                  "Best hike ever",
+                  " ",
+                ],
+                "type": "h4",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Date: ",
+                    "2018-12-19 21:11:29 UTC",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Date: ",
+                  "2018-12-19 21:11:29 UTC",
+                ],
+                "type": "h4",
+              },
             ],
-            "type": "li",
+            "type": "div",
           },
         ],
-        "type": "ol",
+        "type": "section",
       },
       Object {
         "instance": null,
@@ -258,24 +465,52 @@ ShallowWrapper {
             />
           </header>,
           <h1 />,
-          <ol>
-            <li>
-              name: 
-              Andrew
-              , hometown:
-              Boulder
-              , Date:
-              2018-12-19 21:10:17 UTC
-            </li>
-            <li>
-              name: 
-              Andrew Tobin
-              , hometown:
-              Denver
-              , Date:
-              2018-12-19 21:11:29 UTC
-            </li>
-          </ol>,
+          <section
+            className="comment-container"
+          >
+            <div
+              className="comment"
+            >
+              <h4>
+                Name: 
+                Andrew
+              </h4>
+              <h4>
+                Hometown: 
+                Boulder
+              </h4>
+              <h4>
+                Comments: 
+                Great hike
+                 
+              </h4>
+              <h4>
+                Date: 
+                2018-12-19 21:10:17 UTC
+              </h4>
+            </div>
+            <div
+              className="comment"
+            >
+              <h4>
+                Name: 
+                Andrew Tobin
+              </h4>
+              <h4>
+                Hometown: 
+                Denver
+              </h4>
+              <h4>
+                Comments: 
+                Best hike ever
+                 
+              </h4>
+              <h4>
+                Date: 
+                2018-12-19 21:11:29 UTC
+              </h4>
+            </div>
+          </section>,
           <SignRegister />,
         ],
         "className": "Log",
@@ -349,23 +584,50 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <li>
-                name: 
-                Andrew
-                , hometown:
-                Boulder
-                , Date:
-                2018-12-19 21:10:17 UTC
-              </li>,
-              <li>
-                name: 
-                Andrew Tobin
-                , hometown:
-                Denver
-                , Date:
-                2018-12-19 21:11:29 UTC
-              </li>,
+              <div
+                className="comment"
+              >
+                <h4>
+                  Name: 
+                  Andrew
+                </h4>
+                <h4>
+                  Hometown: 
+                  Boulder
+                </h4>
+                <h4>
+                  Comments: 
+                  Great hike
+                   
+                </h4>
+                <h4>
+                  Date: 
+                  2018-12-19 21:10:17 UTC
+                </h4>
+              </div>,
+              <div
+                className="comment"
+              >
+                <h4>
+                  Name: 
+                  Andrew Tobin
+                </h4>
+                <h4>
+                  Hometown: 
+                  Denver
+                </h4>
+                <h4>
+                  Comments: 
+                  Best hike ever
+                   
+                </h4>
+                <h4>
+                  Date: 
+                  2018-12-19 21:11:29 UTC
+                </h4>
+              </div>,
             ],
+            "className": "comment-container",
           },
           "ref": null,
           "rendered": Array [
@@ -375,24 +637,100 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  "name: ",
-                  "Andrew",
-                  ", hometown:",
-                  "Boulder",
-                  ", Date:",
-                  "2018-12-19 21:10:17 UTC",
+                  <h4>
+                    Name: 
+                    Andrew
+                  </h4>,
+                  <h4>
+                    Hometown: 
+                    Boulder
+                  </h4>,
+                  <h4>
+                    Comments: 
+                    Great hike
+                     
+                  </h4>,
+                  <h4>
+                    Date: 
+                    2018-12-19 21:10:17 UTC
+                  </h4>,
                 ],
+                "className": "comment",
               },
               "ref": null,
               "rendered": Array [
-                "name: ",
-                "Andrew",
-                ", hometown:",
-                "Boulder",
-                ", Date:",
-                "2018-12-19 21:10:17 UTC",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Name: ",
+                      "Andrew",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Name: ",
+                    "Andrew",
+                  ],
+                  "type": "h4",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Hometown: ",
+                      "Boulder",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Hometown: ",
+                    "Boulder",
+                  ],
+                  "type": "h4",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Comments: ",
+                      "Great hike",
+                      " ",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Comments: ",
+                    "Great hike",
+                    " ",
+                  ],
+                  "type": "h4",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Date: ",
+                      "2018-12-19 21:10:17 UTC",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Date: ",
+                    "2018-12-19 21:10:17 UTC",
+                  ],
+                  "type": "h4",
+                },
               ],
-              "type": "li",
+              "type": "div",
             },
             Object {
               "instance": null,
@@ -400,27 +738,103 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  "name: ",
-                  "Andrew Tobin",
-                  ", hometown:",
-                  "Denver",
-                  ", Date:",
-                  "2018-12-19 21:11:29 UTC",
+                  <h4>
+                    Name: 
+                    Andrew Tobin
+                  </h4>,
+                  <h4>
+                    Hometown: 
+                    Denver
+                  </h4>,
+                  <h4>
+                    Comments: 
+                    Best hike ever
+                     
+                  </h4>,
+                  <h4>
+                    Date: 
+                    2018-12-19 21:11:29 UTC
+                  </h4>,
                 ],
+                "className": "comment",
               },
               "ref": null,
               "rendered": Array [
-                "name: ",
-                "Andrew Tobin",
-                ", hometown:",
-                "Denver",
-                ", Date:",
-                "2018-12-19 21:11:29 UTC",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Name: ",
+                      "Andrew Tobin",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Name: ",
+                    "Andrew Tobin",
+                  ],
+                  "type": "h4",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Hometown: ",
+                      "Denver",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Hometown: ",
+                    "Denver",
+                  ],
+                  "type": "h4",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Comments: ",
+                      "Best hike ever",
+                      " ",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Comments: ",
+                    "Best hike ever",
+                    " ",
+                  ],
+                  "type": "h4",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Date: ",
+                      "2018-12-19 21:11:29 UTC",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Date: ",
+                    "2018-12-19 21:11:29 UTC",
+                  ],
+                  "type": "h4",
+                },
               ],
-              "type": "li",
+              "type": "div",
             },
           ],
-          "type": "ol",
+          "type": "section",
         },
         Object {
           "instance": null,

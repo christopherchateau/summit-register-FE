@@ -127,6 +127,7 @@ class App extends Component {
             handleViewLogButton={this.handleViewLogButton}
             handleLogUpdate={this.handleLogUpdate}
             handleSignLog={this.handleSignLog}
+            currentLocation={this.state.currentLocation}
           />
         )}
         {currentDisplay[0] === "log" && (

@@ -30,6 +30,6 @@ export const postToLog = async (id, logEntry, timeStamp) => {
       headers: { "Content-Type": "application/json" }
     }
   );
-  const data = await response.json();
-  return data;
+  const updatedLog = await response.json();
+  return updatedLog.data;
 };

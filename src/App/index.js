@@ -17,8 +17,7 @@ class App extends Component {
       currentMountain: "",
       currentMountainData: {},
       currentMountainLog: [],
-      currentLocation: {},
-      errorMessage: ""
+      currentLocation: {}
     };
   }
 
@@ -27,8 +26,10 @@ class App extends Component {
   };
 
   componentDidUpdate = () => {
-    if (this.state.errorMessage.length) {
-      console.log(this.state.errorMessage);
+    if (this.state.currentLocation === undefined) {
+      return;
+    } else {
+      console.log("unable to track location");
     }
   };
 
@@ -83,11 +84,7 @@ class App extends Component {
   };
 
   getLocation = () => {
-    return navigator.geolocation
-      ? navigator.geolocation.watchPosition(this.showPosition)
-      : this.setState({
-          errorMessage: "Geo Location not supported by browser"
-        });
+    return navigator.geolocation.watchPosition(this.showPosition);
   };
 
   showPosition = position => {

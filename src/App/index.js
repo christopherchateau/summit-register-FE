@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Start from "../Start";
 import Info from "../Info";
 import Log from "../Log";
-import LoadingScreen from "../LoadingScreen"
+import LoadingScreen from "../LoadingScreen";
 import RegisterForm from "../RegisterForm";
 import { mountainData } from "../utilities/Data/mountain-data";
 import * as apiCalls from "../utilities/helper/apiCalls";
@@ -16,8 +16,20 @@ class App extends Component {
       currentDisplay: ["start"],
       currentMountain: "",
       currentMountainData: {},
-      currentMountainLog: []
+      currentMountainLog: [],
+      currentLocation: {},
+      errorMessage: ''
     };
+  }
+
+  componentDidMount =  () => {
+    this.getLocation();
+  };
+
+  componentDidUpdate = () => {
+    if (this.state.errorMessage.length) {
+      console.log(this.state.errorMessage)
+    }
   }
 
   handleBackButton = () => {
@@ -60,7 +72,7 @@ class App extends Component {
       timeStamp
     );
     if (response) {
-      await this.setState({ currentMountainLog: response })
+      await this.setState({ currentMountainLog: response });
       await this.updateCurrentDisplayLog("log");
     }
   };
@@ -68,6 +80,20 @@ class App extends Component {
   updateCurrentDisplayLog = display => {
     const updatedDisplay = this.state.currentDisplay;
     this.setState({ currentDisplay: [display, ...updatedDisplay] });
+  };
+
+  getLocation = () => {
+    return navigator.geolocation
+      ? navigator.geolocation.watchPosition(this.showPosition)
+      : "Geo Location not supported by browser";
+  };
+
+  showPosition = position => {
+    const currentLocation = {
+      longitude: position.coords.longitude,
+      latitude: position.coords.latitude
+    };
+    this.setState({ currentLocation });
   };
 
   render() {
@@ -110,10 +136,7 @@ class App extends Component {
             handleLogUpdate={this.handleLogUpdate}
           />
         )}
-        {currentDisplay[0] === "loadingScreen" && (
-          <LoadingScreen
-          />
-        )}
+        {currentDisplay[0] === "loadingScreen" && <LoadingScreen />}
       </div>
     );
   }

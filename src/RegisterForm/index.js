@@ -62,7 +62,11 @@ class RegisterForm extends Component {
             />
           </h3>
         </form>
-        <button className="submit-btn" type="submit" onClick={this.handleSubmit}>
+        <button
+          className="submit-btn"
+          type="submit"
+          onClick={this.handleSubmit}
+        >
           Submit
         </button>
       </div>

@@ -19,7 +19,11 @@ class Log extends Component {
     });
 
     if (!singleLog.length) {
-      singleLog = <h2>This Summit has no existing log</h2>;
+      singleLog = (
+        <section className="empty-log-msg">
+          <h2>No entries found</h2>
+        </section>
+      );
     }
 
     return (

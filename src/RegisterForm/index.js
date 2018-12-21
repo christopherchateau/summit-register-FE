@@ -34,24 +34,33 @@ class RegisterForm extends Component {
           <img className="logo-small" alt="logo" src={logo} />
         </header>
         <form className="register-form" onSubmit={this.handleSubmit}>
-          <input
-            className="name-input"
-            value={name}
-            name="name"
-            onChange={this.handleChange}
-          />
-          <input
-            className="hometown-input"
-            value={hometown}
-            name="hometown"
-            onChange={this.handleChange}
-          />
-          <input
-            className="comments-input"
-            value={comments}
-            name="comments"
-            onChange={this.handleChange}
-          />
+          <h3 className="form-instructions">
+            Name:
+            <input
+              className="input"
+              value={name}
+              name="name"
+              onChange={this.handleChange}
+            />
+          </h3>
+          <h3 className="form-instructions">
+            Hometown:
+            <input
+              className="input"
+              value={hometown}
+              name="hometown"
+              onChange={this.handleChange}
+            />
+          </h3>
+          <h3 className="form-instructions">
+            Comments:
+            <textarea
+              className="input"
+              value={comments}
+              name="comments"
+              onChange={this.handleChange}
+            />
+          </h3>
           <button
             className="submit-btn"
             // onClick={}

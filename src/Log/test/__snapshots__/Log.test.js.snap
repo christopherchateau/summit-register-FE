@@ -64,7 +64,7 @@ ShallowWrapper {
             Andrew
             , hometown:
             Boulder
-            ,Date:
+            , Date:
             2018-12-19 21:10:17 UTC
           </li>
           <li>
@@ -72,7 +72,7 @@ ShallowWrapper {
             Andrew Tobin
             , hometown:
             Denver
-            ,Date:
+            , Date:
             2018-12-19 21:11:29 UTC
           </li>
         </ol>,
@@ -154,7 +154,7 @@ ShallowWrapper {
               Andrew
               , hometown:
               Boulder
-              ,Date:
+              , Date:
               2018-12-19 21:10:17 UTC
             </li>,
             <li>
@@ -162,7 +162,7 @@ ShallowWrapper {
               Andrew Tobin
               , hometown:
               Denver
-              ,Date:
+              , Date:
               2018-12-19 21:11:29 UTC
             </li>,
           ],
@@ -179,7 +179,7 @@ ShallowWrapper {
                 "Andrew",
                 ", hometown:",
                 "Boulder",
-                ",Date:",
+                ", Date:",
                 "2018-12-19 21:10:17 UTC",
               ],
             },
@@ -189,7 +189,7 @@ ShallowWrapper {
               "Andrew",
               ", hometown:",
               "Boulder",
-              ",Date:",
+              ", Date:",
               "2018-12-19 21:10:17 UTC",
             ],
             "type": "li",
@@ -204,7 +204,7 @@ ShallowWrapper {
                 "Andrew Tobin",
                 ", hometown:",
                 "Denver",
-                ",Date:",
+                ", Date:",
                 "2018-12-19 21:11:29 UTC",
               ],
             },
@@ -214,7 +214,7 @@ ShallowWrapper {
               "Andrew Tobin",
               ", hometown:",
               "Denver",
-              ",Date:",
+              ", Date:",
               "2018-12-19 21:11:29 UTC",
             ],
             "type": "li",
@@ -264,7 +264,7 @@ ShallowWrapper {
               Andrew
               , hometown:
               Boulder
-              ,Date:
+              , Date:
               2018-12-19 21:10:17 UTC
             </li>
             <li>
@@ -272,7 +272,7 @@ ShallowWrapper {
               Andrew Tobin
               , hometown:
               Denver
-              ,Date:
+              , Date:
               2018-12-19 21:11:29 UTC
             </li>
           </ol>,
@@ -354,7 +354,7 @@ ShallowWrapper {
                 Andrew
                 , hometown:
                 Boulder
-                ,Date:
+                , Date:
                 2018-12-19 21:10:17 UTC
               </li>,
               <li>
@@ -362,7 +362,7 @@ ShallowWrapper {
                 Andrew Tobin
                 , hometown:
                 Denver
-                ,Date:
+                , Date:
                 2018-12-19 21:11:29 UTC
               </li>,
             ],
@@ -379,7 +379,7 @@ ShallowWrapper {
                   "Andrew",
                   ", hometown:",
                   "Boulder",
-                  ",Date:",
+                  ", Date:",
                   "2018-12-19 21:10:17 UTC",
                 ],
               },
@@ -389,7 +389,7 @@ ShallowWrapper {
                 "Andrew",
                 ", hometown:",
                 "Boulder",
-                ",Date:",
+                ", Date:",
                 "2018-12-19 21:10:17 UTC",
               ],
               "type": "li",
@@ -404,7 +404,7 @@ ShallowWrapper {
                   "Andrew Tobin",
                   ", hometown:",
                   "Denver",
-                  ",Date:",
+                  ", Date:",
                   "2018-12-19 21:11:29 UTC",
                 ],
               },
@@ -414,7 +414,7 @@ ShallowWrapper {
                 "Andrew Tobin",
                 ", hometown:",
                 "Denver",
-                ",Date:",
+                ", Date:",
                 "2018-12-19 21:11:29 UTC",
               ],
               "type": "li",

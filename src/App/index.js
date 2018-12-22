@@ -1,13 +1,16 @@
 import React, { Component } from "react";
+import firebase from 'firebase'
 import Start from "../Start";
 import Info from "../Info";
 import Log from "../Log";
+import SignIn from '../SignIn';
 import LoadingScreen from "../LoadingScreen";
 import RegisterForm from "../RegisterForm";
 import { mountainData } from "../utilities/Data/mountain-data";
 import * as apiCalls from "../utilities/helper/apiCalls";
 import { generateTimeStamp } from "../utilities/helper/timeStamp";
 import "./App.css";
+
 
 class App extends Component {
   constructor() {
@@ -17,7 +20,8 @@ class App extends Component {
       currentMountain: "",
       currentMountainData: {},
       currentMountainLog: [],
-      currentLocation: {}
+      currentLocation: {},
+      isSignedIn: false
     };
   }
 
@@ -32,6 +36,15 @@ class App extends Component {
       console.log("unable to track location");
     }
   };
+
+  validateSignIn = (boolean) => {
+    console.log(boolean)
+    if(boolean === true) {
+      this.setState({
+        isSignedIn: true,})
+    } 
+    this.updateCurrentDisplayLog('start')
+  }
 
   handleBackButton = () => {
     let currentDisplay = this.state.currentDisplay[0];
@@ -72,6 +85,10 @@ class App extends Component {
     this.updateCurrentDisplayLog("registerForm");
   };
 
+  handleSignIn = () => {
+    this.updateCurrentDisplayLog("signIn")
+  }
+
   handleLogUpdate = async logEntry => {
     const timeStamp = generateTimeStamp();
     this.updateCurrentDisplayLog("loadingScreen");
@@ -108,8 +125,10 @@ class App extends Component {
       currentDisplay,
       currentMountain,
       currentMountainData,
-      currentMountainLog
+      currentMountainLog,
+      isSignedIn
     } = this.state;
+
     return (
       <div className="App">
         {currentDisplay[0] === "start" && (
@@ -118,6 +137,7 @@ class App extends Component {
             handleSelectButton={this.handleSelectButton}
             handleLogUpdate={this.handleLogUpdate}
             handleSignLog={this.handleSignLog}
+            handleSignIn={this.handleSignIn}
           />
         )}
         {currentDisplay[0] === "info" && (
@@ -145,6 +165,18 @@ class App extends Component {
           />
         )}
         {currentDisplay[0] === "loadingScreen" && <LoadingScreen />}
+        {this.state.currentDisplay[0] === 'signIn' && (
+          <SignIn 
+            handleBackButton={this.handleBackButton}
+            validateSignIn={this.validateSignIn}
+           />
+          
+          
+          // <StyledFirebaseAuth
+          //   uiConfig={this.uiConfig}
+          //   firebaseAuth={firebase.auth()}
+          // />
+        )}
       </div>
     );
   }

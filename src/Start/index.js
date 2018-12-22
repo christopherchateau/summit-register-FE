@@ -23,7 +23,7 @@ class Start extends Component {
       });
 
     return (
-      <div className="Start">
+      <div className="Start Main">
         <div className="drop-down-controls">
           <select
             className="drop-down-menu"

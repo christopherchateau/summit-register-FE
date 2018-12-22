@@ -6,7 +6,7 @@ import "./Header.css";
 class Header extends Component {
   render() {
     return (
-      <header className="header">
+      <header className="Header">
         <button className="back-btn" onClick={this.props.handleBackButton}>
           Back
         </button>

@@ -134,9 +134,9 @@ class App extends Component {
 
     return (
       <div className="App">
-        <Header className="Header" handleBackButton={this.handleBackButton} />
+        <Header handleBackButton={this.handleBackButton} />
         {currentDisplay[0] === "start" && (
-          <Start
+          <Start 
             currentMountain={currentMountain}
             handleSelectButton={this.handleSelectButton}
             handleLogUpdate={this.handleLogUpdate}
@@ -145,7 +145,7 @@ class App extends Component {
           />
         )}
         {currentDisplay[0] === "info" && (
-          <Info
+          <Info 
             handleBackButton={this.handleBackButton}
             currentMountainData={currentMountainData}
             handleViewLogButton={this.handleViewLogButton}
@@ -155,7 +155,7 @@ class App extends Component {
           />
         )}
         {currentDisplay[0] === "log" && (
-          <Log
+          <Log 
             currentMountainLog={currentMountainLog}
             handleBackButton={this.handleBackButton}
             handleLogUpdate={this.handleLogUpdate}
@@ -163,14 +163,14 @@ class App extends Component {
           />
         )}
         {currentDisplay[0] === "registerForm" && (
-          <RegisterForm
+          <RegisterForm 
             handleBackButton={this.handleBackButton}
             handleLogUpdate={this.handleLogUpdate}
           />
         )}
-        {currentDisplay[0] === "loadingScreen" && <LoadingScreen />}
+        {currentDisplay[0] === "loadingScreen" && <LoadingScreen className="Main"/>}
         {this.state.currentDisplay[0] === "signIn" && (
-          <SignIn
+          <SignIn 
             handleBackButton={this.handleBackButton}
             validateSignIn={this.validateSignIn}
           />

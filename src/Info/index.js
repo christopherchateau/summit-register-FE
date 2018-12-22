@@ -4,8 +4,8 @@ import "./Info.css";
 
 class Info extends Component {
   render() {
-    let locationCheck = this.props.currentLocation.sum - -65.2454654;
-    let locationValidation = locationCheck < .5 && locationCheck > -.5;
+    let locationCheck = this.props.currentLocation.sum - -65.1987469999;
+    let locationValidation = locationCheck < .007 && locationCheck > -.007;
     const {
       name,
       altitude,
@@ -21,7 +21,7 @@ class Info extends Component {
           <h3>Range: {range}</h3>
           <h3>Latitude: {this.props.currentLocation.latitude}</h3>
           <h3>Longitude: {this.props.currentLocation.longitude}</h3>
-          <h3>Sum: {locationCheck}</h3>
+          <h3>{locationCheck}</h3>
           <h3>You at the top?: {locationValidation.toString()}</h3>
         </section>
         <button

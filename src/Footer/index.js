@@ -11,7 +11,7 @@ class Footer extends Component {
         <button
           className="submit-btn"
           type="submit"
-          onClick={this.handleSubmit}
+          onClick={this.props.handleLogUpdate}
         >
           Submit
         </button>

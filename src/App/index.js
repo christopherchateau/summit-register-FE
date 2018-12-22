@@ -134,44 +134,38 @@ class App extends Component {
 
     return (
       <div className="App">
-        <Header currentDisplay={currentDisplay} handleBackButton={this.handleBackButton} />
+        <Header
+          currentDisplay={currentDisplay}
+          handleBackButton={this.handleBackButton}
+        />
         {currentDisplay[0] === "start" && (
-          <Start 
+          <Start
             currentMountain={currentMountain}
             handleSelectButton={this.handleSelectButton}
             handleLogUpdate={this.handleLogUpdate}
-            handleSignLog={this.handleSignLog}
             handleSignIn={this.handleSignIn}
           />
         )}
         {currentDisplay[0] === "info" && (
-          <Info 
-            handleBackButton={this.handleBackButton}
+          <Info
             currentMountainData={currentMountainData}
             handleViewLogButton={this.handleViewLogButton}
             handleLogUpdate={this.handleLogUpdate}
-            handleSignLog={this.handleSignLog}
             currentLocation={this.state.currentLocation}
           />
         )}
         {currentDisplay[0] === "log" && (
-          <Log 
+          <Log
             currentMountainLog={currentMountainLog}
-            handleBackButton={this.handleBackButton}
-            handleLogUpdate={this.handleLogUpdate}
-            handleSignLog={this.handleSignLog}
-          />
-        )}
-        {currentDisplay[0] === "registerForm" && (
-          <RegisterForm 
-            handleBackButton={this.handleBackButton}
             handleLogUpdate={this.handleLogUpdate}
           />
         )}
-        {currentDisplay[0] === "loadingScreen" && <LoadingScreen className="Main"/>}
+        {currentDisplay[0] === "registerForm" && <RegisterForm />}
+        {currentDisplay[0] === "loadingScreen" && (
+          <LoadingScreen className="Main" />
+        )}
         {this.state.currentDisplay[0] === "signIn" && (
-          <SignIn 
-            handleBackButton={this.handleBackButton}
+          <SignIn
             validateSignIn={this.validateSignIn}
           />
 
@@ -180,7 +174,12 @@ class App extends Component {
           //   firebaseAuth={firebase.auth()}
           // />
         )}
-        <Footer currentDisplay={currentDisplay} handleSignIn={this.handleSignIn} handleSignLog={this.handleSignLog}/>
+        <Footer
+          currentDisplay={currentDisplay}
+          handleSignIn={this.handleSignIn}
+          handleLogUpdate={this.handleLogUpdate}
+          handleSignLog={this.handleSignLog}
+        />
       </div>
     );
   }

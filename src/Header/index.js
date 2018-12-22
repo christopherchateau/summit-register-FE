@@ -7,9 +7,11 @@ class Header extends Component {
   render() {
     return (
       <header className="Header">
-        <button className="back-btn" onClick={this.props.handleBackButton}>
-          Back
-        </button>
+        {this.props.currentDisplay[0] !== "start" && (
+          <button className="back-btn" onClick={this.props.handleBackButton}>
+            Back
+          </button>
+        )}
         <h1 className="main-title">Summit Register</h1>
         <img className="logo" alt="logo" src={logo} />
       </header>

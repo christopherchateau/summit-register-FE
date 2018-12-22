@@ -43,20 +43,6 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <header
-          className="header"
-        >
-          <button
-            className="back-btn"
-          >
-            Back
-          </button>
-          <img
-            alt="logo"
-            className="logo-small"
-            src="logo.png"
-          />
-        </header>,
         <h1 />,
         <section
           className="comment-container"
@@ -104,62 +90,11 @@ ShallowWrapper {
             </h4>
           </div>
         </section>,
-        <SignRegister />,
       ],
       "className": "Log",
     },
     "ref": null,
     "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            <button
-              className="back-btn"
-            >
-              Back
-            </button>,
-            <img
-              alt="logo"
-              className="logo-small"
-              src="logo.png"
-            />,
-          ],
-          "className": "header",
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "Back",
-              "className": "back-btn",
-              "onClick": undefined,
-            },
-            "ref": null,
-            "rendered": "Back",
-            "type": "button",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "alt": "logo",
-              "className": "logo-small",
-              "src": "logo.png",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": "img",
-          },
-        ],
-        "type": "header",
-      },
       Object {
         "instance": null,
         "key": undefined,
@@ -429,17 +364,6 @@ ShallowWrapper {
         ],
         "type": "section",
       },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "handleSignLog": undefined,
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
     ],
     "type": "div",
   },
@@ -450,20 +374,6 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <header
-            className="header"
-          >
-            <button
-              className="back-btn"
-            >
-              Back
-            </button>
-            <img
-              alt="logo"
-              className="logo-small"
-              src="logo.png"
-            />
-          </header>,
           <h1 />,
           <section
             className="comment-container"
@@ -511,62 +421,11 @@ ShallowWrapper {
               </h4>
             </div>
           </section>,
-          <SignRegister />,
         ],
         "className": "Log",
       },
       "ref": null,
       "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              <button
-                className="back-btn"
-              >
-                Back
-              </button>,
-              <img
-                alt="logo"
-                className="logo-small"
-                src="logo.png"
-              />,
-            ],
-            "className": "header",
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Back",
-                "className": "back-btn",
-                "onClick": undefined,
-              },
-              "ref": null,
-              "rendered": "Back",
-              "type": "button",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "alt": "logo",
-                "className": "logo-small",
-                "src": "logo.png",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "img",
-            },
-          ],
-          "type": "header",
-        },
         Object {
           "instance": null,
           "key": undefined,
@@ -835,17 +694,6 @@ ShallowWrapper {
             },
           ],
           "type": "section",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "handleSignLog": undefined,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
         },
       ],
       "type": "div",

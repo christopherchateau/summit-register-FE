@@ -357,6 +357,9 @@ ShallowWrapper {
           </button>
         </div>,
         <SignRegister />,
+        <button>
+          SignIn/SignUp
+        </button>,
       ],
       "className": "Start",
     },
@@ -1801,6 +1804,18 @@ ShallowWrapper {
         "rendered": null,
         "type": [Function],
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "SignIn/SignUp",
+          "onClick": undefined,
+        },
+        "ref": null,
+        "rendered": "SignIn/SignUp",
+        "type": "button",
+      },
     ],
     "type": "div",
   },
@@ -2141,6 +2156,9 @@ ShallowWrapper {
             </button>
           </div>,
           <SignRegister />,
+          <button>
+            SignIn/SignUp
+          </button>,
         ],
         "className": "Start",
       },
@@ -3584,6 +3602,18 @@ ShallowWrapper {
           "ref": null,
           "rendered": null,
           "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "SignIn/SignUp",
+            "onClick": undefined,
+          },
+          "ref": null,
+          "rendered": "SignIn/SignUp",
+          "type": "button",
         },
       ],
       "type": "div",

@@ -27,12 +27,6 @@ class RegisterForm extends Component {
     const { name, hometown, comments } = this.state;
     return (
       <div className="RegisterForm">
-        <header className="header">
-          <button className="back-btn" onClick={this.props.handleBackButton}>
-            Back
-          </button>
-          <img className="logo-small" alt="logo" src={logo} />
-        </header>
         <form className="register-form">
           <h3 className="form-instructions">
             Name:

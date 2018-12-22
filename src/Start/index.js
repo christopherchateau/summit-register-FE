@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { mountainData } from "../utilities/Data/mountain-data";
-import logo from "../utilities/Images/logo.png";
 import SignRegister from "../SignRegister";
 import "./Start.css";
 
@@ -25,10 +24,6 @@ class Start extends Component {
 
     return (
       <div className="Start">
-        <h1 className="main-title">
-          Summit Register
-          <img className="logo" alt="logo" src={logo} />
-        </h1>
         <div className="drop-down-controls">
           <select
             className="drop-down-menu"

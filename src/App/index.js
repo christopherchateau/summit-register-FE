@@ -1,16 +1,17 @@
 import React, { Component } from "react";
-import firebase from 'firebase'
+import firebase from "firebase";
+import Header from "../Header";
 import Start from "../Start";
 import Info from "../Info";
 import Log from "../Log";
-import SignIn from '../SignIn';
+import SignIn from "../SignIn";
+import Footer from "../Footer";
 import LoadingScreen from "../LoadingScreen";
 import RegisterForm from "../RegisterForm";
 import { mountainData } from "../utilities/Data/mountain-data";
 import * as apiCalls from "../utilities/helper/apiCalls";
 import { generateTimeStamp } from "../utilities/helper/timeStamp";
 import "./App.css";
-
 
 class App extends Component {
   constructor() {
@@ -37,14 +38,15 @@ class App extends Component {
     }
   };
 
-  validateSignIn = (boolean) => {
-    console.log(boolean)
-    if(boolean === true) {
+  validateSignIn = boolean => {
+    console.log(boolean);
+    if (boolean === true) {
       this.setState({
-        isSignedIn: true,})
-    } 
-    this.updateCurrentDisplayLog('start')
-  }
+        isSignedIn: true
+      });
+    }
+    this.updateCurrentDisplayLog("start");
+  };
 
   handleBackButton = () => {
     let currentDisplay = this.state.currentDisplay[0];
@@ -86,8 +88,8 @@ class App extends Component {
   };
 
   handleSignIn = () => {
-    this.updateCurrentDisplayLog("signIn")
-  }
+    this.updateCurrentDisplayLog("signIn");
+  };
 
   handleLogUpdate = async logEntry => {
     const timeStamp = generateTimeStamp();
@@ -132,6 +134,7 @@ class App extends Component {
 
     return (
       <div className="App">
+        <Header className="Header" handleBackButton={this.handleBackButton} />
         {currentDisplay[0] === "start" && (
           <Start
             currentMountain={currentMountain}
@@ -166,18 +169,18 @@ class App extends Component {
           />
         )}
         {currentDisplay[0] === "loadingScreen" && <LoadingScreen />}
-        {this.state.currentDisplay[0] === 'signIn' && (
-          <SignIn 
+        {this.state.currentDisplay[0] === "signIn" && (
+          <SignIn
             handleBackButton={this.handleBackButton}
             validateSignIn={this.validateSignIn}
-           />
-          
-          
+          />
+
           // <StyledFirebaseAuth
           //   uiConfig={this.uiConfig}
           //   firebaseAuth={firebase.auth()}
           // />
         )}
+        <Footer />
       </div>
     );
   }

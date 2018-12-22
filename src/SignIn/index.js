@@ -44,12 +44,6 @@ class SignIn extends Component {
   render() {
     return (
       <div className="SignIn">
-        <header className="header">
-          <button className="back-btn" onClick={this.props.handleBackButton}>
-            Back
-          </button>
-          <img className="logo-small" alt="logo" src={logo} />
-        </header>
         <StyledFirebaseAuth
           uiConfig={this.uiConfig}
           firebaseAuth={firebase.auth()}

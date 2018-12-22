@@ -2,7 +2,7 @@
   align-items: center;
   background: url("../utilities/Images/mountains-2.jpg") no-repeat center
     rgba(165, 165, 165, 0.9);
-  background-size: auto 70%;
+  background-size: auto 100%;
   display: flex;
   flex-direction: column;
 }
@@ -27,13 +27,4 @@
   font-size: 14px;
   margin-left: 10px;
   padding: 5px;
-}
-
-.submit-btn {
-  border: 1px solid black;
-  border-radius: 20px;
-  font-size: 20px;
-  margin-left: 5px;
-  margin-top: 180px;
-  padding: 2px 10px;
 }

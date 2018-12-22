@@ -2,7 +2,7 @@
   align-items: center;
   background: rgba(165, 165, 165, 0.68);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding-top: 12px;
   width: 80%;
 }
@@ -10,20 +10,16 @@
 .main-title {
   color: white;
   font-size: 30px;
-  margin: 10px 0 0 0;
 }
   
 .logo {
-  height: 40px;
-  margin-left: 10px; 
-  position: relative;
-  top: 8px;
+  height: 60px;
 }
 
 .back-btn {
   background: transparent;
   border: none;
-  display: block;
+  display: none;
   font-size: 22px;
   margin: 70px 0;
   padding: 5px;

@@ -39,7 +39,6 @@ class App extends Component {
   };
 
   validateSignIn = boolean => {
-    console.log(boolean);
     if (boolean === true) {
       this.setState({
         isSignedIn: true

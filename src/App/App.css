@@ -1,7 +1,19 @@
 .App {
-  
+  display: grid;
+  grid-template-rows: 100px 1fr 100px;
 }
 
 .Header {
+  border: 3px solid yellow;
   width: 100%;
+}
+
+.Main {
+  border: 3px solid orange;
+
+}
+
+.Footer {
+  border: 3px solid purple;
+
 }

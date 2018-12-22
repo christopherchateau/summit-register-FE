@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import logo from "../utilities/Images/logo.png";
-import SignRegister from "../SignRegister";
 import "./Log.css";
 
 class Log extends Component {
@@ -30,7 +28,6 @@ class Log extends Component {
       <div className="Log">
         <h1>{name}</h1>
         <section className="comment-container">{singleLog}</section>
-        <SignRegister handleSignLog={this.props.handleSignLog} />
       </div>
     );
   }

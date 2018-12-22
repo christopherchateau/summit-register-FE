@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import logo from "../utilities/Images/logo.png";
-import SignRegister from "../SignRegister";
 import "./Info.css";
 
 class Info extends Component {
@@ -32,7 +30,6 @@ class Info extends Component {
         >
           View Log
         </button>
-        <SignRegister handleSignLog={this.props.handleSignLog} />
       </div>
     );
   }

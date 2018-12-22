@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { mountainData } from "../utilities/Data/mountain-data";
-import SignRegister from "../SignRegister";
 import "./Start.css";
 
 class Start extends Component {
@@ -39,12 +38,6 @@ class Start extends Component {
             Select
           </button>
         </div>
-        <SignRegister handleSignLog={this.props.handleSignLog} />
-        <button 
-        onClick={this.props.handleSignIn}
-        >
-          SignIn/SignUp
-        </button>
       </div>
     );
   }

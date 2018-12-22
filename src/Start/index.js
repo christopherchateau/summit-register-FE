@@ -45,6 +45,11 @@ class Start extends Component {
           </button>
         </div>
         <SignRegister handleSignLog={this.props.handleSignLog} />
+        <button 
+        onClick={this.props.handleSignIn}
+        >
+          SignIn/SignUp
+        </button>
       </div>
     );
   }
@@ -53,7 +58,8 @@ class Start extends Component {
 Start.propTypes = {
   handleSelect: PropTypes.func,
   currentMountain: PropTypes.string,
-  handleLogUpdate: PropTypes.func
+  handleLogUpdate: PropTypes.func,
+  handleSignIn: PropTypes.func
 };
 
 export default Start;

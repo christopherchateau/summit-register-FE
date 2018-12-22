@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import firebase from 'firebase'
 import PropTypes from "prop-types";
 import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth";
-import logo from "../utilities/Images/logo.png";
 import "./SignIn.css";
 
 firebase.initializeApp({

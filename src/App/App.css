@@ -1,19 +1,23 @@
+@import url("https://fonts.googleapis.com/css?family=Archivo");
+
+* {
+  font-family: "Archivo", sans-serif;
+}
+
 .App {
   display: grid;
   grid-template-rows: 100px 1fr 100px;
+  height: 100vh;
 }
 
 .Header {
-  border: 3px solid yellow;
   width: 100%;
 }
 
 .Main {
-  border: 3px solid orange;
 
 }
 
 .Footer {
-  border: 3px solid purple;
 
 }

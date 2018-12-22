@@ -1,5 +1,17 @@
-.footer {
+.Footer {
   background: rgba(165, 165, 165, 0.68);
-  border: 2px solid pink;
-  height: 100px;
+  display: flex;
+}
+
+.sign-register-btn {
+  border: 1px solid black;
+  border-radius: 20px;
+  font-size: 16px;
+  padding: 5px 10px;
+}
+
+.sign-register-btn:hover {
+  background: black;
+  color: white;
+  transition: all 0.4s ease-in-out;
 }

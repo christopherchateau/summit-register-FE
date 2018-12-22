@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import logo from "../utilities/Images/logo.png";
 import loading from "../utilities/Images/loading.gif";
 import PropTypes from "prop-types";
 import "./LoadingScreen.css";

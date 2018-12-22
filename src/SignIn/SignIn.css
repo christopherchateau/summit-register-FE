@@ -5,10 +5,7 @@
   background: url("../utilities/Images/mountains-2.jpg") no-repeat center
   rgba(165, 165, 165, 0.68);
   background-size: auto 70%;
-  height: 90vh;
   justify-content: space-between;
-  border: 4px solid black;
-  height: 100vh;
 }
 
 h4 {

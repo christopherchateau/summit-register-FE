@@ -134,7 +134,7 @@ class App extends Component {
 
     return (
       <div className="App">
-        <Header handleBackButton={this.handleBackButton} />
+        <Header currentDisplay={currentDisplay} handleBackButton={this.handleBackButton} />
         {currentDisplay[0] === "start" && (
           <Start 
             currentMountain={currentMountain}
@@ -180,7 +180,7 @@ class App extends Component {
           //   firebaseAuth={firebase.auth()}
           // />
         )}
-        <Footer handleSignIn={this.handleSignIn} handleSignLog={this.handleSignLog}/>
+        <Footer currentDisplay={currentDisplay} handleSignIn={this.handleSignIn} handleSignLog={this.handleSignLog}/>
       </div>
     );
   }

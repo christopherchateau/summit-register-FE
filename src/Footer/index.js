@@ -7,8 +7,15 @@ class Footer extends Component {
   render() {
     return (
       <footer className="Footer">
+        <button
+          className="submit-btn"
+          type="submit"
+          onClick={this.handleSubmit}
+        >
+          Submit
+        </button>
         <SignRegister handleSignLog={this.props.handleSignLog} />
-        <button onClick={this.props.handleSignIn}>SignIn/SignUp</button>
+        <button className="sign-in-btn" onClick={this.props.handleSignIn}>SignIn/SignUp</button>
       </footer>
     );
   }

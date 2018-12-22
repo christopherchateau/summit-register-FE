@@ -180,7 +180,7 @@ class App extends Component {
           //   firebaseAuth={firebase.auth()}
           // />
         )}
-        <Footer />
+        <Footer handleSignIn={this.handleSignIn} handleSignLog={this.handleSignLog}/>
       </div>
     );
   }

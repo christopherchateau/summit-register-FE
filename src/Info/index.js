@@ -16,12 +16,6 @@ class Info extends Component {
     } = this.props.currentMountainData.attributes;
     return (
       <div className="Info">
-        <header className="header">
-          <button className="back-btn" onClick={this.props.handleBackButton}>
-            Back
-          </button>
-          <img className="logo-small" alt="logo" src={logo} />
-        </header>
         <section className="info-section">
           <h1>{name}</h1>
           <h3>Altitude: {altitude} ft</h3>

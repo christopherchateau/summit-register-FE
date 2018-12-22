@@ -28,12 +28,6 @@ class Log extends Component {
 
     return (
       <div className="Log">
-        <header className="header">
-          <button className="back-btn" onClick={this.props.handleBackButton}>
-            Back
-          </button>
-          <img className="logo-small" alt="logo" src={logo} />
-        </header>
         <h1>{name}</h1>
         <section className="comment-container">{singleLog}</section>
         <SignRegister handleSignLog={this.props.handleSignLog} />

@@ -31,5 +31,6 @@ export const postToLog = async (id, logEntry, timeStamp) => {
     }
   );
   const updatedLog = await response.json();
+  console.log(updatedLog.data)
   return updatedLog.data;
 };

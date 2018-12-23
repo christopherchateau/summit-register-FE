@@ -11,7 +11,7 @@ class Log extends Component {
           <h4>Name: {log.attributes.name}</h4>
           <h4>Hometown: {log.attributes.hometown}</h4>
           <h4>Comments: {log.attributes.comments} </h4>
-          <h4>Date: {log.attributes.date}</h4>
+          <h4>Date: {log.attributes.sign_time}</h4>
         </div>
       );
     });

@@ -162,7 +162,6 @@ class App extends Component {
         )}
         {this.state.currentDisplay[0] === "signIn" && (
           <SignIn validateSignIn={this.validateSignIn} />
-
           // <StyledFirebaseAuth
           //   uiConfig={this.uiConfig}
           //   firebaseAuth={firebase.auth()}
@@ -171,6 +170,7 @@ class App extends Component {
         <Footer
           currentDisplay={currentDisplay}
           handleSignIn={this.handleSignIn}
+          handleLogUpdate={this.handleLogUpdate}
           handleSignLog={this.handleSignLog}
         />
       </div>

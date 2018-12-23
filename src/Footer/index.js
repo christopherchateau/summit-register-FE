@@ -5,23 +5,11 @@ import "./Footer.css";
 
 class Footer extends Component {
   render() {
-    let buttonDisplay;
-    if (this.props.currentDisplay[0] === "registerForm") {
-      buttonDisplay = (
-        <button
-          className="submit-btn"
-          type="submit"
-          onClick={this.props.handleLogUpdate}
-        >
-          Submit
-        </button>
-      );
-    } else {
-      buttonDisplay = <SignRegister handleSignLog={this.props.handleSignLog} />;
-    }
     return (
       <footer className="Footer">
-        {buttonDisplay}
+        {this.props.currentDisplay[0] !== "registerForm" && (
+          <SignRegister handleSignLog={this.props.handleSignLog} />
+        )}
         <button className="sign-in-btn" onClick={this.props.handleSignIn}>
           SignIn/SignUp
         </button>

@@ -28,3 +28,16 @@
   margin-left: 10px;
   padding: 5px;
 }
+
+.submit-btn {
+  border: 1px solid black;
+  border-radius: 20px;
+  font-size: 16px;
+  padding: 5px 10px;
+}
+
+.submit-btn:hover {
+  background: black;
+  color: white;
+  transition: all 0.4s ease-in-out;
+}

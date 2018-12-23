@@ -141,7 +141,6 @@ class App extends Component {
           <Start
             currentMountain={currentMountain}
             handleSelectButton={this.handleSelectButton}
-            handleLogUpdate={this.handleLogUpdate}
             handleSignIn={this.handleSignIn}
           />
         )}
@@ -149,17 +148,15 @@ class App extends Component {
           <Info
             currentMountainData={currentMountainData}
             handleViewLogButton={this.handleViewLogButton}
-            handleLogUpdate={this.handleLogUpdate}
             currentLocation={this.state.currentLocation}
           />
         )}
         {currentDisplay[0] === "log" && (
-          <Log
-            currentMountainLog={currentMountainLog}
-            handleLogUpdate={this.handleLogUpdate}
-          />
+          <Log currentMountainLog={currentMountainLog} />
         )}
-        {currentDisplay[0] === "registerForm" && <RegisterForm />}
+        {currentDisplay[0] === "registerForm" && (
+          <RegisterForm handleLogUpdate={this.handleLogUpdate} />
+        )}
         {currentDisplay[0] === "loadingScreen" && (
           <LoadingScreen className="Main" />
         )}
@@ -174,7 +171,6 @@ class App extends Component {
         <Footer
           currentDisplay={currentDisplay}
           handleSignIn={this.handleSignIn}
-          handleLogUpdate={this.handleLogUpdate}
           handleSignLog={this.handleSignLog}
         />
       </div>

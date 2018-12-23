@@ -164,9 +164,7 @@ class App extends Component {
           <LoadingScreen className="Main" />
         )}
         {this.state.currentDisplay[0] === "signIn" && (
-          <SignIn
-            validateSignIn={this.validateSignIn}
-          />
+          <SignIn validateSignIn={this.validateSignIn} />
 
           // <StyledFirebaseAuth
           //   uiConfig={this.uiConfig}

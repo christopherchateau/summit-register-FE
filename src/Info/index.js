@@ -4,7 +4,7 @@ import "./Info.css";
 
 class Info extends Component {
   render() {
-    let locationCheck = this.props.currentLocation.sum - -65.1987469999;
+    let locationCheck = this.props.currentLocation.sum - -65.4857898;
     let locationValidation = locationCheck < .007 && locationCheck > -.007;
     const {
       name,

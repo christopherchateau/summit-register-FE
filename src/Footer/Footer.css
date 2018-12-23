@@ -5,7 +5,6 @@
   justify-content: space-around;
 }
 
-.submit-btn,
 .sign-in-btn,
 .sign-register-btn {
   border: 1px solid black;
@@ -14,7 +13,6 @@
   padding: 5px 10px;
 }
 
-.submit-btn:hover,
 .sign-in-btn:hover,
 .sign-register-btn:hover {
   background: black;

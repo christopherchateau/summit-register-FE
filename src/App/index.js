@@ -141,7 +141,6 @@ class App extends Component {
           <Start
             currentMountain={currentMountain}
             handleSelectButton={this.handleSelectButton}
-            handleLogUpdate={this.handleLogUpdate}
             handleSignIn={this.handleSignIn}
           />
         )}
@@ -149,25 +148,20 @@ class App extends Component {
           <Info
             currentMountainData={currentMountainData}
             handleViewLogButton={this.handleViewLogButton}
-            handleLogUpdate={this.handleLogUpdate}
             currentLocation={this.state.currentLocation}
           />
         )}
         {currentDisplay[0] === "log" && (
-          <Log
-            currentMountainLog={currentMountainLog}
-            handleLogUpdate={this.handleLogUpdate}
-          />
+          <Log currentMountainLog={currentMountainLog} />
         )}
-        {currentDisplay[0] === "registerForm" && <RegisterForm />}
+        {currentDisplay[0] === "registerForm" && (
+          <RegisterForm handleLogUpdate={this.handleLogUpdate} />
+        )}
         {currentDisplay[0] === "loadingScreen" && (
           <LoadingScreen className="Main" />
         )}
         {this.state.currentDisplay[0] === "signIn" && (
-          <SignIn
-            validateSignIn={this.validateSignIn}
-          />
-
+          <SignIn validateSignIn={this.validateSignIn} />
           // <StyledFirebaseAuth
           //   uiConfig={this.uiConfig}
           //   firebaseAuth={firebase.auth()}

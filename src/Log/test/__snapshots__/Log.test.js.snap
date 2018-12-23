@@ -65,7 +65,6 @@ ShallowWrapper {
             </h4>
             <h4>
               Date: 
-              2018-12-19 21:10:17 UTC
             </h4>
           </div>
           <div
@@ -86,7 +85,6 @@ ShallowWrapper {
             </h4>
             <h4>
               Date: 
-              2018-12-19 21:11:29 UTC
             </h4>
           </div>
         </section>,
@@ -130,7 +128,6 @@ ShallowWrapper {
               </h4>
               <h4>
                 Date: 
-                2018-12-19 21:10:17 UTC
               </h4>
             </div>,
             <div
@@ -151,7 +148,6 @@ ShallowWrapper {
               </h4>
               <h4>
                 Date: 
-                2018-12-19 21:11:29 UTC
               </h4>
             </div>,
           ],
@@ -180,7 +176,6 @@ ShallowWrapper {
                 </h4>,
                 <h4>
                   Date: 
-                  2018-12-19 21:10:17 UTC
                 </h4>,
               ],
               "className": "comment",
@@ -247,13 +242,13 @@ ShallowWrapper {
                 "props": Object {
                   "children": Array [
                     "Date: ",
-                    "2018-12-19 21:10:17 UTC",
+                    undefined,
                   ],
                 },
                 "ref": null,
                 "rendered": Array [
                   "Date: ",
-                  "2018-12-19 21:10:17 UTC",
+                  undefined,
                 ],
                 "type": "h4",
               },
@@ -281,7 +276,6 @@ ShallowWrapper {
                 </h4>,
                 <h4>
                   Date: 
-                  2018-12-19 21:11:29 UTC
                 </h4>,
               ],
               "className": "comment",
@@ -348,13 +342,13 @@ ShallowWrapper {
                 "props": Object {
                   "children": Array [
                     "Date: ",
-                    "2018-12-19 21:11:29 UTC",
+                    undefined,
                   ],
                 },
                 "ref": null,
                 "rendered": Array [
                   "Date: ",
-                  "2018-12-19 21:11:29 UTC",
+                  undefined,
                 ],
                 "type": "h4",
               },
@@ -396,7 +390,6 @@ ShallowWrapper {
               </h4>
               <h4>
                 Date: 
-                2018-12-19 21:10:17 UTC
               </h4>
             </div>
             <div
@@ -417,7 +410,6 @@ ShallowWrapper {
               </h4>
               <h4>
                 Date: 
-                2018-12-19 21:11:29 UTC
               </h4>
             </div>
           </section>,
@@ -461,7 +453,6 @@ ShallowWrapper {
                 </h4>
                 <h4>
                   Date: 
-                  2018-12-19 21:10:17 UTC
                 </h4>
               </div>,
               <div
@@ -482,7 +473,6 @@ ShallowWrapper {
                 </h4>
                 <h4>
                   Date: 
-                  2018-12-19 21:11:29 UTC
                 </h4>
               </div>,
             ],
@@ -511,7 +501,6 @@ ShallowWrapper {
                   </h4>,
                   <h4>
                     Date: 
-                    2018-12-19 21:10:17 UTC
                   </h4>,
                 ],
                 "className": "comment",
@@ -578,13 +567,13 @@ ShallowWrapper {
                   "props": Object {
                     "children": Array [
                       "Date: ",
-                      "2018-12-19 21:10:17 UTC",
+                      undefined,
                     ],
                   },
                   "ref": null,
                   "rendered": Array [
                     "Date: ",
-                    "2018-12-19 21:10:17 UTC",
+                    undefined,
                   ],
                   "type": "h4",
                 },
@@ -612,7 +601,6 @@ ShallowWrapper {
                   </h4>,
                   <h4>
                     Date: 
-                    2018-12-19 21:11:29 UTC
                   </h4>,
                 ],
                 "className": "comment",
@@ -679,13 +667,13 @@ ShallowWrapper {
                   "props": Object {
                     "children": Array [
                       "Date: ",
-                      "2018-12-19 21:11:29 UTC",
+                      undefined,
                     ],
                   },
                   "ref": null,
                   "rendered": Array [
                     "Date: ",
-                    "2018-12-19 21:11:29 UTC",
+                    undefined,
                   ],
                   "type": "h4",
                 },

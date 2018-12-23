@@ -25,7 +25,7 @@ export const postToLog = async (id, logEntry, timeStamp) => {
         name,
         hometown,
         comments,
-        time: timeStamp
+        sign_time: timeStamp,
       }),
       headers: { "Content-Type": "application/json" }
     }

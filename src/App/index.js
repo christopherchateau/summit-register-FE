@@ -158,7 +158,6 @@ class App extends Component {
         )}
         {currentDisplay[0] === "registerForm" && (
           <RegisterForm
-            currentLocation={currentLocation}
             handleLogUpdate={this.handleLogUpdate}
           />
         )}

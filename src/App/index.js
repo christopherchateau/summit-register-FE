@@ -126,6 +126,7 @@ class App extends Component {
       currentMountain,
       currentMountainData,
       currentMountainLog,
+      currentLocation,
       isSignedIn
     } = this.state;
 
@@ -136,11 +137,11 @@ class App extends Component {
           currentMountainData={currentMountainData}
           handleBackButton={this.handleBackButton}
         />
-        {!Object.keys(this.state.currentLocation).length && noConnectionAlert}
 
         {currentDisplay[0] === "start" && (
           <Start
             currentMountain={currentMountain}
+            currentLocation={currentLocation}
             handleSelectButton={this.handleSelectButton}
             handleSignIn={this.handleSignIn}
           />
@@ -156,7 +157,10 @@ class App extends Component {
           <Log currentMountainLog={currentMountainLog} />
         )}
         {currentDisplay[0] === "registerForm" && (
-          <RegisterForm handleLogUpdate={this.handleLogUpdate} />
+          <RegisterForm
+            currentLocation={currentLocation}
+            handleLogUpdate={this.handleLogUpdate}
+          />
         )}
         {currentDisplay[0] === "loadingScreen" && (
           <LoadingScreen className="Main" />

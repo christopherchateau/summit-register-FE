@@ -9,9 +9,8 @@ import "./Info.css";
 class Info extends Component {
   render() {
     let locationCheck = this.props.currentLocation.sum - -65.4857898;
-    let locationValidation = locationCheck < 0.007 && locationCheck > -0.007;
+    let locationValidation = locationCheck < 0.003 && locationCheck > -0.003;
     const {
-      name,
       altitude,
       difficulty,
       range

@@ -8,8 +8,8 @@
 }
 
 .drop-down-controls {
-  margin-top: 50vh;
-
+  position: absolute;
+  margin-top: 60vh;
 }
 
 .drop-down-menu {

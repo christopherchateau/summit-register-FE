@@ -5,11 +5,11 @@
   background: grey;
   display: flex;
   justify-content: space-evenly;
-  margin:  200px 20%;
+  margin:  100px 20% 0 20%;
   opacity: .9;
   padding: 10px;
-  position: absolute;
-  width: 60%
+  width: 60%;
+  z-index: 5;
 }
 
 .loading-gif {

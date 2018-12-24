@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import LocatingPopUp from "../LocatingPopUp";
 import PropTypes from "prop-types";
 import { mountainData } from "../utilities/Data/mountain-data";
 import "./Start.css";
@@ -23,6 +24,7 @@ class Start extends Component {
 
     return (
       <div className="Start Main">
+        {!Object.keys(this.props.currentLocation).length && <LocatingPopUp />}
         <div className="drop-down-controls">
           <select
             className="drop-down-menu"

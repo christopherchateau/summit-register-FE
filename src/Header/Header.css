@@ -14,7 +14,9 @@
 }
   
 .logo {
+  bottom: 4px;
   height: 60px;
+  position: relative;
 }
 
 .back-btn {

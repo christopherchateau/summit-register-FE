@@ -5,6 +5,7 @@
   background-size: auto 100%;
   display: flex;
   flex-direction: column;
+  overflow: auto;
 }
 
 .register-form {
@@ -13,6 +14,7 @@
   background: grey;
   margin-top: 100px;
   opacity: .9;
+  overflow: auto;
   padding: 20px;
   width: 80%
 }

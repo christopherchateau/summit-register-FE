@@ -15,7 +15,9 @@ describe("Start", () => {
     range: "Front Range"
   };
   beforeEach(() => {
-    wrapper = shallow(<Start currentMountainData={currentMountainData} />);
+    wrapper = shallow(
+      <Start currentLocation={{}} currentMountainData={currentMountainData} />
+    );
   });
 
   it("should exist", () => {
@@ -24,7 +26,10 @@ describe("Start", () => {
 
   it("renders without crashing", () => {
     const div = document.createElement("div");
-    ReactDOM.render(<Start currentMountainData={currentMountainData} />, div);
+    ReactDOM.render(
+      <Start currentLocation={{}} currentMountainData={currentMountainData} />,
+      div
+    );
     ReactDOM.unmountComponentAtNode(div);
   });
 

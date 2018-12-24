@@ -18,6 +18,10 @@
   padding: 20px;
 }
 
+.difficulty-icon {
+  height: 60px
+}
+
 .view-log-btn {
   border: 1px solid black;
   border-radius: 20px;

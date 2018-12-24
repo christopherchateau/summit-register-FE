@@ -5,15 +5,15 @@
   "display": "standalone",
   "background_color": "#a5a5a5",
   "theme_color": "#a5a5a5",
-  "description": "A virtual summit Registration Log",
+  "description": "A virtual summit registration log",
   "icons": [
     {
-      "src": "https://placebear.com/192/192",
+      "src": "../src/utilities/Images/summit-2.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "https://placebear.com/192/192",
+      "src": "../src/utilities/Images/summit-2.png",
       "type": "image/png",
       "sizes": "512x512"
     }

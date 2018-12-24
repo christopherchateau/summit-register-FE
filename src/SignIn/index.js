@@ -20,7 +20,8 @@ class SignIn extends Component {
   uiConfig = {
     signInFlow: 'popup',
     signInOptions: [
-      firebase.auth.GoogleAuthProvider.PROVIDER_ID
+      firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+      firebase.auth.EmailAuthProvider.PROVIDER_ID
     ],
     callbacks: {
       signInSuccessWithAuthResult: () => false

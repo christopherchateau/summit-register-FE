@@ -88,6 +88,16 @@ class App extends Component {
     this.updateCurrentDisplayLog("signIn");
   };
 
+  handleSignOut = () => {
+    firebase.auth().signOut().then(() => {
+      this.setState({
+        isSignedIn: false
+      })
+    }).catch(function(error) {
+      throw new Error(error)
+    });
+  }
+
   handleLogUpdate = async logEntry => {
     const timeStamp = generateTimeStamp();
     this.updateCurrentDisplayLog("loadingScreen");
@@ -166,16 +176,14 @@ class App extends Component {
         )}
         {this.state.currentDisplay[0] === "signIn" && (
           <SignIn validateSignIn={this.validateSignIn} />
-          // <StyledFirebaseAuth
-          //   uiConfig={this.uiConfig}
-          //   firebaseAuth={firebase.auth()}
-          // />
         )}
         <Footer
           currentDisplay={currentDisplay}
           handleSignIn={this.handleSignIn}
+          handleSignOut={this.handleSignOut}
           handleLogUpdate={this.handleLogUpdate}
           handleSignLog={this.handleSignLog}
+          isSignedIn={isSignedIn}
         />
       </div>
     );

@@ -10,9 +10,18 @@ class Footer extends Component {
         {this.props.currentDisplay[0] !== "registerForm" && (
           <SignRegister handleSignLog={this.props.handleSignLog} />
         )}
-        <button className="sign-in-btn" onClick={this.props.handleSignIn}>
-          SignIn/SignUp
-        </button>
+        {this.props.isSignedIn === true && (
+          <MyMountains
+
+          <button className="sign-in-btn" onClick={this.props.handleSignOut}>
+          Sign Out
+          </button>
+        )}
+        {this.props.isSignedIn === false && (
+          <button className="sign-in-btn" onClick={this.props.handleSignIn}>
+            SignIn/SignUp
+          </button>
+        )}
       </footer>
     );
   }

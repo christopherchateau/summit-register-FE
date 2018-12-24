@@ -1,0 +1,17 @@
+.LocatingPopUp {
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 20px;
+  background: grey;
+  display: flex;
+  justify-content: space-evenly;
+  margin:  200px 20%;
+  opacity: .9;
+  padding: 10px;
+  position: absolute;
+  width: 60%
+}
+
+.loading-gif {
+  height: 40px;
+}

@@ -13,8 +13,6 @@ import * as apiCalls from "../utilities/helper/apiCalls";
 import { generateTimeStamp } from "../utilities/helper/timeStamp";
 import "./App.css";
 
-import loading from '../utilities/Images/loading.gif'
-
 class App extends Component {
   constructor() {
     super();
@@ -130,13 +128,6 @@ class App extends Component {
       currentMountainLog,
       isSignedIn
     } = this.state;
-
-    const noConnectionAlert = (
-      <div className="no-connection-alert">
-        <h3>Locating...</h3>
-          <img className="loading-gif" alt="loading" src={loading} />
-      </div>
-    );
 
     return (
       <div className="App">

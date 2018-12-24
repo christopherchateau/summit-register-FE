@@ -26,12 +26,12 @@ class Info extends Component {
     return (
       <div className="Info">
         <section className="info-section">
-          <h1>{name}</h1>
+          <img
+            className="difficulty-icon"
+            alt={difficulty}
+            src={difficultyIcons[difficulty]}
+          />
           <h3>Altitude: {altitude} ft</h3>
-          <h3>
-            Difficulty:{" "}
-            <img className="difficulty-icon" alt={difficulty} src={difficultyIcons[difficulty]} />
-          </h3>
           <h3>Range: {range}</h3>
           <h3>Latitude: {this.props.currentLocation.latitude}</h3>
           <h3>Longitude: {this.props.currentLocation.longitude}</h3>

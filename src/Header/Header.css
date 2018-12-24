@@ -2,7 +2,7 @@
   align-items: center;
   background: rgba(165, 165, 165, 0.68);
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   padding-top: 12px;
   width: 80%;
 }

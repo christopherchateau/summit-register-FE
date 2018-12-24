@@ -134,7 +134,8 @@ class App extends Component {
     return (
       <div className="App">
         <Header
-          currentDisplay={currentDisplay}
+          currentDisplay={currentDisplay[0]}
+          currentMountainData={currentMountainData}
           handleBackButton={this.handleBackButton}
         />
         {currentDisplay[0] === "start" && (

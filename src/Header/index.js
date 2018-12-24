@@ -5,14 +5,25 @@ import "./Header.css";
 
 class Header extends Component {
   render() {
+    const {
+      currentDisplay,
+      handleBackButton,
+      currentMountainData
+    } = this.props;
+
+    let displayText = "Summit Register";
+    if (currentMountainData.attributes && currentDisplay !== "start") {
+      displayText = currentMountainData.attributes.name;
+    }
+
     return (
       <header className="Header">
-        {this.props.currentDisplay[0] !== "start" && (
-          <button className="back-btn" onClick={this.props.handleBackButton}>
+        {currentDisplay !== "start" && (
+          <button className="back-btn" onClick={handleBackButton}>
             Back
           </button>
         )}
-        <h1 className="main-title">Summit Register</h1>
+        <h1 className="main-title">{displayText}</h1>
         <img className="logo" alt="logo" src={logo} />
       </header>
     );

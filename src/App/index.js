@@ -6,6 +6,7 @@ import Info from "../Info";
 import Log from "../Log";
 import SignIn from "../SignIn";
 import Footer from "../Footer";
+import MyMountains from '../MyMountains';
 import LoadingScreen from "../LoadingScreen";
 import RegisterForm from "../RegisterForm";
 import { mountainData } from "../utilities/Data/mountain-data";
@@ -44,6 +45,10 @@ class App extends Component {
     }
     this.updateCurrentDisplayLog("start");
   };
+
+  handleMyMountains = () => {
+    this.updateCurrentDisplayLog("myMountains")
+  }
 
   handleBackButton = () => {
     let currentDisplay = this.state.currentDisplay[0];
@@ -177,12 +182,16 @@ class App extends Component {
         {this.state.currentDisplay[0] === "signIn" && (
           <SignIn validateSignIn={this.validateSignIn} />
         )}
+        {this.state.currentDisplay[0] === "myMountains" && (
+          <MyMountains validateSignIn={this.validateSignIn} />
+        )}
         <Footer
           currentDisplay={currentDisplay}
           handleSignIn={this.handleSignIn}
           handleSignOut={this.handleSignOut}
           handleLogUpdate={this.handleLogUpdate}
           handleSignLog={this.handleSignLog}
+          handleMyMountains={this.handleMyMountains}
           isSignedIn={isSignedIn}
         />
       </div>

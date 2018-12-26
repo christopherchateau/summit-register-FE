@@ -30,12 +30,6 @@ class App extends Component {
     this.getLocation();
   };
 
-  componentDidUpdate = () => {
-    if (!Object.keys(this.state.currentLocation).length) {
-      //this.setState({ currentLocation: {} })
-    }
-  };
-
   validateSignIn = boolean => {
     if (boolean === true) {
       this.setState({
@@ -157,9 +151,7 @@ class App extends Component {
           <Log currentMountainLog={currentMountainLog} />
         )}
         {currentDisplay[0] === "registerForm" && (
-          <RegisterForm
-            handleLogUpdate={this.handleLogUpdate}
-          />
+          <RegisterForm handleLogUpdate={this.handleLogUpdate} />
         )}
         {currentDisplay[0] === "loadingScreen" && (
           <LoadingScreen className="Main" />

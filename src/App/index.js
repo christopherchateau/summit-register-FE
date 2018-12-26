@@ -59,7 +59,7 @@ class App extends Component {
   };
 
   handleViewLogButton = async () => {
-    const currentMountainLog = await apiCalls.getMountainLog(
+    const currentMountainLog = await apiCalls.getMountain(
       this.state.currentMountainData.id
     );
     await this.setState({

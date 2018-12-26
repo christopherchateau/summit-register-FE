@@ -1,9 +1,9 @@
 export const generateTimeStamp = () => {
   const currentdate = new Date();
   const datetime =
-    currentdate.getDate() +
+    currentdate.getMonth() + 1 +
     "/" +
-    (currentdate.getMonth() + 1) +
+    currentdate.getDate() +
     "/" +
     currentdate.getFullYear() +
     " @ " +
@@ -12,5 +12,5 @@ export const generateTimeStamp = () => {
     currentdate.getMinutes() +
     ":" +
     currentdate.getSeconds();
-    return datetime;
+  return datetime;
 };

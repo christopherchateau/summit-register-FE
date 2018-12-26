@@ -6,14 +6,6 @@ export const getMountain = async id => {
   return mountains;
 };
 
-export const getMountainLog = async id => {
-  const response = await fetch(
-    `https://summit-register-api.herokuapp.com/api/v1/mountains/${id}`
-  );
-  const log = await response.json();
-  return log;
-};
-
 export const postToLog = async (id, logEntry, timeStamp) => {
   const { name, hometown, comments } = logEntry;
   const response = await fetch(
@@ -31,6 +23,5 @@ export const postToLog = async (id, logEntry, timeStamp) => {
     }
   );
   const updatedLog = await response.json();
-  console.log(updatedLog.data)
   return updatedLog.data;
 };

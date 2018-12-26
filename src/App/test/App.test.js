@@ -96,7 +96,7 @@ describe("App", () => {
         name,
         registries
       } = wrapper.state().currentMountainData.attributes;
-      
+
       expect(name).toEqual("Blanca Peak");
       expect(altitude).toEqual(14345);
       expect(difficulty).toEqual("Black");
@@ -110,6 +110,35 @@ describe("App", () => {
 
       const { currentDisplay, currentMountain } = wrapper.state();
       expect(currentDisplay[0]).toEqual("info");
+    });
+  });
+
+  describe("handleSignLog", () => {
+    it("should add 'registerForm' to currentDisplay array", () => {
+      wrapper.instance().handleSignLog();
+
+      const { currentDisplay } = wrapper.state();
+      expect(currentDisplay[0]).toEqual("registerForm");
+    });
+  });
+
+  describe("handleSignIn", () => {
+    it("should add 'signIn' to currentDisplay array", () => {
+      wrapper.instance().handleSignIn();
+
+      const { currentDisplay } = wrapper.state();
+      expect(currentDisplay[0]).toEqual("signIn");
+    });
+  });
+
+  describe("updateCurrentDisplayLog", () => {
+    it("should add input to currentDisplay array in state", () => {
+      wrapper.instance().updateCurrentDisplayLog("hello");
+      expect(wrapper.state().currentDisplay[0]).toEqual("hello");
+
+      wrapper.instance().updateCurrentDisplayLog("hello... again");
+      expect(wrapper.state().currentDisplay[0]).toEqual("hello... again");
+      expect(wrapper.state().currentDisplay[1]).toEqual("hello");
     });
   });
 });

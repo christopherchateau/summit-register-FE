@@ -66,8 +66,8 @@ describe("App", () => {
       await wrapper.instance().handleViewLogButton();
 
       const { currentMountainLog } = wrapper.state();
-      const names = currentMountainLog.map(log => log.name);
-      const hometowns = currentMountainLog.map(log => log.hometown);
+      const names = currentMountainLog.map(log => log.attributes.name);
+      const hometowns = currentMountainLog.map(log => log.attributes.hometown);
 
       expect(currentMountainLog).toHaveLength(2);
       expect(names.includes("Chris")).toBe(true);
@@ -81,6 +81,35 @@ describe("App", () => {
 
       const { currentDisplay } = wrapper.state();
       expect(currentDisplay[0]).toEqual("log");
+    });
+  });
+
+  describe("handleSelectButton", () => {
+    it("should update state with selected mountain data", async () => {
+      await wrapper.instance().handleSelectButton("Blanca Peak");
+
+      const {
+        altitude,
+        difficulty,
+        summit,
+        range,
+        name,
+        registries
+      } = wrapper.state().currentMountainData.attributes;
+      
+      expect(name).toEqual("Blanca Peak");
+      expect(altitude).toEqual(14345);
+      expect(difficulty).toEqual("Black");
+      expect(summit).toEqual("37.577473,-105.485443");
+      expect(range).toEqual("Sangre de Cristo");
+      expect(registries.data).toHaveLength(2);
+    });
+
+    it("should add 'info' to currentDisplay array", async () => {
+      await wrapper.instance().handleSelectButton("Blanca Peak");
+
+      const { currentDisplay, currentMountain } = wrapper.state();
+      expect(currentDisplay[0]).toEqual("info");
     });
   });
 });

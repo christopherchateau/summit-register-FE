@@ -1,6 +1,6 @@
 export const generateTimeStamp = () => {
   const currentdate = new Date();
-  const datetime =
+  const timeStamp =
     currentdate.getMonth() + 1 +
     "/" +
     currentdate.getDate() +
@@ -12,5 +12,5 @@ export const generateTimeStamp = () => {
     currentdate.getMinutes() +
     ":" +
     currentdate.getSeconds();
-  return datetime;
+  return timeStamp;
 };

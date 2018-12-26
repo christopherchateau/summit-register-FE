@@ -3,6 +3,8 @@ import ReactDOM from "react-dom";
 import App from "..";
 import { shallow } from "enzyme";
 
+jest.mock("../../utilities/helper/apiCalls");
+
 describe("App", () => {
   let wrapper;
   beforeEach(() => {
@@ -56,6 +58,29 @@ describe("App", () => {
       const { currentDisplay } = wrapper.state();
       const expected = ["info", "start"];
       expect(currentDisplay).toEqual(expected);
+    });
+  });
+
+  describe("handleViewLogButton", () => {
+    it("should add all log entries to currentMountainLog", async () => {
+      await wrapper.instance().handleViewLogButton();
+
+      const { currentMountainLog } = wrapper.state();
+      const names = currentMountainLog.map(log => log.name);
+      const hometowns = currentMountainLog.map(log => log.hometown);
+
+      expect(currentMountainLog).toHaveLength(2);
+      expect(names.includes("Chris")).toBe(true);
+      expect(names.includes("Justin")).toBe(true);
+      expect(hometowns.includes("Detroit")).toBe(true);
+      expect(hometowns.includes("Denver")).toBe(true);
+    });
+
+    it("should add 'log' to currentDisplay array", async () => {
+      await wrapper.instance().handleViewLogButton();
+
+      const { currentDisplay } = wrapper.state();
+      expect(currentDisplay[0]).toEqual("log");
     });
   });
 });

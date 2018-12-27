@@ -8,7 +8,9 @@ class Footer extends Component {
     return (
       <footer className="Footer">
         {this.props.currentDisplay[0] !== "registerForm" && (
-          <SignRegister handleSignLog={this.props.handleSignLog} />
+          <SignRegister
+            handleSignLog={this.props.handleSignLog}
+          />
         )}
         <button className="sign-in-btn" onClick={this.props.handleSignIn}>
           SignIn/SignUp

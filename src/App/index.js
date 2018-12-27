@@ -30,35 +30,48 @@ class App extends Component {
   }
 
   componentDidMount = async () => {
+    this.loadPeakLocations();
     await this.getLocation();
-    const peakLocations = await mountainData.data.reduce((acc, mountain) => {
-      const location = mountain.attributes.summit.split(",");
-      acc.push({
-        name: mountain.attributes.name,
-        location: +location[0] + Math.abs(location[1])
-      });
-      return acc;
-    }, []);
-    await this.setState({ peakLocations });
   };
 
   componentDidUpdate = () => {
     if (Object.keys(this.state.currentLocation).length) {
-      this.validateLocation(this.state.currentLocation.sum);
+      this.validateLocation(this.state.currentLocation);
     }
   };
 
+  loadPeakLocations = () => {
+    const peakLocations = mountainData.data.reduce((acc, mountain) => {
+      const location = mountain.attributes.summit.split(",");
+      acc.push({
+        name: mountain.attributes.name,
+        latitude: +location[0],
+        longitude: +location[1]
+      });
+      return acc;
+    }, []);
+    this.setState({ peakLocations });
+  };
+
   validateLocation = userLocation => {
-    // const { peakLocations } = this.state;
-    // const peakProximities = peakLocations.map(location => {
-    //   const proximity = userLocation - location
-    //   return {};
-    //   return difference < 0.003 && difference > -0.003;
-    // });
-    //console.log(currentMountain);
-    // currentMountain
-    //   ? (this.state.withinRange = true)
-    //   : (this.state.withinRange = false);
+    const { peakLocations } = this.state;
+    
+    for (let i = 0; i < peakLocations.length; i++) {
+      const latProximity = userLocation.latitude - peakLocations[i].latitude;
+      const longProximity = userLocation.longitude - peakLocations[i].longitude;
+
+      if (
+        this.checkProximity(latProximity) &&
+        this.checkProximity(longProximity)
+      ) {
+        this.state.withinRange = peakLocations[i].name;
+        break;
+      }
+    }
+  };
+
+  checkProximity = num => {
+    return num < 0.005 && num > -0.005;
   };
 
   validateSignIn = boolean => {
@@ -128,8 +141,8 @@ class App extends Component {
   };
 
   updateCurrentDisplayLog = display => {
-    const updatedDisplay = this.state.currentDisplay;
-    this.setState({ currentDisplay: [display, ...updatedDisplay] });
+    const displayHistory = this.state.currentDisplay;
+    this.setState({ currentDisplay: [display, ...displayHistory] });
   };
 
   getLocation = () => {
@@ -138,9 +151,8 @@ class App extends Component {
 
   showPosition = position => {
     const currentLocation = {
-      longitude: Math.abs(position.coords.longitude),
-      latitude: position.coords.latitude,
-      sum: position.coords.latitude + Math.abs(position.coords.longitude)
+      longitude: position.coords.longitude,
+      latitude: position.coords.latitude
     };
     this.setState({ currentLocation });
   };

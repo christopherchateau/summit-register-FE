@@ -139,6 +139,37 @@ describe("App", () => {
       wrapper.instance().updateCurrentDisplayLog("hello... again");
       expect(wrapper.state().currentDisplay[0]).toEqual("hello... again");
       expect(wrapper.state().currentDisplay[1]).toEqual("hello");
+      expect(wrapper.state().currentDisplay[2]).toEqual("start");
+    });
+  });
+
+  describe("handleLogUpdate", () => {
+    it("should update currentMountainLog in state with response", async () => {
+      await wrapper.instance().handleLogUpdate();
+
+      const { currentMountainLog } = wrapper.state();
+      const names = currentMountainLog.map(log => log.attributes.name);
+      const hometowns = currentMountainLog.map(log => log.attributes.hometown);
+
+      expect(currentMountainLog).toHaveLength(2);
+      expect(names.includes("Andrew M")).toBe(true);
+      expect(names.includes("Andrew T")).toBe(true);
+      expect(hometowns.includes("Longmont")).toBe(true);
+      expect(hometowns.includes("Highlands Ranch")).toBe(true);
+    });
+
+    it("should add 'loadingScreen' to currentDisplay array", () => {
+      wrapper.instance().handleLogUpdate();
+
+      const { currentDisplay } = wrapper.state();
+      expect(currentDisplay[0]).toEqual("loadingScreen");
+    });
+
+    it("should add 'log' to currentDisplay array after awaiting response", async () => {
+      await wrapper.instance().handleLogUpdate();
+
+      const { currentDisplay } = wrapper.state();
+      expect(currentDisplay[0]).toEqual("log");
     });
   });
 });

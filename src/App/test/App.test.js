@@ -115,10 +115,21 @@ describe("App", () => {
 
   describe("handleSignLog", () => {
     it("should add 'registerForm' to currentDisplay array", () => {
+      wrapper.state().currentLocation = {
+        latitude: 39.6294581,
+        longitude: -105.1154555
+      };
       wrapper.instance().handleSignLog();
 
       const { currentDisplay } = wrapper.state();
       expect(currentDisplay[0]).toEqual("registerForm");
+    });
+
+    it("should not add 'registerForm' if location not validated", () => {
+      wrapper.instance().handleSignLog();
+
+      const { currentDisplay } = wrapper.state();
+      expect(currentDisplay[0]).toEqual("start");
     });
   });
 
@@ -203,7 +214,7 @@ describe("App", () => {
         longitude: -105.11525
       };
       const result = wrapper.instance().validateLocation(userLocation);
-      console.log(result)
+      console.log(result);
     });
   });
 

@@ -24,7 +24,13 @@ ShallowWrapper {
           handleBackButton={[Function]}
         />,
         <Start
-          currentLocation={Object {}}
+          currentLocation={
+            Object {
+              "latitude": 51.1,
+              "longitude": 45.3,
+              "sum": 96.4,
+            }
+          }
           currentMountain=""
           handleSelectButton={[Function]}
           handleSignIn={[Function]}
@@ -67,7 +73,11 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "currentLocation": Object {},
+          "currentLocation": Object {
+            "latitude": 51.1,
+            "longitude": 45.3,
+            "sum": 96.4,
+          },
           "currentMountain": "",
           "handleSelectButton": [Function],
           "handleSignIn": [Function],
@@ -113,7 +123,13 @@ ShallowWrapper {
             handleBackButton={[Function]}
           />,
           <Start
-            currentLocation={Object {}}
+            currentLocation={
+              Object {
+                "latitude": 51.1,
+                "longitude": 45.3,
+                "sum": 96.4,
+              }
+            }
             currentMountain=""
             handleSelectButton={[Function]}
             handleSignIn={[Function]}
@@ -156,7 +172,11 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "currentLocation": Object {},
+            "currentLocation": Object {
+              "latitude": 51.1,
+              "longitude": 45.3,
+              "sum": 96.4,
+            },
             "currentMountain": "",
             "handleSelectButton": [Function],
             "handleSignIn": [Function],

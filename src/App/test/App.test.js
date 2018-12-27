@@ -172,4 +172,19 @@ describe("App", () => {
       expect(currentDisplay[0]).toEqual("log");
     });
   });
+
+  describe("validateSignIn", () => {
+    it("should update isSignedIn in state accordingly", () => {
+      expect(wrapper.state().isSignedIn).toEqual(false);
+      wrapper.instance().validateSignIn(true);
+      expect(wrapper.state().isSignedIn).toEqual(true);
+    });
+
+    it("should add 'start' to currentDisplay array", () => {
+      wrapper.instance().validateSignIn(true);
+
+      const { currentDisplay } = wrapper.state();
+      expect(currentDisplay[0]).toEqual("start");
+    });
+  });
 });

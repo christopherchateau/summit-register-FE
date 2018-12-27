@@ -45,8 +45,25 @@ describe("Header", () => {
     ReactDOM.unmountComponentAtNode(div);
   });
 
+  describe("back button", () => {
+    it("should not display back button on start screen", () => {
+      expect(wrapper.find(".back-btn")).toHaveLength(0);
+    });
+
+    it("should display back button if not on start screen", () => {
+      wrapper = shallow(
+        <Header
+          currentDisplay={"log"}
+          handleBackButton={jest.fn()}
+          currentMountainData={currentMountainData}
+        />
+      );
+      expect(wrapper.find(".back-btn")).toHaveLength(1);
+    });
+  });
+
   describe("display text", () => {
-    it("should display 'summit register' on start screen", () => {
+    it("should not display on start screen", () => {
       const displayText = wrapper.find(".main-title");
       expect(displayText.text()).toBe("Summit Register");
     });

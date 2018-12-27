@@ -46,7 +46,7 @@ ShallowWrapper {
               "start",
             ]
           }
-          handleLogUpdate={[Function]}
+          currentLocation={96.4}
           handleSignIn={[Function]}
           handleSignLog={[Function]}
         />,
@@ -99,7 +99,7 @@ ShallowWrapper {
           "currentDisplay": Array [
             "start",
           ],
-          "handleLogUpdate": [Function],
+          "currentLocation": 96.4,
           "handleSignIn": [Function],
           "handleSignLog": [Function],
         },
@@ -145,7 +145,7 @@ ShallowWrapper {
                 "start",
               ]
             }
-            handleLogUpdate={[Function]}
+            currentLocation={96.4}
             handleSignIn={[Function]}
             handleSignLog={[Function]}
           />,
@@ -198,7 +198,7 @@ ShallowWrapper {
             "currentDisplay": Array [
               "start",
             ],
-            "handleLogUpdate": [Function],
+            "currentLocation": 96.4,
             "handleSignIn": [Function],
             "handleSignLog": [Function],
           },

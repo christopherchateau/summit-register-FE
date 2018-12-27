@@ -12,6 +12,7 @@ import { mountainData } from "../utilities/Data/mountain-data";
 import * as apiCalls from "../utilities/helper/apiCalls";
 import { generateTimeStamp } from "../utilities/helper/timeStamp";
 import "./App.css";
+import { access } from "fs";
 
 class App extends Component {
   constructor() {
@@ -22,12 +23,42 @@ class App extends Component {
       currentMountainData: {},
       currentMountainLog: [],
       currentLocation: {},
+      peakLocations: [],
+      withinRange: false,
       isSignedIn: false
     };
   }
 
-  componentDidMount = () => {
-    this.getLocation();
+  componentDidMount = async () => {
+    await this.getLocation();
+    const peakLocations = await mountainData.data.reduce((acc, mountain) => {
+      const location = mountain.attributes.summit.split(",");
+      acc.push({
+        name: mountain.attributes.name,
+        location: +location[0] + Math.abs(location[1])
+      });
+      return acc;
+    }, []);
+    await this.setState({ peakLocations });
+  };
+
+  componentDidUpdate = () => {
+    if (Object.keys(this.state.currentLocation).length) {
+      this.validateLocation(this.state.currentLocation.sum);
+    }
+  };
+
+  validateLocation = userLocation => {
+    // const { peakLocations } = this.state;
+    // const peakProximities = peakLocations.map(location => {
+    //   const proximity = userLocation - location
+    //   return {};
+    //   return difference < 0.003 && difference > -0.003;
+    // });
+    //console.log(currentMountain);
+    // currentMountain
+    //   ? (this.state.withinRange = true)
+    //   : (this.state.withinRange = false);
   };
 
   validateSignIn = boolean => {
@@ -107,9 +138,9 @@ class App extends Component {
 
   showPosition = position => {
     const currentLocation = {
-      longitude: position.coords.longitude,
+      longitude: Math.abs(position.coords.longitude),
       latitude: position.coords.latitude,
-      sum: position.coords.longitude + position.coords.latitude
+      sum: position.coords.latitude + Math.abs(position.coords.longitude)
     };
     this.setState({ currentLocation });
   };
@@ -165,8 +196,8 @@ class App extends Component {
         )}
         <Footer
           currentDisplay={currentDisplay}
+          currentLocation={currentLocation.sum}
           handleSignIn={this.handleSignIn}
-          handleLogUpdate={this.handleLogUpdate}
           handleSignLog={this.handleSignLog}
         />
       </div>

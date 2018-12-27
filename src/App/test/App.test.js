@@ -199,9 +199,9 @@ describe("App", () => {
       wrapper.instance().showPosition(position);
 
       const { longitude, latitude, sum } = wrapper.state().currentLocation;
-      expect(longitude).toEqual(-105.9999999);
+      expect(longitude).toEqual(105.9999999);
       expect(latitude).toEqual(40.55555555);
-      expect(sum).toEqual(-65.44444435);
+      expect(sum).toEqual(146.55555545);
     });
   });
 

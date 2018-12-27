@@ -34,12 +34,6 @@ class App extends Component {
     await this.getLocation();
   };
 
-  componentDidUpdate = () => {
-    if (Object.keys(this.state.currentLocation).length) {
-      this.validateLocation(this.state.currentLocation);
-    }
-  };
-
   loadPeakLocations = () => {
     const peakLocations = mountainData.data.reduce((acc, mountain) => {
       const location = mountain.attributes.summit.split(",");
@@ -64,8 +58,7 @@ class App extends Component {
         this.checkProximity(latProximity) &&
         this.checkProximity(longProximity)
       ) {
-        this.state.withinRange = peakLocations[i].name;
-        break;
+        return (this.state.withinRange = peakLocations[i].name);
       }
     }
   };
@@ -119,7 +112,13 @@ class App extends Component {
   };
 
   handleSignLog = () => {
-    this.updateCurrentDisplayLog("registerForm");
+    let mountain;
+    if (Object.keys(this.state.currentLocation).length) {
+      mountain = this.validateLocation(this.state.currentLocation);
+    }
+    if (mountain) {
+      this.updateCurrentDisplayLog("registerForm");
+    }
   };
 
   handleSignIn = () => {

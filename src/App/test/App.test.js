@@ -204,4 +204,68 @@ describe("App", () => {
       expect(sum).toEqual(-65.44444435);
     });
   });
+
+  describe("page conditionally rendered based on currentDisplay", () => {
+    it("should display Start screen", () => {
+      expect(wrapper.find("Start")).toHaveLength(1);
+      expect(wrapper.find("Info")).toHaveLength(0);
+      expect(wrapper.find("Log")).toHaveLength(0);
+      expect(wrapper.find("RegisterForm")).toHaveLength(0);
+      expect(wrapper.find("LoadingScreen")).toHaveLength(0);
+      expect(wrapper.find("SignIn")).toHaveLength(0);
+    });
+
+    it("should display Start screen", () => {
+      wrapper.instance().updateCurrentDisplayLog("info");
+      expect(wrapper.find("Start")).toHaveLength(0);
+      expect(wrapper.find("Info")).toHaveLength(1);
+      expect(wrapper.find("Log")).toHaveLength(0);
+      expect(wrapper.find("RegisterForm")).toHaveLength(0);
+      expect(wrapper.find("LoadingScreen")).toHaveLength(0);
+      expect(wrapper.find("SignIn")).toHaveLength(0);
+    });
+
+    it("should display Start screen", () => {
+      wrapper.instance().updateCurrentDisplayLog("log");
+      expect(wrapper.find("Start")).toHaveLength(0);
+      expect(wrapper.find("Info")).toHaveLength(0);
+      expect(wrapper.find("Log")).toHaveLength(1);
+      expect(wrapper.find("RegisterForm")).toHaveLength(0);
+      expect(wrapper.find("LoadingScreen")).toHaveLength(0);
+      expect(wrapper.find("SignIn")).toHaveLength(0);
+    });
+
+
+    it("should display Start screen", () => {
+      wrapper.instance().updateCurrentDisplayLog("registerForm");
+      expect(wrapper.find("Start")).toHaveLength(0);
+      expect(wrapper.find("Info")).toHaveLength(0);
+      expect(wrapper.find("Log")).toHaveLength(0);
+      expect(wrapper.find("RegisterForm")).toHaveLength(1);
+      expect(wrapper.find("LoadingScreen")).toHaveLength(0);
+      expect(wrapper.find("SignIn")).toHaveLength(0);
+    });
+
+
+    it("should display Start screen", () => {
+      wrapper.instance().updateCurrentDisplayLog("loadingScreen");
+      expect(wrapper.find("Start")).toHaveLength(0);
+      expect(wrapper.find("Info")).toHaveLength(0);
+      expect(wrapper.find("Log")).toHaveLength(0);
+      expect(wrapper.find("RegisterForm")).toHaveLength(0);
+      expect(wrapper.find("LoadingScreen")).toHaveLength(1);
+      expect(wrapper.find("SignIn")).toHaveLength(0);
+    });
+
+
+    it("should display Start screen", () => {
+      wrapper.instance().updateCurrentDisplayLog("signIn");
+      expect(wrapper.find("Start")).toHaveLength(0);
+      expect(wrapper.find("Info")).toHaveLength(0);
+      expect(wrapper.find("Log")).toHaveLength(0);
+      expect(wrapper.find("RegisterForm")).toHaveLength(0);
+      expect(wrapper.find("LoadingScreen")).toHaveLength(0);
+      expect(wrapper.find("SignIn")).toHaveLength(1);
+    });
+  });
 });

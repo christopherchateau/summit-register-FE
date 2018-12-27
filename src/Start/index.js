@@ -23,7 +23,7 @@ class Start extends Component {
       });
 
     return (
-      <div className="Start Main">
+      <div className="Start">
         {!Object.keys(this.props.currentLocation).length && <LocatingPopUp />}
         <div className="drop-down-controls">
           <select

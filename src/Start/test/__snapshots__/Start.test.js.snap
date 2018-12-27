@@ -349,7 +349,7 @@ ShallowWrapper {
           </button>
         </div>,
       ],
-      "className": "Start Main",
+      "className": "Start",
     },
     "ref": null,
     "rendered": Array [
@@ -2087,7 +2087,7 @@ ShallowWrapper {
             </button>
           </div>,
         ],
-        "className": "Start Main",
+        "className": "Start",
       },
       "ref": null,
       "rendered": Array [

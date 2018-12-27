@@ -23,48 +23,30 @@ class App extends Component {
       currentMountainData: {},
       currentMountainLog: [],
       currentLocation: {},
-      peakLocations: [],
       withinRange: false,
       isSignedIn: false
     };
   }
 
   componentDidMount = async () => {
-    this.loadPeakLocations();
     await this.getLocation();
   };
 
-  loadPeakLocations = () => {
-    const peakLocations = mountainData.data.reduce((acc, mountain) => {
-      const location = mountain.attributes.summit.split(",");
-      acc.push({
-        name: mountain.attributes.name,
-        latitude: +location[0],
-        longitude: +location[1]
-      });
-      return acc;
-    }, []);
-    this.setState({ peakLocations });
+  retrievePeakLocation = peakName => {
+    const peakLocation = mountainData.data.find(
+      peak => peak.attributes.name === peakName
+    );
+    return peakLocation.attributes.summit.split(",");
   };
 
   validateLocation = userLocation => {
-    const { peakLocations } = this.state;
+    const peakLocation = this.retrievePeakLocation(this.state.currentMountain);
+    const latProximity = userLocation.latitude - peakLocation[0];
+    const longProximity = userLocation.longitude - peakLocation[1];
 
-    for (let i = 0; i < peakLocations.length; i++) {
-      const latProximity = userLocation.latitude - peakLocations[i].latitude;
-      const longProximity = userLocation.longitude - peakLocations[i].longitude;
-
-      if (
-        this.checkProximity(latProximity) &&
-        this.checkProximity(longProximity)
-      ) {
-        return (this.state.withinRange = peakLocations[i].name);
-      }
-    }
-  };
-
-  checkProximity = num => {
-    return num < 0.005 && num > -0.005;
+    this.checkProximity(latProximity) && this.checkProximity(longProximity)
+      ? this.setState({ withinRange: true })
+      : this.setState({ withinRange: false });
   };
 
   validateSignIn = boolean => {
@@ -111,13 +93,10 @@ class App extends Component {
     await this.updateCurrentDisplayLog("info");
   };
 
-  handleSignLog = () => {
-    let mountain;
-    if (Object.keys(this.state.currentLocation).length) {
-      mountain = this.validateLocation(this.state.currentLocation);
-    }
-    if (mountain) {
-      this.updateCurrentDisplayLog("registerForm");
+  handleSignLog = async () => {
+    await this.validateLocation(this.state.currentLocation);
+    if (this.state.withinRange) {
+      await this.updateCurrentDisplayLog("registerForm");
     }
   };
 
@@ -146,6 +125,10 @@ class App extends Component {
 
   getLocation = () => {
     return navigator.geolocation.watchPosition(this.showPosition);
+  };
+
+  checkProximity = num => {
+    return num < 0.005 && num > -0.005;
   };
 
   showPosition = position => {

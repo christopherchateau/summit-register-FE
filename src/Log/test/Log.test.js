@@ -1,10 +1,7 @@
-configure({ adapter: new Adapter() });
-import { configure } from "enzyme";
-import Adapter from "enzyme-adapter-react-16";
 import React from "react";
 import ReactDOM from "react-dom";
-import { shallow } from "enzyme";
 import Log from "..";
+import { shallow } from "enzyme";
 
 describe("Log", () => {
   let wrapper;
@@ -34,14 +31,14 @@ describe("Log", () => {
     wrapper = shallow(<Log currentMountainLog={currentMountainLog} />);
   });
 
+  it("should match snapshot", () => {
+    expect(wrapper).toMatchSnapshot();
+  });
+
   it("renders without crashing", () => {
     const div = document.createElement("div");
     ReactDOM.render(<Log currentMountainLog={currentMountainLog} />, div);
     ReactDOM.unmountComponentAtNode(div);
-  });
-
-  it("should match snapshot", () => {
-    expect(wrapper).toMatchSnapshot();
   });
 
   describe("empty log message", () => {

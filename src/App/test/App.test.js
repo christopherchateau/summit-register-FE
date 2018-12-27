@@ -187,4 +187,21 @@ describe("App", () => {
       expect(currentDisplay[0]).toEqual("start");
     });
   });
+
+  describe("showLocation", () => {
+    it("should update currentLocation in state", () => {
+      const position = {
+        coords: {
+          latitude: 40.55555555,
+          longitude: -105.9999999
+        }
+      };
+      wrapper.instance().showPosition(position);
+
+      const { longitude, latitude, sum } = wrapper.state().currentLocation;
+      expect(longitude).toEqual(-105.9999999);
+      expect(latitude).toEqual(40.55555555);
+      expect(sum).toEqual(-65.44444435);
+    });
+  });
 });

@@ -192,6 +192,21 @@ describe("App", () => {
     });
   });
 
+  describe("validateLocation", () => {
+    beforeEach(() => {
+      wrapper.instance().loadPeakLocations();
+    });
+
+    it("should validate accepted locations", () => {
+      const userLocation = {
+        latitude: 39.629486299999996,
+        longitude: -105.11525
+      };
+      const result = wrapper.instance().validateLocation(userLocation);
+      console.log(result)
+    });
+  });
+
   describe("checkProximity", () => {
     it("should return true for valid nums", () => {
       const result = wrapper.instance().checkProximity(0.002);

@@ -10,6 +10,7 @@ button {
 }
 
 .App {
+  background: rgba(165, 165, 165);
   display: grid;
   grid-template-rows: 10vh 80vh 10vh;
   height: 100vh;

@@ -2,12 +2,21 @@
   border: 1px solid black;
   border-radius: 20px;
   font-size: 16px;
+  opacity: .6;
   padding: 5px 10px;
 }
 
-.select-btn:hover,
-.sign-register-btn:hover {
-  background: black;
+.active {
+  background: rgb(1, 162, 1);
   color: white;
+  opacity: 1;
+  transition: all 0.4s ease-in-out;
+}
+
+.active:hover {
+  background: white;
+  color: rgb(1, 162, 1);
+  cursor: pointer;
+  opacity: 1;
   transition: all 0.4s ease-in-out;
 }

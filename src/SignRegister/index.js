@@ -4,12 +4,16 @@ import "./SignRegister.css";
 
 class SignRegister extends Component {
   render() {
+    const { withinRange, handleSignLog } = this.props;
+    let buttonText;
+
+    withinRange
+      ? (buttonText = "Sign Register")
+      : (buttonText = "Out of Range");
+
     return (
-      <button
-        className="SignRegister"
-        onClick={() => this.props.handleSignLog()}
-      >
-        Sign Register
+      <button className={withinRange ? "SignRegister active" : "SignRegister"} onClick={() => handleSignLog()}>
+        {buttonText}
       </button>
     );
   }

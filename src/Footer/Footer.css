@@ -5,17 +5,17 @@
   justify-content: space-around;
 }
 
-.sign-in-btn,
-.sign-register-btn {
+.sign-in-btn {
   border: 1px solid black;
   border-radius: 20px;
   font-size: 16px;
   padding: 5px 10px;
+  transition: all 0.4s ease-in-out;
 }
 
-.sign-in-btn:hover,
-.sign-register-btn:hover {
+.sign-in-btn:hover{
   background: black;
   color: white;
+  cursor: pointer;
   transition: all 0.4s ease-in-out;
 }

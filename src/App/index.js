@@ -55,7 +55,7 @@ class App extends Component {
 
   validateLocation = userLocation => {
     const { peakLocations } = this.state;
-    
+
     for (let i = 0; i < peakLocations.length; i++) {
       const latProximity = userLocation.latitude - peakLocations[i].latitude;
       const longProximity = userLocation.longitude - peakLocations[i].longitude;
@@ -164,6 +164,7 @@ class App extends Component {
       currentMountainData,
       currentMountainLog,
       currentLocation,
+      withinRange,
       isSignedIn
     } = this.state;
 
@@ -188,6 +189,7 @@ class App extends Component {
             currentMountainData={currentMountainData}
             handleViewLogButton={this.handleViewLogButton}
             currentLocation={this.state.currentLocation}
+            withinRange={withinRange}
           />
         )}
         {currentDisplay[0] === "log" && (

@@ -4,8 +4,9 @@
   display: flex;
   justify-content: space-around;
   padding-top: 12px;
+  margin: auto;
   text-align: center; 
-  width: 80%;
+  max-width: 1000px;
 }
 
 .main-title {
@@ -30,5 +31,6 @@
 .back-btn:hover {
   background: black;
   color: white;
+  cursor: pointer;
   transition: all 0.4s ease-in-out;
 }

@@ -5,13 +5,17 @@ import "./Footer.css";
 
 class Footer extends Component {
   render() {
+    const { handleSignLog, handleSignIn, currentDisplay } = this.props;
     return (
       <footer className="Footer">
-        {this.props.currentDisplay[0] !== "registerForm" &&
-          this.props.currentDisplay[0] !== "start" && (
-            <SignRegister handleSignLog={this.props.handleSignLog} />
+        {currentDisplay[0] !== "registerForm" &&
+          currentDisplay[0] !== "start" && (
+            <SignRegister
+              withinRange={this.props.withinRange}
+              handleSignLog={handleSignLog}
+            />
           )}
-        <button className="sign-in-btn" onClick={this.props.handleSignIn}>
+        <button className="sign-in-btn" onClick={handleSignIn}>
           SignIn/SignUp
         </button>
       </footer>

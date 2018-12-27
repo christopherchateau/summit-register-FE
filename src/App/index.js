@@ -90,13 +90,14 @@ class App extends Component {
       currentMountain,
       currentMountainData: currentMountainData.data
     });
+    await this.validateLocation(this.state.currentLocation);
     await this.updateCurrentDisplayLog("info");
   };
 
-  handleSignLog = async () => {
-    await this.validateLocation(this.state.currentLocation);
+  handleSignLog = () => {
+    this.validateLocation(this.state.currentLocation);
     if (this.state.withinRange) {
-      await this.updateCurrentDisplayLog("registerForm");
+      this.updateCurrentDisplayLog("registerForm");
     }
   };
 
@@ -128,7 +129,7 @@ class App extends Component {
   };
 
   checkProximity = num => {
-    return num < 0.005 && num > -0.005;
+    return num < 0.5 && num > -0.5;
   };
 
   showPosition = position => {
@@ -192,9 +193,9 @@ class App extends Component {
         )}
         <Footer
           currentDisplay={currentDisplay}
-          currentLocation={currentLocation.sum}
           handleSignIn={this.handleSignIn}
           handleSignLog={this.handleSignLog}
+          withinRange={withinRange}
         />
       </div>
     );

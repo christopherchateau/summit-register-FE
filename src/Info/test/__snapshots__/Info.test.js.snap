@@ -61,19 +61,7 @@ ShallowWrapper {
             Sangre de Cristo
           </h3>
           <h3>
-            Latitude: 
-            39.6295333
-          </h3>
-          <h3>
-            Longitude: 
-            -105.1153598
-          </h3>
-          <h3>
-            -0.00003669999999544871
-          </h3>
-          <h3>
             You at the top?: 
-            true
           </h3>
         </section>,
         <button
@@ -108,19 +96,7 @@ ShallowWrapper {
               Sangre de Cristo
             </h3>,
             <h3>
-              Latitude: 
-              39.6295333
-            </h3>,
-            <h3>
-              Longitude: 
-              -105.1153598
-            </h3>,
-            <h3>
-              -0.00003669999999544871
-            </h3>,
-            <h3>
               You at the top?: 
-              true
             </h3>,
           ],
           "className": "info-section",
@@ -182,59 +158,14 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
-                "Latitude: ",
-                39.6295333,
-              ],
-            },
-            "ref": null,
-            "rendered": Array [
-              "Latitude: ",
-              39.6295333,
-            ],
-            "type": "h3",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
-                "Longitude: ",
-                -105.1153598,
-              ],
-            },
-            "ref": null,
-            "rendered": Array [
-              "Longitude: ",
-              -105.1153598,
-            ],
-            "type": "h3",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": -0.00003669999999544871,
-            },
-            "ref": null,
-            "rendered": -0.00003669999999544871,
-            "type": "h3",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
                 "You at the top?: ",
-                "true",
+                false,
               ],
             },
             "ref": null,
             "rendered": Array [
               "You at the top?: ",
-              "true",
+              false,
             ],
             "type": "h3",
           },
@@ -282,19 +213,7 @@ ShallowWrapper {
               Sangre de Cristo
             </h3>
             <h3>
-              Latitude: 
-              39.6295333
-            </h3>
-            <h3>
-              Longitude: 
-              -105.1153598
-            </h3>
-            <h3>
-              -0.00003669999999544871
-            </h3>
-            <h3>
               You at the top?: 
-              true
             </h3>
           </section>,
           <button
@@ -329,19 +248,7 @@ ShallowWrapper {
                 Sangre de Cristo
               </h3>,
               <h3>
-                Latitude: 
-                39.6295333
-              </h3>,
-              <h3>
-                Longitude: 
-                -105.1153598
-              </h3>,
-              <h3>
-                -0.00003669999999544871
-              </h3>,
-              <h3>
                 You at the top?: 
-                true
               </h3>,
             ],
             "className": "info-section",
@@ -403,59 +310,14 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  "Latitude: ",
-                  39.6295333,
-                ],
-              },
-              "ref": null,
-              "rendered": Array [
-                "Latitude: ",
-                39.6295333,
-              ],
-              "type": "h3",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
-                  "Longitude: ",
-                  -105.1153598,
-                ],
-              },
-              "ref": null,
-              "rendered": Array [
-                "Longitude: ",
-                -105.1153598,
-              ],
-              "type": "h3",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": -0.00003669999999544871,
-              },
-              "ref": null,
-              "rendered": -0.00003669999999544871,
-              "type": "h3",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
                   "You at the top?: ",
-                  "true",
+                  false,
                 ],
               },
               "ref": null,
               "rendered": Array [
                 "You at the top?: ",
-                "true",
+                false,
               ],
               "type": "h3",
             },

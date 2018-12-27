@@ -173,6 +173,37 @@ describe("App", () => {
     });
   });
 
+  describe("loadPeakLocations", () => {
+    it("should load data for 62 peaks", () => {
+      wrapper.instance().loadPeakLocations;
+      expect(wrapper.state().peakLocations).toHaveLength(62);
+    });
+
+    it("each peak should have valid lat and long", () => {
+      wrapper.instance().loadPeakLocations;
+      const { peakLocations } = wrapper.state();
+      const result = peakLocations.every(peak => {
+        return (
+          typeof peak.latitude === "number" &&
+          typeof peak.longitude === "number"
+        );
+      });
+      expect(result).toBe(true);
+    });
+  });
+
+  describe("checkProximity", () => {
+    it("should return true for valid nums", () => {
+      const result = wrapper.instance().checkProximity(0.002);
+      expect(result).toBe(true);
+    });
+
+    it("should return true for valid nums", () => {
+      const result = wrapper.instance().checkProximity(0.02);
+      expect(result).toBe(false);
+    });
+  });
+
   describe("validateSignIn", () => {
     it("should update isSignedIn in state accordingly", () => {
       expect(wrapper.state().isSignedIn).toEqual(false);
@@ -198,10 +229,9 @@ describe("App", () => {
       };
       wrapper.instance().showPosition(position);
 
-      const { longitude, latitude, sum } = wrapper.state().currentLocation;
-      expect(longitude).toEqual(105.9999999);
+      const { longitude, latitude } = wrapper.state().currentLocation;
+      expect(longitude).toEqual(-105.9999999);
       expect(latitude).toEqual(40.55555555);
-      expect(sum).toEqual(146.55555545);
     });
   });
 
@@ -235,7 +265,6 @@ describe("App", () => {
       expect(wrapper.find("SignIn")).toHaveLength(0);
     });
 
-
     it("should display Start screen", () => {
       wrapper.instance().updateCurrentDisplayLog("registerForm");
       expect(wrapper.find("Start")).toHaveLength(0);
@@ -246,7 +275,6 @@ describe("App", () => {
       expect(wrapper.find("SignIn")).toHaveLength(0);
     });
 
-
     it("should display Start screen", () => {
       wrapper.instance().updateCurrentDisplayLog("loadingScreen");
       expect(wrapper.find("Start")).toHaveLength(0);
@@ -256,7 +284,6 @@ describe("App", () => {
       expect(wrapper.find("LoadingScreen")).toHaveLength(1);
       expect(wrapper.find("SignIn")).toHaveLength(0);
     });
-
 
     it("should display Start screen", () => {
       wrapper.instance().updateCurrentDisplayLog("signIn");

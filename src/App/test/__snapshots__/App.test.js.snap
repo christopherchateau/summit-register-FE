@@ -28,7 +28,6 @@ ShallowWrapper {
             Object {
               "latitude": 51.1,
               "longitude": 45.3,
-              "sum": 96.4,
             }
           }
           currentMountain=""
@@ -46,7 +45,6 @@ ShallowWrapper {
               "start",
             ]
           }
-          currentLocation={96.4}
           handleSignIn={[Function]}
           handleSignLog={[Function]}
         />,
@@ -76,7 +74,6 @@ ShallowWrapper {
           "currentLocation": Object {
             "latitude": 51.1,
             "longitude": 45.3,
-            "sum": 96.4,
           },
           "currentMountain": "",
           "handleSelectButton": [Function],
@@ -99,7 +96,7 @@ ShallowWrapper {
           "currentDisplay": Array [
             "start",
           ],
-          "currentLocation": 96.4,
+          "currentLocation": undefined,
           "handleSignIn": [Function],
           "handleSignLog": [Function],
         },
@@ -127,7 +124,6 @@ ShallowWrapper {
               Object {
                 "latitude": 51.1,
                 "longitude": 45.3,
-                "sum": 96.4,
               }
             }
             currentMountain=""
@@ -145,7 +141,6 @@ ShallowWrapper {
                 "start",
               ]
             }
-            currentLocation={96.4}
             handleSignIn={[Function]}
             handleSignLog={[Function]}
           />,
@@ -175,7 +170,6 @@ ShallowWrapper {
             "currentLocation": Object {
               "latitude": 51.1,
               "longitude": 45.3,
-              "sum": 96.4,
             },
             "currentMountain": "",
             "handleSelectButton": [Function],
@@ -198,7 +192,7 @@ ShallowWrapper {
             "currentDisplay": Array [
               "start",
             ],
-            "currentLocation": 96.4,
+            "currentLocation": undefined,
             "handleSignIn": [Function],
             "handleSignLog": [Function],
           },

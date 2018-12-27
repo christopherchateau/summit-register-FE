@@ -36,4 +36,22 @@ describe("Start", () => {
   it("should match snapshot", () => {
     expect(wrapper).toMatchSnapshot();
   });
+
+  it("should render Locating PopUp window when location not found", () => {
+    expect(wrapper.find("LocatingPopUp")).toHaveLength(1);
+  });
+
+  it("should not render Locating PopUp window when location found", () => {
+    wrapper = shallow(
+      <Start
+        currentLocation={{
+          latitude: 39.6294052,
+          longitude: -105.11518559999999,
+          sum: -65.48578039999998
+        }}
+        currentMountainData={currentMountainData}
+      />
+    );
+    expect(wrapper.find("LocatingPopUp")).toHaveLength(0);
+  });
 });

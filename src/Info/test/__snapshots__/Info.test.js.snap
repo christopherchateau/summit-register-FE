@@ -1,3 +1,500 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Info should match snapshot 1`] = `undefined`;
+exports[`Info should match snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Info
+    currentLocation={
+      Object {
+        "latitude": 39.6295333,
+        "longitude": -105.1153598,
+        "sum": -65.4858265,
+      }
+    }
+    currentMountainData={
+      Object {
+        "attributes": Object {
+          "altitude": 14345,
+          "difficulty": "Black",
+          "name": "Blanca Peak",
+          "range": "Sangre de Cristo",
+          "registries": Object {
+            "data": Array [],
+          },
+          "summit": "37.577473,-105.485443",
+        },
+        "id": "4",
+        "type": "mountain",
+      }
+    }
+    handleViewLogButton={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <section
+          className="info-section"
+        >
+          <img
+            alt="Black"
+            className="difficulty-icon"
+            src="black.png"
+          />
+          <h3>
+            Altitude: 
+            14345
+             ft
+          </h3>
+          <h3>
+            Range: 
+            Sangre de Cristo
+          </h3>
+          <h3>
+            Latitude: 
+            39.6295333
+          </h3>
+          <h3>
+            Longitude: 
+            -105.1153598
+          </h3>
+          <h3>
+            -0.00003669999999544871
+          </h3>
+          <h3>
+            You at the top?: 
+            true
+          </h3>
+        </section>,
+        <button
+          className="view-log-btn"
+          onClick={[Function]}
+        >
+          View Log
+        </button>,
+      ],
+      "className": "Info",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <img
+              alt="Black"
+              className="difficulty-icon"
+              src="black.png"
+            />,
+            <h3>
+              Altitude: 
+              14345
+               ft
+            </h3>,
+            <h3>
+              Range: 
+              Sangre de Cristo
+            </h3>,
+            <h3>
+              Latitude: 
+              39.6295333
+            </h3>,
+            <h3>
+              Longitude: 
+              -105.1153598
+            </h3>,
+            <h3>
+              -0.00003669999999544871
+            </h3>,
+            <h3>
+              You at the top?: 
+              true
+            </h3>,
+          ],
+          "className": "info-section",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "alt": "Black",
+              "className": "difficulty-icon",
+              "src": "black.png",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Altitude: ",
+                14345,
+                " ft",
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "Altitude: ",
+              14345,
+              " ft",
+            ],
+            "type": "h3",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Range: ",
+                "Sangre de Cristo",
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "Range: ",
+              "Sangre de Cristo",
+            ],
+            "type": "h3",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Latitude: ",
+                39.6295333,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "Latitude: ",
+              39.6295333,
+            ],
+            "type": "h3",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Longitude: ",
+                -105.1153598,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "Longitude: ",
+              -105.1153598,
+            ],
+            "type": "h3",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": -0.00003669999999544871,
+            },
+            "ref": null,
+            "rendered": -0.00003669999999544871,
+            "type": "h3",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "You at the top?: ",
+                "true",
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "You at the top?: ",
+              "true",
+            ],
+            "type": "h3",
+          },
+        ],
+        "type": "section",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "View Log",
+          "className": "view-log-btn",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "View Log",
+        "type": "button",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <section
+            className="info-section"
+          >
+            <img
+              alt="Black"
+              className="difficulty-icon"
+              src="black.png"
+            />
+            <h3>
+              Altitude: 
+              14345
+               ft
+            </h3>
+            <h3>
+              Range: 
+              Sangre de Cristo
+            </h3>
+            <h3>
+              Latitude: 
+              39.6295333
+            </h3>
+            <h3>
+              Longitude: 
+              -105.1153598
+            </h3>
+            <h3>
+              -0.00003669999999544871
+            </h3>
+            <h3>
+              You at the top?: 
+              true
+            </h3>
+          </section>,
+          <button
+            className="view-log-btn"
+            onClick={[Function]}
+          >
+            View Log
+          </button>,
+        ],
+        "className": "Info",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <img
+                alt="Black"
+                className="difficulty-icon"
+                src="black.png"
+              />,
+              <h3>
+                Altitude: 
+                14345
+                 ft
+              </h3>,
+              <h3>
+                Range: 
+                Sangre de Cristo
+              </h3>,
+              <h3>
+                Latitude: 
+                39.6295333
+              </h3>,
+              <h3>
+                Longitude: 
+                -105.1153598
+              </h3>,
+              <h3>
+                -0.00003669999999544871
+              </h3>,
+              <h3>
+                You at the top?: 
+                true
+              </h3>,
+            ],
+            "className": "info-section",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "alt": "Black",
+                "className": "difficulty-icon",
+                "src": "black.png",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Altitude: ",
+                  14345,
+                  " ft",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Altitude: ",
+                14345,
+                " ft",
+              ],
+              "type": "h3",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Range: ",
+                  "Sangre de Cristo",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Range: ",
+                "Sangre de Cristo",
+              ],
+              "type": "h3",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Latitude: ",
+                  39.6295333,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Latitude: ",
+                39.6295333,
+              ],
+              "type": "h3",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Longitude: ",
+                  -105.1153598,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Longitude: ",
+                -105.1153598,
+              ],
+              "type": "h3",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": -0.00003669999999544871,
+              },
+              "ref": null,
+              "rendered": -0.00003669999999544871,
+              "type": "h3",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "You at the top?: ",
+                  "true",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "You at the top?: ",
+                "true",
+              ],
+              "type": "h3",
+            },
+          ],
+          "type": "section",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "View Log",
+            "className": "view-log-btn",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "View Log",
+          "type": "button",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

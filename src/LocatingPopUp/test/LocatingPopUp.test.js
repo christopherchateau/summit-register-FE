@@ -1,9 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import LocationPopUp from '..';
+import React from "react";
+import ReactDOM from "react-dom";
+import LocationPopUp from "..";
+import { shallow } from "enzyme";
 
-it.skip('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<LocationPopUp />, div);
-  ReactDOM.unmountComponentAtNode(div);
+describe("LocatingPopUp", () => {
+  it("should match snapshot", () => {
+    const wrapper = shallow(<LocationPopUp />);
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  it("renders without crashing", () => {
+    const div = document.createElement("div");
+    ReactDOM.render(<LocationPopUp />, div);
+    ReactDOM.unmountComponentAtNode(div);
+  });
 });

@@ -32,13 +32,6 @@ class App extends Component {
     await this.getLocation();
   };
 
-  retrievePeakLocation = peakName => {
-    const peakLocation = mountainData.data.find(
-      peak => peak.attributes.name === peakName
-    );
-    return peakLocation.attributes.summit.split(",");
-  };
-
   validateLocation = userLocation => {
     const peakLocation = this.retrievePeakLocation(this.state.currentMountain);
     const latProximity = userLocation.latitude - peakLocation[0];
@@ -47,6 +40,10 @@ class App extends Component {
     this.checkProximity(latProximity) && this.checkProximity(longProximity)
       ? this.setState({ withinRange: true })
       : this.setState({ withinRange: false });
+  };
+
+  retrievePeakLocation = peakName => {
+    return this.state.currentMountainData.attributes.summit.split(",");
   };
 
   validateSignIn = boolean => {
@@ -129,7 +126,7 @@ class App extends Component {
   };
 
   checkProximity = num => {
-    return num < 0.5 && num > -0.5;
+    return num < 0.005 && num > -0.005;
   };
 
   showPosition = position => {

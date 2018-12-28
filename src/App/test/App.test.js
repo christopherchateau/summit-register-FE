@@ -7,6 +7,18 @@ jest.mock("../../utilities/helper/apiCalls");
 
 describe("App", () => {
   let wrapper;
+  const currentMountainData = {
+    id: "61",
+    type: "mountain",
+    attributes: {
+      altitude: 5207,
+      difficulty: "Green",
+      name: "Dry Peak",
+      range: "Front",
+      registries: {},
+      summit: "39.753114,-104.994165"
+    }
+  };
   beforeEach(() => {
     wrapper = shallow(<App />);
   });
@@ -114,22 +126,33 @@ describe("App", () => {
   });
 
   describe("handleSignLog", () => {
-    it("should add 'registerForm' to currentDisplay array", () => {
-      wrapper.state().currentLocation = {
-        latitude: 39.6294581,
-        longitude: -105.1154555
-      };
-      wrapper.instance().handleSignLog();
+    let userLocation;
 
-      const { currentDisplay } = wrapper.state();
-      expect(currentDisplay[0]).toEqual("registerForm");
+    beforeEach(() => {
+      userLocation = {
+        latitude: 39.753114,
+        longitude: -104.994165
+      };
+      wrapper.state().currentMountainData = currentMountainData;
+    });
+
+    it("should add 'registerForm' to currentDisplay array", () => {
+      wrapper.state().currentLocation = userLocation;
+      wrapper.instance().validateLocation(userLocation);
+
+      wrapper.instance().handleSignLog();
+      expect(wrapper.state().currentDisplay[0]).toEqual("registerForm");
     });
 
     it("should not add 'registerForm' if location not validated", () => {
+      userLocation = {
+        latitude: 999,
+        longitude: -999
+      };
+      wrapper.state().currentLocation = userLocation;
+      wrapper.instance().validateLocation(userLocation);
       wrapper.instance().handleSignLog();
-
-      const { currentDisplay } = wrapper.state();
-      expect(currentDisplay[0]).toEqual("start");
+      expect(wrapper.state().currentDisplay[0]).toEqual("start");
     });
   });
 
@@ -184,37 +207,17 @@ describe("App", () => {
     });
   });
 
-  describe("loadPeakLocations", () => {
-    it("should load data for 62 peaks", () => {
-      wrapper.instance().loadPeakLocations;
-      expect(wrapper.state().peakLocations).toHaveLength(62);
-    });
-
-    it("each peak should have valid lat and long", () => {
-      wrapper.instance().loadPeakLocations;
-      const { peakLocations } = wrapper.state();
-      const result = peakLocations.every(peak => {
-        return (
-          typeof peak.latitude === "number" &&
-          typeof peak.longitude === "number"
-        );
-      });
-      expect(result).toBe(true);
-    });
-  });
-
   describe("validateLocation", () => {
-    beforeEach(() => {
-      wrapper.instance().loadPeakLocations();
-    });
-
-    it("should validate accepted locations", () => {
+    it("should update state when user location validated", async () => {
       const userLocation = {
-        latitude: 39.629486299999996,
-        longitude: -105.11525
+        latitude: 39.753114,
+        longitude: -104.994165
       };
-      const result = wrapper.instance().validateLocation(userLocation);
-      console.log(result);
+      wrapper.state().currentMountainData = currentMountainData;
+      expect(wrapper.state().withinRange).toBe(false);
+
+      await wrapper.instance().validateLocation(userLocation);
+      expect(wrapper.state().withinRange).toBe(true);
     });
   });
 

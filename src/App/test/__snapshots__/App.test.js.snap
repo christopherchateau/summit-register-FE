@@ -47,6 +47,7 @@ ShallowWrapper {
           }
           handleSignIn={[Function]}
           handleSignLog={[Function]}
+          withinRange={false}
         />,
       ],
       "className": "App",
@@ -96,9 +97,9 @@ ShallowWrapper {
           "currentDisplay": Array [
             "start",
           ],
-          "currentLocation": undefined,
           "handleSignIn": [Function],
           "handleSignLog": [Function],
+          "withinRange": false,
         },
         "ref": null,
         "rendered": null,
@@ -143,6 +144,7 @@ ShallowWrapper {
             }
             handleSignIn={[Function]}
             handleSignLog={[Function]}
+            withinRange={false}
           />,
         ],
         "className": "App",
@@ -192,9 +194,9 @@ ShallowWrapper {
             "currentDisplay": Array [
               "start",
             ],
-            "currentLocation": undefined,
             "handleSignIn": [Function],
             "handleSignLog": [Function],
+            "withinRange": false,
           },
           "ref": null,
           "rendered": null,

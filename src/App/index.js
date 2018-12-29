@@ -22,6 +22,7 @@ class App extends Component {
       currentMountain: "",
       currentMountainData: {},
       currentMountainLog: [],
+      currentMountainWeather: {},
       currentLocation: {},
       withinRange: false,
       isSignedIn: false
@@ -42,7 +43,7 @@ class App extends Component {
       : this.setState({ withinRange: false });
   };
 
-  retrievePeakLocation = peakName => {
+  retrievePeakLocation = () => {
     return this.state.currentMountainData.attributes.summit.split(",");
   };
 
@@ -82,13 +83,20 @@ class App extends Component {
     const mountain = mountainData.data.find(mountain => {
       return mountain.attributes.name === currentMountain;
     });
-    let currentMountainData = await apiCalls.getMountain(mountain.id);
+    const currentMountainData = await apiCalls.getMountain(mountain.id);
     await this.setState({
       currentMountain,
       currentMountainData: currentMountainData.data
     });
     await this.validateLocation(this.state.currentLocation);
+    await this.getWeatherData();
     await this.updateCurrentDisplayLog("info");
+  };
+
+  getWeatherData = async () => {
+    const peakLocation = await this.retrievePeakLocation();
+    const currentMountainWeather = await apiCalls.getWeather(peakLocation);
+    await this.setState({ currentMountainWeather });
   };
 
   handleSignLog = () => {

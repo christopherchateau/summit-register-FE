@@ -16,7 +16,7 @@ class Footer extends Component {
             />
           )}
         <button className="sign-in-btn" onClick={handleSignIn}>
-          SignIn/SignUp
+          SignIn
         </button>
       </footer>
     );

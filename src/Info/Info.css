@@ -16,8 +16,8 @@
   display: flex;
   flex-direction: column;
   height: 60vh;
-  max-width: 80vw;
   justify-content: space-around;
+  max-width: 80%;
   opacity: .9;
   padding: 20px;
   text-align: center;

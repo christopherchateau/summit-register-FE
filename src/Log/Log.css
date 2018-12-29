@@ -11,14 +11,14 @@ h4 {
 
 .comment-container {
   margin: 0 5%;
-  width: 90%;
 }
 
 .comment {
   background: grey;
-  border: 1px solid white;
+  border: 2px solid white;
   border-radius: 20px;
-  margin: 10px;
+  margin: 10px auto;
+  max-width: 60vw;
   opacity: .9;
   padding: 10px;
   text-align: left;

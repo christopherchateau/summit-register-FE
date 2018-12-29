@@ -41,6 +41,11 @@ class Info extends Component {
       "Double Black": DoubleBlack
     };
 
+    let displayText;
+    withinRange
+      ? (displayText = "Congratulations, you're within range to sign the register!")
+      : (displayText = "You are not currenlty within range to sign the register.");
+
     const hourlyForecasts = currentMountainWeather.data.map(forecast => (
       <HourlyForecast {...forecast} />
     ));
@@ -54,7 +59,7 @@ class Info extends Component {
         />
         <h3>Altitude: {altitude} ft</h3>
         <h3>Range: {range}</h3>
-        <h3>You at the top?: {withinRange || false}</h3>
+        <h3>{displayText}</h3>
       </div>
     );
 

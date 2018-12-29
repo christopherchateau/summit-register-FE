@@ -1,0 +1,24 @@
+.HourlyForecast {
+  align-items: center;
+  background:silver;
+  border: 3px solid white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+  min-height: 40vh;
+  min-width: 40vw;
+  overflow: auto;
+  padding: 5px;
+  justify-content: space-evenly;
+}
+
+.skycon {
+  height: 60px;
+  width: 120px;
+}
+
+.HourlyForecast > h3 {
+  font-size: 12px;
+  margin: 5px;
+}

@@ -14,3 +14,12 @@ export const generateTimeStamp = () => {
     currentdate.getSeconds();
   return timeStamp;
 };
+
+export const convertUnixTimeStamp = unixTimeStamp => {
+  let hours = new Date(unixTimeStamp * 1000).getHours();
+
+  if (hours < 12) hours += "am";
+  if (hours === 12) hours += "pm";
+  if (hours > 12) hours = hours - 12 + "pm";
+  return hours;
+};

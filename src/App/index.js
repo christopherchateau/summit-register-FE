@@ -151,6 +151,7 @@ class App extends Component {
       currentMountain,
       currentMountainData,
       currentMountainLog,
+      currentMountainWeather,
       currentLocation,
       withinRange,
       isSignedIn
@@ -174,9 +175,10 @@ class App extends Component {
         )}
         {currentDisplay[0] === "info" && (
           <Info
-            currentMountainData={currentMountainData}
-            handleViewLogButton={this.handleViewLogButton}
             currentLocation={this.state.currentLocation}
+            currentMountainData={currentMountainData}
+            currentMountainWeather={currentMountainWeather}
+            handleViewLogButton={this.handleViewLogButton}
             withinRange={withinRange}
           />
         )}

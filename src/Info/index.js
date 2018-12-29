@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import HourlyForecast from "../HourlyForecast";
 import PropTypes from "prop-types";
 import Green from "../utilities/Images/green.png";
 import Blue from "../utilities/Images/blue.png";
@@ -7,7 +8,26 @@ import DoubleBlack from "../utilities/Images/double_black.png";
 import "./Info.css";
 
 class Info extends Component {
+  constructor() {
+    super();
+    this.state = {
+      display: "info"
+    };
+  }
+
+  toggleView = () => {
+    this.state.display === "info"
+      ? this.setState({ display: "weather" })
+      : this.setState({ display: "info" });
+  };
+
   render() {
+    const {
+      currentMountainWeather,
+      withinRange,
+      handleViewLogButton
+    } = this.props;
+
     const {
       altitude,
       difficulty,
@@ -20,24 +40,47 @@ class Info extends Component {
       Black,
       "Double Black": DoubleBlack
     };
+
+    const hourlyForecasts = currentMountainWeather.data.map(forecast => (
+      <HourlyForecast {...forecast} />
+    ));
+
+    const info = (
+      <div>
+        <img
+          className="difficulty-icon"
+          alt={difficulty}
+          src={difficultyIcons[difficulty]}
+        />
+        <h3>Altitude: {altitude} ft</h3>
+        <h3>Range: {range}</h3>
+        <h3>You at the top?: {withinRange || false}</h3>
+      </div>
+    );
+
+    const weather = (
+      <div className="weather">
+        <h3>{currentMountainWeather.summary}</h3>
+        <section className="hourly-forecast-section">{hourlyForecasts}</section>
+      </div>
+    );
+
     return (
       <div className="Info">
         <section className="info-section">
-          <img
-            className="difficulty-icon"
-            alt={difficulty}
-            src={difficultyIcons[difficulty]}
-          />
-          <h3>Altitude: {altitude} ft</h3>
-          <h3>Range: {range}</h3>
-          <h3>You at the top?: {this.props.withinRange || false}</h3>
+          {this.state.display === "info" ? info : weather}
+          <div className="btn-container">
+            <button
+              className="view-log-btn"
+              onClick={() => handleViewLogButton()}
+            >
+              Log
+            </button>
+            <button className="weather-btn" onClick={() => this.toggleView()}>
+              {this.state.display === "info" ? "Weather" : "Info"}
+            </button>
+          </div>
         </section>
-        <button
-          className="view-log-btn"
-          onClick={() => this.props.handleViewLogButton()}
-        >
-          View Log
-        </button>
       </div>
     );
   }

@@ -5,15 +5,14 @@ import "./SignRegister.css";
 class SignRegister extends Component {
   render() {
     const { withinRange, handleSignLog } = this.props;
-    let buttonText;
-
-    withinRange
-      ? (buttonText = "Sign Register")
-      : (buttonText = "Out of Range");
 
     return (
-      <button className={withinRange ? "SignRegister active" : "SignRegister"} onClick={() => handleSignLog()}>
-        {buttonText}
+      <button
+        className={withinRange ? "SignRegister active" : "SignRegister"}
+        disabled={!withinRange}
+        onClick={() => handleSignLog()}
+      >
+        Sign Register
       </button>
     );
   }

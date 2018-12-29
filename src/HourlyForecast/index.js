@@ -6,7 +6,7 @@ import "./HourlyForecast.css";
 
 class HourlyForecast extends Component {
   covertToPercent = num => {
-    return num * 100 + "%";
+    return (num * 100).toFixed(0) + "%";
   };
 
   render() {

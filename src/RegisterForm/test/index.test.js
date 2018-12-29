@@ -48,5 +48,25 @@ describe("RegisterForm", () => {
       wrapper.find(".submit-btn").simulate("click", mockEvent);
       expect(spy).toHaveBeenCalled();
     });
-  })
+
+    // it("should call handleSubmit on submit button click", () => {
+    //   wrapper.instance().handleLogUpdate = jest.fn()
+    //   const mockState = {
+    //     name: "Chris",
+    //     hometown: "Denver",
+    //     comments: "Hiking rules"
+    //   };
+    //   wrapper.state().name = "Chris";
+    //   wrapper.state().hometown = "Denver";
+    //   wrapper.state().comments = "Hiking rules";
+    //   console.log(wrapper.state());
+
+    //   const spy = spyOn(wrapper.instance(), "handleLogUpdate");
+    //   const mockEvent = { preventDefault: jest.fn() };
+    //   wrapper.instance().forceUpdate();
+
+    //   wrapper.find(".submit-btn").simulate("click", mockEvent);
+    //   expect(spy).toHaveBeenCalled();
+    // });
+  });
 });

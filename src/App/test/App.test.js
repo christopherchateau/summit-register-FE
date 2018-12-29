@@ -208,7 +208,7 @@ describe("App", () => {
   });
 
   describe("validateLocation", () => {
-    it("should update state when user location validated", async () => {
+    it("should update state when user location validated", () => {
       const userLocation = {
         latitude: 39.753114,
         longitude: -104.994165
@@ -216,7 +216,7 @@ describe("App", () => {
       wrapper.state().currentMountainData = currentMountainData;
       expect(wrapper.state().withinRange).toBe(false);
 
-      await wrapper.instance().validateLocation(userLocation);
+      wrapper.instance().validateLocation(userLocation);
       expect(wrapper.state().withinRange).toBe(true);
     });
   });

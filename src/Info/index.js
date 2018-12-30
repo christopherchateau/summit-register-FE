@@ -43,12 +43,14 @@ class Info extends Component {
 
     let displayText;
     withinRange
-      ? (displayText = "Congratulations, you're within range to sign the register!")
-      : (displayText = "You are not currenlty within range to sign the register.");
+      ? (displayText =
+          "Congratulations, you're within range to sign the register!")
+      : (displayText =
+          "You are not currenlty within range to sign the register.");
 
-    const hourlyForecasts = currentMountainWeather.data.map(forecast => (
-      <HourlyForecast {...forecast} />
-    ));
+    const hourlyForecasts = currentMountainWeather.data
+      .slice(0, 12)
+      .map(forecast => <HourlyForecast key={forecast.time} {...forecast} />);
 
     const info = (
       <div>

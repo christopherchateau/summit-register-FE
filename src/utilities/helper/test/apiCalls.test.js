@@ -43,6 +43,54 @@ describe("apiCalls", () => {
     });
   });
 
+  describe("getWeather", () => {
+    it("should call fetch weather data with correct params", () => {
+      window.fetch = jest.fn().mockImplementation(() =>
+        Promise.resolve({
+          json: () => ({
+            summary: "Mostly cloudy throughout the day.",
+            icon: "partly-cloudy-night",
+            data: [
+              {
+                time: 1546041600,
+                summary: "Mostly Cloudy",
+                icon: "partly-cloudy-night",
+                temperature: 72.8,
+                humidity: 0.95,
+                windSpeed: 12.39
+              }
+            ]
+          })
+        })
+      );
+      const location = ["12.345", "-123.456"];
+      const expected =
+        "https://summit-register-weather-api.herokuapp.com/?lat=12.345&lon=-123.456";
+      apiCalls.getWeather(location);
+      expect(window.fetch).toHaveBeenCalledWith(expected);
+    });
+
+    it("should return a json'd response", async () => {
+      const expected = {
+        summary: "Mostly cloudy throughout the day.",
+        icon: "partly-cloudy-night",
+        data: [
+          {
+            time: 1546041600,
+            summary: "Mostly Cloudy",
+            icon: "partly-cloudy-night",
+            temperature: 72.8,
+            humidity: 0.95,
+            windSpeed: 12.39
+          }
+        ]
+      };
+      const location = ["12.345", "-123.456"];
+      const result = await apiCalls.getMountain(location);
+      expect(result).toEqual(expected);
+    });
+  });
+
   describe("postToLog", () => {
     beforeEach(() => {
       const id = 4;

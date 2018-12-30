@@ -27,6 +27,23 @@ ShallowWrapper {
         "type": "mountain",
       }
     }
+    currentMountainWeather={
+      Object {
+        "data": Array [
+          Object {
+            "humidity": 0.95,
+            "icon": "partly-cloudy-night",
+            "precipProbability": 0.55,
+            "summary": "Mostly Cloudy",
+            "temperature": 72.8,
+            "time": 1546041600,
+            "windSpeed": 12.39,
+          },
+        ],
+        "icon": "partly-cloudy-night",
+        "summary": "Mostly cloudy throughout the day.",
+      }
+    }
     handleViewLogButton={[MockFunction]}
   />,
   Symbol(enzyme.__renderer__): Object {
@@ -42,10 +59,10 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": Array [
-        <section
-          className="info-section"
-        >
+      "children": <section
+        className="info-section"
+      >
+        <div>
           <img
             alt="Black"
             className="difficulty-icon"
@@ -61,143 +78,36 @@ ShallowWrapper {
             Sangre de Cristo
           </h3>
           <h3>
-            You at the top?: 
+            You are not currenlty within range to sign the register.
           </h3>
-        </section>,
-        <button
-          className="view-log-btn"
-          onClick={[Function]}
+        </div>
+        <div
+          className="btn-container"
         >
-          View Log
-        </button>,
-      ],
+          <button
+            className="view-log-btn"
+            onClick={[Function]}
+          >
+            Log
+          </button>
+          <button
+            className="weather-btn"
+            onClick={[Function]}
+          >
+            Weather
+          </button>
+        </div>
+      </section>,
       "className": "Info",
     },
     "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            <img
-              alt="Black"
-              className="difficulty-icon"
-              src="black.png"
-            />,
-            <h3>
-              Altitude: 
-              14345
-               ft
-            </h3>,
-            <h3>
-              Range: 
-              Sangre de Cristo
-            </h3>,
-            <h3>
-              You at the top?: 
-            </h3>,
-          ],
-          "className": "info-section",
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "alt": "Black",
-              "className": "difficulty-icon",
-              "src": "black.png",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": "img",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
-                "Altitude: ",
-                14345,
-                " ft",
-              ],
-            },
-            "ref": null,
-            "rendered": Array [
-              "Altitude: ",
-              14345,
-              " ft",
-            ],
-            "type": "h3",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
-                "Range: ",
-                "Sangre de Cristo",
-              ],
-            },
-            "ref": null,
-            "rendered": Array [
-              "Range: ",
-              "Sangre de Cristo",
-            ],
-            "type": "h3",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
-                "You at the top?: ",
-                false,
-              ],
-            },
-            "ref": null,
-            "rendered": Array [
-              "You at the top?: ",
-              false,
-            ],
-            "type": "h3",
-          },
-        ],
-        "type": "section",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "View Log",
-          "className": "view-log-btn",
-          "onClick": [Function],
-        },
-        "ref": null,
-        "rendered": "View Log",
-        "type": "button",
-      },
-    ],
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
+    "rendered": Object {
       "instance": null,
       "key": undefined,
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <section
-            className="info-section"
-          >
+          <div>
             <img
               alt="Black"
               className="difficulty-icon"
@@ -213,17 +123,27 @@ ShallowWrapper {
               Sangre de Cristo
             </h3>
             <h3>
-              You at the top?: 
+              You are not currenlty within range to sign the register.
             </h3>
-          </section>,
-          <button
-            className="view-log-btn"
-            onClick={[Function]}
+          </div>,
+          <div
+            className="btn-container"
           >
-            View Log
-          </button>,
+            <button
+              className="view-log-btn"
+              onClick={[Function]}
+            >
+              Log
+            </button>
+            <button
+              className="weather-btn"
+              onClick={[Function]}
+            >
+              Weather
+            </button>
+          </div>,
         ],
-        "className": "Info",
+        "className": "info-section",
       },
       "ref": null,
       "rendered": Array [
@@ -248,10 +168,9 @@ ShallowWrapper {
                 Sangre de Cristo
               </h3>,
               <h3>
-                You at the top?: 
+                You are not currenlty within range to sign the register.
               </h3>,
             ],
-            "className": "info-section",
           },
           "ref": null,
           "rendered": Array [
@@ -309,35 +228,311 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": Array [
-                  "You at the top?: ",
-                  false,
-                ],
+                "children": "You are not currenlty within range to sign the register.",
               },
               "ref": null,
-              "rendered": Array [
-                "You at the top?: ",
-                false,
-              ],
+              "rendered": "You are not currenlty within range to sign the register.",
               "type": "h3",
             },
           ],
-          "type": "section",
+          "type": "div",
         },
         Object {
           "instance": null,
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "View Log",
-            "className": "view-log-btn",
-            "onClick": [Function],
+            "children": Array [
+              <button
+                className="view-log-btn"
+                onClick={[Function]}
+              >
+                Log
+              </button>,
+              <button
+                className="weather-btn"
+                onClick={[Function]}
+              >
+                Weather
+              </button>,
+            ],
+            "className": "btn-container",
           },
           "ref": null,
-          "rendered": "View Log",
-          "type": "button",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Log",
+                "className": "view-log-btn",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Log",
+              "type": "button",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Weather",
+                "className": "weather-btn",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Weather",
+              "type": "button",
+            },
+          ],
+          "type": "div",
         },
       ],
+      "type": "section",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <section
+          className="info-section"
+        >
+          <div>
+            <img
+              alt="Black"
+              className="difficulty-icon"
+              src="black.png"
+            />
+            <h3>
+              Altitude: 
+              14345
+               ft
+            </h3>
+            <h3>
+              Range: 
+              Sangre de Cristo
+            </h3>
+            <h3>
+              You are not currenlty within range to sign the register.
+            </h3>
+          </div>
+          <div
+            className="btn-container"
+          >
+            <button
+              className="view-log-btn"
+              onClick={[Function]}
+            >
+              Log
+            </button>
+            <button
+              className="weather-btn"
+              onClick={[Function]}
+            >
+              Weather
+            </button>
+          </div>
+        </section>,
+        "className": "Info",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div>
+              <img
+                alt="Black"
+                className="difficulty-icon"
+                src="black.png"
+              />
+              <h3>
+                Altitude: 
+                14345
+                 ft
+              </h3>
+              <h3>
+                Range: 
+                Sangre de Cristo
+              </h3>
+              <h3>
+                You are not currenlty within range to sign the register.
+              </h3>
+            </div>,
+            <div
+              className="btn-container"
+            >
+              <button
+                className="view-log-btn"
+                onClick={[Function]}
+              >
+                Log
+              </button>
+              <button
+                className="weather-btn"
+                onClick={[Function]}
+              >
+                Weather
+              </button>
+            </div>,
+          ],
+          "className": "info-section",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <img
+                  alt="Black"
+                  className="difficulty-icon"
+                  src="black.png"
+                />,
+                <h3>
+                  Altitude: 
+                  14345
+                   ft
+                </h3>,
+                <h3>
+                  Range: 
+                  Sangre de Cristo
+                </h3>,
+                <h3>
+                  You are not currenlty within range to sign the register.
+                </h3>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "alt": "Black",
+                  "className": "difficulty-icon",
+                  "src": "black.png",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "img",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Altitude: ",
+                    14345,
+                    " ft",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Altitude: ",
+                  14345,
+                  " ft",
+                ],
+                "type": "h3",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Range: ",
+                    "Sangre de Cristo",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Range: ",
+                  "Sangre de Cristo",
+                ],
+                "type": "h3",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "You are not currenlty within range to sign the register.",
+                },
+                "ref": null,
+                "rendered": "You are not currenlty within range to sign the register.",
+                "type": "h3",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <button
+                  className="view-log-btn"
+                  onClick={[Function]}
+                >
+                  Log
+                </button>,
+                <button
+                  className="weather-btn"
+                  onClick={[Function]}
+                >
+                  Weather
+                </button>,
+              ],
+              "className": "btn-container",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Log",
+                  "className": "view-log-btn",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "Log",
+                "type": "button",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Weather",
+                  "className": "weather-btn",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "Weather",
+                "type": "button",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "section",
+      },
       "type": "div",
     },
   ],

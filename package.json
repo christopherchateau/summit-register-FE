@@ -8,6 +8,7 @@
     "node": "9.5.0"
   },
   "dependencies": {
+    "canvas-prebuilt": "^2.0.0-alpha.14",
     "enzyme-adapter-react-16": "^1.7.1",
     "firebase": "^5.7.1",
     "gh-pages": "^2.0.1",
@@ -40,6 +41,7 @@
   ],
   "main": "index.js",
   "devDependencies": {
+    "canvas": "^2.2.0",
     "enzyme": "^3.8.0",
     "enzyme-to-json": "^3.3.5"
   },

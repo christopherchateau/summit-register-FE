@@ -24,12 +24,28 @@ describe("Info", () => {
       }
     }
   };
+  const currentMountainWeather = {
+    summary: "Mostly cloudy throughout the day.",
+    icon: "partly-cloudy-night",
+    data: [
+      {
+        time: 1546041600,
+        summary: "Mostly Cloudy",
+        icon: "partly-cloudy-night",
+        precipProbability: 0.55,
+        temperature: 72.8,
+        humidity: 0.95,
+        windSpeed: 12.39,
+      }
+    ]
+  };
   beforeEach(() => {
     wrapper = shallow(
       <Info
         currentMountainData={currentMountainData}
         handleViewLogButton={jest.fn()}
         currentLocation={currentLocation}
+        currentMountainWeather={currentMountainWeather}
       />
     );
   });
@@ -45,6 +61,7 @@ describe("Info", () => {
         currentMountainData={currentMountainData}
         handleViewLogButton={jest.fn()}
         currentLocation={currentLocation}
+        currentMountainWeather={currentMountainWeather}
       />,
       div
     );

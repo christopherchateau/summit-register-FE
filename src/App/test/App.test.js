@@ -177,6 +177,20 @@ describe("App", () => {
     });
   });
 
+  describe("getWeatherData", () => {
+    it("should load weather data to state", async () => {
+      const summary = "Mostly cloudy throughout the day.";
+      const icon = "partly-cloudy-night";
+
+      wrapper.state().currentMountainData = currentMountainData;
+      await wrapper.instance().getWeatherData();
+
+      expect(wrapper.state().currentMountainWeather.summary).toEqual(summary);
+      expect(wrapper.state().currentMountainWeather.icon).toEqual(icon);
+      expect(wrapper.state().currentMountainWeather.data).toHaveLength(3);
+    });
+  });
+
   describe("handleLogUpdate", () => {
     it("should update currentMountainLog in state with response", async () => {
       await wrapper.instance().handleLogUpdate();

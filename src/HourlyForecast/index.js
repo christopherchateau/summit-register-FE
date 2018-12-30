@@ -21,6 +21,7 @@ class HourlyForecast extends Component {
     } = this.props;
 
     icon = icon.toUpperCase().replace(/-/g, "_");
+
     return (
       <div className="HourlyForecast">
         <div className="skycon">
@@ -32,7 +33,6 @@ class HourlyForecast extends Component {
         <h3>Wind: {windSpeed.toFixed(0)} mph</h3>
         <h3>Chance of Rain: {this.covertToPercent(precipProbability)}</h3>
         <h3>Humidity: {this.covertToPercent(humidity)}</h3>
-
       </div>
     );
   }

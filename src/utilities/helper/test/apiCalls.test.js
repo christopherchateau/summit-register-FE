@@ -92,37 +92,42 @@ describe("apiCalls", () => {
   });
 
   describe("postToLog", () => {
-    beforeEach(() => {
-      const id = 4;
-      const url = `https://summit-register-api.herokuapp.com/api/v1/mountains/${id}/registries`;
-      const logEntry = {
-        name: "Chris",
-        hometown: "Denver",
-        comments: "Hiking Rules"
-      };
-      const timeStamp = "12/25/2018 @ 19:42:41";
-      const expected = {
-        body:
-          '{"name":"Chris","hometown":"Denver","comments":"Hiking Rules","sign_time":"12/25/2018 @ 19:42:41"}',
-        credentials: "same-origin",
-        headers: { "Content-Type": "application/json" },
-        method: "POST"
-      };
+    const id = 4;
+    const url = `https://summit-register-api.herokuapp.com/api/v1/mountains/${id}/registries`;
+    const logEntry = {
+      name: "Chris",
+      hometown: "Denver",
+      comments: "Hiking Rules"
+    };
+    const timeStamp = "12/25/2018 @ 19:42:41";
+    const expected = {
+      body:
+        '{"name":"Chris","hometown":"Denver","comments":"Hiking Rules","sign_time":"12/25/2018 @ 19:42:41"}',
+      credentials: "same-origin",
+      headers: { "Content-Type": "application/json" },
+      method: "POST"
+    };
 
-      it("should call postToLog with correct params", () => {
-        window.fetch = jest.fn().mockImplementation(() =>
-          Promise.resolve({
-            json: () => ({ data: expected })
-          })
-        );
-        apiCalls.postToLog(id, logEntry, timeStamp);
-        expect(window.fetch).toHaveBeenCalledWith(url, expected);
-      });
+    it("should call postToLog with correct params", () => {
+      window.fetch = jest.fn().mockImplementation(() =>
+        Promise.resolve({
+          json: () => ({ data: expected })
+        })
+      );
+      apiCalls.postToLog(id, logEntry, timeStamp);
+      expect(window.fetch).toHaveBeenCalledWith(url, expected);
+    });
 
-      it("should return a json'd response", async () => {
-        const result = await apiCalls.postToLog(id, logEntry, timeStamp);
-        expect(result).toEqual(expected);
-      });
+    it("logEntry should contain correct properties", () => {
+      expect(logEntry.hasOwnProperty("name")).toBe(true);
+      expect(logEntry.hasOwnProperty("hometown")).toBe(true);
+      expect(logEntry.hasOwnProperty("comments")).toBe(true);
+      expect(logEntry.hasOwnProperty("id")).toBe(false);
+    });
+
+    it("should return a json'd response", async () => {
+      const result = await apiCalls.postToLog(id, logEntry, timeStamp);
+      expect(result).toEqual(expected);
     });
   });
 });

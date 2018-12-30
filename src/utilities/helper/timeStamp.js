@@ -17,9 +17,9 @@ export const generateTimeStamp = () => {
 
 export const convertUnixTimeStamp = unixTimeStamp => {
   let hours = new Date(unixTimeStamp * 1000).getHours();
-  if (hours === 0) hours = "12pm";
-  if (hours < 12) hours += "am";
-  if (hours === 12) hours += "pm";
-  if (hours > 12) hours = hours - 12 + "pm";
+  if (hours === 0) hours = "12am";
+  else if (hours === 12) hours += "pm";
+  else if (hours < 12) hours += "am";
+  else if (hours > 12) hours = hours - 12 + "pm";
   return hours;
 };

@@ -5,10 +5,6 @@
   overflow: scroll;
 }
 
-h4 {
-  font-size: 14px;
-}
-
 .comment-container {
   margin: 0 5%;
 }
@@ -17,11 +13,12 @@ h4 {
   background: grey;
   border: 2px solid white;
   border-radius: 20px;
+  color: white;
   margin: 10px auto;
   max-width: 60vw;
   opacity: .9;
   padding: 10px;
-  text-align: left;
+  text-align: center;
 }
 
 .empty-log-msg {

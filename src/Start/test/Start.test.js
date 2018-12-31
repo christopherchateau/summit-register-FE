@@ -30,6 +30,35 @@ describe("Start", () => {
     ReactDOM.unmountComponentAtNode(div);
   });
 
+  describe("compareNames", () => {
+    const mountainData = [
+      {
+        id: "60",
+        attributes: {
+          name: "Highlands Ranch High Point"
+        }
+      },
+      {
+        id: "61",
+        attributes: {
+          name: "Dry Peak"
+        }
+      },
+      {
+        id: "62",
+        attributes: {
+          name: "Mt. Harvard"
+        }
+      }
+    ];
+    it("should sort objects alphabetically by mountain name", () => {
+      const result = mountainData.sort(wrapper.instance().compareNames);
+      expect(result[0].attributes.name).toEqual("Dry Peak");
+      expect(result[1].attributes.name).toEqual("Highlands Ranch High Point");
+      expect(result[2].attributes.name).toEqual("Mt. Harvard");
+    });
+  });
+
   describe("Locating PopUp", () => {
     it("should render Locating PopUp window when location not found", () => {
       expect(wrapper.find("LocatingPopUp")).toHaveLength(1);

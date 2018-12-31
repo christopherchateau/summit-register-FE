@@ -2,11 +2,10 @@
   align-items: center;
   background: rgba(165, 165, 165, 0.68);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin: auto;
-  max-width: 1023px;
+  max-width: 800px;
   padding: 0;
-  text-align: center; 
 }
 
 .main-title {

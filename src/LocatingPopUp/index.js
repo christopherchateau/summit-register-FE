@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import loading from '../utilities/Images/loading.gif'
+import loading from "../utilities/Images/loading.gif";
 import PropTypes from "prop-types";
 import "./LocatingPopUp.css";
 

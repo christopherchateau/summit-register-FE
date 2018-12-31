@@ -61,7 +61,8 @@ class Info extends Component {
         />
         <h3>Altitude: {altitude} ft</h3>
         <h3>Range: {range}</h3>
-        <h3>{displayText}</h3>
+        <hr />
+        <h3 className="display-text">{displayText}</h3>
       </div>
     );
 

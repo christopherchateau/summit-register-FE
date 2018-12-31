@@ -1,8 +1,8 @@
 .LocatingPopUp {
   align-items: center;
+  background: grey;
   border: 1px solid white;
   border-radius: 20px;
-  background: grey;
   display: flex;
   justify-content: space-evenly;
   margin:  100px 20% 0 20%;

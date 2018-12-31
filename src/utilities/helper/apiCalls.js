@@ -6,9 +6,11 @@ export const getMountain = async id => {
   return mountains;
 };
 
-export const getWeather = async (location) => {
+export const getWeather = async location => {
   const response = await fetch(
-    `https://summit-register-weather-api.herokuapp.com/?lat=${location[0]}&lon=${location[1]}`
+    `https://summit-register-weather-api.herokuapp.com/?lat=${
+      location[0]
+    }&lon=${location[1]}`
   );
   const weather = await response.json();
   return weather;

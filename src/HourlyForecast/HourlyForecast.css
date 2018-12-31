@@ -9,7 +9,8 @@
   margin: 0 10px;
   min-height: 40vh;
   min-width: 40vw;
-  overflow-y: auto;
+  overflow-x: auto;
+  overflow-y: hidden;
   padding: 5px;
   justify-content: space-evenly;
 }

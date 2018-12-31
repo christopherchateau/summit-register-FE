@@ -24,10 +24,10 @@ class HourlyForecast extends Component {
 
     return (
       <div className="HourlyForecast">
+        <h3>{convertUnixTimeStamp(time)}</h3>
         <div className="skycon">
           <Skycons icon={icon} autoplay={true} />
         </div>
-        <h3>{convertUnixTimeStamp(time)}</h3>
         <h3>{summary}</h3>
         <h3>{temperature.toFixed(0)} °F</h3>
         <h3>Wind: {windSpeed.toFixed(0)} mph</h3>

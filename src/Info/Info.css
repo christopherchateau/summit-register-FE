@@ -3,6 +3,7 @@
   background: url("../utilities/Images/mountains-2.jpg") no-repeat center
   rgba(165, 165, 165, 0.68);
   background-size: auto 100%;
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -15,17 +16,22 @@
   background: grey;
   display: flex;
   flex-direction: column;
-  height: 60vh;
-  justify-content: space-around;
+  font-size: 20px;
+  height: 70vh;
+  justify-content: space-evenly;
   max-width: 80%;
   opacity: .9;
-  padding: 20px;
+  padding: 5px 20px;
   text-align: center;
 }
 
 .difficulty-icon {
   margin: 0 35%;
   width: 30%;
+}
+
+.weather-summary-text {
+  margin: 15px;
 }
 
 .hourly-forecast-section{

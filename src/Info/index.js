@@ -67,7 +67,7 @@ class Info extends Component {
 
     const weather = (
       <div className="weather">
-        <h3>{currentMountainWeather.summary}</h3>
+        <h3 className="weather-summary-text">{currentMountainWeather.summary}</h3>
         <section className="hourly-forecast-section">{hourlyForecasts}</section>
       </div>
     );

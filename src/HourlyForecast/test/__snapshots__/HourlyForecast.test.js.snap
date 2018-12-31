@@ -26,6 +26,9 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
+        <h3>
+          5pm
+        </h3>,
         <div
           className="skycon"
         >
@@ -35,9 +38,6 @@ ShallowWrapper {
             icon="CLEAR_NIGHT"
           />
         </div>,
-        <h3>
-          5pm
-        </h3>,
         <h3>
           Mostly Cloudy
         </h3>,
@@ -68,6 +68,17 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
+          "children": "5pm",
+        },
+        "ref": null,
+        "rendered": "5pm",
+        "type": "h3",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
           "children": <ReactSkycons
             autoplay={true}
             color={null}
@@ -90,17 +101,6 @@ ShallowWrapper {
           "type": [Function],
         },
         "type": "div",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "5pm",
-        },
-        "ref": null,
-        "rendered": "5pm",
-        "type": "h3",
       },
       Object {
         "instance": null,
@@ -193,6 +193,9 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
+          <h3>
+            5pm
+          </h3>,
           <div
             className="skycon"
           >
@@ -202,9 +205,6 @@ ShallowWrapper {
               icon="CLEAR_NIGHT"
             />
           </div>,
-          <h3>
-            5pm
-          </h3>,
           <h3>
             Mostly Cloudy
           </h3>,
@@ -235,6 +235,17 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
+            "children": "5pm",
+          },
+          "ref": null,
+          "rendered": "5pm",
+          "type": "h3",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
             "children": <ReactSkycons
               autoplay={true}
               color={null}
@@ -257,17 +268,6 @@ ShallowWrapper {
             "type": [Function],
           },
           "type": "div",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "5pm",
-          },
-          "ref": null,
-          "rendered": "5pm",
-          "type": "h3",
         },
         Object {
           "instance": null,

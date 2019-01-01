@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import HourlyForecast from "../HourlyForecast";
-import PropTypes from "prop-types";
 import Green from "../utilities/Images/green.png";
 import Blue from "../utilities/Images/blue.png";
 import Black from "../utilities/Images/black.png";
 import DoubleBlack from "../utilities/Images/double_black.png";
+import PropTypes from "prop-types";
 import "./Info.css";
 
 class Info extends Component {
@@ -68,7 +68,9 @@ class Info extends Component {
 
     const weather = (
       <div className="weather">
-        <h3 className="weather-summary-text">{currentMountainWeather.summary}</h3>
+        <h3 className="weather-summary-text">
+          {currentMountainWeather.summary}
+        </h3>
         <section className="hourly-forecast-section">{hourlyForecasts}</section>
       </div>
     );

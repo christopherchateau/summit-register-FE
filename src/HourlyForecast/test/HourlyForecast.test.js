@@ -18,11 +18,11 @@ describe("HourlyForecast", () => {
     wrapper = shallow(<HourlyForecast {...currentMountainWeather} />);
   });
 
-  it.skip("should match snapshot", () => {
+  it("should match snapshot", () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it.skip("renders without crashing", () => {
+  it("renders without crashing", () => {
     const div = document.createElement("div");
     ReactDOM.render(<HourlyForecast {...currentMountainWeather} />, div);
     ReactDOM.unmountComponentAtNode(div);

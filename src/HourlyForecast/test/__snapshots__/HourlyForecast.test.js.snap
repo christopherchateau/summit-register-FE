@@ -26,18 +26,16 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <h3>
+        <h3
+          className="time"
+        >
           5pm
         </h3>,
-        <div
-          className="skycon"
-        >
-          <ReactSkycons
-            autoplay={true}
-            color={null}
-            icon="CLEAR_NIGHT"
-          />
-        </div>,
+        <img
+          alt="Mostly Cloudy"
+          className="weather-icon"
+          src="clear-night.svg"
+        />,
         <h3>
           Mostly Cloudy
         </h3>,
@@ -69,6 +67,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "5pm",
+          "className": "time",
         },
         "ref": null,
         "rendered": "5pm",
@@ -79,28 +78,13 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": <ReactSkycons
-            autoplay={true}
-            color={null}
-            icon="CLEAR_NIGHT"
-          />,
-          "className": "skycon",
+          "alt": "Mostly Cloudy",
+          "className": "weather-icon",
+          "src": "clear-night.svg",
         },
         "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "autoplay": true,
-            "color": null,
-            "icon": "CLEAR_NIGHT",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        "type": "div",
+        "rendered": null,
+        "type": "img",
       },
       Object {
         "instance": null,
@@ -193,18 +177,16 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <h3>
+          <h3
+            className="time"
+          >
             5pm
           </h3>,
-          <div
-            className="skycon"
-          >
-            <ReactSkycons
-              autoplay={true}
-              color={null}
-              icon="CLEAR_NIGHT"
-            />
-          </div>,
+          <img
+            alt="Mostly Cloudy"
+            className="weather-icon"
+            src="clear-night.svg"
+          />,
           <h3>
             Mostly Cloudy
           </h3>,
@@ -236,6 +218,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "5pm",
+            "className": "time",
           },
           "ref": null,
           "rendered": "5pm",
@@ -246,28 +229,13 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": <ReactSkycons
-              autoplay={true}
-              color={null}
-              icon="CLEAR_NIGHT"
-            />,
-            "className": "skycon",
+            "alt": "Mostly Cloudy",
+            "className": "weather-icon",
+            "src": "clear-night.svg",
           },
           "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "autoplay": true,
-              "color": null,
-              "icon": "CLEAR_NIGHT",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          "type": "div",
+          "rendered": null,
+          "type": "img",
         },
         Object {
           "instance": null,

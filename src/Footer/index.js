@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import SignRegister from "../SignRegister";
 import PropTypes from "prop-types";
+import MyMountains from '../MyMountains'
 import "./Footer.css";
 
 class Footer extends Component {
@@ -8,16 +9,29 @@ class Footer extends Component {
     const { handleSignLog, handleSignIn, currentDisplay } = this.props;
     return (
       <footer className="Footer">
-        {currentDisplay[0] !== "registerForm" &&
-          currentDisplay[0] !== "start" && (
-            <SignRegister
-              withinRange={this.props.withinRange}
-              handleSignLog={handleSignLog}
-            />
-          )}
-        <button className="sign-in-btn" onClick={handleSignIn}>
-          SignIn
-        </button>
+        {this.props.currentDisplay[0] !== "registerForm" && (
+          <SignRegister handleSignLog={this.props.handleSignLog} withinRange={this.props.withinRange} />
+        )}
+
+        {this.props.isSignedIn === true && (
+          <div>
+        
+          <button className="sign-in-btn" onClick={this.props.handleMyMountains}>
+          My Mountains
+          </button>
+
+          <button className="sign-in-btn" onClick={this.props.handleSignOut}>
+          Sign Out
+          </button>
+          </div>
+          
+        )}
+
+        {this.props.isSignedIn === false && (
+          <button className="sign-in-btn" onClick={this.props.handleSignIn}>
+            SignIn/SignUp
+          </button>
+        )}
       </footer>
     );
   }

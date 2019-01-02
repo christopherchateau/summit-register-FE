@@ -1,0 +1,35 @@
+.MyMountains {
+  background: url("../utilities/Images/mountains-2.jpg") no-repeat center
+  rgba(165, 165, 165, 0.68);
+  background-size: auto 100%;
+  overflow: scroll;
+}
+
+h4 {
+  font-size: 14px;
+}
+
+.comment-container {
+  margin: 0 5%;
+  width: 90%;
+}
+
+.comment {
+  background: grey;
+  border: 1px solid white;
+  border-radius: 20px;
+  margin: 10px;
+  opacity: .9;
+  padding: 10px;
+  text-align: left;
+}
+
+.empty-log-msg {
+  border: 1px solid white;
+  border-radius: 20px;
+  background: grey;
+  margin-bottom: 20px;
+  margin-top: 50px;
+  opacity: .9;
+  padding: 20px;
+}

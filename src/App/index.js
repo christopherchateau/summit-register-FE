@@ -6,6 +6,7 @@ import Info from "../Info";
 import Log from "../Log";
 import SignIn from "../SignIn";
 import Footer from "../Footer";
+import MyMountains from '../MyMountains';
 import LoadingScreen from "../LoadingScreen";
 import RegisterForm from "../RegisterForm";
 import { mountainData } from "../utilities/Data/mountain-data";
@@ -24,14 +25,20 @@ class App extends Component {
       currentMountainLog: [],
       currentMountainWeather: {},
       currentLocation: {},
+      isSignedIn: false,
+      userData: {},
       withinRange: false,
-      isSignedIn: false
     };
   }
 
   componentDidMount = async () => {
     await this.getLocation();
   };
+
+
+  componentDidUpdate = () => {
+   this.checkUser()
+  }
 
   validateLocation = userLocation => {
     const peakLocation = this.retrievePeakLocation(this.state.currentMountain);
@@ -47,6 +54,7 @@ class App extends Component {
     return this.state.currentMountainData.attributes.summit.split(",");
   };
 
+
   validateSignIn = boolean => {
     if (boolean === true) {
       this.setState({
@@ -55,6 +63,10 @@ class App extends Component {
     }
     this.updateCurrentDisplayLog("start");
   };
+
+  handleMyMountains = () => {
+    this.updateCurrentDisplayLog("myMountains")
+  }
 
   handleBackButton = () => {
     let currentDisplay = this.state.currentDisplay[0];
@@ -109,6 +121,37 @@ class App extends Component {
   handleSignIn = () => {
     this.updateCurrentDisplayLog("signIn");
   };
+
+  handleSignOut = () => {
+    firebase.auth().signOut().then(() => {
+      this.setState({
+        isSignedIn: false,
+        userData: {}
+      })
+    }).catch(function(error) {
+      throw new Error(error)
+    });
+  }
+
+  checkUser = () => {
+
+    if( this.state.isSignedIn && !Object.keys(this.state.userData).length) {
+      // var name, email, photoUrl, uid, emailVerified;
+      var data = firebase.auth().currentUser;
+  
+  
+      let userData = {
+        name: data.displayName,
+        email: data.email,
+        photoUrl: data.photoURL,
+        emailVerified: data.emailVerified,
+        uid: data.uid
+      } 
+      console.log('Name:', data.displayName,"Email:", data.email,"UID:", data.uid)
+      this.setState({ userData })
+    }
+
+  }
 
   handleLogUpdate = async logEntry => {
     const timeStamp = generateTimeStamp();
@@ -193,15 +236,18 @@ class App extends Component {
         )}
         {this.state.currentDisplay[0] === "signIn" && (
           <SignIn validateSignIn={this.validateSignIn} />
-          // <StyledFirebaseAuth
-          //   uiConfig={this.uiConfig}
-          //   firebaseAuth={firebase.auth()}
-          // />
+        )}
+        {this.state.currentDisplay[0] === "myMountains" && (
+          <MyMountains validateSignIn={this.validateSignIn} />
         )}
         <Footer
           currentDisplay={currentDisplay}
           handleSignIn={this.handleSignIn}
+          handleSignOut={this.handleSignOut}
+          handleLogUpdate={this.handleLogUpdate}
           handleSignLog={this.handleSignLog}
+          handleMyMountains={this.handleMyMountains}
+          isSignedIn={isSignedIn}
           withinRange={withinRange}
         />
       </div>

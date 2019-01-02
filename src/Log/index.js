@@ -5,13 +5,20 @@ import "./Log.css";
 class Log extends Component {
   render() {
     const { name } = this.props.currentMountainLog;
-    let singleLog = this.props.currentMountainLog.reverse().map(log => {
+    let singleLog = [...this.props.currentMountainLog].reverse().map(log => {
       return (
         <div className="comment" key={log.id}>
           <h4>Name: {log.attributes.name}</h4>
           <h4>Hometown: {log.attributes.hometown}</h4>
           <h4>Comments: {log.attributes.comments} </h4>
           <h4>Date: {log.attributes.sign_time}</h4>
+          {log.attributes.imageUrl && (
+            <img
+              className="user-image"
+              alt="user image"
+              src={log.attributes.imageUrl}
+            />
+          )}
         </div>
       );
     });

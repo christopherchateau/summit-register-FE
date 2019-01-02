@@ -8,18 +8,23 @@
   flex-direction: column;
   margin: 0 10px;
   min-height: 40vh;
-  min-width: 40vw;
+  min-width: 200px;
+  overflow-x: hidden;
   overflow-y: auto;
   padding: 5px;
   justify-content: space-evenly;
 }
 
-.skycon {
-  height: 90px;
-  width: 180px;
+.weather-icon {
+  height: 120px;
 }
 
 .HourlyForecast > h3 {
-  font-size: 16px;
+  font-size: 14px;
   margin: 2px;
+}
+
+.HourlyForecast > .time {
+  border-bottom: 2px solid black;
+  font-size: 20px;
 }

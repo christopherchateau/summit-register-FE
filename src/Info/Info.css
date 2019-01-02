@@ -16,7 +16,7 @@
   background: grey;
   display: flex;
   flex-direction: column;
-  font-size: 20px;
+  font-size: 18px;
   height: 70vh;
   justify-content: space-evenly;
   max-width: 80%;
@@ -26,8 +26,12 @@
 }
 
 .difficulty-icon {
-  margin: 0 35%;
-  width: 30%;
+  margin: 0 30%;
+  width: 40%;
+}
+
+.display-text {
+  line-height: 1.5;  
 }
 
 .weather-summary-text {
@@ -62,3 +66,4 @@
   cursor: pointer;
   transition: all 0.4s ease-in-out;
 }
+

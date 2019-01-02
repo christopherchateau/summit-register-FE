@@ -874,20 +874,6 @@ export const mountainData = {
           data: []
         }
       }
-    },
-    {
-      id: "62",
-      type: "mountain",
-      attributes: {
-        name: "Jessie's House",
-        altitude: 5207,
-        summit: "39.629437599999996,-105.11570139999999",
-        difficulty: "Green",
-        range: "Black",
-        registries: {
-          data: []
-        }
-      }
     }
   ]
 };

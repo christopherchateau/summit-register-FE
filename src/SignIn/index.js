@@ -39,8 +39,6 @@ class SignIn extends Component {
     
   };
 
-
-
   render() {
     return (
       <div className="SignIn">
@@ -60,12 +58,4 @@ SignIn.propTypes = {
 
 export default SignIn;
 
-//===This code gives you back the Token for the current User to send to the backend when we get to the iteration ===//
 
-// console.log(firebase.auth().onAuthStateChanged(function(user) {
-//   if (user) {
-//     user.getIdToken().then(function(data) {
-//       console.log(data)
-//     });
-//   }
-// }))

@@ -23,7 +23,8 @@ class App extends Component {
       currentMountainData: {},
       currentMountainLog: [],
       currentLocation: {},
-      isSignedIn: false
+      isSignedIn: false,
+      userData: {}
     };
   }
 
@@ -32,10 +33,8 @@ class App extends Component {
   };
 
   componentDidUpdate = () => {
-    if (!Object.keys(this.state.currentLocation).length) {
-      //this.setState({ currentLocation: {} })
-    }
-  };
+   this.checkUser()
+  }
 
   validateSignIn = boolean => {
     if (boolean === true) {
@@ -96,11 +95,32 @@ class App extends Component {
   handleSignOut = () => {
     firebase.auth().signOut().then(() => {
       this.setState({
-        isSignedIn: false
+        isSignedIn: false,
+        userData: {}
       })
     }).catch(function(error) {
       throw new Error(error)
     });
+  }
+
+  checkUser = () => {
+
+    if( this.state.isSignedIn && !Object.keys(this.state.userData).length) {
+      // var name, email, photoUrl, uid, emailVerified;
+      var data = firebase.auth().currentUser;
+  
+  
+      let userData = {
+        name: data.displayName,
+        email: data.email,
+        photoUrl: data.photoURL,
+        emailVerified: data.emailVerified,
+        uid: data.uid
+      } 
+      console.log('Name:', data.displayName,"Email:", data.email,"UID:", data.uid)
+      this.setState({ userData })
+    }
+
   }
 
   handleLogUpdate = async logEntry => {

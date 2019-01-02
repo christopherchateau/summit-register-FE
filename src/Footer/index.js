@@ -6,21 +6,22 @@ import "./Footer.css";
 
 class Footer extends Component {
   render() {
-    const { handleSignLog, handleSignIn, currentDisplay } = this.props;
+    const { handleSignLog, handleSignIn, currentDisplay, handleMyMountains, withinRange, handleSignOut, isSignedIn } = this.props;
     return (
       <footer className="Footer">
-        {this.props.currentDisplay[0] !== "registerForm" && (
-          <SignRegister handleSignLog={this.props.handleSignLog} withinRange={this.props.withinRange} />
+        {currentDisplay[0] !== "registerForm" &&
+        currentDisplay[0] !== 'start' && (
+          <SignRegister handleSignLog={handleSignLog} withinRange={withinRange} />
         )}
 
-        {this.props.isSignedIn === true && (
+        { isSignedIn === true && (
           <div>
         
-          <button className="sign-in-btn" onClick={this.props.handleMyMountains}>
+          <button className="sign-in-btn" onClick={handleMyMountains}>
           My Mountains
           </button>
 
-          <button className="sign-in-btn" onClick={this.props.handleSignOut}>
+          <button className="sign-in-btn" onClick={handleSignOut}>
           Sign Out
           </button>
           </div>
@@ -28,7 +29,7 @@ class Footer extends Component {
         )}
 
         {this.props.isSignedIn === false && (
-          <button className="sign-in-btn" onClick={this.props.handleSignIn}>
+          <button className="sign-in-btn" onClick={handleSignIn}>
             SignIn/SignUp
           </button>
         )}

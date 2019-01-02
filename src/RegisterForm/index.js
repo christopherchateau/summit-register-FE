@@ -58,6 +58,7 @@ class RegisterForm extends Component {
         <button
           className="submit-btn"
           type="submit"
+          disabled={!name.length || !hometown.length || !comments.length }
           onClick={this.handleSubmit}
         >
           Submit

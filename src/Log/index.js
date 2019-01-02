@@ -5,7 +5,7 @@ import "./Log.css";
 class Log extends Component {
   render() {
     const { name } = this.props.currentMountainLog;
-    let singleLog = this.props.currentMountainLog.reverse().map(log => {
+    let singleLog = [...this.props.currentMountainLog].reverse().map(log => {
       return (
         <div className="comment" key={log.id}>
           <h4>Name: {log.attributes.name}</h4>

@@ -1,10 +1,7 @@
-configure({ adapter: new Adapter() });
-import { configure } from "enzyme";
-import Adapter from "enzyme-adapter-react-16";
 import React from "react";
 import ReactDOM from "react-dom";
-import { shallow } from "enzyme";
 import Log from "..";
+import { shallow } from "enzyme";
 
 describe("Log", () => {
   let wrapper;
@@ -13,10 +10,10 @@ describe("Log", () => {
       id: "1",
       type: "registry",
       attributes: {
-        name: "Andrew",
+        name: "Andrew Mockett",
         hometown: "Boulder",
         comments: "Great hike",
-        date: "2018-12-19 21:10:17 UTC"
+        sign_time: "2018-12-19 21:10:17 UTC"
       }
     },
     {
@@ -26,7 +23,7 @@ describe("Log", () => {
         name: "Andrew Tobin",
         hometown: "Denver",
         comments: "Best hike ever",
-        date: "2018-12-19 21:11:29 UTC"
+        sign_time: "2018-12-19 21:11:29 UTC"
       }
     }
   ];
@@ -34,8 +31,8 @@ describe("Log", () => {
     wrapper = shallow(<Log currentMountainLog={currentMountainLog} />);
   });
 
-  it("should exist", () => {
-    expect(wrapper).toBeDefined();
+  it("should match snapshot", () => {
+    expect(wrapper).toMatchSnapshot();
   });
 
   it("renders without crashing", () => {
@@ -44,7 +41,14 @@ describe("Log", () => {
     ReactDOM.unmountComponentAtNode(div);
   });
 
-  it("should match snapshot", () => {
-    expect(wrapper).toMatchSnapshot();
+  describe("empty log message", () => {
+    it("should not display empty log msg when entries present", () => {
+      expect(wrapper.find(".empty-log-msg")).toHaveLength(0);
+    });
+
+    it("should display empty log msg when zero entries", () => {
+      wrapper = shallow(<Log currentMountainLog={[]} />);
+      expect(wrapper.find(".empty-log-msg")).toHaveLength(1);
+    });
   });
 });

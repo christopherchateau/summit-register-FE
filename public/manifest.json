@@ -8,12 +8,12 @@
   "description": "A virtual summit registration log",
   "icons": [
     {
-      "src": "../src/utilities/Images/summit-2.png",
+      "src": "../src/utilities/Images/icon.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "../src/utilities/Images/summit-2.png",
+      "src": "../src/utilities/Images/icon.png",
       "type": "image/png",
       "sizes": "512x512"
     }

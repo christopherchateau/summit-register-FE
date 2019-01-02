@@ -13,6 +13,7 @@ import { mountainData } from "../utilities/Data/mountain-data";
 import * as apiCalls from "../utilities/helper/apiCalls";
 import { generateTimeStamp } from "../utilities/helper/timeStamp";
 import "./App.css";
+import { access } from "fs";
 
 class App extends Component {
   constructor() {
@@ -22,19 +23,37 @@ class App extends Component {
       currentMountain: "",
       currentMountainData: {},
       currentMountainLog: [],
+      currentMountainWeather: {},
       currentLocation: {},
       isSignedIn: false,
-      userData: {}
+      userData: {},
+      withinRange: false,
     };
   }
 
-  componentDidMount = () => {
-    this.getLocation();
+  componentDidMount = async () => {
+    await this.getLocation();
   };
+
 
   componentDidUpdate = () => {
    this.checkUser()
   }
+
+  validateLocation = userLocation => {
+    const peakLocation = this.retrievePeakLocation(this.state.currentMountain);
+    const latProximity = userLocation.latitude - peakLocation[0];
+    const longProximity = userLocation.longitude - peakLocation[1];
+
+    this.checkProximity(latProximity) && this.checkProximity(longProximity)
+      ? this.setState({ withinRange: true })
+      : this.setState({ withinRange: false });
+  };
+
+  retrievePeakLocation = () => {
+    return this.state.currentMountainData.attributes.summit.split(",");
+  };
+
 
   validateSignIn = boolean => {
     if (boolean === true) {
@@ -63,7 +82,7 @@ class App extends Component {
   };
 
   handleViewLogButton = async () => {
-    const currentMountainLog = await apiCalls.getMountainLog(
+    const currentMountainLog = await apiCalls.getMountain(
       this.state.currentMountainData.id
     );
     await this.setState({
@@ -76,16 +95,27 @@ class App extends Component {
     const mountain = mountainData.data.find(mountain => {
       return mountain.attributes.name === currentMountain;
     });
-    let currentMountainData = await apiCalls.getMountain(mountain.id);
+    const currentMountainData = await apiCalls.getMountain(mountain.id);
     await this.setState({
       currentMountain,
       currentMountainData: currentMountainData.data
     });
+    await this.validateLocation(this.state.currentLocation);
+    await this.getWeatherData();
     await this.updateCurrentDisplayLog("info");
   };
 
+  getWeatherData = async () => {
+    const peakLocation = await this.retrievePeakLocation();
+    const currentMountainWeather = await apiCalls.getWeather(peakLocation);
+    await this.setState({ currentMountainWeather });
+  };
+
   handleSignLog = () => {
-    this.updateCurrentDisplayLog("registerForm");
+    this.validateLocation(this.state.currentLocation);
+    if (this.state.withinRange) {
+      this.updateCurrentDisplayLog("registerForm");
+    }
   };
 
   handleSignIn = () => {
@@ -138,19 +168,22 @@ class App extends Component {
   };
 
   updateCurrentDisplayLog = display => {
-    const updatedDisplay = this.state.currentDisplay;
-    this.setState({ currentDisplay: [display, ...updatedDisplay] });
+    const displayHistory = this.state.currentDisplay;
+    this.setState({ currentDisplay: [display, ...displayHistory] });
   };
 
   getLocation = () => {
     return navigator.geolocation.watchPosition(this.showPosition);
   };
 
+  checkProximity = num => {
+    return num < 0.005 && num > -0.005;
+  };
+
   showPosition = position => {
     const currentLocation = {
       longitude: position.coords.longitude,
-      latitude: position.coords.latitude,
-      sum: position.coords.longitude + position.coords.latitude
+      latitude: position.coords.latitude
     };
     this.setState({ currentLocation });
   };
@@ -161,7 +194,9 @@ class App extends Component {
       currentMountain,
       currentMountainData,
       currentMountainLog,
+      currentMountainWeather,
       currentLocation,
+      withinRange,
       isSignedIn
     } = this.state;
 
@@ -183,18 +218,18 @@ class App extends Component {
         )}
         {currentDisplay[0] === "info" && (
           <Info
-            currentMountainData={currentMountainData}
-            handleViewLogButton={this.handleViewLogButton}
             currentLocation={this.state.currentLocation}
+            currentMountainData={currentMountainData}
+            currentMountainWeather={currentMountainWeather}
+            handleViewLogButton={this.handleViewLogButton}
+            withinRange={withinRange}
           />
         )}
         {currentDisplay[0] === "log" && (
           <Log currentMountainLog={currentMountainLog} />
         )}
         {currentDisplay[0] === "registerForm" && (
-          <RegisterForm
-            handleLogUpdate={this.handleLogUpdate}
-          />
+          <RegisterForm handleLogUpdate={this.handleLogUpdate} />
         )}
         {currentDisplay[0] === "loadingScreen" && (
           <LoadingScreen className="Main" />
@@ -213,6 +248,7 @@ class App extends Component {
           handleSignLog={this.handleSignLog}
           handleMyMountains={this.handleMyMountains}
           isSignedIn={isSignedIn}
+          withinRange={withinRange}
         />
       </div>
     );

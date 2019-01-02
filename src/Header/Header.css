@@ -3,9 +3,10 @@
   background: rgba(165, 165, 165, 0.68);
   display: flex;
   justify-content: space-around;
-  padding-top: 12px;
+  margin: auto;
+  max-width: 1023px;
+  padding: 0;
   text-align: center; 
-  width: 80%;
 }
 
 .main-title {
@@ -14,9 +15,7 @@
 }
   
 .logo {
-  bottom: 4px;
   height: 60px;
-  position: relative;
 }
 
 .back-btn {
@@ -30,5 +29,6 @@
 .back-btn:hover {
   background: black;
   color: white;
+  cursor: pointer;
   transition: all 0.4s ease-in-out;
 }

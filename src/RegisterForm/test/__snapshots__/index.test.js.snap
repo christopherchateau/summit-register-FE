@@ -1,0 +1,491 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RegisterForm should match snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <RegisterForm
+    handleLogUpdate={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <form
+          className="register-form"
+        >
+          <h3
+            className="form-instructions"
+          >
+            Name:
+            <input
+              className="input"
+              name="name"
+              onChange={[Function]}
+              value=""
+            />
+          </h3>
+          <h3
+            className="form-instructions"
+          >
+            Hometown:
+            <input
+              className="input"
+              name="hometown"
+              onChange={[Function]}
+              value=""
+            />
+          </h3>
+          <h3
+            className="form-instructions"
+          >
+            Comments:
+            <textarea
+              className="input"
+              name="comments"
+              onChange={[Function]}
+              value=""
+            />
+          </h3>
+        </form>,
+        <button
+          className="submit-btn"
+          onClick={[Function]}
+          type="submit"
+        >
+          Submit
+        </button>,
+      ],
+      "className": "RegisterForm",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h3
+              className="form-instructions"
+            >
+              Name:
+              <input
+                className="input"
+                name="name"
+                onChange={[Function]}
+                value=""
+              />
+            </h3>,
+            <h3
+              className="form-instructions"
+            >
+              Hometown:
+              <input
+                className="input"
+                name="hometown"
+                onChange={[Function]}
+                value=""
+              />
+            </h3>,
+            <h3
+              className="form-instructions"
+            >
+              Comments:
+              <textarea
+                className="input"
+                name="comments"
+                onChange={[Function]}
+                value=""
+              />
+            </h3>,
+          ],
+          "className": "register-form",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Name:",
+                <input
+                  className="input"
+                  name="name"
+                  onChange={[Function]}
+                  value=""
+                />,
+              ],
+              "className": "form-instructions",
+            },
+            "ref": null,
+            "rendered": Array [
+              "Name:",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "input",
+                  "name": "name",
+                  "onChange": [Function],
+                  "value": "",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+            ],
+            "type": "h3",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Hometown:",
+                <input
+                  className="input"
+                  name="hometown"
+                  onChange={[Function]}
+                  value=""
+                />,
+              ],
+              "className": "form-instructions",
+            },
+            "ref": null,
+            "rendered": Array [
+              "Hometown:",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "input",
+                  "name": "hometown",
+                  "onChange": [Function],
+                  "value": "",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+            ],
+            "type": "h3",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Comments:",
+                <textarea
+                  className="input"
+                  name="comments"
+                  onChange={[Function]}
+                  value=""
+                />,
+              ],
+              "className": "form-instructions",
+            },
+            "ref": null,
+            "rendered": Array [
+              "Comments:",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "input",
+                  "name": "comments",
+                  "onChange": [Function],
+                  "value": "",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "textarea",
+              },
+            ],
+            "type": "h3",
+          },
+        ],
+        "type": "form",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Submit",
+          "className": "submit-btn",
+          "onClick": [Function],
+          "type": "submit",
+        },
+        "ref": null,
+        "rendered": "Submit",
+        "type": "button",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <form
+            className="register-form"
+          >
+            <h3
+              className="form-instructions"
+            >
+              Name:
+              <input
+                className="input"
+                name="name"
+                onChange={[Function]}
+                value=""
+              />
+            </h3>
+            <h3
+              className="form-instructions"
+            >
+              Hometown:
+              <input
+                className="input"
+                name="hometown"
+                onChange={[Function]}
+                value=""
+              />
+            </h3>
+            <h3
+              className="form-instructions"
+            >
+              Comments:
+              <textarea
+                className="input"
+                name="comments"
+                onChange={[Function]}
+                value=""
+              />
+            </h3>
+          </form>,
+          <button
+            className="submit-btn"
+            onClick={[Function]}
+            type="submit"
+          >
+            Submit
+          </button>,
+        ],
+        "className": "RegisterForm",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h3
+                className="form-instructions"
+              >
+                Name:
+                <input
+                  className="input"
+                  name="name"
+                  onChange={[Function]}
+                  value=""
+                />
+              </h3>,
+              <h3
+                className="form-instructions"
+              >
+                Hometown:
+                <input
+                  className="input"
+                  name="hometown"
+                  onChange={[Function]}
+                  value=""
+                />
+              </h3>,
+              <h3
+                className="form-instructions"
+              >
+                Comments:
+                <textarea
+                  className="input"
+                  name="comments"
+                  onChange={[Function]}
+                  value=""
+                />
+              </h3>,
+            ],
+            "className": "register-form",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Name:",
+                  <input
+                    className="input"
+                    name="name"
+                    onChange={[Function]}
+                    value=""
+                  />,
+                ],
+                "className": "form-instructions",
+              },
+              "ref": null,
+              "rendered": Array [
+                "Name:",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "input",
+                    "name": "name",
+                    "onChange": [Function],
+                    "value": "",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+              ],
+              "type": "h3",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Hometown:",
+                  <input
+                    className="input"
+                    name="hometown"
+                    onChange={[Function]}
+                    value=""
+                  />,
+                ],
+                "className": "form-instructions",
+              },
+              "ref": null,
+              "rendered": Array [
+                "Hometown:",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "input",
+                    "name": "hometown",
+                    "onChange": [Function],
+                    "value": "",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+              ],
+              "type": "h3",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Comments:",
+                  <textarea
+                    className="input"
+                    name="comments"
+                    onChange={[Function]}
+                    value=""
+                  />,
+                ],
+                "className": "form-instructions",
+              },
+              "ref": null,
+              "rendered": Array [
+                "Comments:",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "input",
+                    "name": "comments",
+                    "onChange": [Function],
+                    "value": "",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "textarea",
+                },
+              ],
+              "type": "h3",
+            },
+          ],
+          "type": "form",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Submit",
+            "className": "submit-btn",
+            "onClick": [Function],
+            "type": "submit",
+          },
+          "ref": null,
+          "rendered": "Submit",
+          "type": "button",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

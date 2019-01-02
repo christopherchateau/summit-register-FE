@@ -6,10 +6,11 @@ import "./Footer.css";
 
 class Footer extends Component {
   render() {
+    const { handleSignLog, handleSignIn, currentDisplay } = this.props;
     return (
       <footer className="Footer">
         {this.props.currentDisplay[0] !== "registerForm" && (
-          <SignRegister handleSignLog={this.props.handleSignLog} />
+          <SignRegister handleSignLog={this.props.handleSignLog} withinRange={this.props.withinRange} />
         )}
 
         {this.props.isSignedIn === true && (

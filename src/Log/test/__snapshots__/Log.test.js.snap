@@ -8,22 +8,22 @@ ShallowWrapper {
       Array [
         Object {
           "attributes": Object {
-            "comments": "Great hike",
-            "date": "2018-12-19 21:10:17 UTC",
-            "hometown": "Boulder",
-            "name": "Andrew",
+            "comments": "Best hike ever",
+            "hometown": "Denver",
+            "name": "Andrew Tobin",
+            "sign_time": "2018-12-19 21:11:29 UTC",
           },
-          "id": "1",
+          "id": "2",
           "type": "registry",
         },
         Object {
           "attributes": Object {
-            "comments": "Best hike ever",
-            "date": "2018-12-19 21:11:29 UTC",
-            "hometown": "Denver",
-            "name": "Andrew Tobin",
+            "comments": "Great hike",
+            "hometown": "Boulder",
+            "name": "Andrew Mockett",
+            "sign_time": "2018-12-19 21:10:17 UTC",
           },
-          "id": "2",
+          "id": "1",
           "type": "registry",
         },
       ]
@@ -52,26 +52,6 @@ ShallowWrapper {
           >
             <h4>
               Name: 
-              Andrew
-            </h4>
-            <h4>
-              Hometown: 
-              Boulder
-            </h4>
-            <h4>
-              Comments: 
-              Great hike
-               
-            </h4>
-            <h4>
-              Date: 
-            </h4>
-          </div>
-          <div
-            className="comment"
-          >
-            <h4>
-              Name: 
               Andrew Tobin
             </h4>
             <h4>
@@ -85,6 +65,28 @@ ShallowWrapper {
             </h4>
             <h4>
               Date: 
+              2018-12-19 21:11:29 UTC
+            </h4>
+          </div>
+          <div
+            className="comment"
+          >
+            <h4>
+              Name: 
+              Andrew Mockett
+            </h4>
+            <h4>
+              Hometown: 
+              Boulder
+            </h4>
+            <h4>
+              Comments: 
+              Great hike
+               
+            </h4>
+            <h4>
+              Date: 
+              2018-12-19 21:10:17 UTC
             </h4>
           </div>
         </section>,
@@ -115,26 +117,6 @@ ShallowWrapper {
             >
               <h4>
                 Name: 
-                Andrew
-              </h4>
-              <h4>
-                Hometown: 
-                Boulder
-              </h4>
-              <h4>
-                Comments: 
-                Great hike
-                 
-              </h4>
-              <h4>
-                Date: 
-              </h4>
-            </div>,
-            <div
-              className="comment"
-            >
-              <h4>
-                Name: 
                 Andrew Tobin
               </h4>
               <h4>
@@ -148,6 +130,28 @@ ShallowWrapper {
               </h4>
               <h4>
                 Date: 
+                2018-12-19 21:11:29 UTC
+              </h4>
+            </div>,
+            <div
+              className="comment"
+            >
+              <h4>
+                Name: 
+                Andrew Mockett
+              </h4>
+              <h4>
+                Hometown: 
+                Boulder
+              </h4>
+              <h4>
+                Comments: 
+                Great hike
+                 
+              </h4>
+              <h4>
+                Date: 
+                2018-12-19 21:10:17 UTC
               </h4>
             </div>,
           ],
@@ -155,106 +159,6 @@ ShallowWrapper {
         },
         "ref": null,
         "rendered": Array [
-          Object {
-            "instance": null,
-            "key": "1",
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
-                <h4>
-                  Name: 
-                  Andrew
-                </h4>,
-                <h4>
-                  Hometown: 
-                  Boulder
-                </h4>,
-                <h4>
-                  Comments: 
-                  Great hike
-                   
-                </h4>,
-                <h4>
-                  Date: 
-                </h4>,
-              ],
-              "className": "comment",
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": Array [
-                    "Name: ",
-                    "Andrew",
-                  ],
-                },
-                "ref": null,
-                "rendered": Array [
-                  "Name: ",
-                  "Andrew",
-                ],
-                "type": "h4",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": Array [
-                    "Hometown: ",
-                    "Boulder",
-                  ],
-                },
-                "ref": null,
-                "rendered": Array [
-                  "Hometown: ",
-                  "Boulder",
-                ],
-                "type": "h4",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": Array [
-                    "Comments: ",
-                    "Great hike",
-                    " ",
-                  ],
-                },
-                "ref": null,
-                "rendered": Array [
-                  "Comments: ",
-                  "Great hike",
-                  " ",
-                ],
-                "type": "h4",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": Array [
-                    "Date: ",
-                    undefined,
-                  ],
-                },
-                "ref": null,
-                "rendered": Array [
-                  "Date: ",
-                  undefined,
-                ],
-                "type": "h4",
-              },
-            ],
-            "type": "div",
-          },
           Object {
             "instance": null,
             "key": "2",
@@ -276,6 +180,7 @@ ShallowWrapper {
                 </h4>,
                 <h4>
                   Date: 
+                  2018-12-19 21:11:29 UTC
                 </h4>,
               ],
               "className": "comment",
@@ -342,13 +247,114 @@ ShallowWrapper {
                 "props": Object {
                   "children": Array [
                     "Date: ",
-                    undefined,
+                    "2018-12-19 21:11:29 UTC",
                   ],
                 },
                 "ref": null,
                 "rendered": Array [
                   "Date: ",
-                  undefined,
+                  "2018-12-19 21:11:29 UTC",
+                ],
+                "type": "h4",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": "1",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h4>
+                  Name: 
+                  Andrew Mockett
+                </h4>,
+                <h4>
+                  Hometown: 
+                  Boulder
+                </h4>,
+                <h4>
+                  Comments: 
+                  Great hike
+                   
+                </h4>,
+                <h4>
+                  Date: 
+                  2018-12-19 21:10:17 UTC
+                </h4>,
+              ],
+              "className": "comment",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Name: ",
+                    "Andrew Mockett",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Name: ",
+                  "Andrew Mockett",
+                ],
+                "type": "h4",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Hometown: ",
+                    "Boulder",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Hometown: ",
+                  "Boulder",
+                ],
+                "type": "h4",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Comments: ",
+                    "Great hike",
+                    " ",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Comments: ",
+                  "Great hike",
+                  " ",
+                ],
+                "type": "h4",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Date: ",
+                    "2018-12-19 21:10:17 UTC",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Date: ",
+                  "2018-12-19 21:10:17 UTC",
                 ],
                 "type": "h4",
               },
@@ -377,26 +383,6 @@ ShallowWrapper {
             >
               <h4>
                 Name: 
-                Andrew
-              </h4>
-              <h4>
-                Hometown: 
-                Boulder
-              </h4>
-              <h4>
-                Comments: 
-                Great hike
-                 
-              </h4>
-              <h4>
-                Date: 
-              </h4>
-            </div>
-            <div
-              className="comment"
-            >
-              <h4>
-                Name: 
                 Andrew Tobin
               </h4>
               <h4>
@@ -410,6 +396,28 @@ ShallowWrapper {
               </h4>
               <h4>
                 Date: 
+                2018-12-19 21:11:29 UTC
+              </h4>
+            </div>
+            <div
+              className="comment"
+            >
+              <h4>
+                Name: 
+                Andrew Mockett
+              </h4>
+              <h4>
+                Hometown: 
+                Boulder
+              </h4>
+              <h4>
+                Comments: 
+                Great hike
+                 
+              </h4>
+              <h4>
+                Date: 
+                2018-12-19 21:10:17 UTC
               </h4>
             </div>
           </section>,
@@ -440,26 +448,6 @@ ShallowWrapper {
               >
                 <h4>
                   Name: 
-                  Andrew
-                </h4>
-                <h4>
-                  Hometown: 
-                  Boulder
-                </h4>
-                <h4>
-                  Comments: 
-                  Great hike
-                   
-                </h4>
-                <h4>
-                  Date: 
-                </h4>
-              </div>,
-              <div
-                className="comment"
-              >
-                <h4>
-                  Name: 
                   Andrew Tobin
                 </h4>
                 <h4>
@@ -473,6 +461,28 @@ ShallowWrapper {
                 </h4>
                 <h4>
                   Date: 
+                  2018-12-19 21:11:29 UTC
+                </h4>
+              </div>,
+              <div
+                className="comment"
+              >
+                <h4>
+                  Name: 
+                  Andrew Mockett
+                </h4>
+                <h4>
+                  Hometown: 
+                  Boulder
+                </h4>
+                <h4>
+                  Comments: 
+                  Great hike
+                   
+                </h4>
+                <h4>
+                  Date: 
+                  2018-12-19 21:10:17 UTC
                 </h4>
               </div>,
             ],
@@ -480,106 +490,6 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": Array [
-            Object {
-              "instance": null,
-              "key": "1",
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
-                  <h4>
-                    Name: 
-                    Andrew
-                  </h4>,
-                  <h4>
-                    Hometown: 
-                    Boulder
-                  </h4>,
-                  <h4>
-                    Comments: 
-                    Great hike
-                     
-                  </h4>,
-                  <h4>
-                    Date: 
-                  </h4>,
-                ],
-                "className": "comment",
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": Array [
-                      "Name: ",
-                      "Andrew",
-                    ],
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    "Name: ",
-                    "Andrew",
-                  ],
-                  "type": "h4",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": Array [
-                      "Hometown: ",
-                      "Boulder",
-                    ],
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    "Hometown: ",
-                    "Boulder",
-                  ],
-                  "type": "h4",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": Array [
-                      "Comments: ",
-                      "Great hike",
-                      " ",
-                    ],
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    "Comments: ",
-                    "Great hike",
-                    " ",
-                  ],
-                  "type": "h4",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": Array [
-                      "Date: ",
-                      undefined,
-                    ],
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    "Date: ",
-                    undefined,
-                  ],
-                  "type": "h4",
-                },
-              ],
-              "type": "div",
-            },
             Object {
               "instance": null,
               "key": "2",
@@ -601,6 +511,7 @@ ShallowWrapper {
                   </h4>,
                   <h4>
                     Date: 
+                    2018-12-19 21:11:29 UTC
                   </h4>,
                 ],
                 "className": "comment",
@@ -667,13 +578,114 @@ ShallowWrapper {
                   "props": Object {
                     "children": Array [
                       "Date: ",
-                      undefined,
+                      "2018-12-19 21:11:29 UTC",
                     ],
                   },
                   "ref": null,
                   "rendered": Array [
                     "Date: ",
-                    undefined,
+                    "2018-12-19 21:11:29 UTC",
+                  ],
+                  "type": "h4",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "1",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h4>
+                    Name: 
+                    Andrew Mockett
+                  </h4>,
+                  <h4>
+                    Hometown: 
+                    Boulder
+                  </h4>,
+                  <h4>
+                    Comments: 
+                    Great hike
+                     
+                  </h4>,
+                  <h4>
+                    Date: 
+                    2018-12-19 21:10:17 UTC
+                  </h4>,
+                ],
+                "className": "comment",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Name: ",
+                      "Andrew Mockett",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Name: ",
+                    "Andrew Mockett",
+                  ],
+                  "type": "h4",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Hometown: ",
+                      "Boulder",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Hometown: ",
+                    "Boulder",
+                  ],
+                  "type": "h4",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Comments: ",
+                      "Great hike",
+                      " ",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Comments: ",
+                    "Great hike",
+                    " ",
+                  ],
+                  "type": "h4",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Date: ",
+                      "2018-12-19 21:10:17 UTC",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Date: ",
+                    "2018-12-19 21:10:17 UTC",
                   ],
                   "type": "h4",
                 },

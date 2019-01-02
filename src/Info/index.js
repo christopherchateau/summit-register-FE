@@ -1,15 +1,33 @@
 import React, { Component } from "react";
-import PropTypes from "prop-types";
+import HourlyForecast from "../HourlyForecast";
 import Green from "../utilities/Images/green.png";
 import Blue from "../utilities/Images/blue.png";
 import Black from "../utilities/Images/black.png";
 import DoubleBlack from "../utilities/Images/double_black.png";
+import PropTypes from "prop-types";
 import "./Info.css";
 
 class Info extends Component {
+  constructor() {
+    super();
+    this.state = {
+      display: "info"
+    };
+  }
+
+  toggleView = () => {
+    this.state.display === "info"
+      ? this.setState({ display: "weather" })
+      : this.setState({ display: "info" });
+  };
+
   render() {
-    let locationCheck = this.props.currentLocation.sum - -65.4857898;
-    let locationValidation = locationCheck < 0.003 && locationCheck > -0.003;
+    const {
+      currentMountainWeather,
+      withinRange,
+      handleViewLogButton
+    } = this.props;
+
     const {
       altitude,
       difficulty,
@@ -22,27 +40,57 @@ class Info extends Component {
       Black,
       "Double Black": DoubleBlack
     };
+
+    let displayText;
+    withinRange
+      ? (displayText =
+          "Congratulations, you're within range to sign the register!")
+      : (displayText =
+          "You are not currenlty within range to sign the register.");
+
+    const hourlyForecasts = currentMountainWeather.data
+      .slice(0, 12)
+      .map(forecast => <HourlyForecast key={forecast.time} {...forecast} />);
+
+    const info = (
+      <div>
+        <img
+          className="difficulty-icon"
+          alt={difficulty}
+          src={difficultyIcons[difficulty]}
+        />
+        <h3>Altitude: {altitude} ft</h3>
+        <h3>Range: {range}</h3>
+        <hr />
+        <h3 className="display-text">{displayText}</h3>
+      </div>
+    );
+
+    const weather = (
+      <div className="weather">
+        <h3 className="weather-summary-text">
+          {currentMountainWeather.summary}
+        </h3>
+        <section className="hourly-forecast-section">{hourlyForecasts}</section>
+      </div>
+    );
+
     return (
       <div className="Info">
         <section className="info-section">
-          <img
-            className="difficulty-icon"
-            alt={difficulty}
-            src={difficultyIcons[difficulty]}
-          />
-          <h3>Altitude: {altitude} ft</h3>
-          <h3>Range: {range}</h3>
-          <h3>Latitude: {this.props.currentLocation.latitude}</h3>
-          <h3>Longitude: {this.props.currentLocation.longitude}</h3>
-          <h3>{locationCheck}</h3>
-          <h3>You at the top?: {locationValidation.toString()}</h3>
+          {this.state.display === "info" ? info : weather}
+          <div className="btn-container">
+            <button
+              className="view-log-btn"
+              onClick={() => handleViewLogButton()}
+            >
+              Log
+            </button>
+            <button className="weather-btn" onClick={() => this.toggleView()}>
+              {this.state.display === "info" ? "Weather" : "Info"}
+            </button>
+          </div>
         </section>
-        <button
-          className="view-log-btn"
-          onClick={() => this.props.handleViewLogButton()}
-        >
-          View Log
-        </button>
       </div>
     );
   }

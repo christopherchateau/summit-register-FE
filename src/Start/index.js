@@ -8,7 +8,6 @@ class Start extends Component {
   compareNames = (a, b) => {
     if (a.attributes.name < b.attributes.name) return -1;
     if (a.attributes.name > b.attributes.name) return 1;
-    return 0;
   };
 
   render() {
@@ -23,7 +22,7 @@ class Start extends Component {
       });
 
     return (
-      <div className="Start Main">
+      <div className="Start">
         {!Object.keys(this.props.currentLocation).length && <LocatingPopUp />}
         <div className="drop-down-controls">
           <select

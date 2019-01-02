@@ -1,20 +1,20 @@
 import React, { Component } from "react";
-import firebase from 'firebase'
+import firebase from "firebase";
 import PropTypes from "prop-types";
 import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth";
 import "./SignIn.css";
 
 firebase.initializeApp({
-  apiKey: 'AIzaSyCOPftNFUOFLFm0alfd8hswAh9kF-wojsc',
-  authDomain: 'summit-register-dad45.firebaseapp.com'
-})
+  apiKey: "AIzaSyCOPftNFUOFLFm0alfd8hswAh9kF-wojsc",
+  authDomain: "summit-register-dad45.firebaseapp.com"
+});
 
 class SignIn extends Component {
   constructor() {
     super();
     this.state = {
       isSignedIn: false
-    }
+    };
   }
 
   uiConfig = {
@@ -23,20 +23,20 @@ class SignIn extends Component {
       firebase.auth.GoogleAuthProvider.PROVIDER_ID,
       firebase.auth.EmailAuthProvider.PROVIDER_ID
     ],
+    signInFlow: "popup",
+    signInOptions: [firebase.auth.GoogleAuthProvider.PROVIDER_ID],
     callbacks: {
       signInSuccessWithAuthResult: () => false
     }
-  }
-
+  };
 
   componentDidMount = () => {
-    firebase.auth().onAuthStateChanged( user => {
-      this.setState({isSignedIn: !!user})
-      if(user){
-        this.props.validateSignIn(user.I)
+    firebase.auth().onAuthStateChanged(user => {
+      this.setState({ isSignedIn: !!user });
+      if (user) {
+        this.props.validateSignIn(user.I);
       }
-    })
-    
+    });
   };
 
   render() {

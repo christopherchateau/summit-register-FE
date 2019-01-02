@@ -5,31 +5,30 @@
   overflow: scroll;
 }
 
-h4 {
-  font-size: 14px;
-}
-
 .comment-container {
   margin: 0 5%;
-  width: 90%;
 }
 
 .comment {
   background: grey;
-  border: 1px solid white;
+  border: 2px solid white;
   border-radius: 20px;
-  margin: 10px;
+  color: white;
+  margin: 10px auto;
+  max-width: 60vw;
   opacity: .9;
   padding: 10px;
-  text-align: left;
+  text-align: center;
 }
 
 .empty-log-msg {
   border: 1px solid white;
   border-radius: 20px;
   background: grey;
-  margin-bottom: 20px;
-  margin-top: 50px;
+  height: 10%;
+  margin: 25vh auto 0 auto;
   opacity: .9;
   padding: 20px;
+  text-align: center;
+  width: 50%;
 }

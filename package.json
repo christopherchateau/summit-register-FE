@@ -11,12 +11,13 @@
     "enzyme-adapter-react-16": "^1.7.1",
     "firebase": "^5.7.1",
     "gh-pages": "^2.0.1",
+    "jest": "^23.6.0",
     "prop-types": "^15.6.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-firebaseui": "^3.1.2",
     "react-redux": "^6.0.0",
-    "react-scripts": "2.1.1",
+    "react-scripts": "^2.1.2",
     "redux": "^4.0.1"
   },
   "scripts": {
@@ -44,6 +45,14 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/christopherchateau/Summit-Register-FE.git"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!src/index.js",
+      "!src/serviceWorker.js",
+      "!src/setupTests.js"
+    ]
   },
   "keywords": [],
   "author": "",

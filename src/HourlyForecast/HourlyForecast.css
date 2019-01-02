@@ -1,0 +1,30 @@
+.HourlyForecast {
+  align-items: center;
+  background:white;
+  border: 3px solid white;
+  border-radius: 20px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+  min-height: 40vh;
+  min-width: 200px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 5px;
+  justify-content: space-evenly;
+}
+
+.weather-icon {
+  height: 120px;
+}
+
+.HourlyForecast > h3 {
+  font-size: 14px;
+  margin: 2px;
+}
+
+.HourlyForecast > .time {
+  border-bottom: 2px solid black;
+  font-size: 20px;
+}

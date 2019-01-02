@@ -1,3 +1,5 @@
+import firebase from "firebase";
+
 export const getMountain = async id => {
   const response = await fetch(
     `https://summit-register-api.herokuapp.com/api/v1/mountains/${id}`
@@ -5,6 +7,10 @@ export const getMountain = async id => {
   const mountains = await response.json();
   return mountains;
 };
+
+export const getCurrentUser = () => {
+  return firebase.auth().currentUser
+}
 
 export const getWeather = async (location) => {
   const response = await fetch(

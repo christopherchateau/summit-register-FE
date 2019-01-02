@@ -1,17 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Footer should match snapshot 1`] = `
+exports[`MyMountains should match the snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Footer
-    currentDisplay={
-      Array [
-        "registerForm",
-      ]
-    }
-    handleLogUpdate={[MockFunction]}
-    handleSignIn={[MockFunction]}
-    handleSignLog={[MockFunction]}
+  Symbol(enzyme.__unrendered__): <MyMountains
+    validateSignIn={[MockFunction]}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -26,20 +19,11 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": Array [
-        false,
-        false,
-        false,
-      ],
-      "className": "Footer",
+      "className": "MyMountains",
     },
     "ref": null,
-    "rendered": Array [
-      false,
-      false,
-      false,
-    ],
-    "type": "footer",
+    "rendered": null,
+    "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
@@ -47,20 +31,11 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": Array [
-          false,
-          false,
-          false,
-        ],
-        "className": "Footer",
+        "className": "MyMountains",
       },
       "ref": null,
-      "rendered": Array [
-        false,
-        false,
-        false,
-      ],
-      "type": "footer",
+      "rendered": null,
+      "type": "div",
     },
   ],
   Symbol(enzyme.__options__): Object {

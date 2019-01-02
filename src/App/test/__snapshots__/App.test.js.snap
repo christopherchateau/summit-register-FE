@@ -39,14 +39,19 @@ ShallowWrapper {
         false,
         false,
         false,
+        false,
         <Footer
           currentDisplay={
             Array [
               "start",
             ]
           }
+          handleLogUpdate={[Function]}
+          handleMyMountains={[Function]}
           handleSignIn={[Function]}
           handleSignLog={[Function]}
+          handleSignOut={[Function]}
+          isSignedIn={false}
           withinRange={false}
         />,
       ],
@@ -89,6 +94,7 @@ ShallowWrapper {
       false,
       false,
       false,
+      false,
       Object {
         "instance": null,
         "key": undefined,
@@ -97,8 +103,12 @@ ShallowWrapper {
           "currentDisplay": Array [
             "start",
           ],
+          "handleLogUpdate": [Function],
+          "handleMyMountains": [Function],
           "handleSignIn": [Function],
           "handleSignLog": [Function],
+          "handleSignOut": [Function],
+          "isSignedIn": false,
           "withinRange": false,
         },
         "ref": null,
@@ -136,14 +146,19 @@ ShallowWrapper {
           false,
           false,
           false,
+          false,
           <Footer
             currentDisplay={
               Array [
                 "start",
               ]
             }
+            handleLogUpdate={[Function]}
+            handleMyMountains={[Function]}
             handleSignIn={[Function]}
             handleSignLog={[Function]}
+            handleSignOut={[Function]}
+            isSignedIn={false}
             withinRange={false}
           />,
         ],
@@ -186,6 +201,7 @@ ShallowWrapper {
         false,
         false,
         false,
+        false,
         Object {
           "instance": null,
           "key": undefined,
@@ -194,8 +210,12 @@ ShallowWrapper {
             "currentDisplay": Array [
               "start",
             ],
+            "handleLogUpdate": [Function],
+            "handleMyMountains": [Function],
             "handleSignIn": [Function],
             "handleSignLog": [Function],
+            "handleSignOut": [Function],
+            "isSignedIn": false,
             "withinRange": false,
           },
           "ref": null,

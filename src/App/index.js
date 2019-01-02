@@ -13,7 +13,6 @@ import { mountainData } from "../utilities/Data/mountain-data";
 import * as apiCalls from "../utilities/helper/apiCalls";
 import { generateTimeStamp } from "../utilities/helper/timeStamp";
 import "./App.css";
-import { access } from "fs";
 
 class App extends Component {
   constructor() {
@@ -137,7 +136,7 @@ class App extends Component {
 
     if( this.state.isSignedIn && !Object.keys(this.state.userData).length) {
       // var name, email, photoUrl, uid, emailVerified;
-      var data = firebase.auth().currentUser;
+      var data = apiCalls.getCurrentUser();
   
   
       let userData = {

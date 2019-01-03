@@ -33,6 +33,7 @@ ShallowWrapper {
           currentMountain=""
           handleSelectButton={[Function]}
           handleSignIn={[Function]}
+          userData={Object {}}
         />,
         false,
         false,
@@ -84,6 +85,7 @@ ShallowWrapper {
           "currentMountain": "",
           "handleSelectButton": [Function],
           "handleSignIn": [Function],
+          "userData": Object {},
         },
         "ref": null,
         "rendered": null,
@@ -140,6 +142,7 @@ ShallowWrapper {
             currentMountain=""
             handleSelectButton={[Function]}
             handleSignIn={[Function]}
+            userData={Object {}}
           />,
           false,
           false,
@@ -191,6 +194,7 @@ ShallowWrapper {
             "currentMountain": "",
             "handleSelectButton": [Function],
             "handleSignIn": [Function],
+            "userData": Object {},
           },
           "ref": null,
           "rendered": null,

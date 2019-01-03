@@ -24,10 +24,10 @@ class App extends Component {
       currentMountainLog: [],
       currentMountainWeather: {},
       currentLocation: {},
-      withinRange: false,
-      isSignedIn: false,
+      userCredentials: {},
       userData: {},
-      userCredentials: {}
+      withinRange: false,
+      isSignedIn: false
     };
   }
 
@@ -159,11 +159,12 @@ class App extends Component {
   };
 
   handleLogUpdate = async logEntry => {
+    const timeStamp = generateTimeStamp();
     let apiKey;
-    if( this.state.isSignedIn) {
+
+    if (this.state.isSignedIn) {
       apiKey = this.state.userCredentials.data.attributes.api_key;
     }
-    const timeStamp = generateTimeStamp();
     this.updateCurrentDisplayLog("loadingScreen");
     const response = await apiCalls.postToLog(
       this.state.currentMountainData.id,
@@ -187,7 +188,7 @@ class App extends Component {
   };
 
   checkProximity = num => {
-    return num < 0.05 && num > -0.05;
+    return true //num < 0.05 && num > -0.05;
   };
 
   showPosition = position => {
@@ -206,6 +207,7 @@ class App extends Component {
       currentMountainLog,
       currentMountainWeather,
       currentLocation,
+      userCredentials,
       userRegistry,
       withinRange,
       isSignedIn,
@@ -252,6 +254,7 @@ class App extends Component {
           <MyMountains
             validateSignIn={this.validateSignIn}
             userRegistry={userRegistry}
+            userCredentials={userCredentials}
           />
         )}
         <Footer

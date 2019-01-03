@@ -49,7 +49,6 @@ export const postToLog = async (id, logEntry, timeStamp, apiKey) => {
     }
   );
   const updatedLog = await response.json();
-  console.log(updatedLog)
   return updatedLog.data;
 };
 
@@ -72,7 +71,6 @@ export const postImage = async image => {
 };
 
 export const postUserCredentials = async userData => {
-  console.log(userData)
   const { name, uid } = userData;
   const response = await fetch(
     `https://summit-register-api.herokuapp.com/api/v1/users`,
@@ -83,13 +81,17 @@ export const postUserCredentials = async userData => {
       body: JSON.stringify({
         name,
         uid
-      }),
+      })
     }
   );
   const userRegistry = await response.json();
-    console.log(userRegistry)
   return userRegistry;
 };
 
-
-// https://summit-register-api.herokuapp.com/api/v1/user/${id}
+export const getMyMountains = async id => {
+  const response = await fetch(
+    `https://summit-register-api.herokuapp.com/api/v1/users/${id}`
+  );
+  const myMountains = await response.json();
+  return myMountains.data.attributes.registries.data;
+};

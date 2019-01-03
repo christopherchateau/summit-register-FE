@@ -33,9 +33,21 @@ const registries = [
 
 class MyMountains extends Component {
   render() {
-    return <div className="MyMountains">
-    
-    </div>;
+    const mountain = registries.map(log => {
+      return <div className="comment" key={log.id}>
+        <h4>Name: {log.name}</h4>
+        <h4>Hometown: {log.hometown}</h4>
+        <h4>Comments: {log.comments} </h4>
+        <h4>Date: {log.sign_time}</h4>
+        <img className="user-image" alt="user image" src={log.image_url} />
+      </div>;
+    });
+
+    return (
+      <div className="MyMountains">
+        <section className="mountain-container">{mountain}</section>
+      </div>
+    );
   }
 }
 

@@ -6,18 +6,20 @@
 }
 
 
-.comment-container-rename {
+.mountain-container {
   margin: 0 5%;
-  width: 90%;
+  /* width: 90%; */
 }
 
-.comment-rename {
+.my-mountain {
   background: grey;
-  border: 1px solid white;
+  border: 2px solid white;
   border-radius: 20px;
-  margin: 10px;
+  color: white;
+  margin: 10px auto;
+  max-width: 60vw;
   opacity: .9;
   padding: 10px;
-  text-align: left;
+  text-align: center;
 }
 

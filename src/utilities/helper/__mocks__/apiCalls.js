@@ -38,14 +38,14 @@ export const getMountain = jest.fn().mockImplementation(() => ({
   }
 }));
 
-export const getCurrentUser = jest.fn().mockImplementation(() => ({
+export const getCurrentUser = jest.fn().mockImplementation(() => ({data:{
   email: "justinstewart3313@gmail.com",
   emailVerified: true,
-  name: "Justin S",
+  displayName: "Justin S",
   photoUrl:
     "https://lh6.googleusercontent.com/-pSIwWNMafUA/AAAAAAAAAAI/AAAAAAAAAAA/AKxrwcaWlCy7imswUFxVJ8nakIaabrRwlA/mo/photo.jpg",
   uid: "fYLGD6WzgDdIs4K9LVsW9ODES6x2"
-}));
+}}));
 
 export const postToLog = jest.fn().mockImplementation(() => [
   {
@@ -72,7 +72,22 @@ export const postToLog = jest.fn().mockImplementation(() => [
   }
 ]);
 
-export const postImage = jest.fn().mockImplementation(() => 'http://res.cloudinary.com/summit-register/image/upload/v1546476463/pe0msmw1hh91l5dv9kha.jpg');
+export const postImage = jest.fn().mockImplementation(() => {
+'http://res.cloudinary.com/summit-register/image/upload/v1546476463/pe0msmw1hh91l5dv9kha.jpg';
+})
+
+export const postUserCredentials = jest.fn().mockImplementation(() => (
+  {data: {
+    attributes: {
+      attributes: {
+        api_key: 'asdfasdfasdfadfadsf',
+        name: 'jimbob',
+        registries: [],
+      },
+      id: '6',
+      type: 'user',
+    }
+  }}))
 
 export const getWeather = jest.fn().mockImplementation(() => ({
   summary: "Mostly cloudy throughout the day.",

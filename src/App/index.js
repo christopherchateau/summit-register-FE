@@ -188,7 +188,7 @@ class App extends Component {
   };
 
   checkProximity = num => {
-    return true //num < 0.05 && num > -0.05;
+    return num < 0.005 && num > -0.005;
   };
 
   showPosition = position => {

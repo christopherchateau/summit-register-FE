@@ -30,7 +30,7 @@ class RegisterForm extends Component {
     await this.props.handleLogUpdate(this.state);
   };
 
-  handleImage = async e => {
+  handleImage = e => {
     !e.target.files[0]
       ? this.setState({ image: false })
       : this.setState({ image: e.target.files[0] });

@@ -27,7 +27,7 @@ class App extends Component {
       withinRange: false,
       isSignedIn: false,
       userData: {},
-      userRegistry: []
+      userCredentials: {}
     };
   }
 
@@ -138,7 +138,8 @@ class App extends Component {
       .then(() => {
         this.setState({
           isSignedIn: false,
-          userData: {}
+          userData: {},
+          userCredentials: {}
         });
       })
       .catch(function(error) {
@@ -152,18 +153,23 @@ class App extends Component {
       const userData = await apiCalls.getCurrentUser();
       await this.setState({ userData });
 
-      // const userRegistry = await apiCalls.postUserCredentials(userData);
-      // await this.setState({ userRegistry });
+      const userCredentials = await apiCalls.postUserCredentials(userData);
+      await this.setState({ userCredentials });
     }
   };
 
   handleLogUpdate = async logEntry => {
+    let apiKey;
+    if( this.state.isSignedIn) {
+      apiKey = this.state.userCredentials.data.attributes.api_key;
+    }
     const timeStamp = generateTimeStamp();
     this.updateCurrentDisplayLog("loadingScreen");
     const response = await apiCalls.postToLog(
       this.state.currentMountainData.id,
       logEntry,
-      timeStamp
+      timeStamp,
+      apiKey
     );
     if (response) {
       await this.setState({ currentMountainLog: response });
@@ -181,7 +187,7 @@ class App extends Component {
   };
 
   checkProximity = num => {
-    return num < 0.5 && num > -0.5;
+    return num < 0.05 && num > -0.05;
   };
 
   showPosition = position => {
@@ -202,7 +208,8 @@ class App extends Component {
       currentLocation,
       userRegistry,
       withinRange,
-      isSignedIn
+      isSignedIn,
+      userData
     } = this.state;
 
     return (
@@ -219,6 +226,7 @@ class App extends Component {
             currentLocation={currentLocation}
             handleSelectButton={this.handleSelectButton}
             handleSignIn={this.handleSignIn}
+            userData={userData}
           />
         )}
         {currentDisplay[0] === "info" && (

@@ -30,7 +30,7 @@ export const getWeather = async location => {
   return weather;
 };
 
-export const postToLog = async (id, logEntry, timeStamp) => {
+export const postToLog = async (id, logEntry, timeStamp, apiKey) => {
   const { name, hometown, comments, imageUrl } = logEntry;
   const response = await fetch(
     `https://summit-register-api.herokuapp.com/api/v1/mountains/${id}/registries`,
@@ -42,12 +42,14 @@ export const postToLog = async (id, logEntry, timeStamp) => {
         hometown,
         comments,
         image_url: imageUrl,
-        sign_time: timeStamp
+        sign_time: timeStamp,
+        api_key: apiKey
       }),
       headers: { "Content-Type": "application/json" }
     }
   );
   const updatedLog = await response.json();
+  console.log(updatedLog)
   return updatedLog.data;
 };
 
@@ -70,20 +72,22 @@ export const postImage = async image => {
 };
 
 export const postUserCredentials = async userData => {
+  console.log(userData)
   const { name, uid } = userData;
   const response = await fetch(
-    `https://summit-register-api.herokuapp.com/api/v1/`,
+    `https://summit-register-api.herokuapp.com/api/v1/users`,
     {
       method: "POST",
       credentials: "same-origin",
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         name,
         uid
       }),
-      headers: { "Content-Type": "application/json" }
     }
   );
   const userRegistry = await response.json();
+    console.log(userRegistry)
   return userRegistry;
 };
 

@@ -27,17 +27,17 @@ class Footer extends Component {
             />
           )}
         {isSignedIn === true && currentDisplay[0] !== "myMountains" && (
-          <button className="footer-btn" onClick={handleMyMountains}>
+          <button className="my-mountains-btn footer-btn" onClick={handleMyMountains}>
             My Mountains
           </button>
         )}
         {isSignedIn === true && (
-          <button className="footer-btn" onClick={handleSignOut}>
+          <button className="sign-out-btn footer-btn" onClick={handleSignOut}>
             Sign Out
           </button>
         )}
         {this.props.isSignedIn === false && (
-          <button className="footer-btn" onClick={handleSignIn}>
+          <button className="sign-in-btn footer-btn" onClick={handleSignIn}>
             Sign In
           </button>
         )}

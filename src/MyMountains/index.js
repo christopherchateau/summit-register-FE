@@ -33,19 +33,34 @@ const registries = [
 
 class MyMountains extends Component {
   render() {
-    const mountain = registries.map(log => {
-      return <div className="comment" key={log.id}>
-        <h4>Name: {log.name}</h4>
-        <h4>Hometown: {log.hometown}</h4>
-        <h4>Comments: {log.comments} </h4>
-        <h4>Date: {log.sign_time}</h4>
-        <img className="user-image" alt="user image" src={log.image_url} />
-      </div>;
+    const myMountains = registries.reduce((acc, log) => {
+      if (!acc[log.mountain_id]) {
+        acc[log.mountain_id] = [];
+      }
+      acc[log.mountain_id].push(log);
+      return acc;
+    }, {});
+
+    const MyMountainNames = Object.keys(myMountains)
+
+    const displayMyMountains = MyMountainNames.map(mountain => {
+      // console.log(myMountains[mountain])
+      // mountain.map(log => {
+      //   return (
+      //     <div className="comment" key={log.id}>
+      //       <h4>Name: {log.name}</h4>
+      //       <h4>Hometown: {log.hometown}</h4>
+      //       <h4>Comments: {log.comments} </h4>
+      //       <h4>Date: {log.sign_time}</h4>
+      //       <img className="user-image" alt="user image" src={log.image_url} />
+      //     </div>
+      //   );
+      // });
     });
 
     return (
       <div className="MyMountains">
-        <section className="mountain-container">{mountain}</section>
+        {/* <section className="mountain-container">{mountain}</section> */}
       </div>
     );
   }

@@ -68,7 +68,12 @@ class RegisterForm extends Component {
               onChange={this.handleChange}
             />
           </h3>
-          <input type="file" accept="image/*" onChange={this.handleImage} />
+          <input
+            className="upload-image"
+            type="file"
+            accept="image/*"
+            onChange={this.handleImage}
+          />
         </form>
         <button
           className="submit-btn"

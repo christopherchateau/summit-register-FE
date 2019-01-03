@@ -12,7 +12,12 @@ class Header extends Component {
     } = this.props;
 
     let displayText = "Summit Register";
-    if (currentMountainData.attributes && currentDisplay !== "start") {
+
+    if (currentDisplay === "myMountains") {
+      displayText = "My Mountains"
+    }
+
+    else if (currentMountainData.attributes && currentDisplay !== "start") {
       displayText = currentMountainData.attributes.name;
     }
 

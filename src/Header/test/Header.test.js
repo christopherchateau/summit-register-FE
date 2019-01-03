@@ -63,12 +63,24 @@ describe("Header", () => {
   });
 
   describe("display text", () => {
-    it("should not display on start screen", () => {
+    it("should display 'Summit Register' on start screen", () => {
       const displayText = wrapper.find(".main-title");
       expect(displayText.text()).toBe("Summit Register");
     });
 
-    it("should display mountain name if not on start screen", () => {
+    it("should display 'My Mountains' on start screen", () => {
+      wrapper = shallow(
+        <Header
+          currentDisplay={"myMountains"}
+          handleBackButton={jest.fn()}
+          currentMountainData={currentMountainData}
+        />
+      );
+      const displayText = wrapper.find(".main-title");
+      expect(displayText.text()).toBe("My Mountains");
+    });
+
+    it("should display mountain name if not on start/myMountain screens", () => {
       wrapper = shallow(
         <Header
           currentDisplay={"info"}

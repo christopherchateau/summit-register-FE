@@ -12,11 +12,11 @@ class Log extends Component {
           <h4>Hometown: {log.attributes.hometown}</h4>
           <h4>Comments: {log.attributes.comments} </h4>
           <h4>Date: {log.attributes.sign_time}</h4>
-          {log.attributes.imageUrl && (
+          {log.attributes.image_url && (
             <img
               className="user-image"
               alt="user image"
-              src={log.attributes.imageUrl}
+              src={log.attributes.image_url}
             />
           )}
         </div>

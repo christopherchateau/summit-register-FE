@@ -1,4 +1,10 @@
 import * as apiCalls from "../apiCalls";
+import firebase from "firebase";
+
+firebase.initializeApp({
+  apiKey: "AIzaSyCOPftNFUOFLFm0alfd8hswAh9kF-wojsc",
+  authDomain: "summit-register-dad45.firebaseapp.com"
+});
 
 describe("apiCalls", () => {
   describe("getMountain", () => {
@@ -127,6 +133,26 @@ describe("apiCalls", () => {
 
     it("should return a json'd response", async () => {
       const result = await apiCalls.postToLog(id, logEntry, timeStamp);
+      expect(result).toEqual(expected);
+    });
+  });
+
+  describe("getCurrentUser", () => {
+    it("should return a json'd response", async () => {
+      const expected = {
+        email: "justinstewart3313@gmail.com",
+        emailVerified: true,
+        name: "Justin S",
+        photoUrl:
+          "https://lh6.googleusercontent.com/-pSIwWNMafUA/AAAAAAAAAAI/AAAAAAAAAAA/AKxrwcaWlCy7imswUFxVJ8nakIaabrRwlA/mo/photo.jpg",
+        uid: "fYLGD6WzgDdIs4K9LVsW9ODES6x2"
+      };
+      window.fetch = jest.fn().mockImplementation(() =>
+        Promise.resolve({
+          json: () => expected
+        })
+      );
+      const result = await apiCalls.getCurrentUser();
       expect(result).toEqual(expected);
     });
   });

@@ -278,6 +278,12 @@ describe("App", () => {
     });
   });
 
+  describe("checkUser", () => {
+    it("", () => {
+      jest.fn()
+    });
+  });
+
   describe("page conditionally rendered based on currentDisplay", () => {
     it("should display Start screen", () => {
       expect(wrapper.find("Start")).toHaveLength(1);

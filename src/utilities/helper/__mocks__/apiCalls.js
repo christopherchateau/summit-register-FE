@@ -40,11 +40,12 @@ export const getMountain = jest.fn().mockImplementation(() => ({
 
 export const getCurrentUser = jest.fn().mockImplementation(() => ({
   email: "justinstewart3313@gmail.com",
-emailVerified: true,
-name: "Justin S",
-photoUrl: "https://lh6.googleusercontent.com/-pSIwWNMafUA/AAAAAAAAAAI/AAAAAAAAAAA/AKxrwcaWlCy7imswUFxVJ8nakIaabrRwlA/mo/photo.jpg",
-uid: "fYLGD6WzgDdIs4K9LVsW9ODES6x2",
-}))
+  emailVerified: true,
+  name: "Justin S",
+  photoUrl:
+    "https://lh6.googleusercontent.com/-pSIwWNMafUA/AAAAAAAAAAI/AAAAAAAAAAA/AKxrwcaWlCy7imswUFxVJ8nakIaabrRwlA/mo/photo.jpg",
+  uid: "fYLGD6WzgDdIs4K9LVsW9ODES6x2"
+}));
 
 export const postToLog = jest.fn().mockImplementation(() => [
   {

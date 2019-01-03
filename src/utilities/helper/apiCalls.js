@@ -9,7 +9,15 @@ export const getMountain = async id => {
 };
 
 export const getCurrentUser = () => {
-  return firebase.auth().currentUser;
+  const data = firebase.auth().currentUser;
+  let userData = {
+    name: data.displayName,
+    email: data.email,
+    photoUrl: data.photoURL,
+    emailVerified: data.emailVerified,
+    uid: data.uid
+  };
+  return userData;
 };
 
 export const getWeather = async location => {
@@ -23,7 +31,7 @@ export const getWeather = async location => {
 };
 
 export const postToLog = async (id, logEntry, timeStamp) => {
-  const { name, hometown, comments } = logEntry;
+  const { name, hometown, comments, imageUrl } = logEntry;
   const response = await fetch(
     `https://summit-register-api.herokuapp.com/api/v1/mountains/${id}/registries`,
     {
@@ -33,6 +41,7 @@ export const postToLog = async (id, logEntry, timeStamp) => {
         name,
         hometown,
         comments,
+        image_url: imageUrl,
         sign_time: timeStamp
       }),
       headers: { "Content-Type": "application/json" }
@@ -58,4 +67,22 @@ export const postImage = async image => {
   );
   const data = await response.json();
   return data.url;
+};
+
+export const postUserCredentials = async userData => {
+  const { name, uid } = userData;
+  const response = await fetch(
+    `https://summit-register-api.herokuapp.com/api/v1/`,
+    {
+      method: "POST",
+      credentials: "same-origin",
+      body: JSON.stringify({
+        name,
+        uid
+      }),
+      headers: { "Content-Type": "application/json" }
+    }
+  );
+  const userRegistry = await response.json();
+  return userRegistry;
 };

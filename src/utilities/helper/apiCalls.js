@@ -86,3 +86,6 @@ export const postUserCredentials = async userData => {
   const userRegistry = await response.json();
   return userRegistry;
 };
+
+
+// https://summit-register-api.herokuapp.com/api/v1/user/${id}

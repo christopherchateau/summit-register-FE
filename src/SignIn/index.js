@@ -10,19 +10,7 @@ firebase.initializeApp({
 });
 
 class SignIn extends Component {
-  // constructor() {
-  //   super();
-  //   this.state = {
-  //     isSignedIn: false
-  //   };
-  // }
-
   uiConfig = {
-    signInFlow: "popup",
-    signInOptions: [
-      firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-      firebase.auth.EmailAuthProvider.PROVIDER_ID
-    ],
     signInFlow: "popup",
     signInOptions: [
       firebase.auth.GoogleAuthProvider.PROVIDER_ID,
@@ -32,15 +20,6 @@ class SignIn extends Component {
       signInSuccessWithAuthResult: () => false
     }
   };
-
-  // componentDidMount = () => {
-  //   firebase.auth().onAuthStateChanged(user => {
-  //     this.setState({ isSignedIn: !!user });
-  //     if (user) {
-  //       this.props.validateSignIn(user.I);
-  //     }
-  //   });
-  // };
 
   render() {
     return (

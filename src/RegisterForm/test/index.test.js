@@ -2,9 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom";
 import RegisterForm from "..";
 import { shallow } from "enzyme";
+import { postImage } from "../../utilities/helper/apiCalls";
 
 describe("RegisterForm", () => {
   let wrapper;
+  let mockHandleLogUpdate;
   beforeEach(() => {
     wrapper = shallow(<RegisterForm handleLogUpdate={jest.fn()} />);
   });
@@ -48,5 +50,38 @@ describe("RegisterForm", () => {
       wrapper.find(".submit-btn").simulate("click", mockEvent);
       expect(spy).toHaveBeenCalled();
     });
+
+    it.skip('should update state when called', () => {
+      wrapper.instance().handleSubmit();
+      const { imageURL } = wrapper.state();
+      wrapper.instance().postImage('http://res.cloudinary.com/summit-register/image/upload/v1546476463/pe0msmw1hh91l5dv9kha.jpg')
+      const expected = ['http://res.cloudinary.com/summit-register/image/upload/v1546476463/pe0msmw1hh91l5dv9kha.jpg'];
+      expect(imageURL).toEqual(expected);
+    })
+
+    it('should have called handleLogUpdate', () => {
+      const spy = spyOn(wrapper.instance(), "handleLogUpdate");
+      const mockEvent = { preventDefault: jest.fn() };
+      wrapper.instance().handleSubmit()
+
+
+      wrapper.find('.submit-btn').simulate('click')
+      // mockHandleLogUpdate = jest.fn()
+      expect(spy).toHaveBeenCalled()
+    })
   });
+
+  describe('handleImage', () => {
+    it('should set state of image url', () => {
+      let expected = 'something'
+      let mockEventFile = {
+        target: {
+          files: ['something']
+        }
+      }
+
+      wrapper.instance().handleImage(mockEventFile)
+      expect(wrapper.state().image).toEqual('something')
+    })
+  })
 });

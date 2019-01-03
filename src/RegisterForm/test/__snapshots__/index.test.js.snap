@@ -58,11 +58,13 @@ ShallowWrapper {
           </h3>
           <input
             accept="image/*"
+            onChange={[Function]}
             type="file"
           />
         </form>,
         <button
           className="submit-btn"
+          disabled={true}
           onClick={[Function]}
           type="submit"
         >
@@ -114,6 +116,7 @@ ShallowWrapper {
             </h3>,
             <input
               accept="image/*"
+              onChange={[Function]}
               type="file"
             />,
           ],
@@ -235,6 +238,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "accept": "image/*",
+              "onChange": [Function],
               "type": "file",
             },
             "ref": null,
@@ -251,6 +255,7 @@ ShallowWrapper {
         "props": Object {
           "children": "Submit",
           "className": "submit-btn",
+          "disabled": true,
           "onClick": [Function],
           "type": "submit",
         },
@@ -306,11 +311,13 @@ ShallowWrapper {
             </h3>
             <input
               accept="image/*"
+              onChange={[Function]}
               type="file"
             />
           </form>,
           <button
             className="submit-btn"
+            disabled={true}
             onClick={[Function]}
             type="submit"
           >
@@ -362,6 +369,7 @@ ShallowWrapper {
               </h3>,
               <input
                 accept="image/*"
+                onChange={[Function]}
                 type="file"
               />,
             ],
@@ -483,6 +491,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "accept": "image/*",
+                "onChange": [Function],
                 "type": "file",
               },
               "ref": null,
@@ -499,6 +508,7 @@ ShallowWrapper {
           "props": Object {
             "children": "Submit",
             "className": "submit-btn",
+            "disabled": true,
             "onClick": [Function],
             "type": "submit",
           },

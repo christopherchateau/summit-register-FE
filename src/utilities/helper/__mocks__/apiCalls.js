@@ -72,6 +72,8 @@ export const postToLog = jest.fn().mockImplementation(() => [
   }
 ]);
 
+export const postImage = jest.fn().mockImplementation(() => 'http://res.cloudinary.com/summit-register/image/upload/v1546476463/pe0msmw1hh91l5dv9kha.jpg');
+
 export const getWeather = jest.fn().mockImplementation(() => ({
   summary: "Mostly cloudy throughout the day.",
   icon: "partly-cloudy-night",

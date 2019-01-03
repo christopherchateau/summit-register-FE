@@ -78,4 +78,16 @@ describe("Start", () => {
       expect(wrapper.find("LocatingPopUp")).toHaveLength(0);
     });
   });
+
+  describe('start', () => {
+    it('should called handleSelectButton', () => {
+      // const spy = spyOn(wrapper.instance(), "handleSelectButton");
+      wrapper.instance().handleSelectButton = jest.fn()
+  
+  
+      wrapper.find('.select-btn').simulate('click')
+      // wrapper.prop('onClickOfCreateAccountButton')()
+      expect(wrapper.instance().handleSelectButton).toHaveBeenCalled()
+    })
+  })
 });

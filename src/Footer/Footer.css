@@ -5,7 +5,7 @@
   justify-content: space-around;
 }
 
-.sign-in-btn {
+.footer-btn {
   border: 1px solid black;
   border-radius: 20px;
   font-size: 16px;
@@ -13,7 +13,7 @@
   transition: all 0.4s ease-in-out;
 }
 
-.sign-in-btn:hover{
+.footer-btn:hover{
   background: black;
   color: white;
   cursor: pointer;

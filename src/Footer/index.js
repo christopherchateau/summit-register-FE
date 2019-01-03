@@ -15,6 +15,7 @@ class Footer extends Component {
       handleSignOut,
       isSignedIn
     } = this.props;
+
     return (
       <footer className="Footer">
         {currentDisplay[0] !== "registerForm" &&
@@ -24,20 +25,19 @@ class Footer extends Component {
               withinRange={withinRange}
             />
           )}
-
         {isSignedIn === true && (
-          <button className="sign-in-btn" onClick={handleMyMountains}>
+          <button className="footer-btn" onClick={handleMyMountains}>
             My Mountains
           </button>
         )}
         {isSignedIn === true && (
-          <button className="sign-in-btn" onClick={handleSignOut}>
+          <button className="footer-btn" onClick={handleSignOut}>
             Sign Out
           </button>
         )}
         {this.props.isSignedIn === false && (
-          <button className="sign-in-btn" onClick={handleSignIn}>
-            SignIn/SignUp
+          <button className="footer-btn" onClick={handleSignIn}>
+            Sign In
           </button>
         )}
       </footer>

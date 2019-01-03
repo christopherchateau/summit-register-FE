@@ -9,9 +9,9 @@ import Footer from "../Footer";
 import MyMountains from "../MyMountains";
 import LoadingScreen from "../LoadingScreen";
 import RegisterForm from "../RegisterForm";
+import { generateTimeStamp } from "../utilities/helper/timeStamp";
 import { mountainData } from "../utilities/Data/mountain-data";
 import * as apiCalls from "../utilities/helper/apiCalls";
-import { generateTimeStamp } from "../utilities/helper/timeStamp";
 import "./App.css";
 
 class App extends Component {
@@ -131,6 +131,7 @@ class App extends Component {
   };
 
   handleSignOut = () => {
+    this.updateCurrentDisplayLog("start");
     firebase
       .auth()
       .signOut()

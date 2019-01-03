@@ -15,29 +15,30 @@ class Footer extends Component {
       handleSignOut,
       isSignedIn
     } = this.props;
+
     return (
       <footer className="Footer">
         {currentDisplay[0] !== "registerForm" &&
+          currentDisplay[0] !== "myMountains" &&
           currentDisplay[0] !== "start" && (
             <SignRegister
               handleSignLog={handleSignLog}
               withinRange={withinRange}
             />
           )}
-
-        {isSignedIn === true && (
-          <button className="sign-in-btn" onClick={handleMyMountains}>
+        {isSignedIn === true && currentDisplay[0] !== "myMountains" && (
+          <button className="my-mountains-btn footer-btn" onClick={handleMyMountains}>
             My Mountains
           </button>
         )}
         {isSignedIn === true && (
-          <button className="sign-in-btn" onClick={handleSignOut}>
+          <button className="sign-out-btn footer-btn" onClick={handleSignOut}>
             Sign Out
           </button>
         )}
         {this.props.isSignedIn === false && (
-          <button className="sign-in-btn" onClick={handleSignIn}>
-            SignIn/SignUp
+          <button className="sign-in-btn footer-btn" onClick={handleSignIn}>
+            Sign In
           </button>
         )}
       </footer>

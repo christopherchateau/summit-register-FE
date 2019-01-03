@@ -46,7 +46,7 @@ class Info extends Component {
       ? (displayText =
           "Congratulations, you're within range to sign the register!")
       : (displayText =
-          "You are not currenlty within range to sign the register.");
+          "You are not currently within range to sign the register.");
 
     const hourlyForecasts = currentMountainWeather.data
       .slice(0, 12)

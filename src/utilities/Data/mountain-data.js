@@ -1,3 +1,7 @@
+export const sortMountainNames = () => {
+  return mountainData.data.map(mountain => mountain.attributes.name).sort();
+};
+
 export const mountainData = {
   data: [
     {
@@ -18,7 +22,7 @@ export const mountainData = {
                 name: "Andrew",
                 hometown: "Boulder",
                 comments: "Great hike",
-                date: "2018-12-19 21:10:17 UTC",
+                date: "2018-12-19 21:10:17 UTC"
               }
             },
             {
@@ -28,7 +32,7 @@ export const mountainData = {
                 name: "Andrew Tobin",
                 hometown: "Denver",
                 comments: "Best hike ever",
-                date: "2018-12-19 21:11:29 UTC",
+                date: "2018-12-19 21:11:29 UTC"
               }
             }
           ]

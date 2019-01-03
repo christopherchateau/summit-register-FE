@@ -2,6 +2,7 @@
   background: url("../utilities/Images/mountains-2.jpg") no-repeat center
   rgba(165, 165, 165, 0.68);
   background-size: auto 100%;
+  color: white;
   overflow: scroll;
 }
 
@@ -13,7 +14,6 @@
   background: grey;
   border: 2px solid white;
   border-radius: 20px;
-  color: white;
   margin: 10px auto;
   max-width: 60vw;
   opacity: .9;

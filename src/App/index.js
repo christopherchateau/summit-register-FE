@@ -33,10 +33,20 @@ class App extends Component {
 
   componentDidMount = async () => {
     await this.getLocation();
+    this.validateUser();
   };
 
   componentDidUpdate = () => {
     this.checkUser();
+  };
+
+  validateUser = () => {
+    firebase.auth().onAuthStateChanged(user => {
+      this.setState({ isSignedIn: !!user });
+      if (user) {
+        this.validateSignIn(user.I);
+      }
+    });
   };
 
   validateLocation = userLocation => {
@@ -141,8 +151,8 @@ class App extends Component {
       const userData = await apiCalls.getCurrentUser();
       await this.setState({ userData });
 
-      const userRegistry = await apiCalls.postUserCredentials(userData);
-      await this.setState({ userRegistry });
+      // const userRegistry = await apiCalls.postUserCredentials(userData);
+      // await this.setState({ userRegistry });
     }
   };
 
@@ -189,6 +199,7 @@ class App extends Component {
       currentMountainLog,
       currentMountainWeather,
       currentLocation,
+      userRegistry,
       withinRange,
       isSignedIn
     } = this.state;
@@ -228,10 +239,10 @@ class App extends Component {
           <LoadingScreen className="Main" />
         )}
         {this.state.currentDisplay[0] === "signIn" && (
-          <SignIn validateSignIn={this.validateSignIn} />
+          <SignIn />
         )}
         {this.state.currentDisplay[0] === "myMountains" && (
-          <MyMountains validateSignIn={this.validateSignIn} />
+          <MyMountains validateSignIn={this.validateSignIn} userRegistry={userRegistry}/>
         )}
         <Footer
           currentDisplay={currentDisplay}

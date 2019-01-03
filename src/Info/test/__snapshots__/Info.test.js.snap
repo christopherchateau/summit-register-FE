@@ -81,7 +81,7 @@ ShallowWrapper {
           <h3
             className="display-text"
           >
-            You are not currenlty within range to sign the register.
+            You are not currently within range to sign the register.
           </h3>
         </div>
         <div
@@ -129,7 +129,7 @@ ShallowWrapper {
             <h3
               className="display-text"
             >
-              You are not currenlty within range to sign the register.
+              You are not currently within range to sign the register.
             </h3>
           </div>,
           <div
@@ -177,7 +177,7 @@ ShallowWrapper {
               <h3
                 className="display-text"
               >
-                You are not currenlty within range to sign the register.
+                You are not currently within range to sign the register.
               </h3>,
             ],
           },
@@ -246,11 +246,11 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "You are not currenlty within range to sign the register.",
+                "children": "You are not currently within range to sign the register.",
                 "className": "display-text",
               },
               "ref": null,
-              "rendered": "You are not currenlty within range to sign the register.",
+              "rendered": "You are not currently within range to sign the register.",
               "type": "h3",
             },
           ],
@@ -341,7 +341,7 @@ ShallowWrapper {
             <h3
               className="display-text"
             >
-              You are not currenlty within range to sign the register.
+              You are not currently within range to sign the register.
             </h3>
           </div>
           <div
@@ -389,7 +389,7 @@ ShallowWrapper {
               <h3
                 className="display-text"
               >
-                You are not currenlty within range to sign the register.
+                You are not currently within range to sign the register.
               </h3>
             </div>,
             <div
@@ -437,7 +437,7 @@ ShallowWrapper {
                 <h3
                   className="display-text"
                 >
-                  You are not currenlty within range to sign the register.
+                  You are not currently within range to sign the register.
                 </h3>,
               ],
             },
@@ -506,11 +506,11 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "You are not currenlty within range to sign the register.",
+                  "children": "You are not currently within range to sign the register.",
                   "className": "display-text",
                 },
                 "ref": null,
-                "rendered": "You are not currenlty within range to sign the register.",
+                "rendered": "You are not currently within range to sign the register.",
                 "type": "h3",
               },
             ],

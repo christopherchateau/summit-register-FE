@@ -19,10 +19,540 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
+      "children": <section
+        className="mountain-container"
+      >
+        <div
+          className="comment"
+        >
+          <h4>
+            Name: 
+            Chris
+          </h4>
+          <h4>
+            Hometown: 
+            Denver
+          </h4>
+          <h4>
+            Comments: 
+            Hi
+             
+          </h4>
+          <h4>
+            Date: 
+            1/1/2019 @ 17:47:41
+          </h4>
+          <img
+            alt="user image"
+            className="user-image"
+            src="https://res.cloudinary.com/summit-register/image/upload/v1546476463/pe0msmw1hh91l5dv9kha.jpg"
+          />
+        </div>
+        <div
+          className="comment"
+        >
+          <h4>
+            Name: 
+            Chris
+          </h4>
+          <h4>
+            Hometown: 
+            Denver
+          </h4>
+          <h4>
+            Comments: 
+            Hi again
+             
+          </h4>
+          <h4>
+            Date: 
+            1/2/2019 @ 17:47:41
+          </h4>
+          <img
+            alt="user image"
+            className="user-image"
+            src="https://res.cloudinary.com/summit-register/image/upload/v1546476463/pe0msmw1hh91l5dv9kha.jpg"
+          />
+        </div>
+        <div
+          className="comment"
+        >
+          <h4>
+            Name: 
+            Chris
+          </h4>
+          <h4>
+            Hometown: 
+            Denver
+          </h4>
+          <h4>
+            Comments: 
+            Hi
+             
+          </h4>
+          <h4>
+            Date: 
+            1/2/2019 @ 17:47:41
+          </h4>
+          <img
+            alt="user image"
+            className="user-image"
+            src="https://res.cloudinary.com/summit-register/image/upload/v1546476463/pe0msmw1hh91l5dv9kha.jpg"
+          />
+        </div>
+      </section>,
       "className": "MyMountains",
     },
     "ref": null,
-    "rendered": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="comment"
+          >
+            <h4>
+              Name: 
+              Chris
+            </h4>
+            <h4>
+              Hometown: 
+              Denver
+            </h4>
+            <h4>
+              Comments: 
+              Hi
+               
+            </h4>
+            <h4>
+              Date: 
+              1/1/2019 @ 17:47:41
+            </h4>
+            <img
+              alt="user image"
+              className="user-image"
+              src="https://res.cloudinary.com/summit-register/image/upload/v1546476463/pe0msmw1hh91l5dv9kha.jpg"
+            />
+          </div>,
+          <div
+            className="comment"
+          >
+            <h4>
+              Name: 
+              Chris
+            </h4>
+            <h4>
+              Hometown: 
+              Denver
+            </h4>
+            <h4>
+              Comments: 
+              Hi again
+               
+            </h4>
+            <h4>
+              Date: 
+              1/2/2019 @ 17:47:41
+            </h4>
+            <img
+              alt="user image"
+              className="user-image"
+              src="https://res.cloudinary.com/summit-register/image/upload/v1546476463/pe0msmw1hh91l5dv9kha.jpg"
+            />
+          </div>,
+          <div
+            className="comment"
+          >
+            <h4>
+              Name: 
+              Chris
+            </h4>
+            <h4>
+              Hometown: 
+              Denver
+            </h4>
+            <h4>
+              Comments: 
+              Hi
+               
+            </h4>
+            <h4>
+              Date: 
+              1/2/2019 @ 17:47:41
+            </h4>
+            <img
+              alt="user image"
+              className="user-image"
+              src="https://res.cloudinary.com/summit-register/image/upload/v1546476463/pe0msmw1hh91l5dv9kha.jpg"
+            />
+          </div>,
+        ],
+        "className": "mountain-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h4>
+                Name: 
+                Chris
+              </h4>,
+              <h4>
+                Hometown: 
+                Denver
+              </h4>,
+              <h4>
+                Comments: 
+                Hi
+                 
+              </h4>,
+              <h4>
+                Date: 
+                1/1/2019 @ 17:47:41
+              </h4>,
+              <img
+                alt="user image"
+                className="user-image"
+                src="https://res.cloudinary.com/summit-register/image/upload/v1546476463/pe0msmw1hh91l5dv9kha.jpg"
+              />,
+            ],
+            "className": "comment",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Name: ",
+                  "Chris",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Name: ",
+                "Chris",
+              ],
+              "type": "h4",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Hometown: ",
+                  "Denver",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Hometown: ",
+                "Denver",
+              ],
+              "type": "h4",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Comments: ",
+                  "Hi",
+                  " ",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Comments: ",
+                "Hi",
+                " ",
+              ],
+              "type": "h4",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Date: ",
+                  "1/1/2019 @ 17:47:41",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Date: ",
+                "1/1/2019 @ 17:47:41",
+              ],
+              "type": "h4",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "alt": "user image",
+                "className": "user-image",
+                "src": "https://res.cloudinary.com/summit-register/image/upload/v1546476463/pe0msmw1hh91l5dv9kha.jpg",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h4>
+                Name: 
+                Chris
+              </h4>,
+              <h4>
+                Hometown: 
+                Denver
+              </h4>,
+              <h4>
+                Comments: 
+                Hi again
+                 
+              </h4>,
+              <h4>
+                Date: 
+                1/2/2019 @ 17:47:41
+              </h4>,
+              <img
+                alt="user image"
+                className="user-image"
+                src="https://res.cloudinary.com/summit-register/image/upload/v1546476463/pe0msmw1hh91l5dv9kha.jpg"
+              />,
+            ],
+            "className": "comment",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Name: ",
+                  "Chris",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Name: ",
+                "Chris",
+              ],
+              "type": "h4",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Hometown: ",
+                  "Denver",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Hometown: ",
+                "Denver",
+              ],
+              "type": "h4",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Comments: ",
+                  "Hi again",
+                  " ",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Comments: ",
+                "Hi again",
+                " ",
+              ],
+              "type": "h4",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Date: ",
+                  "1/2/2019 @ 17:47:41",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Date: ",
+                "1/2/2019 @ 17:47:41",
+              ],
+              "type": "h4",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "alt": "user image",
+                "className": "user-image",
+                "src": "https://res.cloudinary.com/summit-register/image/upload/v1546476463/pe0msmw1hh91l5dv9kha.jpg",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h4>
+                Name: 
+                Chris
+              </h4>,
+              <h4>
+                Hometown: 
+                Denver
+              </h4>,
+              <h4>
+                Comments: 
+                Hi
+                 
+              </h4>,
+              <h4>
+                Date: 
+                1/2/2019 @ 17:47:41
+              </h4>,
+              <img
+                alt="user image"
+                className="user-image"
+                src="https://res.cloudinary.com/summit-register/image/upload/v1546476463/pe0msmw1hh91l5dv9kha.jpg"
+              />,
+            ],
+            "className": "comment",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Name: ",
+                  "Chris",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Name: ",
+                "Chris",
+              ],
+              "type": "h4",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Hometown: ",
+                  "Denver",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Hometown: ",
+                "Denver",
+              ],
+              "type": "h4",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Comments: ",
+                  "Hi",
+                  " ",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Comments: ",
+                "Hi",
+                " ",
+              ],
+              "type": "h4",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Date: ",
+                  "1/2/2019 @ 17:47:41",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Date: ",
+                "1/2/2019 @ 17:47:41",
+              ],
+              "type": "h4",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "alt": "user image",
+                "className": "user-image",
+                "src": "https://res.cloudinary.com/summit-register/image/upload/v1546476463/pe0msmw1hh91l5dv9kha.jpg",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "section",
+    },
     "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -31,10 +561,540 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
+        "children": <section
+          className="mountain-container"
+        >
+          <div
+            className="comment"
+          >
+            <h4>
+              Name: 
+              Chris
+            </h4>
+            <h4>
+              Hometown: 
+              Denver
+            </h4>
+            <h4>
+              Comments: 
+              Hi
+               
+            </h4>
+            <h4>
+              Date: 
+              1/1/2019 @ 17:47:41
+            </h4>
+            <img
+              alt="user image"
+              className="user-image"
+              src="https://res.cloudinary.com/summit-register/image/upload/v1546476463/pe0msmw1hh91l5dv9kha.jpg"
+            />
+          </div>
+          <div
+            className="comment"
+          >
+            <h4>
+              Name: 
+              Chris
+            </h4>
+            <h4>
+              Hometown: 
+              Denver
+            </h4>
+            <h4>
+              Comments: 
+              Hi again
+               
+            </h4>
+            <h4>
+              Date: 
+              1/2/2019 @ 17:47:41
+            </h4>
+            <img
+              alt="user image"
+              className="user-image"
+              src="https://res.cloudinary.com/summit-register/image/upload/v1546476463/pe0msmw1hh91l5dv9kha.jpg"
+            />
+          </div>
+          <div
+            className="comment"
+          >
+            <h4>
+              Name: 
+              Chris
+            </h4>
+            <h4>
+              Hometown: 
+              Denver
+            </h4>
+            <h4>
+              Comments: 
+              Hi
+               
+            </h4>
+            <h4>
+              Date: 
+              1/2/2019 @ 17:47:41
+            </h4>
+            <img
+              alt="user image"
+              className="user-image"
+              src="https://res.cloudinary.com/summit-register/image/upload/v1546476463/pe0msmw1hh91l5dv9kha.jpg"
+            />
+          </div>
+        </section>,
         "className": "MyMountains",
       },
       "ref": null,
-      "rendered": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="comment"
+            >
+              <h4>
+                Name: 
+                Chris
+              </h4>
+              <h4>
+                Hometown: 
+                Denver
+              </h4>
+              <h4>
+                Comments: 
+                Hi
+                 
+              </h4>
+              <h4>
+                Date: 
+                1/1/2019 @ 17:47:41
+              </h4>
+              <img
+                alt="user image"
+                className="user-image"
+                src="https://res.cloudinary.com/summit-register/image/upload/v1546476463/pe0msmw1hh91l5dv9kha.jpg"
+              />
+            </div>,
+            <div
+              className="comment"
+            >
+              <h4>
+                Name: 
+                Chris
+              </h4>
+              <h4>
+                Hometown: 
+                Denver
+              </h4>
+              <h4>
+                Comments: 
+                Hi again
+                 
+              </h4>
+              <h4>
+                Date: 
+                1/2/2019 @ 17:47:41
+              </h4>
+              <img
+                alt="user image"
+                className="user-image"
+                src="https://res.cloudinary.com/summit-register/image/upload/v1546476463/pe0msmw1hh91l5dv9kha.jpg"
+              />
+            </div>,
+            <div
+              className="comment"
+            >
+              <h4>
+                Name: 
+                Chris
+              </h4>
+              <h4>
+                Hometown: 
+                Denver
+              </h4>
+              <h4>
+                Comments: 
+                Hi
+                 
+              </h4>
+              <h4>
+                Date: 
+                1/2/2019 @ 17:47:41
+              </h4>
+              <img
+                alt="user image"
+                className="user-image"
+                src="https://res.cloudinary.com/summit-register/image/upload/v1546476463/pe0msmw1hh91l5dv9kha.jpg"
+              />
+            </div>,
+          ],
+          "className": "mountain-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h4>
+                  Name: 
+                  Chris
+                </h4>,
+                <h4>
+                  Hometown: 
+                  Denver
+                </h4>,
+                <h4>
+                  Comments: 
+                  Hi
+                   
+                </h4>,
+                <h4>
+                  Date: 
+                  1/1/2019 @ 17:47:41
+                </h4>,
+                <img
+                  alt="user image"
+                  className="user-image"
+                  src="https://res.cloudinary.com/summit-register/image/upload/v1546476463/pe0msmw1hh91l5dv9kha.jpg"
+                />,
+              ],
+              "className": "comment",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Name: ",
+                    "Chris",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Name: ",
+                  "Chris",
+                ],
+                "type": "h4",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Hometown: ",
+                    "Denver",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Hometown: ",
+                  "Denver",
+                ],
+                "type": "h4",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Comments: ",
+                    "Hi",
+                    " ",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Comments: ",
+                  "Hi",
+                  " ",
+                ],
+                "type": "h4",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Date: ",
+                    "1/1/2019 @ 17:47:41",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Date: ",
+                  "1/1/2019 @ 17:47:41",
+                ],
+                "type": "h4",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "alt": "user image",
+                  "className": "user-image",
+                  "src": "https://res.cloudinary.com/summit-register/image/upload/v1546476463/pe0msmw1hh91l5dv9kha.jpg",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "img",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h4>
+                  Name: 
+                  Chris
+                </h4>,
+                <h4>
+                  Hometown: 
+                  Denver
+                </h4>,
+                <h4>
+                  Comments: 
+                  Hi again
+                   
+                </h4>,
+                <h4>
+                  Date: 
+                  1/2/2019 @ 17:47:41
+                </h4>,
+                <img
+                  alt="user image"
+                  className="user-image"
+                  src="https://res.cloudinary.com/summit-register/image/upload/v1546476463/pe0msmw1hh91l5dv9kha.jpg"
+                />,
+              ],
+              "className": "comment",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Name: ",
+                    "Chris",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Name: ",
+                  "Chris",
+                ],
+                "type": "h4",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Hometown: ",
+                    "Denver",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Hometown: ",
+                  "Denver",
+                ],
+                "type": "h4",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Comments: ",
+                    "Hi again",
+                    " ",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Comments: ",
+                  "Hi again",
+                  " ",
+                ],
+                "type": "h4",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Date: ",
+                    "1/2/2019 @ 17:47:41",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Date: ",
+                  "1/2/2019 @ 17:47:41",
+                ],
+                "type": "h4",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "alt": "user image",
+                  "className": "user-image",
+                  "src": "https://res.cloudinary.com/summit-register/image/upload/v1546476463/pe0msmw1hh91l5dv9kha.jpg",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "img",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h4>
+                  Name: 
+                  Chris
+                </h4>,
+                <h4>
+                  Hometown: 
+                  Denver
+                </h4>,
+                <h4>
+                  Comments: 
+                  Hi
+                   
+                </h4>,
+                <h4>
+                  Date: 
+                  1/2/2019 @ 17:47:41
+                </h4>,
+                <img
+                  alt="user image"
+                  className="user-image"
+                  src="https://res.cloudinary.com/summit-register/image/upload/v1546476463/pe0msmw1hh91l5dv9kha.jpg"
+                />,
+              ],
+              "className": "comment",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Name: ",
+                    "Chris",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Name: ",
+                  "Chris",
+                ],
+                "type": "h4",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Hometown: ",
+                    "Denver",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Hometown: ",
+                  "Denver",
+                ],
+                "type": "h4",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Comments: ",
+                    "Hi",
+                    " ",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Comments: ",
+                  "Hi",
+                  " ",
+                ],
+                "type": "h4",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Date: ",
+                    "1/2/2019 @ 17:47:41",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Date: ",
+                  "1/2/2019 @ 17:47:41",
+                ],
+                "type": "h4",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "alt": "user image",
+                  "className": "user-image",
+                  "src": "https://res.cloudinary.com/summit-register/image/upload/v1546476463/pe0msmw1hh91l5dv9kha.jpg",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "img",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "section",
+      },
       "type": "div",
     },
   ],

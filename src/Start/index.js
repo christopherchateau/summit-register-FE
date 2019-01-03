@@ -1,25 +1,19 @@
 import React, { Component } from "react";
 import LocatingPopUp from "../LocatingPopUp";
 import PropTypes from "prop-types";
-import { mountainData } from "../utilities/Data/mountain-data";
+import { sortMountainNames } from "../utilities/Data/mountain-data";
 import "./Start.css";
 
 class Start extends Component {
-  compareNames = (a, b) => {
-    if (a.attributes.name < b.attributes.name) return -1;
-    if (a.attributes.name > b.attributes.name) return 1;
-  };
-
   render() {
-    const mountainNames = mountainData.data
-      .sort(this.compareNames)
-      .map((mountain, index) => {
-        return (
-          <option value={mountain.attributes.name} key={index}>
-            {mountain.attributes.name}
-          </option>
-        );
-      });
+    const mountainsNames = sortMountainNames();
+    const mountainDropDownMenu = mountainsNames.map((name, index) => {
+      return (
+        <option value={name} key={index}>
+          {name}
+        </option>
+      );
+    });
 
     return (
       <div className="Start">
@@ -30,7 +24,7 @@ class Start extends Component {
             ref={input => (this.menu = input)}
             defaultValue={this.props.currentMountain}
           >
-            {mountainNames}
+            {mountainDropDownMenu}
           </select>
           <button
             className="select-btn"

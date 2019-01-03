@@ -19,13 +19,14 @@ class Footer extends Component {
     return (
       <footer className="Footer">
         {currentDisplay[0] !== "registerForm" &&
+          currentDisplay[0] !== "myMountains" &&
           currentDisplay[0] !== "start" && (
             <SignRegister
               handleSignLog={handleSignLog}
               withinRange={withinRange}
             />
           )}
-        {isSignedIn === true && (
+        {isSignedIn === true && currentDisplay[0] !== "myMountains" && (
           <button className="footer-btn" onClick={handleMyMountains}>
             My Mountains
           </button>

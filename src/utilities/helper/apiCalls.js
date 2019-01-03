@@ -57,6 +57,5 @@ export const postImage = async image => {
     }
   );
   const data = await response.json();
-  console.log(data)
   return data.url;
 };

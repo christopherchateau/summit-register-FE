@@ -6,7 +6,7 @@ import Info from "../Info";
 import Log from "../Log";
 import SignIn from "../SignIn";
 import Footer from "../Footer";
-import MyMountains from '../MyMountains';
+import MyMountains from "../MyMountains";
 import LoadingScreen from "../LoadingScreen";
 import RegisterForm from "../RegisterForm";
 import { mountainData } from "../utilities/Data/mountain-data";
@@ -24,9 +24,10 @@ class App extends Component {
       currentMountainLog: [],
       currentMountainWeather: {},
       currentLocation: {},
+      withinRange: false,
       isSignedIn: false,
       userData: {},
-      withinRange: false,
+      userRegistry: []
     };
   }
 
@@ -34,10 +35,9 @@ class App extends Component {
     await this.getLocation();
   };
 
-
   componentDidUpdate = () => {
-   this.checkUser()
-  }
+    this.checkUser();
+  };
 
   validateLocation = userLocation => {
     const peakLocation = this.retrievePeakLocation(this.state.currentMountain);
@@ -53,7 +53,6 @@ class App extends Component {
     return this.state.currentMountainData.attributes.summit.split(",");
   };
 
-
   validateSignIn = boolean => {
     if (boolean === true) {
       this.setState({
@@ -64,8 +63,8 @@ class App extends Component {
   };
 
   handleMyMountains = () => {
-    this.updateCurrentDisplayLog("myMountains")
-  }
+    this.updateCurrentDisplayLog("myMountains");
+  };
 
   handleBackButton = () => {
     let currentDisplay = this.state.currentDisplay[0];
@@ -122,35 +121,30 @@ class App extends Component {
   };
 
   handleSignOut = () => {
-    firebase.auth().signOut().then(() => {
-      this.setState({
-        isSignedIn: false,
-        userData: {}
+    firebase
+      .auth()
+      .signOut()
+      .then(() => {
+        this.setState({
+          isSignedIn: false,
+          userData: {}
+        });
       })
-    }).catch(function(error) {
-      throw new Error(error)
-    });
-  }
+      .catch(function(error) {
+        throw new Error(error);
+      });
+  };
 
-  checkUser = () => {
+  checkUser = async () => {
+    const { userData, isSignedIn } = this.state;
+    if (isSignedIn && !Object.keys(userData).length) {
+      const userData = await apiCalls.getCurrentUser();
+      await this.setState({ userData });
 
-    if( this.state.isSignedIn && !Object.keys(this.state.userData).length) {
-      // var name, email, photoUrl, uid, emailVerified;
-      var data = apiCalls.getCurrentUser();
-  
-  
-      let userData = {
-        name: data.displayName,
-        email: data.email,
-        photoUrl: data.photoURL,
-        emailVerified: data.emailVerified,
-        uid: data.uid
-      } 
-      console.log('Name:', data.displayName,"Email:", data.email,"UID:", data.uid)
-      this.setState({ userData })
+      const userRegistry = await apiCalls.postUserCredentials(userData);
+      await this.setState({ userRegistry });
     }
-
-  }
+  };
 
   handleLogUpdate = async logEntry => {
     const timeStamp = generateTimeStamp();

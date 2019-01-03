@@ -26,7 +26,7 @@ class MyMountains extends Component {
 
     const myMountainNames = Object.keys(cleanMountainData);
 
-    const mountainCard = myMountainNames.map(mountain => {
+    const mountainCard = myMountainNames.sort().map(mountain => {
       return (
         <div className="my-mountain">
           <h3>{mountain}</h3>

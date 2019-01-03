@@ -84,7 +84,7 @@ class Info extends Component {
               className="view-log-btn"
               onClick={() => handleViewLogButton()}
             >
-              Log
+              View Register
             </button>
             <button className="weather-btn" onClick={() => this.toggleView()}>
               {this.state.display === "info" ? "Weather" : "Info"}

@@ -4,7 +4,6 @@ import "./MyMountainRegister.css";
 
 class MyMountainRegister extends Component {
   render() {
-    console.log(this.props.log.name);
 
     const { name, hometown, comments, sign_time, image_url } = this.props.log;
     return (

@@ -27,12 +27,6 @@ describe("App", () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it("renders without crashing", () => {
-    const div = document.createElement("div");
-    ReactDOM.render(<App />, div);
-    ReactDOM.unmountComponentAtNode(div);
-  });
-
   describe("handleBackButton", () => {
     let currentDisplay;
     beforeEach(() => {
@@ -241,7 +235,7 @@ describe("App", () => {
       expect(result).toBe(true);
     });
 
-    it.skip("should return true for valid nums", () => {
+    it("should return true for valid nums", () => {
       const result = wrapper.instance().checkProximity(0.02);
       expect(result).toBe(false);
     });

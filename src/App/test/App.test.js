@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import App from "..";
 import { shallow } from "enzyme";
 
@@ -274,7 +273,7 @@ describe("App", () => {
 
   describe("checkUser", () => {
     it("", () => {
-      jest.fn()
+      jest.fn();
     });
   });
 

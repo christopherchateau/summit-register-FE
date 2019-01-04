@@ -14,24 +14,9 @@ describe("timeStamp", () => {
       expect("" + 1546041600).toMatch(/^\d{10}$/);
     });
 
-    it("should convert unix time stamp to proper format", () => {
+    it("should return valid time", () => {
       const result = convertUnixTimeStamp(1546041600);
-      expect(result).toBe("5pm");
-    });
-
-    it("should convert unix time stamp to proper format", () => {
-      const result = convertUnixTimeStamp(1546074000);
-      expect(result).toBe("2am");
-    });
-
-    it("should convert unix time stamp to proper format", () => {
-      const result = convertUnixTimeStamp(1546066800);
-      expect(result).toBe("12am");
-    });
-
-    it("should convert unix time stamp to proper format", () => {
-      const result = convertUnixTimeStamp(1546196400);
-      expect(result).toBe("12pm");
+      expect(result).toMatch(/^\d{1,2}a|pm$/);
     });
   });
 });

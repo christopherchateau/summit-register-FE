@@ -26,6 +26,14 @@ describe("App", () => {
     expect(wrapper).toMatchSnapshot();
   });
 
+  it("", () => {
+    expect(wrapper.state().withinRange).toBe(false);
+  });
+
+  it("", () => {
+    expect(wrapper.state().isSignedIn).toBe(false);
+  });
+
   describe("handleBackButton", () => {
     let currentDisplay;
     beforeEach(() => {

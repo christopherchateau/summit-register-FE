@@ -51,7 +51,7 @@ Additional enhancments could include :
 #### Mobile View
 
 ![homescreen](./src/utilities/videos/iphone-home.png)
-![homescreen](./src/utilities/videos/iphone-mountainInfo.png)
-![homescreen](./src/utilities/videos/iphone-mountainRegister.png)
-![homescreen](./src/utilities/videos/iphone-oAuth.png)
-![homescreen](./src/utilities/videos/tablet-home.png)
+![mountainInfo](./src/utilities/videos/iphone-mountainInfo.png)
+![mountainRegister](./src/utilities/videos/iphone-mountainRegister.png)
+![oAuth](./src/utilities/videos/iphone-oAuth.png)
+![tablet-homescreen](./src/utilities/videos/tablet-home.png)

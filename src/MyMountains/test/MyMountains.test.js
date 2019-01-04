@@ -3,6 +3,8 @@ import ReactDOM from "react-dom";
 import MyMountains from "..";
 import { shallow } from "enzyme";
 
+jest.mock("../../utilities/helper/apiCalls");
+
 describe("MyMountains", () => {
   let wrapper = shallow(<MyMountains validateSignIn={jest.fn()} />);
   const registries = [
@@ -73,9 +75,5 @@ describe("MyMountains", () => {
       expect(cleanMountainData["mt jimbob"]).toHaveLength(2);
       expect(cleanMountainData["mt timbucktoo"]).toHaveLength(1);
     });
-
-    // it("should call cleanUserMountainData on ComponentDidMount", () => {
-    //   expect(wrapper.instance().cleanUserMountainData).toBeCalled();
-    // });
   });
 });

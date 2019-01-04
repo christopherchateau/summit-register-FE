@@ -67,4 +67,18 @@ describe("Info", () => {
     );
     ReactDOM.unmountComponentAtNode(div);
   });
+
+  describe("toggleView", () => {
+    it("display should toggle between 'info' and 'weather'", () => {
+      wrapper.state().display = "info";
+      wrapper.instance().toggleView();
+      expect(wrapper.state().display).toEqual("weather");
+    });
+
+    it("display should toggle between 'info' and 'weather'", () => {
+      wrapper.state().display = "weather";
+      wrapper.instance().toggleView();
+      expect(wrapper.state().display).toEqual("info");
+    });
+  });
 });

@@ -135,9 +135,6 @@ class App extends Component {
           userData: {},
           userCredentials: {}
         });
-      })
-      .catch(function(error) {
-        throw new Error(error);
       });
   };
 
@@ -148,7 +145,7 @@ class App extends Component {
       await this.setState({ userData });
 
       const userCredentials = await apiCalls.postUserCredentials(userData);
-      await this.setState({ userCredentials });
+      await this.setState({ userCgit redentials });
     }
   };
 
@@ -209,7 +206,7 @@ class App extends Component {
       currentLocation,
       userCredentials,
       withinRange,
-      isSignedIn,
+      isSignedIn
     } = this.state;
 
     return (

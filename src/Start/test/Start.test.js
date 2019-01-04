@@ -49,28 +49,4 @@ describe("Start", () => {
       expect(wrapper.find("LocatingPopUp")).toHaveLength(0);
     });
   });
-
-  describe("start", () => {
-    it.skip("should called handleSelectButton", () => {
-      const someFunc = jest.fn();
-      // wrapper.instance().menu = currentMountainData
-      wrapper = shallow(
-        <Start
-          handleSelectButton={someFunc}
-          currentLocation={{
-            latitude: 39.6294052,
-            longitude: -105.11518559999999,
-            sum: -65.48578039999998
-          }}
-          currentMountainData={currentMountainData}
-        />
-      );
-      // const spy = spyOn(wrapper.instance(), "handleSelectButton");
-      // wrapper.instance().handleSelectButton = jest.fn()
-
-      wrapper.find(".select-btn").simulate("click");
-      // wrapper.prop('onClickOfCreateAccountButton')()
-      expect(someFunc).toHaveBeenCalled();
-    });
-  });
 });

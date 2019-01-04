@@ -30,21 +30,24 @@ class MyMountains extends Component {
   render() {
     const myMountainNames = Object.keys(this.state.cleanMountainData);
 
-    const mountainCard = myMountainNames.sort().map(mountain => {
+    let mountainCard = myMountainNames.sort().map(mountain => {
       return (
         <div className="my-mountain" key={mountain}>
           <h3>{mountain}</h3>
           {this.state.cleanMountainData[mountain].map(log => {
-            return (
-              <MyMountainRegister
-                key={log.id}
-                log={log.attributes}
-              />
-            );
+            return <MyMountainRegister key={log.id} log={log.attributes} />;
           })}
         </div>
       );
     });
+
+    if (!mountainCard.length) {
+      mountainCard = (
+        <div className="no-registers-msg">
+          <h3>No Registers Found</h3>
+        </div>
+      );
+    }
 
     return <div className="MyMountains">{mountainCard}</div>;
   }

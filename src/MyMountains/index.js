@@ -6,31 +6,35 @@ import "./MyMountains.css";
 class MyMountains extends Component {
   constructor() {
     super();
-    this.state = { myMountains: [] };
+    this.state = { cleanMountainData: {} };
   }
 
   componentDidMount = async () => {
     const userId = this.props.userCredentials.data.id;
     const myMountains = await getMyMountains(userId);
-    await this.setState({ myMountains });
+    this.cleanUserMountainData(myMountains)
   };
 
-  render() {
-    const cleanMountainData = this.state.myMountains.reduce((acc, log) => {
+  cleanUserMountainData = (myMountains) => {
+    const cleanMountainData = myMountains.reduce((acc, log) => {
       if (!acc[log.attributes.mountain]) {
         acc[log.attributes.mountain] = [];
       }
       acc[log.attributes.mountain].push(log);
       return acc;
     }, {});
+    this.setState({ cleanMountainData })
+  }
 
-    const myMountainNames = Object.keys(cleanMountainData);
+  render() {
+
+    const myMountainNames = Object.keys(this.state.cleanMountainData);
 
     const mountainCard = myMountainNames.sort().map(mountain => {
       return (
-        <div className="my-mountain">
+        <div className="my-mountain" key={mountain}>
           <h3>{mountain}</h3>
-          {cleanMountainData[mountain].map(log => {
+          {this.state.cleanMountainData[mountain].map(log => {
             return <MyMountainRegister key={log.attributes.id} log={log.attributes} />;
           })}
         </div>
@@ -46,4 +50,3 @@ class MyMountains extends Component {
 }
 
 export default MyMountains;
-

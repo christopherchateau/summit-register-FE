@@ -68,6 +68,7 @@ class RegisterForm extends Component {
               onChange={this.handleChange}
             />
           </h3>
+          <h5 className="upload-instructions">Upload a photo</h5>
           <input
             className="upload-image"
             type="file"

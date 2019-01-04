@@ -7,24 +7,16 @@ describe("Info", () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = shallow(
-      <SignIn
-        handleBackButton={this.handleBackButton}
-        validateSignIn={this.validateSignIn}
-      />
-    );
+    wrapper = shallow(<SignIn />);
   });
 
-  it.skip("should match snapshot", () => {
+  it("should match snapshot", () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it.skip("renders without crashing", () => {
+  it("renders without crashing", () => {
     const div = document.createElement("div");
-    ReactDOM.render(
-      <Start currentLocation={{}} currentMountainData={currentMountainData} />,
-      div
-    );
+    ReactDOM.render(<SignIn />, div);
     ReactDOM.unmountComponentAtNode(div);
   });
 });

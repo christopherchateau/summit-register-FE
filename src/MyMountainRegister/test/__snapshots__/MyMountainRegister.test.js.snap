@@ -1,0 +1,271 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MyMountainRegister should match the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <MyMountainRegister
+    log={
+      Object {
+        "comments": "This was rad",
+        "hometown": "Tim-buck-too",
+        "image_url": null,
+        "name": "jimbob",
+        "sign_time": "10:30pm",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <hr />,
+        <h4>
+          Name: 
+          jimbob
+        </h4>,
+        <h4>
+          Hometown: 
+          Tim-buck-too
+        </h4>,
+        <h4>
+          Comments: 
+          This was rad
+           
+        </h4>,
+        <h4>
+          Date: 
+          10:30pm
+        </h4>,
+        null,
+      ],
+      "className": "log-entry",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": "hr",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Name: ",
+            "jimbob",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Name: ",
+          "jimbob",
+        ],
+        "type": "h4",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Hometown: ",
+            "Tim-buck-too",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Hometown: ",
+          "Tim-buck-too",
+        ],
+        "type": "h4",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Comments: ",
+            "This was rad",
+            " ",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Comments: ",
+          "This was rad",
+          " ",
+        ],
+        "type": "h4",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Date: ",
+            "10:30pm",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Date: ",
+          "10:30pm",
+        ],
+        "type": "h4",
+      },
+      null,
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <hr />,
+          <h4>
+            Name: 
+            jimbob
+          </h4>,
+          <h4>
+            Hometown: 
+            Tim-buck-too
+          </h4>,
+          <h4>
+            Comments: 
+            This was rad
+             
+          </h4>,
+          <h4>
+            Date: 
+            10:30pm
+          </h4>,
+          null,
+        ],
+        "className": "log-entry",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": "hr",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Name: ",
+              "jimbob",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Name: ",
+            "jimbob",
+          ],
+          "type": "h4",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Hometown: ",
+              "Tim-buck-too",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Hometown: ",
+            "Tim-buck-too",
+          ],
+          "type": "h4",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Comments: ",
+              "This was rad",
+              " ",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Comments: ",
+            "This was rad",
+            " ",
+          ],
+          "type": "h4",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Date: ",
+              "10:30pm",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Date: ",
+            "10:30pm",
+          ],
+          "type": "h4",
+        },
+        null,
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

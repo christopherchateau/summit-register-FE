@@ -81,7 +81,7 @@ describe("RegisterForm", () => {
   });
 
   describe("handleImage", () => {
-    it.skip("should set state of image url", () => {
+    it("should set state of image url", () => {
       let expected = "something";
       let mockEventFile = {
         target: {

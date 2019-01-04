@@ -145,7 +145,7 @@ class App extends Component {
       await this.setState({ userData });
 
       const userCredentials = await apiCalls.postUserCredentials(userData);
-      await this.setState({ userCgit redentials });
+      await this.setState({ userCredentials });
     }
   };
 

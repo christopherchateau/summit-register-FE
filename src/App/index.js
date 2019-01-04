@@ -72,10 +72,6 @@ class App extends Component {
     this.updateCurrentDisplayLog("start");
   };
 
-  handleMyMountains = () => {
-    this.updateCurrentDisplayLog("myMountains");
-  };
-
   handleBackButton = () => {
     let currentDisplay = this.state.currentDisplay[0];
     let updatedDisplay = this.state.currentDisplay
@@ -113,17 +109,15 @@ class App extends Component {
     await this.updateCurrentDisplayLog("info");
   };
 
-  getWeatherData = async () => {
-    const peakLocation = await this.retrievePeakLocation();
-    const currentMountainWeather = await apiCalls.getWeather(peakLocation);
-    await this.setState({ currentMountainWeather });
-  };
-
   handleSignLog = () => {
     this.validateLocation(this.state.currentLocation);
     if (this.state.withinRange) {
       this.updateCurrentDisplayLog("registerForm");
     }
+  };
+
+  handleMyMountains = () => {
+    this.updateCurrentDisplayLog("myMountains");
   };
 
   handleSignIn = () => {
@@ -181,6 +175,12 @@ class App extends Component {
   updateCurrentDisplayLog = display => {
     const displayHistory = this.state.currentDisplay;
     this.setState({ currentDisplay: [display, ...displayHistory] });
+  };
+
+  getWeatherData = async () => {
+    const peakLocation = await this.retrievePeakLocation();
+    const currentMountainWeather = await apiCalls.getWeather(peakLocation);
+    await this.setState({ currentMountainWeather });
   };
 
   getLocation = () => {

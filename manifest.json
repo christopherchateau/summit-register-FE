@@ -3,16 +3,12 @@
   "short_name": "Summit Register",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#2196F3",
-  "description": "A virtual summit Registration Log",
+  "background_color": "#a5a5a5",
+  "theme_color": "#a5a5a5",
+  "description": "A virtual summit registration log",
   "icons": [
     {
-      "src": "https://placebear.com/192/192",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "https://placebear.com/192/192",
+      "src": "http://res.cloudinary.com/summit-register/image/upload/v1546473907/ztr2pkpcxcrbjsnknldw.png",
       "type": "image/png",
       "sizes": "512x512"
     }

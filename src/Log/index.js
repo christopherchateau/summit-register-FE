@@ -15,7 +15,7 @@ class Log extends Component {
           {log.attributes.image_url && (
             <img
               className="user-image"
-              alt="user image"
+              alt="user"
               src={log.attributes.image_url}
             />
           )}
@@ -41,9 +41,7 @@ class Log extends Component {
 }
 
 Log.propTypes = {
-  handleBackButton: PropTypes.func,
-  currentMountainLog: PropTypes.array,
-  handleLogUpdate: PropTypes.func
+  currentMountainLog: PropTypes.array
 };
 
 export default Log;

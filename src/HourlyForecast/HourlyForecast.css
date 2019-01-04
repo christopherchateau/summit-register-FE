@@ -6,13 +6,13 @@
   color: black;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   margin: 0 10px;
   min-height: 40vh;
   min-width: 200px;
   overflow-x: hidden;
   overflow-y: auto;
   padding: 5px;
-  justify-content: space-evenly;
 }
 
 .weather-icon {

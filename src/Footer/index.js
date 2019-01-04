@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import SignRegister from "../SignRegister";
 import PropTypes from "prop-types";
-import MyMountains from "../MyMountains";
 import "./Footer.css";
 
 class Footer extends Component {
@@ -27,7 +26,10 @@ class Footer extends Component {
             />
           )}
         {isSignedIn === true && currentDisplay[0] !== "myMountains" && (
-          <button className="my-mountains-btn footer-btn" onClick={handleMyMountains}>
+          <button
+            className="my-mountains-btn footer-btn"
+            onClick={handleMyMountains}
+          >
             My Mountains
           </button>
         )}
@@ -46,6 +48,14 @@ class Footer extends Component {
   }
 }
 
-Footer.propTypes = {};
+Footer.propTypes = {
+  currentDisplay: PropTypes.array,
+  handleSignIn: PropTypes.func,
+  handleSignOut: PropTypes.func,
+  handleSignLog: PropTypes.func,
+  handleMyMountains: PropTypes.func,
+  isSignedIn: PropTypes.bool,
+  withinRange: PropTypes.bool
+};
 
 export default Footer;

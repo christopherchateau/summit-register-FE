@@ -24,7 +24,7 @@ describe("SignRegister", () => {
 
   describe("outside accepted range", () => {
     it("should not have 'active' class", () => {
-      expect(wrapper.find('.SignRegister').hasClass('active')).toBe(false)
+      expect(wrapper.find(".SignRegister").hasClass("active")).toBe(false);
     });
   });
 
@@ -35,7 +35,7 @@ describe("SignRegister", () => {
       );
     });
     it("should have 'active' class", () => {
-      expect(wrapper.find('.SignRegister').hasClass('active')).toBe(true)
+      expect(wrapper.find(".SignRegister").hasClass("active")).toBe(true);
     });
   });
 });

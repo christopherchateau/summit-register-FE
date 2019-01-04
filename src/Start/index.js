@@ -6,6 +6,7 @@ import "./Start.css";
 
 class Start extends Component {
   render() {
+    const { currentMountain, currentLocation, handleSelectButton } = this.props;
     const mountainsNames = sortMountainNames();
     const mountainDropDownMenu = mountainsNames.map((name, index) => {
       return (
@@ -17,18 +18,18 @@ class Start extends Component {
 
     return (
       <div className="Start">
-        {!Object.keys(this.props.currentLocation).length && <LocatingPopUp />}
+        {!Object.keys(currentLocation).length && <LocatingPopUp />}
         <div className="drop-down-controls">
           <select
             className="drop-down-menu"
             ref={input => (this.menu = input)}
-            defaultValue={this.props.currentMountain}
+            defaultValue={currentMountain}
           >
             {mountainDropDownMenu}
           </select>
           <button
             className="select-btn"
-            onClick={() => this.props.handleSelectButton(this.menu.value)}
+            onClick={() => handleSelectButton(this.menu.value)}
           >
             Select
           </button>
@@ -39,10 +40,9 @@ class Start extends Component {
 }
 
 Start.propTypes = {
-  handleSelect: PropTypes.func,
   currentMountain: PropTypes.string,
-  handleLogUpdate: PropTypes.func,
-  handleSignIn: PropTypes.func
+  currentLocation: PropTypes.object,
+  handleSelectButton: PropTypes.func
 };
 
 export default Start;

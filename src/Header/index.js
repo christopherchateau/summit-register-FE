@@ -14,10 +14,8 @@ class Header extends Component {
     let displayText = "Summit Register";
 
     if (currentDisplay === "myMountains") {
-      displayText = "My Mountains"
-    }
-
-    else if (currentMountainData.attributes && currentDisplay !== "start") {
+      displayText = "My Mountains";
+    } else if (currentMountainData.attributes && currentDisplay !== "start") {
       displayText = currentMountainData.attributes.name;
     }
 
@@ -35,6 +33,10 @@ class Header extends Component {
   }
 }
 
-Header.propTypes = {};
+Header.propTypes = {
+  currentDisplay: PropTypes.string,
+  handleBackButton: PropTypes.func,
+  currentMountainData: PropTypes.object
+};
 
 export default Header;

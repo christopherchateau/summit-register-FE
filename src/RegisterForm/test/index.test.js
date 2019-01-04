@@ -58,7 +58,7 @@ describe("RegisterForm", () => {
     it.skip("should update state when called", async () => {
       console.log(wrapper.state());
       wrapper.instance().handleSubmit();
-      await wrapper.instance().postImage()
+      await wrapper.instance().postImage();
 
       const expected = [
         "http://res.cloudinary.com/summit-register/image/upload/v1546476463/pe0msmw1hh91l5dv9kha.jpg"

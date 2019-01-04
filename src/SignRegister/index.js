@@ -19,7 +19,8 @@ class SignRegister extends Component {
 }
 
 SignRegister.propTypes = {
-  handleLogUpdate: PropTypes.func
+  handleSignLog: PropTypes.func,
+  withinRange: PropTypes.bool
 };
 
 export default SignRegister;

@@ -89,8 +89,6 @@ class RegisterForm extends Component {
 }
 
 RegisterForm.propTypes = {
-  currentDisplay: PropTypes.string,
-  handleBackButton: PropTypes.func,
   handleLogUpdate: PropTypes.func
 };
 export default RegisterForm;

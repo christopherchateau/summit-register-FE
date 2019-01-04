@@ -137,28 +137,6 @@ describe("apiCalls", () => {
     });
   });
 
-  describe("getCurrentUser", () => {
-    it.skip("should return a json'd response", async () => {
-      const expected = {
-        data: {
-          email: "justinstewart3313@gmail.com",
-          emailVerified: true,
-          displayName: "Justin S",
-          photoUrl:
-            "https://lh6.googleusercontent.com/-pSIwWNMafUA/AAAAAAAAAAI/AAAAAAAAAAA/AKxrwcaWlCy7imswUFxVJ8nakIaabrRwlA/mo/photo.jpg",
-          uid: "fYLGD6WzgDdIs4K9LVsW9ODES6x2"
-        }
-      };
-      window.fetch = jest.fn().mockImplementation(() =>
-        Promise.resolve({
-          json: () => expected
-        })
-      );
-      const result = await apiCalls.getCurrentUser();
-      expect(result).toEqual(expected);
-    });
-  });
-
   describe("postUserCredentials", () => {
     const id = 4;
     const userData = {

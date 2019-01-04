@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import firebase from "firebase";
 import Header from "../Header";
 import Start from "../Start";
 import Info from "../Info";
@@ -12,6 +11,7 @@ import RegisterForm from "../RegisterForm";
 import { generateTimeStamp } from "../utilities/helper/timeStamp";
 import { mountainData } from "../utilities/Data/mountain-data";
 import * as apiCalls from "../utilities/helper/apiCalls";
+import firebase from "firebase";
 import "./App.css";
 
 class App extends Component {
@@ -188,7 +188,7 @@ class App extends Component {
   };
 
   checkProximity = num => {
-    return num < 0.005 && num > -0.005;
+    return true //num < 0.005 && num > -0.005;
   };
 
   showPosition = position => {
@@ -208,10 +208,8 @@ class App extends Component {
       currentMountainWeather,
       currentLocation,
       userCredentials,
-      userRegistry,
       withinRange,
       isSignedIn,
-      userData
     } = this.state;
 
     return (
@@ -227,13 +225,10 @@ class App extends Component {
             currentMountain={currentMountain}
             currentLocation={currentLocation}
             handleSelectButton={this.handleSelectButton}
-            handleSignIn={this.handleSignIn}
-            userData={userData}
           />
         )}
         {currentDisplay[0] === "info" && (
           <Info
-            currentLocation={this.state.currentLocation}
             currentMountainData={currentMountainData}
             currentMountainWeather={currentMountainWeather}
             handleViewLogButton={this.handleViewLogButton}
@@ -253,7 +248,6 @@ class App extends Component {
         {this.state.currentDisplay[0] === "myMountains" && (
           <MyMountains
             validateSignIn={this.validateSignIn}
-            userRegistry={userRegistry}
             userCredentials={userCredentials}
           />
         )}
@@ -261,7 +255,6 @@ class App extends Component {
           currentDisplay={currentDisplay}
           handleSignIn={this.handleSignIn}
           handleSignOut={this.handleSignOut}
-          handleLogUpdate={this.handleLogUpdate}
           handleSignLog={this.handleSignLog}
           handleMyMountains={this.handleMyMountains}
           isSignedIn={isSignedIn}

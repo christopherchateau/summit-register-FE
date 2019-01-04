@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import firebase from "firebase";
-import PropTypes from "prop-types";
 import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth";
 import "./SignIn.css";
 
@@ -32,10 +31,5 @@ class SignIn extends Component {
     );
   }
 }
-
-SignIn.propTypes = {
-  handleBackButton: PropTypes.func,
-  validateSignIn: PropTypes.func
-};
 
 export default SignIn;

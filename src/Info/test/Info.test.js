@@ -35,7 +35,7 @@ describe("Info", () => {
         precipProbability: 0.55,
         temperature: 72.8,
         humidity: 0.95,
-        windSpeed: 12.39,
+        windSpeed: 12.39
       }
     ]
   };

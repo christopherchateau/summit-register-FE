@@ -52,6 +52,6 @@ Additional enhancments could include :
 
 ![homescreen](./src/utilities/videos/iphone-home.png)
 ![homescreen](./src/utilities/videos/iphone-mountainInfo.png)
-![homescreen](./src/utilities/videos/mountainRegister.png)
+![homescreen](./src/utilities/videos/iphone-mountainRegister.png)
 ![homescreen](./src/utilities/videos/iphone-oAuth.png)
 ![homescreen](./src/utilities/videos/tablet-home.png)

@@ -57,6 +57,11 @@ ShallowWrapper {
               value=""
             />
           </h3>
+          <h5
+            className="upload-instructions"
+          >
+            Upload a photo
+          </h5>
           <input
             accept="image/*"
             className="upload-image"
@@ -116,6 +121,11 @@ ShallowWrapper {
                 value=""
               />
             </h3>,
+            <h5
+              className="upload-instructions"
+            >
+              Upload a photo
+            </h5>,
             <input
               accept="image/*"
               className="upload-image"
@@ -240,6 +250,18 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
+              "children": "Upload a photo",
+              "className": "upload-instructions",
+            },
+            "ref": null,
+            "rendered": "Upload a photo",
+            "type": "h5",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
               "accept": "image/*",
               "className": "upload-image",
               "onChange": [Function],
@@ -313,6 +335,11 @@ ShallowWrapper {
                 value=""
               />
             </h3>
+            <h5
+              className="upload-instructions"
+            >
+              Upload a photo
+            </h5>
             <input
               accept="image/*"
               className="upload-image"
@@ -372,6 +399,11 @@ ShallowWrapper {
                   value=""
                 />
               </h3>,
+              <h5
+                className="upload-instructions"
+              >
+                Upload a photo
+              </h5>,
               <input
                 accept="image/*"
                 className="upload-image"
@@ -490,6 +522,18 @@ ShallowWrapper {
                 },
               ],
               "type": "h3",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Upload a photo",
+                "className": "upload-instructions",
+              },
+              "ref": null,
+              "rendered": "Upload a photo",
+              "type": "h5",
             },
             Object {
               "instance": null,

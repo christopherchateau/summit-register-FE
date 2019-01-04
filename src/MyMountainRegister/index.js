@@ -12,9 +12,7 @@ class MyMountainRegister extends Component {
         <h4>Hometown: {hometown}</h4>
         <h4>Comments: {comments} </h4>
         <h4>Date: {sign_time}</h4>
-        {image_url && (
-          <img className="user-image" alt="user" src={image_url} />
-        )}
+        {image_url && <img className="user-image" alt="user" src={image_url} />}
       </div>
     );
   }

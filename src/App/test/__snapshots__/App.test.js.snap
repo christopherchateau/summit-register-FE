@@ -32,8 +32,6 @@ ShallowWrapper {
           }
           currentMountain=""
           handleSelectButton={[Function]}
-          handleSignIn={[Function]}
-          userData={Object {}}
         />,
         false,
         false,
@@ -47,7 +45,6 @@ ShallowWrapper {
               "start",
             ]
           }
-          handleLogUpdate={[Function]}
           handleMyMountains={[Function]}
           handleSignIn={[Function]}
           handleSignLog={[Function]}
@@ -84,8 +81,6 @@ ShallowWrapper {
           },
           "currentMountain": "",
           "handleSelectButton": [Function],
-          "handleSignIn": [Function],
-          "userData": Object {},
         },
         "ref": null,
         "rendered": null,
@@ -105,7 +100,6 @@ ShallowWrapper {
           "currentDisplay": Array [
             "start",
           ],
-          "handleLogUpdate": [Function],
           "handleMyMountains": [Function],
           "handleSignIn": [Function],
           "handleSignLog": [Function],
@@ -141,8 +135,6 @@ ShallowWrapper {
             }
             currentMountain=""
             handleSelectButton={[Function]}
-            handleSignIn={[Function]}
-            userData={Object {}}
           />,
           false,
           false,
@@ -156,7 +148,6 @@ ShallowWrapper {
                 "start",
               ]
             }
-            handleLogUpdate={[Function]}
             handleMyMountains={[Function]}
             handleSignIn={[Function]}
             handleSignLog={[Function]}
@@ -193,8 +184,6 @@ ShallowWrapper {
             },
             "currentMountain": "",
             "handleSelectButton": [Function],
-            "handleSignIn": [Function],
-            "userData": Object {},
           },
           "ref": null,
           "rendered": null,
@@ -214,7 +203,6 @@ ShallowWrapper {
             "currentDisplay": Array [
               "start",
             ],
-            "handleLogUpdate": [Function],
             "handleMyMountains": [Function],
             "handleSignIn": [Function],
             "handleSignLog": [Function],

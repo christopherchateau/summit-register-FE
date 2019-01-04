@@ -18,10 +18,6 @@ describe("HourlyForecast", () => {
     wrapper = shallow(<HourlyForecast {...currentMountainWeather} />);
   });
 
-  it("should match snapshot", () => {
-    expect(wrapper).toMatchSnapshot();
-  });
-
   it("renders without crashing", () => {
     const div = document.createElement("div");
     ReactDOM.render(<HourlyForecast {...currentMountainWeather} />, div);

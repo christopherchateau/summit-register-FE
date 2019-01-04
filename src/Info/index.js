@@ -97,10 +97,10 @@ class Info extends Component {
 }
 
 Info.propTypes = {
-  handleBackButton: PropTypes.func,
   currentMountainData: PropTypes.object,
+  currentMountainWeather: PropTypes.object,
   handleviewLogButton: PropTypes.func,
-  handleLogUpdate: PropTypes.func
+  withinRange: PropTypes.bool
 };
 
 export default Info;

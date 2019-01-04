@@ -56,6 +56,14 @@ class HourlyForecast extends Component {
   }
 }
 
-HourlyForecast.propTypes = {};
+HourlyForecast.propTypes = {
+  time: PropTypes.number,
+  icon: PropTypes.string,
+  summary: PropTypes.string,
+  humidity: PropTypes.number,
+  windSpeed: PropTypes.number,
+  temperature: PropTypes.number,
+  precipProbability: PropTypes.number
+};
 
 export default HourlyForecast;

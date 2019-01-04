@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import App from "..";
 import { shallow } from "enzyme";
 
@@ -25,6 +24,14 @@ describe("App", () => {
 
   it("should match snapshot", () => {
     expect(wrapper).toMatchSnapshot();
+  });
+
+  it("", () => {
+    expect(wrapper.state().withinRange).toBe(false);
+  });
+
+  it("", () => {
+    expect(wrapper.state().isSignedIn).toBe(false);
   });
 
   describe("handleBackButton", () => {
@@ -274,7 +281,7 @@ describe("App", () => {
 
   describe("checkUser", () => {
     it("", () => {
-      jest.fn()
+      jest.fn();
     });
   });
 

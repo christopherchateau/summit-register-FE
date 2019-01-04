@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import loading from '../utilities/Images/loading.gif'
-import PropTypes from "prop-types";
+import loading from "../utilities/Images/loading.gif";
 import "./LocatingPopUp.css";
 
 class LocatingPopUp extends Component {
@@ -13,7 +12,5 @@ class LocatingPopUp extends Component {
     );
   }
 }
-
-LocatingPopUp.propTypes = {};
 
 export default LocatingPopUp;

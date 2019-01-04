@@ -54,30 +54,6 @@ describe("RegisterForm", () => {
       wrapper.find(".submit-btn").simulate("click", mockEvent);
       expect(spy).toHaveBeenCalled();
     });
-
-    it.skip("should update state when called", async () => {
-      console.log(wrapper.state());
-      wrapper.instance().handleSubmit();
-      await wrapper.instance().postImage()
-
-      const expected = [
-        "http://res.cloudinary.com/summit-register/image/upload/v1546476463/pe0msmw1hh91l5dv9kha.jpg"
-      ];
-      await expect(wrapper.state().imageUrl).toEqual(expected);
-      console.log(wrapper.state());
-    });
-
-    it.skip("should have called handleLogUpdate", async () => {
-      const mockHandleLogUpdate = jest.fn();
-
-      wrapper = shallow(<RegisterForm handLogUpdate={mockHandleLogUpdate} />);
-      // const spy = spyOn(wrapper.instance(), "handleLogUpdate");
-      // const mockEvent = { preventDefault: jest.fn() };
-      // wrapper.instance().handleSubmit()
-
-      wrapper.find(".submit-btn").simulate("click");
-      await expect(mockHandleLogUpdate).toBeCalled();
-    });
   });
 
   describe("handleImage", () => {

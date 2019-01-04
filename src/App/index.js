@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import firebase from "firebase";
 import Header from "../Header";
 import Start from "../Start";
 import Info from "../Info";
@@ -12,6 +11,7 @@ import RegisterForm from "../RegisterForm";
 import { generateTimeStamp } from "../utilities/helper/timeStamp";
 import { mountainData } from "../utilities/Data/mountain-data";
 import * as apiCalls from "../utilities/helper/apiCalls";
+import firebase from "firebase";
 import "./App.css";
 
 class App extends Component {
@@ -72,10 +72,6 @@ class App extends Component {
     this.updateCurrentDisplayLog("start");
   };
 
-  handleMyMountains = () => {
-    this.updateCurrentDisplayLog("myMountains");
-  };
-
   handleBackButton = () => {
     let currentDisplay = this.state.currentDisplay[0];
     let updatedDisplay = this.state.currentDisplay
@@ -113,17 +109,15 @@ class App extends Component {
     await this.updateCurrentDisplayLog("info");
   };
 
-  getWeatherData = async () => {
-    const peakLocation = await this.retrievePeakLocation();
-    const currentMountainWeather = await apiCalls.getWeather(peakLocation);
-    await this.setState({ currentMountainWeather });
-  };
-
   handleSignLog = () => {
     this.validateLocation(this.state.currentLocation);
     if (this.state.withinRange) {
       this.updateCurrentDisplayLog("registerForm");
     }
+  };
+
+  handleMyMountains = () => {
+    this.updateCurrentDisplayLog("myMountains");
   };
 
   handleSignIn = () => {
@@ -141,9 +135,6 @@ class App extends Component {
           userData: {},
           userCredentials: {}
         });
-      })
-      .catch(function(error) {
-        throw new Error(error);
       });
   };
 
@@ -183,6 +174,12 @@ class App extends Component {
     this.setState({ currentDisplay: [display, ...displayHistory] });
   };
 
+  getWeatherData = async () => {
+    const peakLocation = await this.retrievePeakLocation();
+    const currentMountainWeather = await apiCalls.getWeather(peakLocation);
+    await this.setState({ currentMountainWeather });
+  };
+
   getLocation = () => {
     return navigator.geolocation.watchPosition(this.showPosition);
   };
@@ -208,10 +205,8 @@ class App extends Component {
       currentMountainWeather,
       currentLocation,
       userCredentials,
-      userRegistry,
       withinRange,
-      isSignedIn,
-      userData
+      isSignedIn
     } = this.state;
 
     return (
@@ -227,13 +222,10 @@ class App extends Component {
             currentMountain={currentMountain}
             currentLocation={currentLocation}
             handleSelectButton={this.handleSelectButton}
-            handleSignIn={this.handleSignIn}
-            userData={userData}
           />
         )}
         {currentDisplay[0] === "info" && (
           <Info
-            currentLocation={this.state.currentLocation}
             currentMountainData={currentMountainData}
             currentMountainWeather={currentMountainWeather}
             handleViewLogButton={this.handleViewLogButton}
@@ -253,7 +245,6 @@ class App extends Component {
         {this.state.currentDisplay[0] === "myMountains" && (
           <MyMountains
             validateSignIn={this.validateSignIn}
-            userRegistry={userRegistry}
             userCredentials={userCredentials}
           />
         )}
@@ -261,7 +252,6 @@ class App extends Component {
           currentDisplay={currentDisplay}
           handleSignIn={this.handleSignIn}
           handleSignOut={this.handleSignOut}
-          handleLogUpdate={this.handleLogUpdate}
           handleSignLog={this.handleSignLog}
           handleMyMountains={this.handleMyMountains}
           isSignedIn={isSignedIn}

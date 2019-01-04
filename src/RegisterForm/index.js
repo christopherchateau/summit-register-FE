@@ -68,6 +68,7 @@ class RegisterForm extends Component {
               onChange={this.handleChange}
             />
           </h3>
+          <h5 className="upload-instructions">Upload a photo</h5>
           <input
             className="upload-image"
             type="file"
@@ -89,8 +90,6 @@ class RegisterForm extends Component {
 }
 
 RegisterForm.propTypes = {
-  currentDisplay: PropTypes.string,
-  handleBackButton: PropTypes.func,
   handleLogUpdate: PropTypes.func
 };
 export default RegisterForm;

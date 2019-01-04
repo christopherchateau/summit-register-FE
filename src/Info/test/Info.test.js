@@ -35,7 +35,7 @@ describe("Info", () => {
         precipProbability: 0.55,
         temperature: 72.8,
         humidity: 0.95,
-        windSpeed: 12.39,
+        windSpeed: 12.39
       }
     ]
   };
@@ -66,5 +66,19 @@ describe("Info", () => {
       div
     );
     ReactDOM.unmountComponentAtNode(div);
+  });
+
+  describe("toggleView", () => {
+    it("display should toggle between 'info' and 'weather'", () => {
+      wrapper.state().display = "info";
+      wrapper.instance().toggleView();
+      expect(wrapper.state().display).toEqual("weather");
+    });
+
+    it("display should toggle between 'info' and 'weather'", () => {
+      wrapper.state().display = "weather";
+      wrapper.instance().toggleView();
+      expect(wrapper.state().display).toEqual("info");
+    });
   });
 });

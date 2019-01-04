@@ -5,20 +5,27 @@
   overflow: scroll;
 }
 
-
-/* .mountain-container {
-  margin: 0 5%;
-} */
-
 .my-mountain {
   background: grey;
   border: 2px solid white;
   border-radius: 20px;
   color: white;
   margin: 10px auto;
-  max-width: 60vw;
+  max-width: 50vw;
   opacity: .9;
   padding: 10px;
   text-align: center;
 }
 
+.no-registers-msg {
+  border: 1px solid white;
+  border-radius: 20px;
+  background: grey;
+  color: white;
+  font-size: 18px;
+  opacity: .9;
+  margin: 30vh auto;
+  padding: 5px 20px;
+  text-align: center;
+  width: 200px;
+}

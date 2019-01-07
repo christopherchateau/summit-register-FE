@@ -14,6 +14,7 @@ describe("HourlyForecast", () => {
     humidity: 0.95,
     windSpeed: 12.39
   };
+  
   beforeEach(() => {
     wrapper = shallow(<HourlyForecast {...currentMountainWeather} />);
   });

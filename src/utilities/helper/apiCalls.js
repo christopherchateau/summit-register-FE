@@ -60,7 +60,7 @@ export const postImage = async image => {
   formData.append("upload_preset", cloudinaryPreset);
 
   const response = await fetch(
-    "https://api.cloudinary.com/v1_1/summit-register/upload",
+    "https://api.cloudinary.com/v1_1/summit-register/upload/a_ignore",
     {
       method: "POST",
       body: formData

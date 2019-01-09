@@ -8,10 +8,6 @@ class Log extends Component {
     let singleLog = [...this.props.currentMountainLog].reverse().map(log => {
       return (
         <div className="comment" key={log.id}>
-          <h4>Name: {log.attributes.name}</h4>
-          <h4>Hometown: {log.attributes.hometown}</h4>
-          <h4>Comments: {log.attributes.comments} </h4>
-          <h4>Date: {log.attributes.sign_time}</h4>
           {log.attributes.image_url && (
             <img
               className="user-image"
@@ -19,6 +15,10 @@ class Log extends Component {
               src={log.attributes.image_url}
             />
           )}
+          <h4>Name: {log.attributes.name}</h4>
+          <h4>Hometown: {log.attributes.hometown}</h4>
+          <h4>Comments: {log.attributes.comments} </h4>
+          <h4>Date: {log.attributes.sign_time}</h4>
         </div>
       );
     });

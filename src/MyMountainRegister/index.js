@@ -4,14 +4,7 @@ import "./MyMountainRegister.css";
 
 class MyMountainRegister extends Component {
   render() {
-    const {
-      name,
-      hometown,
-      comments,
-      sign_time,
-      image_url,
-      index
-    } = this.props.log;
+    const { name, hometown, comments, sign_time, image_url } = this.props.log;
     return (
       <div className="log-entry">
         {this.props.index !== 0 && <hr />}

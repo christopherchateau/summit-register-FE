@@ -36,7 +36,11 @@ class MyMountains extends Component {
           <h3 className="mountain-title">{mountain}</h3>
           {this.state.cleanMountainData[mountain].map((log, index) => {
             return (
-              <MyMountainRegister key={log.id} index={index} log={log.attributes} />
+              <MyMountainRegister
+                key={log.id}
+                index={index}
+                log={log.attributes}
+              />
             );
           })}
         </div>

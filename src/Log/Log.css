@@ -32,5 +32,6 @@
 }
 
 .user-image {
-  width: 40vw;
+  max-height: 40vh;
+  max-width: 40vw;
 }

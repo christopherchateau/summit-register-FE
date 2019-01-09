@@ -15,10 +15,10 @@ class Log extends Component {
               src={log.attributes.image_url}
             />
           )}
-          <h4>Name: {log.attributes.name}</h4>
-          <h4>Hometown: {log.attributes.hometown}</h4>
-          <h4>Comments: {log.attributes.comments} </h4>
-          <h4>Date: {log.attributes.sign_time}</h4>
+          <h4>{log.attributes.name}</h4>
+          <h4>{log.attributes.hometown}</h4>
+          <h4>{log.attributes.comments} </h4>
+          <h4>{log.attributes.sign_time}</h4>
         </div>
       );
     });

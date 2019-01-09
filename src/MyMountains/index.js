@@ -33,9 +33,11 @@ class MyMountains extends Component {
     let mountainCard = myMountainNames.sort().map(mountain => {
       return (
         <div className="my-mountain" key={mountain}>
-          <h3>{mountain}</h3>
-          {this.state.cleanMountainData[mountain].map(log => {
-            return <MyMountainRegister key={log.id} log={log.attributes} />;
+          <h3 className="mountain-title">{mountain}</h3>
+          {this.state.cleanMountainData[mountain].map((log, index) => {
+            return (
+              <MyMountainRegister key={log.id} index={index} log={log.attributes} />
+            );
           })}
         </div>
       );

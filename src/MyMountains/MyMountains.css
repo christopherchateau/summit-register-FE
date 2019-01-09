@@ -6,7 +6,7 @@
 }
 
 .my-mountain {
-  background: rgb(128, 128, 128, 0.9);
+  background: rgba(128, 128, 128, 0.9);
   border: 2px solid white;
   border-radius: 20px;
   color: white;

@@ -31,20 +31,16 @@ ShallowWrapper {
         <hr />,
         null,
         <h4>
-          Name: 
           jimbob
         </h4>,
         <h4>
-          Hometown: 
           Tim-buck-too
         </h4>,
         <h4>
-          Comments: 
           This was rad
            
         </h4>,
         <h4>
-          Date: 
           10:30pm
         </h4>,
       ],
@@ -67,16 +63,21 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": Array [
-            "Name: ",
-            "jimbob",
-          ],
+          "children": "jimbob",
         },
         "ref": null,
-        "rendered": Array [
-          "Name: ",
-          "jimbob",
-        ],
+        "rendered": "jimbob",
+        "type": "h4",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Tim-buck-too",
+        },
+        "ref": null,
+        "rendered": "Tim-buck-too",
         "type": "h4",
       },
       Object {
@@ -85,31 +86,12 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            "Hometown: ",
-            "Tim-buck-too",
-          ],
-        },
-        "ref": null,
-        "rendered": Array [
-          "Hometown: ",
-          "Tim-buck-too",
-        ],
-        "type": "h4",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            "Comments: ",
             "This was rad",
             " ",
           ],
         },
         "ref": null,
         "rendered": Array [
-          "Comments: ",
           "This was rad",
           " ",
         ],
@@ -120,16 +102,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": Array [
-            "Date: ",
-            "10:30pm",
-          ],
+          "children": "10:30pm",
         },
         "ref": null,
-        "rendered": Array [
-          "Date: ",
-          "10:30pm",
-        ],
+        "rendered": "10:30pm",
         "type": "h4",
       },
     ],
@@ -145,20 +121,16 @@ ShallowWrapper {
           <hr />,
           null,
           <h4>
-            Name: 
             jimbob
           </h4>,
           <h4>
-            Hometown: 
             Tim-buck-too
           </h4>,
           <h4>
-            Comments: 
             This was rad
              
           </h4>,
           <h4>
-            Date: 
             10:30pm
           </h4>,
         ],
@@ -181,16 +153,21 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": Array [
-              "Name: ",
-              "jimbob",
-            ],
+            "children": "jimbob",
           },
           "ref": null,
-          "rendered": Array [
-            "Name: ",
-            "jimbob",
-          ],
+          "rendered": "jimbob",
+          "type": "h4",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Tim-buck-too",
+          },
+          "ref": null,
+          "rendered": "Tim-buck-too",
           "type": "h4",
         },
         Object {
@@ -199,31 +176,12 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              "Hometown: ",
-              "Tim-buck-too",
-            ],
-          },
-          "ref": null,
-          "rendered": Array [
-            "Hometown: ",
-            "Tim-buck-too",
-          ],
-          "type": "h4",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              "Comments: ",
               "This was rad",
               " ",
             ],
           },
           "ref": null,
           "rendered": Array [
-            "Comments: ",
             "This was rad",
             " ",
           ],
@@ -234,16 +192,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": Array [
-              "Date: ",
-              "10:30pm",
-            ],
+            "children": "10:30pm",
           },
           "ref": null,
-          "rendered": Array [
-            "Date: ",
-            "10:30pm",
-          ],
+          "rendered": "10:30pm",
           "type": "h4",
         },
       ],

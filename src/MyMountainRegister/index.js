@@ -9,10 +9,10 @@ class MyMountainRegister extends Component {
       <div className="log-entry">
         {this.props.index !== 0 && <hr />}
         {image_url && <img className="user-image" alt="user" src={image_url} />}
-        <h4>Name: {name}</h4>
-        <h4>Hometown: {hometown}</h4>
-        <h4>Comments: {comments} </h4>
-        <h4>Date: {sign_time}</h4>
+        <h4>{name}</h4>
+        <h4>{hometown}</h4>
+        <h4>{comments} </h4>
+        <h4>{sign_time}</h4>
       </div>
     );
   }

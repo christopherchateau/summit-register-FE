@@ -15,7 +15,7 @@ class Header extends Component {
 
     if (currentDisplay === "myMountains") {
       displayText = "My Mountains";
-    } else if (currentMountainData.attributes && currentDisplay !== "start") {
+    } else if (currentMountainData.attributes && currentDisplay !== "start" && currentDisplay !== "signIn") {
       displayText = currentMountainData.attributes.name;
     }
 

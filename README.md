@@ -3,20 +3,20 @@
 
 [![Build Status](https://travis-ci.org/christopherchateau/summit-register-FE.svg?branch=master)](https://travis-ci.org/christopherchateau/summit-register-FE)<br>
 
-### See it Live
+### See it Live:
 
-#### Deployed on Heroku
+### Deployed on Heroku
 https://summit-register.herokuapp.com/
 
-#### Deployed on GH pages
+### Deployed on GH pages
 
 https://christopherchateau.github.io/summit-register-FE/
 
 
 ### Primary technologies
-* React
+* React JS
 * Enzyme/Jest
-* Firebase
+* Google Firebase
 
 ### Setup
 
@@ -30,15 +30,17 @@ Summit Registry uses Jest and Enzyme for all testing purposes
 
 `npm test` from the associated root directory
 
+![test](./src/utilities/Images/summit-register-test-coverage.png)
+
 ### Contributors
 
 #### Front End
-Chris Chateau: [Github](https://github.com/christopherchateau)<br>
-Justin Stewart: [Github](https://github.com/Jstewart3313)<br>
+[Chris Chateau](https://github.com/christopherchateau)<br>
+[Justin Stewart](https://github.com/Jstewart3313)<br>
 
 #### Back End
-Andrew Mockett: [Github](https://github.com/MacInnes)<br>
-Andrew Tobin: [Github](https://github.com/andrewetobin)
+[Andrew Tobin](https://github.com/andrewetobin)
+[Andrew Mockett](https://github.com/MacInnes)<br>
 
 ### Next Steps
 Additional enhancments could include :
@@ -55,3 +57,7 @@ Additional enhancments could include :
 ![mountainRegister](./src/utilities/videos/iphone-mountainRegister.png)
 ![oAuth](./src/utilities/videos/iphone-oAuth.png)
 ![tablet-homescreen](./src/utilities/videos/tablet-home.png)
+
+#### Summit Register was presented at the Turing Demo Competition on Jan 24th 2019
+
+![presentation](./src/utilities/Images/demo-comp.png)

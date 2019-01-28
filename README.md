@@ -60,4 +60,4 @@ Additional enhancments could include :
 
 #### Summit Register was presented at the Turing Demo Competition on Jan 24th 2019
 
-![presentation](./src/utilities/Images/demo-comp.png)
+![presentation](./src/utilities/Images/demo-comp.jpg)

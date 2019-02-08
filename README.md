@@ -57,6 +57,7 @@ Additional enhancments could include :
 ![mountainRegister](./src/utilities/videos/iphone-mountainRegister.png)
 ![oAuth](./src/utilities/videos/iphone-oAuth.png)
 ![tablet-homescreen](./src/utilities/videos/tablet-home.png)
+![tablet-myMountains](./src/utilities/videos/tablet-myMountains.png)
 
 #### Summit Register was presented at the Turing Demo Competition on Jan 24th 2019
 

@@ -3,14 +3,7 @@
 
 [![Build Status](https://travis-ci.org/christopherchateau/summit-register-FE.svg?branch=master)](https://travis-ci.org/christopherchateau/summit-register-FE)<br>
 
-### See it Live:
-
-### Deployed on Heroku
-https://summit-register.herokuapp.com/
-
-### Deployed on GH pages
-
-https://christopherchateau.github.io/summit-register-FE/
+## [See it Live on Heroku!](https://summit-register.herokuapp.com/)
 
 
 ### Primary technologies

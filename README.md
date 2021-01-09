@@ -1,5 +1,4 @@
-# Summit Registry
-[![Waffle.io - Columns and their card count](https://badge.waffle.io/MacInnes/summit-register-BE.svg?columns=all)](https://waffle.io/MacInnes/summit-register-BE)<br>
+# Summit Register
 
 [![Build Status](https://travis-ci.org/christopherchateau/summit-register-FE.svg?branch=master)](https://travis-ci.org/christopherchateau/summit-register-FE)<br>
 
